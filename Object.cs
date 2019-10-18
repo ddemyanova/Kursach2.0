@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace GoodVision
 {
-    abstract class Object
+   abstract class Object
     {
-        private string Name;
-        private Tuple<int, int> Size;
-        public Object(Object Obj)
+        private Image Image_to_show = Image.FromFile("Ssss.jpg");//рандомное имя файла
+        
+            public Tuple<double,double> Get_size(Image Image_to_show)
         {
-            this.Name = Obj.Name;
-            this.Size = Obj.Size;
+            var size = new Tuple<double, double>((double)Image_to_show.Height * 0.265, (double)Image_to_show.Width * 0.265);
+            return size;
         }
+
+      //  public void Set_size(Image Image_to_show)
     }
 }
