@@ -9,11 +9,11 @@ using System.Drawing;
 namespace GoodVision
 {
 
-    abstract class Object
+    abstract public class Object
     {
-        private string FileName;
-        private Tuple<double, double> size;
-        private Image ShowImage;
+        protected string FileName;
+        protected Tuple<double, double> size;
+        protected Image ShowImage;
         public Object()
         {
             this.FileName = "...";//Тут должен будет быт путь к базовому изображения
