@@ -16,5 +16,11 @@ namespace GoodVision
         {
             InitializeComponent();
         }
+
+
+        private void RegistTextBox_TextChanged(object sender, EventArgs e) //Имя пользователя 
+        {
+
+        }
     }
 }
