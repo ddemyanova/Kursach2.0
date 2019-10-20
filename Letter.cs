@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GoodVision
 {
-    class Letter : Object
+   class Letter : Object
     {
-        private enum Letters : int//список букв в таблице Сивцева
+       public enum Letters : int//список букв в таблице Сивцева
         {
             Ш = 1,
             Б,
@@ -19,7 +19,7 @@ namespace GoodVision
             И
         };
         private Letters Letter_to_show;//Буква которая будет для каждого объекта класса 
-        public virtual int Get_Rnadom()//случайная генерация числа 1-7
+        public virtual int Get_Random()//случайная генерация числа 1-7
         {
             Random rnd = new Random();
             int Random_Letter = rnd.Next(1,7);
@@ -27,7 +27,7 @@ namespace GoodVision
         }
         public Letter()//конструктор в котором буква для каждого объекта будет по умолчанию выбрана случайно
         {
-            this.Letter_to_show = (Letters)Get_Rnadom();
+            this.Letter_to_show = (Letters)Get_Random();
             switch (Letter_to_show)
             {
                 case Letters.Ш:
@@ -71,8 +71,10 @@ namespace GoodVision
         {
             this.Letter_to_show = (Letters)letter;
         }
-        //а здесь должен быть метод чтобы узнать букву объекта, но шо сь его пока нет
-        //sadasdasdasdlkad
-        
+        //а здесь должен быть метод чтобы узнать букву объекта, но шось его пока нет
+        public Letters Get_Letter()
+        {
+            return this.Letter_to_show;//возвращает текующую букву дял объекта класса
+        }
     }
 }

@@ -36,10 +36,7 @@ namespace GoodVision
         {
             this.size = Size;
         }
-        ~Object()
-        {
-            //хз че в деструкторе писать
-        }
+        ~Object(){}
     };
 }
 
