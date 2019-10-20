@@ -19,7 +19,7 @@ namespace GoodVision
             И
         };
         private Letters Letter_to_show;//Буква которая будет для каждого объекта класса 
-        public virtual int Get_Random()//случайная генерация числа 1-7
+        public int Get_Random()//случайная генерация числа 1-7
         {
             Random rnd = new Random();
             int Random_Letter = rnd.Next(1,7);
