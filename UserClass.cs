@@ -34,6 +34,7 @@ namespace GoodVision
             var vision = new Tuple<double, double>(User.left_eye_vision, User.right_eye_vision);
             return vision;
         }
+        ~UserClass() { }
         
     }
 }

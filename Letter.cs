@@ -76,5 +76,6 @@ namespace GoodVision
         {
             return this.Letter_to_show;//возвращает текующую букву дял объекта класса
         }
+        ~Letter() { }
     }
 }
