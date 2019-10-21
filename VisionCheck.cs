@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace GoodVision
 {
-    public partial class MainForm : Form
+    public partial class VisionCheck : Form
     {
-        public MainForm()
+        public VisionCheck()
         {
             InitializeComponent();
         }
 
-
-        private void RegistTextBox_TextChanged(object sender, EventArgs e) //Имя пользователя 
+        private void BackFromVChButton_Click(object sender, EventArgs e)
         {
-
+            MainMenu mMForm = new MainMenu();
+            mMForm.Show();
+            this.Hide();
         }
     }
 }
