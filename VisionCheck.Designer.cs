@@ -32,14 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.VisionCheckLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.InstructionLabel = new System.Windows.Forms.Label();
-            this.LandoltModeButton = new CustomButton.ImageCustomButton();
-            this.SivtsevModeButton = new CustomButton.ImageCustomButton();
             this.BackFromVChButton = new rbutton.CustRoundButton();
+            this.SivtsevModeButton = new CustomButton.ImageCustomButton();
+            this.LandoltModeButton = new CustomButton.ImageCustomButton();
+            this.InstructionLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LandoltModeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SivtsevModeButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LandoltModeButton)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,7 +56,7 @@
             this.VisionCheckLabel.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VisionCheckLabel.Location = new System.Drawing.Point(447, 11);
             this.VisionCheckLabel.Name = "VisionCheckLabel";
-            this.VisionCheckLabel.Size = new System.Drawing.Size(209, 48);
+            this.VisionCheckLabel.Size = new System.Drawing.Size(214, 50);
             this.VisionCheckLabel.TabIndex = 0;
             this.VisionCheckLabel.Text = "Lets Start";
             // 
@@ -71,38 +71,6 @@
             this.panel2.Size = new System.Drawing.Size(1116, 479);
             this.panel2.TabIndex = 1;
             // 
-            // InstructionLabel
-            // 
-            this.InstructionLabel.AutoSize = true;
-            this.InstructionLabel.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InstructionLabel.Location = new System.Drawing.Point(31, 25);
-            this.InstructionLabel.Name = "InstructionLabel";
-            this.InstructionLabel.Size = new System.Drawing.Size(124, 21);
-            this.InstructionLabel.TabIndex = 0;
-            this.InstructionLabel.Text = "INSTRUCTION";
-            // 
-            // LandoltModeButton
-            // 
-            this.LandoltModeButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageHover")));
-            this.LandoltModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageNormal")));
-            this.LandoltModeButton.Location = new System.Drawing.Point(417, 175);
-            this.LandoltModeButton.Name = "LandoltModeButton";
-            this.LandoltModeButton.Size = new System.Drawing.Size(530, 175);
-            this.LandoltModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LandoltModeButton.TabIndex = 1;
-            this.LandoltModeButton.TabStop = false;
-            // 
-            // SivtsevModeButton
-            // 
-            this.SivtsevModeButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.ImageHover")));
-            this.SivtsevModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.ImageNormal")));
-            this.SivtsevModeButton.Location = new System.Drawing.Point(182, 175);
-            this.SivtsevModeButton.Name = "SivtsevModeButton";
-            this.SivtsevModeButton.Size = new System.Drawing.Size(403, 175);
-            this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SivtsevModeButton.TabIndex = 1;
-            this.SivtsevModeButton.TabStop = false;
-            // 
             // BackFromVChButton
             // 
             this.BackFromVChButton.ImageHover = null;
@@ -115,21 +83,56 @@
             this.BackFromVChButton.UseVisualStyleBackColor = true;
             this.BackFromVChButton.Click += new System.EventHandler(this.BackFromVChButton_Click);
             // 
+            // SivtsevModeButton
+            // 
+            this.SivtsevModeButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.ImageHover")));
+            this.SivtsevModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.ImageNormal")));
+            this.SivtsevModeButton.Location = new System.Drawing.Point(244, 147);
+            this.SivtsevModeButton.Name = "SivtsevModeButton";
+            this.SivtsevModeButton.Size = new System.Drawing.Size(348, 175);
+            this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SivtsevModeButton.TabIndex = 1;
+            this.SivtsevModeButton.TabStop = false;
+            this.SivtsevModeButton.Click += new System.EventHandler(this.SivtsevModeButton_Click);
+            // 
+            // LandoltModeButton
+            // 
+            this.LandoltModeButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageHover")));
+            this.LandoltModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageNormal")));
+            this.LandoltModeButton.Location = new System.Drawing.Point(586, 147);
+            this.LandoltModeButton.Name = "LandoltModeButton";
+            this.LandoltModeButton.Size = new System.Drawing.Size(368, 175);
+            this.LandoltModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LandoltModeButton.TabIndex = 1;
+            this.LandoltModeButton.TabStop = false;
+            this.LandoltModeButton.Click += new System.EventHandler(this.LandoltModeButton_Click);
+            // 
+            // InstructionLabel
+            // 
+            this.InstructionLabel.AutoSize = true;
+            this.InstructionLabel.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InstructionLabel.Location = new System.Drawing.Point(31, 25);
+            this.InstructionLabel.Name = "InstructionLabel";
+            this.InstructionLabel.Size = new System.Drawing.Size(124, 21);
+            this.InstructionLabel.TabIndex = 0;
+            this.InstructionLabel.Text = "INSTRUCTION";
+            // 
             // VisionCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 579);
+            this.ClientSize = new System.Drawing.Size(1166, 594);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "VisionCheck";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VisionCheck";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LandoltModeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SivtsevModeButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LandoltModeButton)).EndInit();
             this.ResumeLayout(false);
 
         }
