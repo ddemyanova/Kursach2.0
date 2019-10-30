@@ -25,7 +25,9 @@ namespace GoodVision
             set {StatisticLabel.Text = value; }
         }
 
-        private void BackToMainButton_Click(object sender, EventArgs e)
+  
+
+        private void BackToMenuButton_Click(object sender, EventArgs e)
         {
             MainMenu mMForm = new MainMenu();
             mMForm.Show();

@@ -59,5 +59,35 @@ namespace GoodVision.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _66936 {
+            get {
+                object obj = ResourceManager.GetObject("66936", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_186382688_stock_illustration_eye_test_chart_vector_rings {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_186382688-stock-illustration-eye-test-chart-vector-rings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap desktop_3246124__340 {
+            get {
+                object obj = ResourceManager.GetObject("desktop-3246124__340", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

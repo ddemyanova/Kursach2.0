@@ -32,22 +32,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SivtsevCheckingPro));
             this.panel2 = new System.Windows.Forms.Panel();
             this.LetterPictureBox = new System.Windows.Forms.PictureBox();
-            this.SivtsevTimer = new CircularProgressBar.CircularProgressBar();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.AnswerSivtsevButton = new RoundButtonTwo.MyRoundButton();
             this.AnswerTextBox = new System.Windows.Forms.TextBox();
-            this.BackFromSivtsevButton = new rbutton.CustRoundButton();
+            this.SivtsevTimer = new CircularProgressBar.CircularProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.StartButton = new RoundButtonTwo.MyRoundButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.SivtsevInstrTextBox = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BackToVisionCheckButton = new rbutton.CustRoundButton();
+            this.AnswerSivtsevButton = new RoundButtonTwo.MyRoundButton();
+            this.StartButton = new RoundButtonTwo.MyRoundButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).BeginInit();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -69,6 +69,24 @@
             this.LetterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.TabIndex = 0;
             this.LetterPictureBox.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.AnswerSivtsevButton);
+            this.panel3.Controls.Add(this.AnswerTextBox);
+            this.panel3.Location = new System.Drawing.Point(100, 405);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(559, 116);
+            this.panel3.TabIndex = 2;
+            // 
+            // AnswerTextBox
+            // 
+            this.AnswerTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerTextBox.Location = new System.Drawing.Point(90, 33);
+            this.AnswerTextBox.Name = "AnswerTextBox";
+            this.AnswerTextBox.Size = new System.Drawing.Size(158, 55);
+            this.AnswerTextBox.TabIndex = 0;
+            this.AnswerTextBox.TextChanged += new System.EventHandler(this.AnswerTextBox_TextChanged);
             // 
             // SivtsevTimer
             // 
@@ -102,64 +120,10 @@
             this.SivtsevTimer.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.SivtsevTimer.Value = 50;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.AnswerSivtsevButton);
-            this.panel3.Controls.Add(this.AnswerTextBox);
-            this.panel3.Location = new System.Drawing.Point(100, 405);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(559, 116);
-            this.panel3.TabIndex = 2;
-            // 
-            // AnswerSivtsevButton
-            // 
-            this.AnswerSivtsevButton.ImageHover = null;
-            this.AnswerSivtsevButton.ImageNormal = null;
-            this.AnswerSivtsevButton.Location = new System.Drawing.Point(320, 19);
-            this.AnswerSivtsevButton.Name = "AnswerSivtsevButton";
-            this.AnswerSivtsevButton.Size = new System.Drawing.Size(173, 79);
-            this.AnswerSivtsevButton.TabIndex = 1;
-            this.AnswerSivtsevButton.TabStop = false;
-            this.AnswerSivtsevButton.Click += new System.EventHandler(this.AnswerSivtsevButton_Click);
-            // 
-            // AnswerTextBox
-            // 
-            this.AnswerTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnswerTextBox.Location = new System.Drawing.Point(90, 33);
-            this.AnswerTextBox.Name = "AnswerTextBox";
-            this.AnswerTextBox.Size = new System.Drawing.Size(158, 55);
-            this.AnswerTextBox.TabIndex = 0;
-            this.AnswerTextBox.TextChanged += new System.EventHandler(this.AnswerTextBox_TextChanged);
-            // 
-            // BackFromSivtsevButton
-            // 
-            this.BackFromSivtsevButton.ImageHover = null;
-            this.BackFromSivtsevButton.ImageNormal = null;
-            this.BackFromSivtsevButton.Location = new System.Drawing.Point(29, 468);
-            this.BackFromSivtsevButton.Name = "BackFromSivtsevButton";
-            this.BackFromSivtsevButton.Size = new System.Drawing.Size(151, 93);
-            this.BackFromSivtsevButton.TabIndex = 3;
-            this.BackFromSivtsevButton.Text = "custRoundButton1";
-            this.BackFromSivtsevButton.UseVisualStyleBackColor = true;
-            this.BackFromSivtsevButton.Click += new System.EventHandler(this.BackFromSivtsevButton_Click);
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // StartButton
-            // 
-            this.StartButton.Image = ((System.Drawing.Image)(resources.GetObject("StartButton.Image")));
-            this.StartButton.ImageHover = null;
-            this.StartButton.ImageNormal = null;
-            this.StartButton.Location = new System.Drawing.Point(232, 426);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(135, 135);
-            this.StartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.StartButton.TabIndex = 4;
-            this.StartButton.TabStop = false;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // panel4
             // 
@@ -169,14 +133,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(416, 366);
             this.panel4.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
-            this.label1.TabIndex = 0;
             // 
             // SivtsevInstrTextBox
             // 
@@ -189,14 +145,59 @@
             this.SivtsevInstrTextBox.Text = "Инструкция\nС другой стороны реализация намеченных плановых заданий представляет с" +
     "обой интересный эксперимент проверки соответствующий условий активизации. ";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 0;
+            // 
+            // BackToVisionCheckButton
+            // 
+            this.BackToVisionCheckButton.ImageHover = null;
+            this.BackToVisionCheckButton.ImageNormal = null;
+            this.BackToVisionCheckButton.Location = new System.Drawing.Point(33, 426);
+            this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
+            this.BackToVisionCheckButton.Size = new System.Drawing.Size(166, 148);
+            this.BackToVisionCheckButton.TabIndex = 6;
+            this.BackToVisionCheckButton.Text = "custRoundButton1";
+            this.BackToVisionCheckButton.UseVisualStyleBackColor = true;
+            this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
+            // 
+            // AnswerSivtsevButton
+            // 
+            this.AnswerSivtsevButton.Image = ((System.Drawing.Image)(resources.GetObject("AnswerSivtsevButton.Image")));
+            this.AnswerSivtsevButton.ImageHover = null;
+            this.AnswerSivtsevButton.ImageNormal = global::GoodVision.Properties.Resources.desktop_3246124__340;
+            this.AnswerSivtsevButton.Location = new System.Drawing.Point(326, 28);
+            this.AnswerSivtsevButton.Name = "AnswerSivtsevButton";
+            this.AnswerSivtsevButton.Size = new System.Drawing.Size(195, 59);
+            this.AnswerSivtsevButton.TabIndex = 1;
+            this.AnswerSivtsevButton.TabStop = false;
+            this.AnswerSivtsevButton.Click += new System.EventHandler(this.AnswerSivtsevButton_Click);
+            // 
+            // StartButton
+            // 
+            this.StartButton.Image = ((System.Drawing.Image)(resources.GetObject("StartButton.Image")));
+            this.StartButton.ImageHover = null;
+            this.StartButton.ImageNormal = null;
+            this.StartButton.Location = new System.Drawing.Point(240, 426);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(147, 136);
+            this.StartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StartButton.TabIndex = 7;
+            this.StartButton.TabStop = false;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
             // SivtsevCheckingPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1139, 601);
             this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.BackToVisionCheckButton);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.BackFromSivtsevButton);
             this.Controls.Add(this.panel2);
             this.Name = "SivtsevCheckingPro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -205,10 +206,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -219,12 +220,13 @@
         private CircularProgressBar.CircularProgressBar SivtsevTimer;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox AnswerTextBox;
-        private RoundButtonTwo.MyRoundButton AnswerSivtsevButton;
-        private rbutton.CustRoundButton BackFromSivtsevButton;
+      //  private rbutton.CustRoundButton BackFromSivtsevButton;
         private System.Windows.Forms.Timer timer1;
-        private RoundButtonTwo.MyRoundButton StartButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox SivtsevInstrTextBox;
+        private rbutton.CustRoundButton BackToVisionCheckButton;
+        private RoundButtonTwo.MyRoundButton AnswerSivtsevButton;
+        private RoundButtonTwo.MyRoundButton StartButton;
     }
 }

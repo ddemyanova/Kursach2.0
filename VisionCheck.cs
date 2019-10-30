@@ -17,25 +17,30 @@ namespace GoodVision
             InitializeComponent();
         }
 
-        private void BackFromVChButton_Click(object sender, EventArgs e)
+
+
+        private void SivtsevModeButton_Click(object sender, EventArgs e)
+        {
+            SivtsevCheckingPro sivCheck = new SivtsevCheckingPro();
+            sivCheck.Show();
+            this.Hide();
+        }
+
+
+
+        private void BackToMenuButton_Click(object sender, EventArgs e)
         {
             MainMenu mMForm = new MainMenu();
             mMForm.Show();
             this.Hide();
         }
 
-        private void SivtsevModeButton_Click(object sender, EventArgs e)
-        {
-          SivtsevCheckingPro sivCheck = new SivtsevCheckingPro();
-            sivCheck.Show();
-            this.Hide();
-        }
-
-        private void LandoltModeButton_Click(object sender, EventArgs e)
+        private void LandoltModeButton_Click_1(object sender, EventArgs e)
         {
             LandotCheckPro LanCheck = new LandotCheckPro();
             LanCheck.Show();
             this.Hide();
         }
+
     }
 }

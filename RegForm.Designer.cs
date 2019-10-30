@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.WellcomePanel = new System.Windows.Forms.Panel();
             this.WellcLabel = new System.Windows.Forms.Label();
             this.RegPanel = new System.Windows.Forms.Panel();
@@ -86,11 +87,13 @@
             // 
             // RegButton
             // 
+            this.RegButton.Image = ((System.Drawing.Image)(resources.GetObject("RegButton.Image")));
             this.RegButton.ImageHover = null;
-            this.RegButton.ImageNormal = null;
-            this.RegButton.Location = new System.Drawing.Point(290, 429);
+            this.RegButton.ImageNormal = global::GoodVision.Properties.Resources.desktop_3246124__340;
+            this.RegButton.Location = new System.Drawing.Point(328, 423);
             this.RegButton.Name = "RegButton";
-            this.RegButton.Size = new System.Drawing.Size(625, 72);
+            this.RegButton.Size = new System.Drawing.Size(518, 85);
+            this.RegButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RegButton.TabIndex = 3;
             this.RegButton.TabStop = false;
             this.RegButton.Click += new System.EventHandler(this.RegButton_Click);
@@ -125,8 +128,8 @@
         private System.Windows.Forms.Panel RegPanel;
         private System.Windows.Forms.Label WellcLabel;
         private System.Windows.Forms.Label label2;
-        private RoundButtonTwo.MyRoundButton RegButton;
         public System.Windows.Forms.TextBox RegistTextBox;
+        private RoundButtonTwo.MyRoundButton RegButton;
     }
 }
 

@@ -32,10 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.VisionCheckLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.BackFromVChButton = new rbutton.CustRoundButton();
-            this.SivtsevModeButton = new CustomButton.ImageCustomButton();
-            this.LandoltModeButton = new CustomButton.ImageCustomButton();
+            this.BackToMenuButton = new rbutton.CustRoundButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.InstructionLabel = new System.Windows.Forms.Label();
+            this.SivtsevModeButton = new TetraCustomButton.ImageTetraButton();
+            this.LandoltModeButton = new TetraCustomButton.ImageTetraButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SivtsevModeButton)).BeginInit();
@@ -62,60 +63,73 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.BackFromVChButton);
             this.panel2.Controls.Add(this.SivtsevModeButton);
             this.panel2.Controls.Add(this.LandoltModeButton);
+            this.panel2.Controls.Add(this.BackToMenuButton);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.InstructionLabel);
             this.panel2.Location = new System.Drawing.Point(8, 88);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1116, 479);
             this.panel2.TabIndex = 1;
             // 
-            // BackFromVChButton
+            // BackToMenuButton
             // 
-            this.BackFromVChButton.ImageHover = null;
-            this.BackFromVChButton.ImageNormal = null;
-            this.BackFromVChButton.Location = new System.Drawing.Point(445, 385);
-            this.BackFromVChButton.Name = "BackFromVChButton";
-            this.BackFromVChButton.Size = new System.Drawing.Size(283, 72);
-            this.BackFromVChButton.TabIndex = 2;
-            this.BackFromVChButton.Text = "custRoundButton1";
-            this.BackFromVChButton.UseVisualStyleBackColor = true;
-            this.BackFromVChButton.Click += new System.EventHandler(this.BackFromVChButton_Click);
+            this.BackToMenuButton.ImageHover = null;
+            this.BackToMenuButton.ImageNormal = null;
+            this.BackToMenuButton.Location = new System.Drawing.Point(0, 336);
+            this.BackToMenuButton.Name = "BackToMenuButton";
+            this.BackToMenuButton.Size = new System.Drawing.Size(209, 140);
+            this.BackToMenuButton.TabIndex = 2;
+            this.BackToMenuButton.Text = "custRoundButton1";
+            this.BackToMenuButton.UseVisualStyleBackColor = true;
+            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
             // 
-            // SivtsevModeButton
+            // label1
             // 
-            this.SivtsevModeButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.ImageHover")));
-            this.SivtsevModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.ImageNormal")));
-            this.SivtsevModeButton.Location = new System.Drawing.Point(244, 147);
-            this.SivtsevModeButton.Name = "SivtsevModeButton";
-            this.SivtsevModeButton.Size = new System.Drawing.Size(348, 175);
-            this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SivtsevModeButton.TabIndex = 1;
-            this.SivtsevModeButton.TabStop = false;
-            this.SivtsevModeButton.Click += new System.EventHandler(this.SivtsevModeButton_Click);
-            // 
-            // LandoltModeButton
-            // 
-            this.LandoltModeButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageHover")));
-            this.LandoltModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageNormal")));
-            this.LandoltModeButton.Location = new System.Drawing.Point(586, 147);
-            this.LandoltModeButton.Name = "LandoltModeButton";
-            this.LandoltModeButton.Size = new System.Drawing.Size(368, 175);
-            this.LandoltModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LandoltModeButton.TabIndex = 1;
-            this.LandoltModeButton.TabStop = false;
-            this.LandoltModeButton.Click += new System.EventHandler(this.LandoltModeButton_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ONE MORE INSTRUCTION";
             // 
             // InstructionLabel
             // 
             this.InstructionLabel.AutoSize = true;
             this.InstructionLabel.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InstructionLabel.Location = new System.Drawing.Point(31, 25);
+            this.InstructionLabel.Location = new System.Drawing.Point(23, 22);
             this.InstructionLabel.Name = "InstructionLabel";
             this.InstructionLabel.Size = new System.Drawing.Size(124, 21);
             this.InstructionLabel.TabIndex = 0;
             this.InstructionLabel.Text = "INSTRUCTION";
+            // 
+            // SivtsevModeButton
+            // 
+            this.SivtsevModeButton.Image = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.Image")));
+            this.SivtsevModeButton.ImageHover = null;
+            this.SivtsevModeButton.ImageNormal = global::GoodVision.Properties.Resources.depositphotos_186382688_stock_illustration_eye_test_chart_vector_rings;
+            this.SivtsevModeButton.Location = new System.Drawing.Point(495, 130);
+            this.SivtsevModeButton.Name = "SivtsevModeButton";
+            this.SivtsevModeButton.Size = new System.Drawing.Size(287, 200);
+            this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SivtsevModeButton.TabIndex = 4;
+            this.SivtsevModeButton.TabStop = false;
+            this.SivtsevModeButton.Click += new System.EventHandler(this.SivtsevModeButton_Click);
+            // 
+            // LandoltModeButton
+            // 
+            this.LandoltModeButton.Image = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.Image")));
+            this.LandoltModeButton.ImageHover = null;
+            this.LandoltModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageNormal")));
+            this.LandoltModeButton.Location = new System.Drawing.Point(205, 132);
+            this.LandoltModeButton.Name = "LandoltModeButton";
+            this.LandoltModeButton.Size = new System.Drawing.Size(284, 198);
+            this.LandoltModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LandoltModeButton.TabIndex = 3;
+            this.LandoltModeButton.TabStop = false;
+            this.LandoltModeButton.Click += new System.EventHandler(this.LandoltModeButton_Click_1);
             // 
             // VisionCheck
             // 
@@ -143,8 +157,12 @@
         private System.Windows.Forms.Label VisionCheckLabel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label InstructionLabel;
-        private CustomButton.ImageCustomButton SivtsevModeButton;
-        private CustomButton.ImageCustomButton LandoltModeButton;
-        private rbutton.CustRoundButton BackFromVChButton;
+     //   private ImageTetraButton.ImageCustomButton SivtsevModeButton;
+       // private ImageTetraButton.ImageCustomButton LandoltModeButton;
+    //    private rbutton.CustRoundButton BackFromVChButton;
+        private System.Windows.Forms.Label label1;
+        private rbutton.CustRoundButton BackToMenuButton;
+        private TetraCustomButton.ImageTetraButton LandoltModeButton;
+        private TetraCustomButton.ImageTetraButton SivtsevModeButton;
     }
 }

@@ -27,6 +27,8 @@ namespace GoodVision
             
         }
 
+       
+
         private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
         {
             MainMenu mMForm = new MainMenu();

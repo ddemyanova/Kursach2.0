@@ -54,13 +54,21 @@ namespace GoodVision
              timer1.Enabled = false;
             }
 
-   
+      
+        private void BackToVisionCheckButton_Click(object sender, EventArgs e)
+        {
+            VisionCheck Vch = new VisionCheck();
+            Vch.Show();
+            this.Hide();
+        }
+
+
 
         private void StartButton_Click(object sender, EventArgs e)
         {
             SivtsevTimer.Value = 0;
             timer1.Enabled = true;
-             temp = i;
+            temp = i;
         }
     }
 }

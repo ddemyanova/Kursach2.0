@@ -39,7 +39,7 @@ namespace GoodVision
             statForm.StatistExchange = Exchange;
             statForm.Show();
             this.Hide();
-            
+
         }
 
         private void VisionCheckButton_Click(object sender, EventArgs e)
@@ -49,12 +49,15 @@ namespace GoodVision
             this.Hide();
         }
 
-        private void MainMenuHellpButton_Click(object sender, EventArgs e) // вызываем хелп для главного меню
+
+        // вызываем помощь для главного меню
+        private void HelpButton_Click(object sender, EventArgs e) 
         {
             HellpMessage hellpForm = new HellpMessage();
-         
+
             hellpForm.Show();
-            
         }
+
+   
     }
 }

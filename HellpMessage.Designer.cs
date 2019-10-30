@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HellpMessage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.HelpGreetingLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.NotaButtnGuide = new RoundButtonTwo.MyRoundButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.NotaButtnMode = new RoundButtonTwo.MyRoundButton();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.NotaButtnVisionCheck = new RoundButtonTwo.MyRoundButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.NotaButtnStatic = new RoundButtonTwo.MyRoundButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.HelpPicture1 = new RoundButtonTwo.MyRoundButton();
+            this.HelpPicture3 = new RoundButtonTwo.MyRoundButton();
+            this.HelpPicture4 = new RoundButtonTwo.MyRoundButton();
+            this.HelpPicture2 = new RoundButtonTwo.MyRoundButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnGuide)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnMode)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnVisionCheck)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnStatic)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,29 +76,19 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.NotaButtnGuide);
+            this.panel2.Controls.Add(this.HelpPicture2);
+            this.panel2.Controls.Add(this.HelpPicture4);
+            this.panel2.Controls.Add(this.HelpPicture3);
+            this.panel2.Controls.Add(this.HelpPicture1);
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.NotaButtnMode);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.NotaButtnVisionCheck);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.NotaButtnStatic);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Location = new System.Drawing.Point(13, 17);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(588, 577);
             this.panel2.TabIndex = 2;
-            // 
-            // NotaButtnGuide
-            // 
-            this.NotaButtnGuide.ImageHover = null;
-            this.NotaButtnGuide.ImageNormal = null;
-            this.NotaButtnGuide.Location = new System.Drawing.Point(24, 394);
-            this.NotaButtnGuide.Name = "NotaButtnGuide";
-            this.NotaButtnGuide.Size = new System.Drawing.Size(166, 142);
-            this.NotaButtnGuide.TabIndex = 3;
-            this.NotaButtnGuide.TabStop = false;
             // 
             // panel7
             // 
@@ -107,15 +98,13 @@
             this.panel7.Size = new System.Drawing.Size(374, 142);
             this.panel7.TabIndex = 2;
             // 
-            // NotaButtnMode
+            // richTextBox4
             // 
-            this.NotaButtnMode.ImageHover = null;
-            this.NotaButtnMode.ImageNormal = null;
-            this.NotaButtnMode.Location = new System.Drawing.Point(24, 246);
-            this.NotaButtnMode.Name = "NotaButtnMode";
-            this.NotaButtnMode.Size = new System.Drawing.Size(166, 142);
-            this.NotaButtnMode.TabIndex = 3;
-            this.NotaButtnMode.TabStop = false;
+            this.richTextBox4.Location = new System.Drawing.Point(9, 6);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(362, 136);
+            this.richTextBox4.TabIndex = 0;
+            this.richTextBox4.Text = "";
             // 
             // panel5
             // 
@@ -125,15 +114,13 @@
             this.panel5.Size = new System.Drawing.Size(374, 142);
             this.panel5.TabIndex = 2;
             // 
-            // NotaButtnVisionCheck
+            // richTextBox3
             // 
-            this.NotaButtnVisionCheck.ImageHover = null;
-            this.NotaButtnVisionCheck.ImageNormal = null;
-            this.NotaButtnVisionCheck.Location = new System.Drawing.Point(24, 172);
-            this.NotaButtnVisionCheck.Name = "NotaButtnVisionCheck";
-            this.NotaButtnVisionCheck.Size = new System.Drawing.Size(166, 68);
-            this.NotaButtnVisionCheck.TabIndex = 3;
-            this.NotaButtnVisionCheck.TabStop = false;
+            this.richTextBox3.Location = new System.Drawing.Point(9, 3);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(362, 136);
+            this.richTextBox3.TabIndex = 0;
+            this.richTextBox3.Text = "";
             // 
             // panel4
             // 
@@ -143,15 +130,13 @@
             this.panel4.Size = new System.Drawing.Size(374, 68);
             this.panel4.TabIndex = 2;
             // 
-            // NotaButtnStatic
+            // richTextBox1
             // 
-            this.NotaButtnStatic.ImageHover = null;
-            this.NotaButtnStatic.ImageNormal = null;
-            this.NotaButtnStatic.Location = new System.Drawing.Point(24, 98);
-            this.NotaButtnStatic.Name = "NotaButtnStatic";
-            this.NotaButtnStatic.Size = new System.Drawing.Size(166, 68);
-            this.NotaButtnStatic.TabIndex = 3;
-            this.NotaButtnStatic.TabStop = false;
+            this.richTextBox1.Location = new System.Drawing.Point(12, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(362, 55);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
             // 
             // panel3
             // 
@@ -161,14 +146,6 @@
             this.panel3.Size = new System.Drawing.Size(374, 68);
             this.panel3.TabIndex = 2;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(362, 55);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
             // richTextBox2
             // 
             this.richTextBox2.Location = new System.Drawing.Point(9, 10);
@@ -177,21 +154,51 @@
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             // 
-            // richTextBox3
+            // HelpPicture1
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(9, 3);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(362, 136);
-            this.richTextBox3.TabIndex = 0;
-            this.richTextBox3.Text = "";
+            this.HelpPicture1.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture1.Image")));
+            this.HelpPicture1.ImageHover = null;
+            this.HelpPicture1.ImageNormal = null;
+            this.HelpPicture1.Location = new System.Drawing.Point(18, 98);
+            this.HelpPicture1.Name = "HelpPicture1";
+            this.HelpPicture1.Size = new System.Drawing.Size(172, 68);
+            this.HelpPicture1.TabIndex = 3;
+            this.HelpPicture1.TabStop = false;
             // 
-            // richTextBox4
+            // HelpPicture3
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(9, 6);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(362, 136);
-            this.richTextBox4.TabIndex = 0;
-            this.richTextBox4.Text = "";
+            this.HelpPicture3.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture3.Image")));
+            this.HelpPicture3.ImageHover = null;
+            this.HelpPicture3.ImageNormal = null;
+            this.HelpPicture3.Location = new System.Drawing.Point(18, 261);
+            this.HelpPicture3.Name = "HelpPicture3";
+            this.HelpPicture3.Size = new System.Drawing.Size(176, 124);
+            this.HelpPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HelpPicture3.TabIndex = 4;
+            this.HelpPicture3.TabStop = false;
+            // 
+            // HelpPicture4
+            // 
+            this.HelpPicture4.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture4.Image")));
+            this.HelpPicture4.ImageHover = null;
+            this.HelpPicture4.ImageNormal = null;
+            this.HelpPicture4.Location = new System.Drawing.Point(22, 400);
+            this.HelpPicture4.Name = "HelpPicture4";
+            this.HelpPicture4.Size = new System.Drawing.Size(168, 135);
+            this.HelpPicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HelpPicture4.TabIndex = 5;
+            this.HelpPicture4.TabStop = false;
+            // 
+            // HelpPicture2
+            // 
+            this.HelpPicture2.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture2.Image")));
+            this.HelpPicture2.ImageHover = null;
+            this.HelpPicture2.ImageNormal = null;
+            this.HelpPicture2.Location = new System.Drawing.Point(15, 172);
+            this.HelpPicture2.Name = "HelpPicture2";
+            this.HelpPicture2.Size = new System.Drawing.Size(174, 67);
+            this.HelpPicture2.TabIndex = 6;
+            this.HelpPicture2.TabStop = false;
             // 
             // HellpMessage
             // 
@@ -207,14 +214,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnGuide)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnMode)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnVisionCheck)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.NotaButtnStatic)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,17 +231,17 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label HelpGreetingLabel;
         private System.Windows.Forms.Panel panel2;
-        private RoundButtonTwo.MyRoundButton NotaButtnGuide;
         private System.Windows.Forms.Panel panel7;
-        private RoundButtonTwo.MyRoundButton NotaButtnMode;
         private System.Windows.Forms.Panel panel5;
-        private RoundButtonTwo.MyRoundButton NotaButtnVisionCheck;
         private System.Windows.Forms.Panel panel4;
-        private RoundButtonTwo.MyRoundButton NotaButtnStatic;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private RoundButtonTwo.MyRoundButton HelpPicture2;
+        private RoundButtonTwo.MyRoundButton HelpPicture4;
+        private RoundButtonTwo.MyRoundButton HelpPicture3;
+        private RoundButtonTwo.MyRoundButton HelpPicture1;
     }
 }

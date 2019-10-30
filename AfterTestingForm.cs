@@ -32,11 +32,15 @@ namespace GoodVision
 
         }
 
+
+
         private void BackToMenuButton_Click(object sender, EventArgs e)
         {
             MainMenu mMen = new MainMenu();
             mMen.Show();
             mMen.Hide();
         }
+
+       
     }
 }

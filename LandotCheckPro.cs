@@ -45,6 +45,9 @@ namespace GoodVision
             else
                 LTimer.Enabled = false;
         }
+
+
+
         private void UpLandotButton_Click(object sender, EventArgs e) //здесь можно добавить смену картики и считывание ответа
         {
             LandotTimer.Value = 0;
@@ -67,7 +70,14 @@ namespace GoodVision
             temp = i;
         }
 
+        private void BackToVisionCheckButton_Click_1(object sender, EventArgs e)
+        {
+            VisionCheck Vch = new VisionCheck();
+            Vch.Show();
+            this.Hide();
+        }
 
+      
 
         private void RightLandotButton_Click(object sender, EventArgs e)
         {
@@ -77,6 +87,6 @@ namespace GoodVision
         }
 
 
-    
-}
+
+    }
 }

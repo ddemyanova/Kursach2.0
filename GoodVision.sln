@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodVision", "GoodVision.csproj", "{001511CE-F22E-4FB3-80B3-CD2667DC2637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundButtonTwo", "..\..\kurs\RoundButtonTwo\RoundButtonTwo.csproj", "{1A993FF3-91FD-4EF0-8011-81184AA9F8A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetraCustomButton", "..\TetraCustomButton\TetraCustomButton.csproj", "{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rbutton", "..\..\rbutton\rbutton\rbutton.csproj", "{10610C41-2771-4A80-B1A7-60E413A6A447}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundedButton", "..\RoundedButton\RoundedButton.csproj", "{B6B0C367-9AC3-46F8-8E7C-EE936073BCD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomButton", "..\..\kurs\CustomButton\CustomButton.csproj", "{B8AA22DF-0B74-41F4-9445-5C398B41DB9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rbutton", "rbutton\rbutton.csproj", "{38A0CE2A-335B-4A34-8B34-603CD42F4A36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,18 @@ Global
 		{001511CE-F22E-4FB3-80B3-CD2667DC2637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{001511CE-F22E-4FB3-80B3-CD2667DC2637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{001511CE-F22E-4FB3-80B3-CD2667DC2637}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A993FF3-91FD-4EF0-8011-81184AA9F8A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A993FF3-91FD-4EF0-8011-81184AA9F8A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A993FF3-91FD-4EF0-8011-81184AA9F8A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A993FF3-91FD-4EF0-8011-81184AA9F8A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10610C41-2771-4A80-B1A7-60E413A6A447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10610C41-2771-4A80-B1A7-60E413A6A447}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10610C41-2771-4A80-B1A7-60E413A6A447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10610C41-2771-4A80-B1A7-60E413A6A447}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8AA22DF-0B74-41F4-9445-5C398B41DB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8AA22DF-0B74-41F4-9445-5C398B41DB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8AA22DF-0B74-41F4-9445-5C398B41DB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8AA22DF-0B74-41F4-9445-5C398B41DB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B0C367-9AC3-46F8-8E7C-EE936073BCD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B0C367-9AC3-46F8-8E7C-EE936073BCD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B0C367-9AC3-46F8-8E7C-EE936073BCD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B0C367-9AC3-46F8-8E7C-EE936073BCD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
