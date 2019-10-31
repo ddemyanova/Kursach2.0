@@ -32,10 +32,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.HelloLab = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.VisionCheckButton = new RoundButtonTwo.MyRoundButton();
-            this.StaticticButton = new RoundButtonTwo.MyRoundButton();
             this.custRoundButton1 = new rbutton.CustRoundButton();
             this.HelpButton = new rbutton.CustRoundButton();
+            this.VisionCheckButton = new ButtonRoundedCorners.RoundedCorners();
+            this.StaticticButton = new ButtonRoundedCorners.RoundedCorners();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
@@ -70,32 +70,6 @@
             this.panel4.Size = new System.Drawing.Size(772, 323);
             this.panel4.TabIndex = 2;
             // 
-            // VisionCheckButton
-            // 
-            this.VisionCheckButton.Image = ((System.Drawing.Image)(resources.GetObject("VisionCheckButton.Image")));
-            this.VisionCheckButton.ImageHover = null;
-            this.VisionCheckButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("VisionCheckButton.ImageNormal")));
-            this.VisionCheckButton.Location = new System.Drawing.Point(88, 65);
-            this.VisionCheckButton.Name = "VisionCheckButton";
-            this.VisionCheckButton.Size = new System.Drawing.Size(627, 82);
-            this.VisionCheckButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.VisionCheckButton.TabIndex = 3;
-            this.VisionCheckButton.TabStop = false;
-            this.VisionCheckButton.Click += new System.EventHandler(this.VisionCheckButton_Click);
-            // 
-            // StaticticButton
-            // 
-            this.StaticticButton.Image = ((System.Drawing.Image)(resources.GetObject("StaticticButton.Image")));
-            this.StaticticButton.ImageHover = null;
-            this.StaticticButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("StaticticButton.ImageNormal")));
-            this.StaticticButton.Location = new System.Drawing.Point(88, 196);
-            this.StaticticButton.Name = "StaticticButton";
-            this.StaticticButton.Size = new System.Drawing.Size(627, 77);
-            this.StaticticButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.StaticticButton.TabIndex = 2;
-            this.StaticticButton.TabStop = false;
-            this.StaticticButton.Click += new System.EventHandler(this.StaticticButton_Click);
-            // 
             // custRoundButton1
             // 
             this.custRoundButton1.ImageHover = null;
@@ -120,6 +94,30 @@
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
+            // VisionCheckButton
+            // 
+            this.VisionCheckButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.VisionCheckButton.ImageHover = null;
+            this.VisionCheckButton.ImageNormal = null;
+            this.VisionCheckButton.Location = new System.Drawing.Point(65, 187);
+            this.VisionCheckButton.Name = "VisionCheckButton";
+            this.VisionCheckButton.Size = new System.Drawing.Size(663, 110);
+            this.VisionCheckButton.TabIndex = 3;
+            this.VisionCheckButton.TabStop = false;
+            this.VisionCheckButton.Click += new System.EventHandler(this.VisionCheckButton_Click);
+            // 
+            // StaticticButton
+            // 
+            this.StaticticButton.BackColor = System.Drawing.Color.Coral;
+            this.StaticticButton.ImageHover = null;
+            this.StaticticButton.ImageNormal = null;
+            this.StaticticButton.Location = new System.Drawing.Point(65, 47);
+            this.StaticticButton.Name = "StaticticButton";
+            this.StaticticButton.Size = new System.Drawing.Size(668, 93);
+            this.StaticticButton.TabIndex = 2;
+            this.StaticticButton.TabStop = false;
+            this.StaticticButton.Click += new System.EventHandler(this.StaticticButton_Click);
+            // 
             // MainMenu
             // 
             this.ClientSize = new System.Drawing.Size(1126, 560);
@@ -140,9 +138,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private RoundButtonTwo.MyRoundButton CheckVisionButton;
+    //    private RoundButtonTwo.MyRoundButton CheckVisionButton;
        // private rbutton.CustRoundButton HelpButton;
-        private RoundButtonTwo.MyRoundButton StatisticButton;
+   //     private RoundButtonTwo.MyRoundButton StatisticButton;
         private System.Windows.Forms.Label HelloLabel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
@@ -150,7 +148,8 @@
         public System.Windows.Forms.Label HelloLab;
         private rbutton.CustRoundButton custRoundButton1;
         private rbutton.CustRoundButton HelpButton;
-        private RoundButtonTwo.MyRoundButton VisionCheckButton;
-        private RoundButtonTwo.MyRoundButton StaticticButton;
+        private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
+        private ButtonRoundedCorners.RoundedCorners StaticticButton;
+        //
     }
 }

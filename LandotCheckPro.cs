@@ -21,6 +21,8 @@ namespace GoodVision
         private void GoLandotButton_Click(object sender, EventArgs e) // Запуск тестирования Сюда первую картинку надо
         {
             LandotTimer.Value = 0;
+            EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
+            System.Threading.Thread.Sleep(100);
             LTimer.Enabled = true;
             temp = i;
         }
@@ -46,7 +48,8 @@ namespace GoodVision
                 LTimer.Enabled = false;
         }
 
-
+    
+        // Выбор ответа
 
         private void UpLandotButton_Click(object sender, EventArgs e) //здесь можно добавить смену картики и считывание ответа
         {
@@ -69,15 +72,6 @@ namespace GoodVision
             LTimer.Enabled = true;
             temp = i;
         }
-
-        private void BackToVisionCheckButton_Click_1(object sender, EventArgs e)
-        {
-            VisionCheck Vch = new VisionCheck();
-            Vch.Show();
-            this.Hide();
-        }
-
-      
 
         private void RightLandotButton_Click(object sender, EventArgs e)
         {

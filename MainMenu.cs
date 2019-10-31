@@ -33,7 +33,7 @@ namespace GoodVision
             }
         }
 
-        private void StaticticButton_Click(object sender, EventArgs e)
+        private void StaticticButton_Click(object sender, EventArgs e)  // просмотр статистики
         {
             StatisticForm statForm = new StatisticForm();
             statForm.StatistExchange = Exchange;
@@ -42,7 +42,7 @@ namespace GoodVision
 
         }
 
-        private void VisionCheckButton_Click(object sender, EventArgs e)
+        private void VisionCheckButton_Click(object sender, EventArgs e) // переход к форме тестирования
         {
             VisionCheck VChForm = new VisionCheck();
             VChForm.Show();
@@ -58,6 +58,6 @@ namespace GoodVision
             hellpForm.Show();
         }
 
-   
+     
     }
 }

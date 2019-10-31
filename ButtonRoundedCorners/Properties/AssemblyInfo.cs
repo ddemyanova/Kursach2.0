@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("RoundedButton")]
+[assembly: AssemblyTitle("ButtonRoundedCorners")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RoundedButton")]
+[assembly: AssemblyProduct("ButtonRoundedCorners")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("b6b0c367-9ac3-46f8-8e7c-ee936073bcd1")]
+[assembly: Guid("716c50cf-ad8c-402a-a6fa-a76d27a60068")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

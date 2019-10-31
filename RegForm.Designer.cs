@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.WellcomePanel = new System.Windows.Forms.Panel();
             this.WellcLabel = new System.Windows.Forms.Label();
             this.RegPanel = new System.Windows.Forms.Panel();
             this.RegistTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.RegButton = new RoundButtonTwo.MyRoundButton();
+            this.RegButton = new ButtonRoundedCorners.RoundedCorners();
             this.WellcomePanel.SuspendLayout();
             this.RegPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RegButton)).BeginInit();
@@ -87,13 +86,12 @@
             // 
             // RegButton
             // 
-            this.RegButton.Image = ((System.Drawing.Image)(resources.GetObject("RegButton.Image")));
+            this.RegButton.BackColor = System.Drawing.Color.Coral;
             this.RegButton.ImageHover = null;
-            this.RegButton.ImageNormal = global::GoodVision.Properties.Resources.desktop_3246124__340;
-            this.RegButton.Location = new System.Drawing.Point(328, 423);
+            this.RegButton.ImageNormal = null;
+            this.RegButton.Location = new System.Drawing.Point(279, 417);
             this.RegButton.Name = "RegButton";
-            this.RegButton.Size = new System.Drawing.Size(518, 85);
-            this.RegButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RegButton.Size = new System.Drawing.Size(636, 91);
             this.RegButton.TabIndex = 3;
             this.RegButton.TabStop = false;
             this.RegButton.Click += new System.EventHandler(this.RegButton_Click);
@@ -118,7 +116,7 @@
 
         #endregion
 
-        private RoundButtonTwo.MyRoundButton ButtonReg;
+       // private RoundButtonTwo.MyRoundButton ButtonReg;
         private System.Windows.Forms.Panel panelForGreet;
         private System.Windows.Forms.Label WellcomeLabel;
         private System.Windows.Forms.Label EnterNameMess;
@@ -129,7 +127,8 @@
         private System.Windows.Forms.Label WellcLabel;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox RegistTextBox;
-        private RoundButtonTwo.MyRoundButton RegButton;
+        private ButtonRoundedCorners.RoundedCorners RegButton;
+        // private RoundButtonTwo.MyRoundButton RegButton;
     }
 }
 

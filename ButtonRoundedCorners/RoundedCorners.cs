@@ -9,14 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RoundButtonTwo
+namespace ButtonRoundedCorners
 {
-    public partial class MyRoundButton : PictureBox
+    public partial class RoundedCorners:  PictureBox
     {
-        public MyRoundButton()
+        public RoundedCorners()
         {
             InitializeComponent();
         }
+
         private Image NormalImage;
         private Image HoverImage;
         public Image ImageNormal
@@ -33,17 +34,16 @@ namespace RoundButtonTwo
 
         }
 
-
-
-        private void MyRoundButton_MouseHover(object sender, EventArgs e)
+        private void RoundedCorners_MouseHover(object sender, EventArgs e)
         {
             this.Image = HoverImage;
         }
 
-        private void MyRoundButton_MouseLeave(object sender, EventArgs e)
+        private void RoundedCorners_MouseLeave(object sender, EventArgs e)
         {
             this.Image = NormalImage;
         }
+
         GraphicsPath GetRoundPath(RectangleF Rect, int radius)
         {
             float r2 = radius / 2f;
@@ -75,8 +75,5 @@ namespace RoundButtonTwo
                 }
             }
         }
-
-        
     }
 }
-

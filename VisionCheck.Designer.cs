@@ -78,7 +78,7 @@
             this.SivtsevModeButton.Image = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.Image")));
             this.SivtsevModeButton.ImageHover = null;
             this.SivtsevModeButton.ImageNormal = global::GoodVision.Properties.Resources.depositphotos_186382688_stock_illustration_eye_test_chart_vector_rings;
-            this.SivtsevModeButton.Location = new System.Drawing.Point(495, 130);
+            this.SivtsevModeButton.Location = new System.Drawing.Point(571, 132);
             this.SivtsevModeButton.Name = "SivtsevModeButton";
             this.SivtsevModeButton.Size = new System.Drawing.Size(287, 200);
             this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +91,7 @@
             this.LandoltModeButton.Image = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.Image")));
             this.LandoltModeButton.ImageHover = null;
             this.LandoltModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageNormal")));
-            this.LandoltModeButton.Location = new System.Drawing.Point(205, 132);
+            this.LandoltModeButton.Location = new System.Drawing.Point(265, 134);
             this.LandoltModeButton.Name = "LandoltModeButton";
             this.LandoltModeButton.Size = new System.Drawing.Size(284, 198);
             this.LandoltModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

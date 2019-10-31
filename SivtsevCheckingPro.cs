@@ -27,6 +27,14 @@ namespace GoodVision
             timer1.Enabled = true;
 
         }
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            SivtsevTimer.Value = 0;
+            EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
+            System.Threading.Thread.Sleep(100);
+            timer1.Enabled = true;
+            temp = i;
+        }
 
         private void AnswerTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -39,7 +47,7 @@ namespace GoodVision
             Vch.Show();
             this.Hide();
         }
-       
+
 
         private void timer1_Tick(object sender, EventArgs e) // Здесь же можем и начинать грузить картинки
         {
@@ -54,7 +62,6 @@ namespace GoodVision
              timer1.Enabled = false;
             }
 
-      
         private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
             VisionCheck Vch = new VisionCheck();
@@ -64,11 +71,6 @@ namespace GoodVision
 
 
 
-        private void StartButton_Click(object sender, EventArgs e)
-        {
-            SivtsevTimer.Value = 0;
-            timer1.Enabled = true;
-            temp = i;
-        }
+    
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6B0C367-9AC3-46F8-8E7C-EE936073BCD1}</ProjectGuid>
+    <ProjectGuid>{716C50CF-AD8C-402A-A6FA-A76D27A60068}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>RoundedButton</RootNamespace>
-    <AssemblyName>RoundedButton</AssemblyName>
+    <RootNamespace>ButtonRoundedCorners</RootNamespace>
+    <AssemblyName>ButtonRoundedCorners</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,18 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyRoundButton.cs">
+    <Compile Include="RoundedCorners.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MyRoundButton.Designer.cs">
-      <DependentUpon>MyRoundButton.cs</DependentUpon>
+    <Compile Include="RoundedCorners.Designer.cs">
+      <DependentUpon>RoundedCorners.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MyRoundButton.resx">
-      <DependentUpon>MyRoundButton.cs</DependentUpon>
+    <EmbeddedResource Include="RoundedCorners.resx">
+      <DependentUpon>RoundedCorners.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

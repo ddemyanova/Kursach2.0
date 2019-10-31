@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegMessage));
             this.label1 = new System.Windows.Forms.Label();
-            this.YesButton = new RoundButtonTwo.MyRoundButton();
-            this.NoButton = new RoundButtonTwo.MyRoundButton();
-            ((System.ComponentModel.ISupportInitialize)(this.YesButton)).BeginInit();
+            this.NoButton = new ButtonRoundedCorners.RoundedCorners();
+            this.YesButton = new ButtonRoundedCorners.RoundedCorners();
             ((System.ComponentModel.ISupportInitialize)(this.NoButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YesButton)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -46,45 +45,45 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Account *UserName* is already exist.\r\n Is it your account?";
             // 
+            // NoButton
+            // 
+            this.NoButton.Image = global::GoodVision.Properties.Resources.hrest;
+            this.NoButton.ImageHover = null;
+            this.NoButton.ImageNormal = null;
+            this.NoButton.Location = new System.Drawing.Point(310, 143);
+            this.NoButton.Name = "NoButton";
+            this.NoButton.Size = new System.Drawing.Size(110, 54);
+            this.NoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NoButton.TabIndex = 2;
+            this.NoButton.TabStop = false;
+            this.NoButton.Click += new System.EventHandler(this.NoButton_Click);
+            // 
             // YesButton
             // 
             this.YesButton.Image = global::GoodVision.Properties.Resources._66936;
             this.YesButton.ImageHover = null;
             this.YesButton.ImageNormal = null;
-            this.YesButton.Location = new System.Drawing.Point(135, 137);
+            this.YesButton.Location = new System.Drawing.Point(99, 146);
             this.YesButton.Name = "YesButton";
-            this.YesButton.Size = new System.Drawing.Size(114, 71);
+            this.YesButton.Size = new System.Drawing.Size(114, 51);
             this.YesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.YesButton.TabIndex = 1;
             this.YesButton.TabStop = false;
             this.YesButton.Click += new System.EventHandler(this.YesButton_Click);
             // 
-            // NoButton
-            // 
-            this.NoButton.Image = ((System.Drawing.Image)(resources.GetObject("NoButton.Image")));
-            this.NoButton.ImageHover = null;
-            this.NoButton.ImageNormal = null;
-            this.NoButton.Location = new System.Drawing.Point(307, 137);
-            this.NoButton.Name = "NoButton";
-            this.NoButton.Size = new System.Drawing.Size(107, 69);
-            this.NoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.NoButton.TabIndex = 2;
-            this.NoButton.TabStop = false;
-            this.NoButton.Click += new System.EventHandler(this.NoButton_Click);
-            // 
             // RegMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 286);
+            this.ClientSize = new System.Drawing.Size(527, 255);
             this.Controls.Add(this.NoButton);
             this.Controls.Add(this.YesButton);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegMessage";
             this.Text = "RegMessage";
-            ((System.ComponentModel.ISupportInitialize)(this.YesButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YesButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,7 +92,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private RoundButtonTwo.MyRoundButton YesButton;
-        private RoundButtonTwo.MyRoundButton NoButton;
+        private ButtonRoundedCorners.RoundedCorners YesButton;
+        private ButtonRoundedCorners.RoundedCorners NoButton;
+        //  private RoundedButton.MyRoundButton YesButton;
+        //   private RoundButtonTwo.MyRoundButton NoButton;
     }
 }

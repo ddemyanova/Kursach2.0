@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GoodVision
+namespace GoodVision  
 {
     public partial class RegMessage : Form
     {
+
+     // форма для подтверждения имени
         public RegMessage()
         {
             InitializeComponent();

@@ -1,6 +1,6 @@
-﻿namespace RoundButtonTwo
+﻿namespace ButtonRoundedCorners
 {
-    partial class MyRoundButton
+    partial class RoundedCorners
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -31,10 +31,11 @@
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // MyRoundButton
+            // RoundedCorners
             // 
-            this.MouseLeave += new System.EventHandler(this.MyRoundButton_MouseLeave);
-            this.MouseHover += new System.EventHandler(this.MyRoundButton_MouseHover);
+            this.Size = new System.Drawing.Size(800, 450);
+            this.MouseLeave += new System.EventHandler(this.RoundedCorners_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.RoundedCorners_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 

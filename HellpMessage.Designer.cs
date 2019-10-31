@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HellpMessage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.HelpGreetingLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,20 +39,20 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.HelpPicture1 = new RoundButtonTwo.MyRoundButton();
-            this.HelpPicture3 = new RoundButtonTwo.MyRoundButton();
-            this.HelpPicture4 = new RoundButtonTwo.MyRoundButton();
-            this.HelpPicture2 = new RoundButtonTwo.MyRoundButton();
+            this.PictureHelp4 = new ButtonRoundedCorners.RoundedCorners();
+            this.PictureHelp3 = new ButtonRoundedCorners.RoundedCorners();
+            this.PictureHelp2 = new ButtonRoundedCorners.RoundedCorners();
+            this.PictureHelp1 = new ButtonRoundedCorners.RoundedCorners();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,10 +75,10 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.HelpPicture2);
-            this.panel2.Controls.Add(this.HelpPicture4);
-            this.panel2.Controls.Add(this.HelpPicture3);
-            this.panel2.Controls.Add(this.HelpPicture1);
+            this.panel2.Controls.Add(this.PictureHelp4);
+            this.panel2.Controls.Add(this.PictureHelp3);
+            this.panel2.Controls.Add(this.PictureHelp2);
+            this.panel2.Controls.Add(this.PictureHelp1);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
@@ -154,51 +153,50 @@
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             // 
-            // HelpPicture1
+            // PictureHelp4
             // 
-            this.HelpPicture1.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture1.Image")));
-            this.HelpPicture1.ImageHover = null;
-            this.HelpPicture1.ImageNormal = null;
-            this.HelpPicture1.Location = new System.Drawing.Point(18, 98);
-            this.HelpPicture1.Name = "HelpPicture1";
-            this.HelpPicture1.Size = new System.Drawing.Size(172, 68);
-            this.HelpPicture1.TabIndex = 3;
-            this.HelpPicture1.TabStop = false;
+            this.PictureHelp4.Image = global::GoodVision.Properties.Resources.image;
+            this.PictureHelp4.ImageHover = null;
+            this.PictureHelp4.ImageNormal = null;
+            this.PictureHelp4.Location = new System.Drawing.Point(22, 400);
+            this.PictureHelp4.Name = "PictureHelp4";
+            this.PictureHelp4.Size = new System.Drawing.Size(168, 136);
+            this.PictureHelp4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureHelp4.TabIndex = 6;
+            this.PictureHelp4.TabStop = false;
             // 
-            // HelpPicture3
+            // PictureHelp3
             // 
-            this.HelpPicture3.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture3.Image")));
-            this.HelpPicture3.ImageHover = null;
-            this.HelpPicture3.ImageNormal = null;
-            this.HelpPicture3.Location = new System.Drawing.Point(18, 261);
-            this.HelpPicture3.Name = "HelpPicture3";
-            this.HelpPicture3.Size = new System.Drawing.Size(176, 124);
-            this.HelpPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HelpPicture3.TabIndex = 4;
-            this.HelpPicture3.TabStop = false;
+            this.PictureHelp3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PictureHelp3.ImageHover = null;
+            this.PictureHelp3.ImageNormal = null;
+            this.PictureHelp3.Location = new System.Drawing.Point(22, 272);
+            this.PictureHelp3.Name = "PictureHelp3";
+            this.PictureHelp3.Size = new System.Drawing.Size(161, 116);
+            this.PictureHelp3.TabIndex = 5;
+            this.PictureHelp3.TabStop = false;
             // 
-            // HelpPicture4
+            // PictureHelp2
             // 
-            this.HelpPicture4.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture4.Image")));
-            this.HelpPicture4.ImageHover = null;
-            this.HelpPicture4.ImageNormal = null;
-            this.HelpPicture4.Location = new System.Drawing.Point(22, 400);
-            this.HelpPicture4.Name = "HelpPicture4";
-            this.HelpPicture4.Size = new System.Drawing.Size(168, 135);
-            this.HelpPicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HelpPicture4.TabIndex = 5;
-            this.HelpPicture4.TabStop = false;
+            this.PictureHelp2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PictureHelp2.ImageHover = null;
+            this.PictureHelp2.ImageNormal = null;
+            this.PictureHelp2.Location = new System.Drawing.Point(31, 180);
+            this.PictureHelp2.Name = "PictureHelp2";
+            this.PictureHelp2.Size = new System.Drawing.Size(138, 60);
+            this.PictureHelp2.TabIndex = 4;
+            this.PictureHelp2.TabStop = false;
             // 
-            // HelpPicture2
+            // PictureHelp1
             // 
-            this.HelpPicture2.Image = ((System.Drawing.Image)(resources.GetObject("HelpPicture2.Image")));
-            this.HelpPicture2.ImageHover = null;
-            this.HelpPicture2.ImageNormal = null;
-            this.HelpPicture2.Location = new System.Drawing.Point(15, 172);
-            this.HelpPicture2.Name = "HelpPicture2";
-            this.HelpPicture2.Size = new System.Drawing.Size(174, 67);
-            this.HelpPicture2.TabIndex = 6;
-            this.HelpPicture2.TabStop = false;
+            this.PictureHelp1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PictureHelp1.ImageHover = null;
+            this.PictureHelp1.ImageNormal = null;
+            this.PictureHelp1.Location = new System.Drawing.Point(31, 105);
+            this.PictureHelp1.Name = "PictureHelp1";
+            this.PictureHelp1.Size = new System.Drawing.Size(144, 61);
+            this.PictureHelp1.TabIndex = 3;
+            this.PictureHelp1.TabStop = false;
             // 
             // HellpMessage
             // 
@@ -218,10 +216,10 @@
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HelpPicture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureHelp1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,9 +237,9 @@
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private RoundButtonTwo.MyRoundButton HelpPicture2;
-        private RoundButtonTwo.MyRoundButton HelpPicture4;
-        private RoundButtonTwo.MyRoundButton HelpPicture3;
-        private RoundButtonTwo.MyRoundButton HelpPicture1;
+        private ButtonRoundedCorners.RoundedCorners PictureHelp4;
+        private ButtonRoundedCorners.RoundedCorners PictureHelp3;
+        private ButtonRoundedCorners.RoundedCorners PictureHelp2;
+        private ButtonRoundedCorners.RoundedCorners PictureHelp1;
     }
 }

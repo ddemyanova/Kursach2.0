@@ -31,21 +31,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.StatistButton = new ButtonRoundedCorners.RoundedCorners();
             this.BackToMenuButton = new rbutton.CustRoundButton();
-            this.StatisticButton = new RoundButtonTwo.MyRoundButton();
-            this.VisionCheckButton = new RoundButtonTwo.MyRoundButton();
             this.RightEyeRes = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.LeftEyeRes = new System.Windows.Forms.Label();
             this.RightEyeLabel = new System.Windows.Forms.Label();
             this.LeftEyeLabel = new System.Windows.Forms.Label();
+            this.VisionCheckButton = new ButtonRoundedCorners.RoundedCorners();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatisticButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatistButton)).BeginInit();
             this.RightEyeRes.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,9 +68,9 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.BackToMenuButton);
-            this.panel2.Controls.Add(this.StatisticButton);
             this.panel2.Controls.Add(this.VisionCheckButton);
+            this.panel2.Controls.Add(this.StatistButton);
+            this.panel2.Controls.Add(this.BackToMenuButton);
             this.panel2.Controls.Add(this.RightEyeRes);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.RightEyeLabel);
@@ -80,44 +80,27 @@
             this.panel2.Size = new System.Drawing.Size(1114, 412);
             this.panel2.TabIndex = 1;
             // 
+            // StatistButton
+            // 
+            this.StatistButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.StatistButton.ImageHover = null;
+            this.StatistButton.ImageNormal = null;
+            this.StatistButton.Location = new System.Drawing.Point(263, 154);
+            this.StatistButton.Name = "StatistButton";
+            this.StatistButton.Size = new System.Drawing.Size(594, 92);
+            this.StatistButton.TabIndex = 2;
+            this.StatistButton.TabStop = false;
+            this.StatistButton.Click += new System.EventHandler(this.StatistButton_Click);
+            // 
             // BackToMenuButton
             // 
             this.BackToMenuButton.ImageHover = null;
             this.BackToMenuButton.ImageNormal = null;
-            this.BackToMenuButton.Location = new System.Drawing.Point(18, 261);
+            this.BackToMenuButton.Location = new System.Drawing.Point(0, 279);
             this.BackToMenuButton.Name = "BackToMenuButton";
-            this.BackToMenuButton.Size = new System.Drawing.Size(146, 139);
-            this.BackToMenuButton.TabIndex = 4;
-            this.BackToMenuButton.Text = "custRoundButton1";
-            this.BackToMenuButton.UseVisualStyleBackColor = true;
-            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
-            // 
-            // StatisticButton
-            // 
-            this.StatisticButton.Image = global::GoodVision.Properties.Resources.desktop_3246124__340;
-            this.StatisticButton.ImageHover = null;
-            this.StatisticButton.ImageNormal = null;
-            this.StatisticButton.Location = new System.Drawing.Point(243, 261);
-            this.StatisticButton.Name = "StatisticButton";
-            this.StatisticButton.Size = new System.Drawing.Size(599, 96);
-            this.StatisticButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.StatisticButton.TabIndex = 3;
-            this.StatisticButton.TabStop = false;
-            this.StatisticButton.Click += new System.EventHandler(this.StatisticButton_Click);
-            // 
-            // VisionCheckButton
-            // 
-            this.VisionCheckButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.VisionCheckButton.Image = global::GoodVision.Properties.Resources.desktop_3246124__340;
-            this.VisionCheckButton.ImageHover = null;
-            this.VisionCheckButton.ImageNormal = null;
-            this.VisionCheckButton.Location = new System.Drawing.Point(243, 142);
-            this.VisionCheckButton.Name = "VisionCheckButton";
-            this.VisionCheckButton.Size = new System.Drawing.Size(599, 91);
-            this.VisionCheckButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.VisionCheckButton.TabIndex = 2;
-            this.VisionCheckButton.TabStop = false;
-            this.VisionCheckButton.Click += new System.EventHandler(this.VisionCheckButton_Click);
+            this.BackToMenuButton.Size = new System.Drawing.Size(187, 133);
+            this.BackToMenuButton.TabIndex = 0;
+            this.BackToMenuButton.Text = "Back to Menu";
             // 
             // RightEyeRes
             // 
@@ -173,6 +156,18 @@
             this.LeftEyeLabel.TabIndex = 0;
             this.LeftEyeLabel.Text = "Left Eye";
             // 
+            // VisionCheckButton
+            // 
+            this.VisionCheckButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.VisionCheckButton.ImageHover = null;
+            this.VisionCheckButton.ImageNormal = null;
+            this.VisionCheckButton.Location = new System.Drawing.Point(263, 279);
+            this.VisionCheckButton.Name = "VisionCheckButton";
+            this.VisionCheckButton.Size = new System.Drawing.Size(594, 95);
+            this.VisionCheckButton.TabIndex = 3;
+            this.VisionCheckButton.TabStop = false;
+            this.VisionCheckButton.Click += new System.EventHandler(this.VisionCheckButton_Click);
+            // 
             // AfterTestingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,12 +181,12 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatisticButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatistButton)).EndInit();
             this.RightEyeRes.ResumeLayout(false);
             this.RightEyeRes.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,9 +202,11 @@
         private System.Windows.Forms.Panel RightEyeRes;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label LeftEyeRes;
-        private RoundButtonTwo.MyRoundButton StatisticButton;
-        private RoundButtonTwo.MyRoundButton VisionCheckButton;
+  //      private RoundButtonTwo.MyRoundButton StatisticButton;
+  //      private RoundButtonTwo.MyRoundButton VisionCheckButton;
         private rbutton.CustRoundButton BackToMenuButton;
+        private ButtonRoundedCorners.RoundedCorners StatistButton;
+        private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
         //  private rbutton.CustRoundButton BackToMenuButton;
     }
 }

@@ -42,10 +42,6 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="RoundedButton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>RoundedButton\bin\Debug\RoundedButton.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -177,7 +173,6 @@
     <EmbeddedResource Include="VisionCheck.resx">
       <DependentUpon>VisionCheck.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -192,6 +187,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ButtonRoundedCorners\ButtonRoundedCorners.csproj">
+      <Project>{716c50cf-ad8c-402a-a6fa-a76d27a60068}</Project>
+      <Name>ButtonRoundedCorners</Name>
+    </ProjectReference>
     <ProjectReference Include="rbutton\rbutton.csproj">
       <Project>{38A0CE2A-335B-4A34-8B34-603CD42F4A36}</Project>
       <Name>rbutton</Name>
@@ -205,6 +204,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\depositphotos_186382688-stock-illustration-eye-test-chart-vector-rings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hgEtDJcH_400x400.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hrest.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

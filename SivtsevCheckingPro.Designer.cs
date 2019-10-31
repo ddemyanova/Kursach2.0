@@ -40,18 +40,22 @@
             this.SivtsevInstrTextBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BackToVisionCheckButton = new rbutton.CustRoundButton();
-            this.AnswerSivtsevButton = new RoundButtonTwo.MyRoundButton();
-            this.StartButton = new RoundButtonTwo.MyRoundButton();
+            this.StartButton = new ButtonRoundedCorners.RoundedCorners();
+            this.AnswerSivtsevButton = new ButtonRoundedCorners.RoundedCorners();
+            this.EyeTestPanel = new System.Windows.Forms.Panel();
+            this.EyeTextLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).BeginInit();
+            this.EyeTestPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.EyeTestPanel);
             this.panel2.Controls.Add(this.LetterPictureBox);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.SivtsevTimer);
@@ -63,7 +67,7 @@
             // LetterPictureBox
             // 
             this.LetterPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LetterPictureBox.Image")));
-            this.LetterPictureBox.Location = new System.Drawing.Point(256, 120);
+            this.LetterPictureBox.Location = new System.Drawing.Point(229, 133);
             this.LetterPictureBox.Name = "LetterPictureBox";
             this.LetterPictureBox.Size = new System.Drawing.Size(287, 248);
             this.LetterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,8 +131,8 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.SivtsevInstrTextBox);
             this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.SivtsevInstrTextBox);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(416, 366);
@@ -165,30 +169,49 @@
             this.BackToVisionCheckButton.UseVisualStyleBackColor = true;
             this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
             // 
-            // AnswerSivtsevButton
-            // 
-            this.AnswerSivtsevButton.Image = ((System.Drawing.Image)(resources.GetObject("AnswerSivtsevButton.Image")));
-            this.AnswerSivtsevButton.ImageHover = null;
-            this.AnswerSivtsevButton.ImageNormal = global::GoodVision.Properties.Resources.desktop_3246124__340;
-            this.AnswerSivtsevButton.Location = new System.Drawing.Point(326, 28);
-            this.AnswerSivtsevButton.Name = "AnswerSivtsevButton";
-            this.AnswerSivtsevButton.Size = new System.Drawing.Size(195, 59);
-            this.AnswerSivtsevButton.TabIndex = 1;
-            this.AnswerSivtsevButton.TabStop = false;
-            this.AnswerSivtsevButton.Click += new System.EventHandler(this.AnswerSivtsevButton_Click);
-            // 
             // StartButton
             // 
-            this.StartButton.Image = ((System.Drawing.Image)(resources.GetObject("StartButton.Image")));
+            this.StartButton.Image = global::GoodVision.Properties.Resources.hgEtDJcH_400x400;
             this.StartButton.ImageHover = null;
             this.StartButton.ImageNormal = null;
-            this.StartButton.Location = new System.Drawing.Point(240, 426);
+            this.StartButton.Location = new System.Drawing.Point(236, 426);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(147, 136);
+            this.StartButton.Size = new System.Drawing.Size(141, 133);
             this.StartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.StartButton.TabIndex = 7;
             this.StartButton.TabStop = false;
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
+            // AnswerSivtsevButton
+            // 
+            this.AnswerSivtsevButton.BackColor = System.Drawing.Color.Coral;
+            this.AnswerSivtsevButton.ImageHover = null;
+            this.AnswerSivtsevButton.ImageNormal = null;
+            this.AnswerSivtsevButton.Location = new System.Drawing.Point(350, 29);
+            this.AnswerSivtsevButton.Name = "AnswerSivtsevButton";
+            this.AnswerSivtsevButton.Size = new System.Drawing.Size(149, 58);
+            this.AnswerSivtsevButton.TabIndex = 1;
+            this.AnswerSivtsevButton.TabStop = false;
+            this.AnswerSivtsevButton.Click += new System.EventHandler(this.AnswerSivtsevButton_Click);
+            // 
+            // EyeTestPanel
+            // 
+            this.EyeTestPanel.BackColor = System.Drawing.Color.Transparent;
+            this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
+            this.EyeTestPanel.Location = new System.Drawing.Point(3, 3);
+            this.EyeTestPanel.Name = "EyeTestPanel";
+            this.EyeTestPanel.Size = new System.Drawing.Size(690, 363);
+            this.EyeTestPanel.TabIndex = 2;
+            // 
+            // EyeTextLabel
+            // 
+            this.EyeTextLabel.AutoSize = true;
+            this.EyeTextLabel.Font = new System.Drawing.Font("18thCentury", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EyeTextLabel.Location = new System.Drawing.Point(154, 159);
+            this.EyeTextLabel.Name = "EyeTextLabel";
+            this.EyeTextLabel.Size = new System.Drawing.Size(415, 40);
+            this.EyeTextLabel.TabIndex = 0;
+            this.EyeTextLabel.Text = "Тестируем правый глаз";
             // 
             // SivtsevCheckingPro
             // 
@@ -197,8 +220,8 @@
             this.ClientSize = new System.Drawing.Size(1139, 601);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.BackToVisionCheckButton);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
             this.Name = "SivtsevCheckingPro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -208,8 +231,10 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).EndInit();
+            this.EyeTestPanel.ResumeLayout(false);
+            this.EyeTestPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -226,7 +251,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox SivtsevInstrTextBox;
         private rbutton.CustRoundButton BackToVisionCheckButton;
-        private RoundButtonTwo.MyRoundButton AnswerSivtsevButton;
-        private RoundButtonTwo.MyRoundButton StartButton;
+        private ButtonRoundedCorners.RoundedCorners AnswerSivtsevButton;
+        private ButtonRoundedCorners.RoundedCorners StartButton;
+        private System.Windows.Forms.Panel EyeTestPanel;
+        private System.Windows.Forms.Label EyeTextLabel;
+        //   private RoundButtonTwo.MyRoundButton AnswerSivtsevButton;
+        //private RoundButtonTwo.MyRoundButton StartButton;
     }
 }
