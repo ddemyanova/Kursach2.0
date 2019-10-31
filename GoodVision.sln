@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodVision", "GoodVision.csproj", "{001511CE-F22E-4FB3-80B3-CD2667DC2637}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D} = {E7212C61-F3F3-45B1-9BBE-E57FEC20754D}
+		{B6B0C367-9AC3-46F8-8E7C-EE936073BCD1} = {B6B0C367-9AC3-46F8-8E7C-EE936073BCD1}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rbutton", "rbutton\rbutton.csproj", "{38A0CE2A-335B-4A34-8B34-603CD42F4A36}"
 EndProject
