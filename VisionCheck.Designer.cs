@@ -32,11 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.VisionCheckLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SivtsevModeButton = new TetraCustomButton.ImageTetraButton();
+            this.LandoltModeButton = new TetraCustomButton.ImageTetraButton();
             this.BackToMenuButton = new rbutton.CustRoundButton();
             this.label1 = new System.Windows.Forms.Label();
             this.InstructionLabel = new System.Windows.Forms.Label();
-            this.SivtsevModeButton = new TetraCustomButton.ImageTetraButton();
-            this.LandoltModeButton = new TetraCustomButton.ImageTetraButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SivtsevModeButton)).BeginInit();
@@ -73,6 +73,32 @@
             this.panel2.Size = new System.Drawing.Size(1116, 479);
             this.panel2.TabIndex = 1;
             // 
+            // SivtsevModeButton
+            // 
+            this.SivtsevModeButton.Image = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.Image")));
+            this.SivtsevModeButton.ImageHover = null;
+            this.SivtsevModeButton.ImageNormal = global::GoodVision.Properties.Resources.depositphotos_186382688_stock_illustration_eye_test_chart_vector_rings;
+            this.SivtsevModeButton.Location = new System.Drawing.Point(495, 130);
+            this.SivtsevModeButton.Name = "SivtsevModeButton";
+            this.SivtsevModeButton.Size = new System.Drawing.Size(287, 200);
+            this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SivtsevModeButton.TabIndex = 4;
+            this.SivtsevModeButton.TabStop = false;
+            this.SivtsevModeButton.Click += new System.EventHandler(this.SivtsevModeButton_Click);
+            // 
+            // LandoltModeButton
+            // 
+            this.LandoltModeButton.Image = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.Image")));
+            this.LandoltModeButton.ImageHover = null;
+            this.LandoltModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageNormal")));
+            this.LandoltModeButton.Location = new System.Drawing.Point(205, 132);
+            this.LandoltModeButton.Name = "LandoltModeButton";
+            this.LandoltModeButton.Size = new System.Drawing.Size(284, 198);
+            this.LandoltModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LandoltModeButton.TabIndex = 3;
+            this.LandoltModeButton.TabStop = false;
+            this.LandoltModeButton.Click += new System.EventHandler(this.LandoltModeButton_Click_1);
+            // 
             // BackToMenuButton
             // 
             this.BackToMenuButton.ImageHover = null;
@@ -104,32 +130,6 @@
             this.InstructionLabel.Size = new System.Drawing.Size(124, 21);
             this.InstructionLabel.TabIndex = 0;
             this.InstructionLabel.Text = "INSTRUCTION";
-            // 
-            // SivtsevModeButton
-            // 
-            this.SivtsevModeButton.Image = ((System.Drawing.Image)(resources.GetObject("SivtsevModeButton.Image")));
-            this.SivtsevModeButton.ImageHover = null;
-            this.SivtsevModeButton.ImageNormal = global::GoodVision.Properties.Resources.depositphotos_186382688_stock_illustration_eye_test_chart_vector_rings;
-            this.SivtsevModeButton.Location = new System.Drawing.Point(495, 130);
-            this.SivtsevModeButton.Name = "SivtsevModeButton";
-            this.SivtsevModeButton.Size = new System.Drawing.Size(287, 200);
-            this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SivtsevModeButton.TabIndex = 4;
-            this.SivtsevModeButton.TabStop = false;
-            this.SivtsevModeButton.Click += new System.EventHandler(this.SivtsevModeButton_Click);
-            // 
-            // LandoltModeButton
-            // 
-            this.LandoltModeButton.Image = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.Image")));
-            this.LandoltModeButton.ImageHover = null;
-            this.LandoltModeButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("LandoltModeButton.ImageNormal")));
-            this.LandoltModeButton.Location = new System.Drawing.Point(205, 132);
-            this.LandoltModeButton.Name = "LandoltModeButton";
-            this.LandoltModeButton.Size = new System.Drawing.Size(284, 198);
-            this.LandoltModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LandoltModeButton.TabIndex = 3;
-            this.LandoltModeButton.TabStop = false;
-            this.LandoltModeButton.Click += new System.EventHandler(this.LandoltModeButton_Click_1);
             // 
             // VisionCheck
             // 
