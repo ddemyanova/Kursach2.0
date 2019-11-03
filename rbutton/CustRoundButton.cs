@@ -59,10 +59,10 @@ new System.Drawing.Drawing2D.GraphicsPath();
             newRectangle.Inflate(-10, -10);
 
             // Draw the button's border.
-            e.Graphics.DrawEllipse(System.Drawing.Pens.Black, newRectangle);
+            e.Graphics.DrawEllipse(System.Drawing.Pens.Transparent, newRectangle);
 
             // Increase the size of the rectangle to include the border.
-            newRectangle.Inflate(1, 1);
+            newRectangle.Inflate(2, 2); //1 1
 
             // Create a circle within the new rectangle.
             buttonPath.AddEllipse(newRectangle);

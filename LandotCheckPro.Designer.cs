@@ -39,11 +39,11 @@
             this.LandotCirclePictureBox = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LandotInstructTextBox = new System.Windows.Forms.RichTextBox();
+            this.EyeTestPanel = new System.Windows.Forms.Panel();
+            this.EyeTextLabel = new System.Windows.Forms.Label();
             this.LTimer = new System.Windows.Forms.Timer(this.components);
             this.BackToVisionCheckButton = new rbutton.CustRoundButton();
             this.GoLandotButton = new ButtonRoundedCorners.RoundedCorners();
-            this.EyeTestPanel = new System.Windows.Forms.Panel();
-            this.EyeTextLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpLandotButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightLandotButton)).BeginInit();
@@ -51,31 +51,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.LeftLandotButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LandotCirclePictureBox)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).BeginInit();
             this.EyeTestPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.подложка2;
             this.panel1.Controls.Add(this.UpLandotButton);
             this.panel1.Controls.Add(this.LandotTimer);
             this.panel1.Controls.Add(this.RightLandotButton);
             this.panel1.Controls.Add(this.DownLandotButton);
             this.panel1.Controls.Add(this.LeftLandotButton);
             this.panel1.Controls.Add(this.LandotCirclePictureBox);
-            this.panel1.Location = new System.Drawing.Point(408, 12);
+            this.panel1.Location = new System.Drawing.Point(412, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(696, 552);
+            this.panel1.Size = new System.Drawing.Size(704, 552);
             this.panel1.TabIndex = 0;
             // 
             // UpLandotButton
             // 
             this.UpLandotButton.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.UpLandotButton.ImageHover = null;
-            this.UpLandotButton.ImageNormal = null;
-            this.UpLandotButton.Location = new System.Drawing.Point(260, 23);
+            this.UpLandotButton.Image = global::GoodVision.Properties.Resources.Up;
+            this.UpLandotButton.ImageHover = global::GoodVision.Properties.Resources.UpHover;
+            this.UpLandotButton.ImageNormal = global::GoodVision.Properties.Resources.Up;
+            this.UpLandotButton.Location = new System.Drawing.Point(260, 46);
             this.UpLandotButton.Name = "UpLandotButton";
-            this.UpLandotButton.Size = new System.Drawing.Size(225, 126);
+            this.UpLandotButton.Size = new System.Drawing.Size(225, 109);
             this.UpLandotButton.TabIndex = 5;
             this.UpLandotButton.TabStop = false;
             this.UpLandotButton.Click += new System.EventHandler(this.UpLandotButton_Click);
@@ -84,20 +87,20 @@
             // 
             this.LandotTimer.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("LandotTimer.AnimationFunction")));
             this.LandotTimer.AnimationSpeed = 500;
-            this.LandotTimer.BackColor = System.Drawing.Color.White;
-            this.LandotTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.LandotTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.LandotTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 55.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LandotTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LandotTimer.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LandotTimer.InnerColor = System.Drawing.Color.Transparent;
             this.LandotTimer.InnerMargin = 2;
             this.LandotTimer.InnerWidth = -1;
-            this.LandotTimer.Location = new System.Drawing.Point(64, 21);
+            this.LandotTimer.Location = new System.Drawing.Point(12, 3);
             this.LandotTimer.MarqueeAnimationSpeed = 2000;
             this.LandotTimer.Maximum = 50;
             this.LandotTimer.Name = "LandotTimer";
             this.LandotTimer.OuterColor = System.Drawing.Color.Gray;
-            this.LandotTimer.OuterMargin = -20;
-            this.LandotTimer.OuterWidth = 20;
-            this.LandotTimer.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.LandotTimer.OuterMargin = -10;
+            this.LandotTimer.OuterWidth = 10;
+            this.LandotTimer.ProgressColor = System.Drawing.Color.Coral;
             this.LandotTimer.ProgressWidth = 20;
             this.LandotTimer.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.LandotTimer.Size = new System.Drawing.Size(155, 146);
@@ -109,27 +112,29 @@
             this.LandotTimer.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.LandotTimer.SuperscriptText = "";
             this.LandotTimer.TabIndex = 2;
-            this.LandotTimer.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.LandotTimer.TextMargin = new System.Windows.Forms.Padding(4, 8, 0, 0);
             this.LandotTimer.Value = 50;
             // 
             // RightLandotButton
             // 
             this.RightLandotButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.RightLandotButton.ImageHover = null;
-            this.RightLandotButton.ImageNormal = null;
+            this.RightLandotButton.Image = global::GoodVision.Properties.Resources.Right;
+            this.RightLandotButton.ImageHover = global::GoodVision.Properties.Resources.RightHover;
+            this.RightLandotButton.ImageNormal = global::GoodVision.Properties.Resources.Right;
             this.RightLandotButton.Location = new System.Drawing.Point(522, 174);
             this.RightLandotButton.Name = "RightLandotButton";
-            this.RightLandotButton.Size = new System.Drawing.Size(143, 211);
+            this.RightLandotButton.Size = new System.Drawing.Size(109, 211);
             this.RightLandotButton.TabIndex = 6;
             this.RightLandotButton.TabStop = false;
             this.RightLandotButton.Click += new System.EventHandler(this.RightLandotButton_Click);
             // 
             // DownLandotButton
             // 
-            this.DownLandotButton.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.DownLandotButton.ImageHover = null;
-            this.DownLandotButton.ImageNormal = null;
-            this.DownLandotButton.Location = new System.Drawing.Point(271, 410);
+            this.DownLandotButton.BackColor = System.Drawing.Color.DimGray;
+            this.DownLandotButton.Image = global::GoodVision.Properties.Resources.down;
+            this.DownLandotButton.ImageHover = global::GoodVision.Properties.Resources.downHower;
+            this.DownLandotButton.ImageNormal = global::GoodVision.Properties.Resources.down;
+            this.DownLandotButton.Location = new System.Drawing.Point(260, 410);
             this.DownLandotButton.Name = "DownLandotButton";
             this.DownLandotButton.Size = new System.Drawing.Size(225, 109);
             this.DownLandotButton.TabIndex = 4;
@@ -139,11 +144,12 @@
             // LeftLandotButton
             // 
             this.LeftLandotButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.LeftLandotButton.ImageHover = null;
-            this.LeftLandotButton.ImageNormal = null;
-            this.LeftLandotButton.Location = new System.Drawing.Point(71, 173);
+            this.LeftLandotButton.Image = global::GoodVision.Properties.Resources.Left;
+            this.LeftLandotButton.ImageHover = global::GoodVision.Properties.Resources.LeftHover;
+            this.LeftLandotButton.ImageNormal = global::GoodVision.Properties.Resources.Left;
+            this.LeftLandotButton.Location = new System.Drawing.Point(120, 173);
             this.LeftLandotButton.Name = "LeftLandotButton";
-            this.LeftLandotButton.Size = new System.Drawing.Size(148, 212);
+            this.LeftLandotButton.Size = new System.Drawing.Size(109, 212);
             this.LeftLandotButton.TabIndex = 3;
             this.LeftLandotButton.TabStop = false;
             this.LeftLandotButton.Click += new System.EventHandler(this.LeftLandotButton_Click);
@@ -163,54 +169,26 @@
             this.panel2.Controls.Add(this.LandotInstructTextBox);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(374, 375);
+            this.panel2.Size = new System.Drawing.Size(402, 375);
             this.panel2.TabIndex = 3;
             // 
             // LandotInstructTextBox
             // 
-            this.LandotInstructTextBox.Location = new System.Drawing.Point(18, 23);
+            this.LandotInstructTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.LandotInstructTextBox.Location = new System.Drawing.Point(27, 26);
             this.LandotInstructTextBox.Name = "LandotInstructTextBox";
-            this.LandotInstructTextBox.Size = new System.Drawing.Size(340, 330);
+            this.LandotInstructTextBox.Size = new System.Drawing.Size(356, 306);
             this.LandotInstructTextBox.TabIndex = 0;
             this.LandotInstructTextBox.Text = "Instuction";
-            // 
-            // LTimer
-            // 
-            this.LTimer.Interval = 1000;
-            this.LTimer.Tick += new System.EventHandler(this.LTimer_Tick_1);
-            // 
-            // BackToVisionCheckButton
-            // 
-            this.BackToVisionCheckButton.ImageHover = null;
-            this.BackToVisionCheckButton.ImageNormal = null;
-            this.BackToVisionCheckButton.Location = new System.Drawing.Point(29, 413);
-            this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
-            this.BackToVisionCheckButton.Size = new System.Drawing.Size(149, 134);
-            this.BackToVisionCheckButton.TabIndex = 4;
-            this.BackToVisionCheckButton.Text = "custRoundButton1";
-            this.BackToVisionCheckButton.UseVisualStyleBackColor = true;
-            this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
-            // 
-            // GoLandotButton
-            // 
-            this.GoLandotButton.Image = global::GoodVision.Properties.Resources.hgEtDJcH_400x400;
-            this.GoLandotButton.ImageHover = null;
-            this.GoLandotButton.ImageNormal = null;
-            this.GoLandotButton.Location = new System.Drawing.Point(205, 413);
-            this.GoLandotButton.Name = "GoLandotButton";
-            this.GoLandotButton.Size = new System.Drawing.Size(150, 138);
-            this.GoLandotButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.GoLandotButton.TabIndex = 5;
-            this.GoLandotButton.TabStop = false;
-            this.GoLandotButton.Click += new System.EventHandler(this.GoLandotButton_Click);
             // 
             // EyeTestPanel
             // 
             this.EyeTestPanel.BackColor = System.Drawing.Color.Transparent;
+            this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
-            this.EyeTestPanel.Location = new System.Drawing.Point(408, 15);
+            this.EyeTestPanel.Location = new System.Drawing.Point(412, 12);
             this.EyeTestPanel.Name = "EyeTestPanel";
-            this.EyeTestPanel.Size = new System.Drawing.Size(691, 372);
+            this.EyeTestPanel.Size = new System.Drawing.Size(704, 375);
             this.EyeTestPanel.TabIndex = 7;
             // 
             // EyeTextLabel
@@ -223,17 +201,49 @@
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестируем левый глаз\r\n";
             // 
+            // LTimer
+            // 
+            this.LTimer.Interval = 1000;
+            this.LTimer.Tick += new System.EventHandler(this.LTimer_Tick_1);
+            // 
+            // BackToVisionCheckButton
+            // 
+            this.BackToVisionCheckButton.Image = global::GoodVision.Properties.Resources._13;
+            this.BackToVisionCheckButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
+            this.BackToVisionCheckButton.ImageNormal = global::GoodVision.Properties.Resources._13;
+            this.BackToVisionCheckButton.Location = new System.Drawing.Point(12, 401);
+            this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
+            this.BackToVisionCheckButton.Size = new System.Drawing.Size(218, 163);
+            this.BackToVisionCheckButton.TabIndex = 4;
+            this.BackToVisionCheckButton.UseVisualStyleBackColor = true;
+            this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
+            // 
+            // GoLandotButton
+            // 
+            this.GoLandotButton.ImageHover = null;
+            this.GoLandotButton.ImageNormal = null;
+            this.GoLandotButton.Location = new System.Drawing.Point(236, 410);
+            this.GoLandotButton.Name = "GoLandotButton";
+            this.GoLandotButton.Size = new System.Drawing.Size(150, 138);
+            this.GoLandotButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GoLandotButton.TabIndex = 5;
+            this.GoLandotButton.TabStop = false;
+            this.GoLandotButton.Click += new System.EventHandler(this.GoLandotButton_Click);
+            // 
             // LandotCheckPro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1107, 576);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1140, 601);
             this.Controls.Add(this.GoLandotButton);
-            this.Controls.Add(this.BackToVisionCheckButton);
             this.Controls.Add(this.EyeTestPanel);
+            this.Controls.Add(this.BackToVisionCheckButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "LandotCheckPro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.UpLandotButton)).EndInit();
@@ -242,9 +252,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.LeftLandotButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LandotCirclePictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).EndInit();
             this.EyeTestPanel.ResumeLayout(false);
             this.EyeTestPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -38,19 +38,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 34);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::GoodVision.Properties.Resources.подложка;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(516, 68);
+            this.label1.Size = new System.Drawing.Size(509, 114);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Account *UserName* is already exist.\r\n Is it your account?";
+            this.label1.Text = "Account *UserName* is already \r\nexist.\r\n Is it your account?";
             // 
             // NoButton
             // 
             this.NoButton.Image = global::GoodVision.Properties.Resources.hrest;
             this.NoButton.ImageHover = null;
             this.NoButton.ImageNormal = null;
-            this.NoButton.Location = new System.Drawing.Point(310, 143);
+            this.NoButton.Location = new System.Drawing.Point(305, 171);
             this.NoButton.Name = "NoButton";
             this.NoButton.Size = new System.Drawing.Size(110, 54);
             this.NoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -63,7 +64,7 @@
             this.YesButton.Image = global::GoodVision.Properties.Resources._66936;
             this.YesButton.ImageHover = null;
             this.YesButton.ImageNormal = null;
-            this.YesButton.Location = new System.Drawing.Point(99, 146);
+            this.YesButton.Location = new System.Drawing.Point(99, 174);
             this.YesButton.Name = "YesButton";
             this.YesButton.Size = new System.Drawing.Size(114, 51);
             this.YesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,10 +76,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = global::GoodVision.Properties.Resources.подложка2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(527, 255);
             this.Controls.Add(this.NoButton);
             this.Controls.Add(this.YesButton);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegMessage";
             this.Text = "RegMessage";

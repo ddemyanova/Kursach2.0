@@ -32,7 +32,7 @@ namespace GoodVision
                 else HelloLab.Text= "Hello, " + UserName;
             }
         }
-
+       
         private void StaticticButton_Click(object sender, EventArgs e)  // просмотр статистики
         {
             StatisticForm statForm = new StatisticForm();
@@ -57,7 +57,5 @@ namespace GoodVision
 
             hellpForm.Show();
         }
-
-     
     }
 }

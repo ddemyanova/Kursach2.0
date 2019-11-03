@@ -15,7 +15,7 @@ namespace GoodVision
         public VisionCheck()
         {
             InitializeComponent();
-            panel2.BackColor= ColorTranslator.FromHtml("#d0dfd2");
+         
         }
 
 

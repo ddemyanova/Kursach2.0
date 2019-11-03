@@ -31,6 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.HelpGreetingLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.PictureHelp4 = new ButtonRoundedCorners.RoundedCorners();
+            this.PictureHelp3 = new ButtonRoundedCorners.RoundedCorners();
+            this.PictureHelp2 = new ButtonRoundedCorners.RoundedCorners();
+            this.PictureHelp1 = new ButtonRoundedCorners.RoundedCorners();
             this.panel7 = new System.Windows.Forms.Panel();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -39,20 +43,16 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.PictureHelp4 = new ButtonRoundedCorners.RoundedCorners();
-            this.PictureHelp3 = new ButtonRoundedCorners.RoundedCorners();
-            this.PictureHelp2 = new ButtonRoundedCorners.RoundedCorners();
-            this.PictureHelp1 = new ButtonRoundedCorners.RoundedCorners();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp1)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +75,8 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.BlueBack1;
             this.panel2.Controls.Add(this.PictureHelp4);
             this.panel2.Controls.Add(this.PictureHelp3);
             this.panel2.Controls.Add(this.PictureHelp2);
@@ -88,6 +90,50 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(588, 577);
             this.panel2.TabIndex = 2;
+            // 
+            // PictureHelp4
+            // 
+            this.PictureHelp4.ImageHover = null;
+            this.PictureHelp4.ImageNormal = null;
+            this.PictureHelp4.Location = new System.Drawing.Point(22, 400);
+            this.PictureHelp4.Name = "PictureHelp4";
+            this.PictureHelp4.Size = new System.Drawing.Size(168, 136);
+            this.PictureHelp4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureHelp4.TabIndex = 6;
+            this.PictureHelp4.TabStop = false;
+            // 
+            // PictureHelp3
+            // 
+            this.PictureHelp3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PictureHelp3.ImageHover = null;
+            this.PictureHelp3.ImageNormal = null;
+            this.PictureHelp3.Location = new System.Drawing.Point(22, 272);
+            this.PictureHelp3.Name = "PictureHelp3";
+            this.PictureHelp3.Size = new System.Drawing.Size(161, 116);
+            this.PictureHelp3.TabIndex = 5;
+            this.PictureHelp3.TabStop = false;
+            // 
+            // PictureHelp2
+            // 
+            this.PictureHelp2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PictureHelp2.ImageHover = null;
+            this.PictureHelp2.ImageNormal = null;
+            this.PictureHelp2.Location = new System.Drawing.Point(31, 180);
+            this.PictureHelp2.Name = "PictureHelp2";
+            this.PictureHelp2.Size = new System.Drawing.Size(138, 60);
+            this.PictureHelp2.TabIndex = 4;
+            this.PictureHelp2.TabStop = false;
+            // 
+            // PictureHelp1
+            // 
+            this.PictureHelp1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PictureHelp1.ImageHover = null;
+            this.PictureHelp1.ImageNormal = null;
+            this.PictureHelp1.Location = new System.Drawing.Point(31, 105);
+            this.PictureHelp1.Name = "PictureHelp1";
+            this.PictureHelp1.Size = new System.Drawing.Size(144, 61);
+            this.PictureHelp1.TabIndex = 3;
+            this.PictureHelp1.TabStop = false;
             // 
             // panel7
             // 
@@ -153,58 +199,16 @@
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             // 
-            // PictureHelp4
-            // 
-            this.PictureHelp4.Image = global::GoodVision.Properties.Resources.image;
-            this.PictureHelp4.ImageHover = null;
-            this.PictureHelp4.ImageNormal = null;
-            this.PictureHelp4.Location = new System.Drawing.Point(22, 400);
-            this.PictureHelp4.Name = "PictureHelp4";
-            this.PictureHelp4.Size = new System.Drawing.Size(168, 136);
-            this.PictureHelp4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureHelp4.TabIndex = 6;
-            this.PictureHelp4.TabStop = false;
-            // 
-            // PictureHelp3
-            // 
-            this.PictureHelp3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PictureHelp3.ImageHover = null;
-            this.PictureHelp3.ImageNormal = null;
-            this.PictureHelp3.Location = new System.Drawing.Point(22, 272);
-            this.PictureHelp3.Name = "PictureHelp3";
-            this.PictureHelp3.Size = new System.Drawing.Size(161, 116);
-            this.PictureHelp3.TabIndex = 5;
-            this.PictureHelp3.TabStop = false;
-            // 
-            // PictureHelp2
-            // 
-            this.PictureHelp2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PictureHelp2.ImageHover = null;
-            this.PictureHelp2.ImageNormal = null;
-            this.PictureHelp2.Location = new System.Drawing.Point(31, 180);
-            this.PictureHelp2.Name = "PictureHelp2";
-            this.PictureHelp2.Size = new System.Drawing.Size(138, 60);
-            this.PictureHelp2.TabIndex = 4;
-            this.PictureHelp2.TabStop = false;
-            // 
-            // PictureHelp1
-            // 
-            this.PictureHelp1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.PictureHelp1.ImageHover = null;
-            this.PictureHelp1.ImageNormal = null;
-            this.PictureHelp1.Location = new System.Drawing.Point(31, 105);
-            this.PictureHelp1.Name = "PictureHelp1";
-            this.PictureHelp1.Size = new System.Drawing.Size(144, 61);
-            this.PictureHelp1.TabIndex = 3;
-            this.PictureHelp1.TabStop = false;
-            // 
             // HellpMessage
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GoodVision.Properties.Resources.helpBG;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 610);
             this.Controls.Add(this.panel2);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "HellpMessage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -212,14 +216,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

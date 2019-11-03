@@ -87,6 +87,11 @@
     <Compile Include="LandotCheckPro.Designer.cs">
       <DependentUpon>LandotCheckPro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RegMessage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,14 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="StatisticForm.resx">
       <DependentUpon>StatisticForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +232,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LandoltHover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SivtsevHover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\подложка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionHover2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вопросе.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\подложка2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Регистр2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gjlkj%3brf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downHower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
