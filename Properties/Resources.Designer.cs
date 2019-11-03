@@ -73,6 +73,16 @@ namespace GoodVision.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap civtsev {
+            get {
+                object obj = ResourceManager.GetObject("civtsev", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap depositphotos_186382688_stock_illustration_eye_test_chart_vector_rings {
             get {
                 object obj = ResourceManager.GetObject("depositphotos_186382688-stock-illustration-eye-test-chart-vector-rings", resourceCulture);
@@ -86,6 +96,16 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap desktop_3246124__340 {
             get {
                 object obj = ResourceManager.GetObject("desktop-3246124__340", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fontb_g {
+            get {
+                object obj = ResourceManager.GetObject("fontb-g", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +136,36 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap landolt {
+            get {
+                object obj = ResourceManager.GetObject("landolt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LandoltHover {
+            get {
+                object obj = ResourceManager.GetObject("LandoltHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SivtsevHover1 {
+            get {
+                object obj = ResourceManager.GetObject("SivtsevHover1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
