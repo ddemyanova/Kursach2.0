@@ -44,18 +44,21 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.StatisticLabel);
-            this.panel1.Location = new System.Drawing.Point(43, 12);
+            this.panel1.Location = new System.Drawing.Point(50, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1060, 108);
+            this.panel1.Size = new System.Drawing.Size(1063, 129);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 23);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(100, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(896, 62);
             this.label1.TabIndex = 3;
@@ -80,10 +83,10 @@
             this.Date,
             this.LeftEyeAcuity,
             this.RightEyeAcuity});
-            this.StatisticTable.Location = new System.Drawing.Point(206, 117);
+            this.StatisticTable.Location = new System.Drawing.Point(211, 147);
             this.StatisticTable.Name = "StatisticTable";
             this.StatisticTable.RowTemplate.Height = 24;
-            this.StatisticTable.Size = new System.Drawing.Size(870, 453);
+            this.StatisticTable.Size = new System.Drawing.Size(902, 416);
             this.StatisticTable.TabIndex = 1;
             // 
             // UserName
@@ -108,24 +111,27 @@
             // 
             // BackToMenuButton
             // 
-            this.BackToMenuButton.ImageHover = null;
-            this.BackToMenuButton.ImageNormal = null;
-            this.BackToMenuButton.Location = new System.Drawing.Point(10, 441);
+            this.BackToMenuButton.BackColor = System.Drawing.Color.Transparent;
+            this.BackToMenuButton.Image = global::GoodVision.Properties.Resources._14;
+            this.BackToMenuButton.ImageHover = global::GoodVision.Properties.Resources._14Hover;
+            this.BackToMenuButton.ImageNormal = global::GoodVision.Properties.Resources._14;
+            this.BackToMenuButton.Location = new System.Drawing.Point(12, 432);
             this.BackToMenuButton.Name = "BackToMenuButton";
-            this.BackToMenuButton.Size = new System.Drawing.Size(182, 128);
+            this.BackToMenuButton.Size = new System.Drawing.Size(192, 152);
             this.BackToMenuButton.TabIndex = 2;
-            this.BackToMenuButton.Text = "custRoundButton1";
-            this.BackToMenuButton.UseVisualStyleBackColor = true;
+            this.BackToMenuButton.UseVisualStyleBackColor = false;
             this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
             // 
             // StatisticForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1140, 596);
             this.Controls.Add(this.BackToMenuButton);
             this.Controls.Add(this.StatisticTable);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "StatisticForm";
             this.Text = "StatisticForm";
             this.panel1.ResumeLayout(false);

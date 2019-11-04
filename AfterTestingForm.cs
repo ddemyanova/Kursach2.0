@@ -39,6 +39,5 @@ namespace GoodVision
             stat.Show();
             this.Hide();
         }
-
     }
 }

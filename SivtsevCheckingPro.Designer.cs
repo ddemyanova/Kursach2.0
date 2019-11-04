@@ -33,29 +33,30 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.LetterPictureBox = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.AnswerSivtsevButton = new ButtonRoundedCorners.RoundedCorners();
             this.AnswerTextBox = new System.Windows.Forms.TextBox();
             this.SivtsevTimer = new CircularProgressBar.CircularProgressBar();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.SivtsevInstrTextBox = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BackToVisionCheckButton = new rbutton.CustRoundButton();
-            this.StartButton = new ButtonRoundedCorners.RoundedCorners();
-            this.AnswerSivtsevButton = new ButtonRoundedCorners.RoundedCorners();
             this.EyeTestPanel = new System.Windows.Forms.Panel();
             this.EyeTextLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SivtsevInstrTextBox = new System.Windows.Forms.RichTextBox();
+            this.BackToVisionCheckButton = new rbutton.CustRoundButton();
+            this.StartButton = new ButtonRoundedCorners.RoundedCorners();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StartButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).BeginInit();
             this.EyeTestPanel.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StartButton)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.EyeTestPanel);
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.panel2.Controls.Add(this.LetterPictureBox);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.SivtsevTimer);
@@ -83,105 +84,6 @@
             this.panel3.Size = new System.Drawing.Size(559, 116);
             this.panel3.TabIndex = 2;
             // 
-            // AnswerTextBox
-            // 
-            this.AnswerTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnswerTextBox.Location = new System.Drawing.Point(90, 33);
-            this.AnswerTextBox.Name = "AnswerTextBox";
-            this.AnswerTextBox.Size = new System.Drawing.Size(158, 55);
-            this.AnswerTextBox.TabIndex = 0;
-            this.AnswerTextBox.TextChanged += new System.EventHandler(this.AnswerTextBox_TextChanged);
-            // 
-            // SivtsevTimer
-            // 
-            this.SivtsevTimer.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("SivtsevTimer.AnimationFunction")));
-            this.SivtsevTimer.AnimationSpeed = 500;
-            this.SivtsevTimer.BackColor = System.Drawing.Color.White;
-            this.SivtsevTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
-            this.SivtsevTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SivtsevTimer.InnerColor = System.Drawing.Color.White;
-            this.SivtsevTimer.InnerMargin = 2;
-            this.SivtsevTimer.InnerWidth = -1;
-            this.SivtsevTimer.Location = new System.Drawing.Point(88, 41);
-            this.SivtsevTimer.MarqueeAnimationSpeed = 2000;
-            this.SivtsevTimer.Maximum = 50;
-            this.SivtsevTimer.Name = "SivtsevTimer";
-            this.SivtsevTimer.OuterColor = System.Drawing.Color.Gray;
-            this.SivtsevTimer.OuterMargin = -20;
-            this.SivtsevTimer.OuterWidth = 20;
-            this.SivtsevTimer.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.SivtsevTimer.ProgressWidth = 20;
-            this.SivtsevTimer.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.SivtsevTimer.Size = new System.Drawing.Size(135, 128);
-            this.SivtsevTimer.StartAngle = 270;
-            this.SivtsevTimer.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.SivtsevTimer.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.SivtsevTimer.SubscriptText = "";
-            this.SivtsevTimer.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.SivtsevTimer.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.SivtsevTimer.SuperscriptText = "";
-            this.SivtsevTimer.TabIndex = 1;
-            this.SivtsevTimer.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.SivtsevTimer.Value = 50;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.SivtsevInstrTextBox);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(416, 366);
-            this.panel4.TabIndex = 5;
-            // 
-            // SivtsevInstrTextBox
-            // 
-            this.SivtsevInstrTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.SivtsevInstrTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SivtsevInstrTextBox.Location = new System.Drawing.Point(17, 28);
-            this.SivtsevInstrTextBox.Name = "SivtsevInstrTextBox";
-            this.SivtsevInstrTextBox.Size = new System.Drawing.Size(380, 290);
-            this.SivtsevInstrTextBox.TabIndex = 1;
-            this.SivtsevInstrTextBox.Text = "Инструкция\nС другой стороны реализация намеченных плановых заданий представляет с" +
-    "обой интересный эксперимент проверки соответствующий условий активизации. ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
-            this.label1.TabIndex = 0;
-            // 
-            // BackToVisionCheckButton
-            // 
-            this.BackToVisionCheckButton.ImageHover = null;
-            this.BackToVisionCheckButton.ImageNormal = null;
-            this.BackToVisionCheckButton.Location = new System.Drawing.Point(33, 426);
-            this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
-            this.BackToVisionCheckButton.Size = new System.Drawing.Size(166, 148);
-            this.BackToVisionCheckButton.TabIndex = 6;
-            this.BackToVisionCheckButton.Text = "custRoundButton1";
-            this.BackToVisionCheckButton.UseVisualStyleBackColor = true;
-            this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
-            // 
-            // StartButton
-            // 
-            this.StartButton.Image = global::GoodVision.Properties.Resources.hgEtDJcH_400x400;
-            this.StartButton.ImageHover = null;
-            this.StartButton.ImageNormal = null;
-            this.StartButton.Location = new System.Drawing.Point(236, 426);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(141, 133);
-            this.StartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.StartButton.TabIndex = 7;
-            this.StartButton.TabStop = false;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
-            // 
             // AnswerSivtsevButton
             // 
             this.AnswerSivtsevButton.BackColor = System.Drawing.Color.Coral;
@@ -194,13 +96,57 @@
             this.AnswerSivtsevButton.TabStop = false;
             this.AnswerSivtsevButton.Click += new System.EventHandler(this.AnswerSivtsevButton_Click);
             // 
+            // AnswerTextBox
+            // 
+            this.AnswerTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AnswerTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerTextBox.Location = new System.Drawing.Point(90, 33);
+            this.AnswerTextBox.Name = "AnswerTextBox";
+            this.AnswerTextBox.Size = new System.Drawing.Size(158, 55);
+            this.AnswerTextBox.TabIndex = 0;
+            this.AnswerTextBox.TextChanged += new System.EventHandler(this.AnswerTextBox_TextChanged);
+            // 
+            // SivtsevTimer
+            // 
+            this.SivtsevTimer.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("SivtsevTimer.AnimationFunction")));
+            this.SivtsevTimer.AnimationSpeed = 500;
+            this.SivtsevTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.SivtsevTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 55.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SivtsevTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SivtsevTimer.InnerColor = System.Drawing.Color.Transparent;
+            this.SivtsevTimer.InnerMargin = 2;
+            this.SivtsevTimer.InnerWidth = -1;
+            this.SivtsevTimer.Location = new System.Drawing.Point(70, 28);
+            this.SivtsevTimer.MarqueeAnimationSpeed = 2000;
+            this.SivtsevTimer.Maximum = 50;
+            this.SivtsevTimer.Name = "SivtsevTimer";
+            this.SivtsevTimer.OuterColor = System.Drawing.Color.DimGray;
+            this.SivtsevTimer.OuterMargin = -10;
+            this.SivtsevTimer.OuterWidth = 10;
+            this.SivtsevTimer.ProgressColor = System.Drawing.Color.Coral;
+            this.SivtsevTimer.ProgressWidth = 20;
+            this.SivtsevTimer.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.SivtsevTimer.Size = new System.Drawing.Size(135, 128);
+            this.SivtsevTimer.StartAngle = 270;
+            this.SivtsevTimer.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.SivtsevTimer.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.SivtsevTimer.SubscriptText = "";
+            this.SivtsevTimer.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.SivtsevTimer.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.SivtsevTimer.SuperscriptText = "";
+            this.SivtsevTimer.TabIndex = 1;
+            this.SivtsevTimer.TextMargin = new System.Windows.Forms.Padding(7, 7, 0, 0);
+            this.SivtsevTimer.Value = 50;
+            // 
             // EyeTestPanel
             // 
             this.EyeTestPanel.BackColor = System.Drawing.Color.Transparent;
+            this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
-            this.EyeTestPanel.Location = new System.Drawing.Point(3, 3);
+            this.EyeTestPanel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.EyeTestPanel.Location = new System.Drawing.Point(434, 12);
             this.EyeTestPanel.Name = "EyeTestPanel";
-            this.EyeTestPanel.Size = new System.Drawing.Size(690, 363);
+            this.EyeTestPanel.Size = new System.Drawing.Size(693, 363);
             this.EyeTestPanel.TabIndex = 2;
             // 
             // EyeTextLabel
@@ -213,15 +159,79 @@
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестируем правый глаз";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.SivtsevInstrTextBox);
+            this.panel4.Location = new System.Drawing.Point(12, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(423, 363);
+            this.panel4.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 0;
+            // 
+            // SivtsevInstrTextBox
+            // 
+            this.SivtsevInstrTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.SivtsevInstrTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SivtsevInstrTextBox.Location = new System.Drawing.Point(17, 28);
+            this.SivtsevInstrTextBox.Name = "SivtsevInstrTextBox";
+            this.SivtsevInstrTextBox.ReadOnly = true;
+            this.SivtsevInstrTextBox.Size = new System.Drawing.Size(378, 290);
+            this.SivtsevInstrTextBox.TabIndex = 1;
+            this.SivtsevInstrTextBox.Text = "Инструкция\nС другой стороны реализация намеченных плановых заданий представляет с" +
+    "обой интересный эксперимент проверки соответствующий условий активизации. ";
+            // 
+            // BackToVisionCheckButton
+            // 
+            this.BackToVisionCheckButton.Image = ((System.Drawing.Image)(resources.GetObject("BackToVisionCheckButton.Image")));
+            this.BackToVisionCheckButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
+            this.BackToVisionCheckButton.ImageNormal = global::GoodVision.Properties.Resources._13;
+            this.BackToVisionCheckButton.Location = new System.Drawing.Point(12, 426);
+            this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
+            this.BackToVisionCheckButton.Size = new System.Drawing.Size(218, 163);
+            this.BackToVisionCheckButton.TabIndex = 6;
+            this.BackToVisionCheckButton.UseVisualStyleBackColor = true;
+            this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
+            // 
+            // StartButton
+            // 
+            this.StartButton.BackColor = System.Drawing.Color.Transparent;
+            this.StartButton.BackgroundImage = global::GoodVision.Properties.Resources.start;
+            this.StartButton.Image = ((System.Drawing.Image)(resources.GetObject("StartButton.Image")));
+            this.StartButton.ImageHover = null;
+            this.StartButton.ImageNormal = null;
+            this.StartButton.Location = new System.Drawing.Point(236, 426);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(143, 136);
+            this.StartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StartButton.TabIndex = 7;
+            this.StartButton.TabStop = false;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
             // SivtsevCheckingPro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 601);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1140, 601);
+            this.Controls.Add(this.EyeTestPanel);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.BackToVisionCheckButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
+            this.DoubleBuffered = true;
             this.Name = "SivtsevCheckingPro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -229,12 +239,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).EndInit();
             this.EyeTestPanel.ResumeLayout(false);
             this.EyeTestPanel.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();
             this.ResumeLayout(false);
 
         }

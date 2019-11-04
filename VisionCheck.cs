@@ -15,6 +15,7 @@ namespace GoodVision
         public VisionCheck()
         {
             InitializeComponent();
+         
         }
 
 
@@ -41,6 +42,5 @@ namespace GoodVision
             LanCheck.Show();
             this.Hide();
         }
-
     }
 }
