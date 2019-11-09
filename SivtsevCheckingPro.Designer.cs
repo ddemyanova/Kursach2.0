@@ -198,7 +198,7 @@
             this.BackToVisionCheckButton.Image = ((System.Drawing.Image)(resources.GetObject("BackToVisionCheckButton.Image")));
             this.BackToVisionCheckButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
             this.BackToVisionCheckButton.ImageNormal = global::GoodVision.Properties.Resources._13;
-            this.BackToVisionCheckButton.Location = new System.Drawing.Point(12, 426);
+            this.BackToVisionCheckButton.Location = new System.Drawing.Point(5, 408);
             this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
             this.BackToVisionCheckButton.Size = new System.Drawing.Size(218, 163);
             this.BackToVisionCheckButton.TabIndex = 6;
@@ -208,13 +208,14 @@
             // StartButton
             // 
             this.StartButton.BackColor = System.Drawing.Color.Transparent;
-            this.StartButton.BackgroundImage = global::GoodVision.Properties.Resources.start;
+            this.StartButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("StartButton.BackgroundImage")));
+            this.StartButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.StartButton.Image = ((System.Drawing.Image)(resources.GetObject("StartButton.Image")));
             this.StartButton.ImageHover = null;
             this.StartButton.ImageNormal = null;
-            this.StartButton.Location = new System.Drawing.Point(236, 426);
+            this.StartButton.Location = new System.Drawing.Point(229, 381);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(143, 136);
+            this.StartButton.Size = new System.Drawing.Size(199, 199);
             this.StartButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.StartButton.TabIndex = 7;
             this.StartButton.TabStop = false;

@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RightHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RightHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="gjlkj;rf2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>"..\Resources\gjlkj;rf2.png";System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,8 +139,8 @@
   <data name="landolt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\landolt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="questionHover2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\questionHover2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="civtsev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\civtsev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hgEtDJcH_400x400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hgEtDJcH_400x400.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,6 +156,9 @@
   </data>
   <data name="helpBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\helpBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="depositphotos_186382688-stock-illustration-eye-test-chart-vector-rings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\depositphotos_186382688-stock-illustration-eye-test-chart-vector-rings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +187,8 @@
   <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RightHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="66936" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\66936.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,11 +208,11 @@
   <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="civtsev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\civtsev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="questionHover2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\questionHover2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UpHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UpHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -222,5 +222,8 @@
   </data>
   <data name="start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="старт11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\старт11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
