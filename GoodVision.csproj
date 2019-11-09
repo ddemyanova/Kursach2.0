@@ -46,6 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AfterTestingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfterTestingForm.Designer.cs">
+      <DependentUpon>AfterTestingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandotCheckPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandotCheckPro.Designer.cs">
+      <DependentUpon>LandotCheckPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegMessage.Designer.cs">
+      <DependentUpon>RegMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SivtsevCheckingPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SivtsevCheckingPro.Designer.cs">
+      <DependentUpon>SivtsevCheckingPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HellpMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HellpMessage.Designer.cs">
+      <DependentUpon>HellpMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GoodVisionClass.cs" />
     <Compile Include="Landolt_Circle.cs" />
     <Compile Include="Letter.cs" />
