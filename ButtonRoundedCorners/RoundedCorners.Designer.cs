@@ -1,6 +1,6 @@
-﻿namespace GoodVision
+﻿namespace ButtonRoundedCorners
 {
-    partial class MainForm
+    partial class RoundedCorners
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Код, автоматически созданный конструктором компонентов
 
         /// <summary>
         /// Требуемый метод для поддержки конструктора — не изменяйте 
@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // RoundedCorners
+            // 
+            this.Size = new System.Drawing.Size(800, 450);
+            this.MouseLeave += new System.EventHandler(this.RoundedCorners_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.RoundedCorners_MouseHover);
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
