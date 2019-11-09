@@ -88,7 +88,7 @@
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     =======
-    <Compile Include="GoodVisionClass.cs" />
+  
     <Compile Include="GoodVisionClass.cs" />
     <Compile Include="Landolt_Circle.cs" />
     <Compile Include="Letter.cs" />
