@@ -80,6 +80,8 @@
     <Compile Include="AfterTestingForm.Designer.cs">
       <DependentUpon>AfterTestingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GoodVisionClass.cs" />
+    <Compile Include="GoodVisionInterface.cs" />
     <Compile Include="LandotCheckPro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,7 +125,6 @@
     <Compile Include="RegForm.Designer.cs">
       <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GoodVisionInterface.cs" />
     <Compile Include="Object.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -312,7 +313,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-
     <PropertyGroup>
       <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
     </PropertyGroup>
@@ -321,4 +321,3 @@
   </Target>
   <Import Project="packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />
 </Project>
-

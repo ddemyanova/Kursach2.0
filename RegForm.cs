@@ -10,9 +10,13 @@ using System.Windows.Forms;
 
 namespace GoodVision
 {
+
     public partial class RegForm : Form
     {
-        public RegForm()
+		UserClass User;
+		GoodVisionClass MyVision;
+		//создали объекты, которые будем передавать между формами!
+		public RegForm()
         {
             InitializeComponent();
         }
@@ -26,9 +30,13 @@ namespace GoodVision
        
         
         private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
+
         {
+
             MainMenu mMForm = new MainMenu();
-            mMForm.Exchange = RegistTextBox.Text; // отправили имя пользователя через свойство
+			User.Nick = RegistTextBox.Text;
+			MyVision.Enter_account(ref User);
+			mMForm.Exchange = User; // отправили имя пользователя через свойство
             mMForm.Show();
             this.Hide();
         }

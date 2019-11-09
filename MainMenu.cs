@@ -12,28 +12,39 @@ namespace GoodVision
 {
     public partial class MainMenu : Form
     {
-        public MainMenu()
+        UserClass User;
+		public MainMenu()
         {
             InitializeComponent();
            
         }
-      static  string UserName;
-     
-        public string Exchange // передаем имя пользователя в эту форму
+		
+		
+		
+        public UserClass UserExchange // передаем имя пользователя в эту форму
         {
-            get {return UserName; }
+            get {return User; }
             set
             {
                 if (value != null)
                 {
-                    UserName = value;
+                    User.Nick = value;
                     HelloLab.Text = "Hello, " + value;
                 }
-                else HelloLab.Text= "Hello, " + UserName;
+                else HelloLab.Text= "Hello, " + User.Nick;
             }
         }
-       
-        private void StaticticButton_Click(object sender, EventArgs e)  // просмотр статистики
+		GoodVisionClass MyVision;
+		public GoodVisionClass GVExchange // передаем имя пользователя в эту форму
+		{
+			get { return MyVision; }
+			set
+			{
+				
+			}
+		}
+
+		private void StaticticButton_Click(object sender, EventArgs e)  // просмотр статистики
         {
             StatisticForm statForm = new StatisticForm();
             statForm.StatistExchange = Exchange;

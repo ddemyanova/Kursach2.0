@@ -10,9 +10,56 @@ namespace GoodVision
 	class GoodVisionClass: GoodVisionInterface
 	{
 		private FileStream fileStream;
-		void Create_account(string Nickname)
+
+		public void Add_to_file(ref UserClass User)
 		{
-			string filePath = Nickname + ".xml";//можно прописать тут полный адрес
+			throw new NotImplementedException();
+		}
+
+		public void Change_form()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Clear_account(ref UserClass User)
+		{
+			try {
+				File.Delete(User.Nick + ".xml");
+			}
+			catch (FileNotFoundException)
+			{
+
+			}
+
+		}
+		void GoodVisionInterface.Clear_account(ref UserClass User)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Get_help()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Get_Stats(ref UserClass User)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Test_vision_with_circles(ref UserClass User)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Test_vision_with_letters(ref UserClass User)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Create_account(ref UserClass User)
+		{
+			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
 			if (File.Exists(filePath))
 			{
 				//вывести свой месседж бокс с "да-нет",сказать, что уже существует такой юзер
@@ -21,30 +68,47 @@ namespace GoodVision
 				//хз что здесь возвращать
 			}
 			else
+			
+			try
 			{
-				fileStream = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
-				//создать файл с именем;
+					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
+					//создать файл с именем;
 				
+				
+			}
+			catch (FileNotFoundException)
+			{
+
 			}
 
 			
 		}
-		void Enter_account(string Nickname)
+
+		void GoodVisionInterface.Create_account(ref UserClass User)
 		{
-			string filePath = Nickname + ".xml";//можно прописать тут полный адрес
-			if (File.Exists(filePath))
+			throw new NotImplementedException();
+		}
+
+		public void Enter_account(ref UserClass User)
+		{
+			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
+			try
 			{
-			fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+				fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
 			}
-			//открыть файл ;
-			else
+			catch (FileNotFoundException)
 			{
-				//если такого нет - вывести месседж бокс с ответом "ок", что нет такого пользователя и предложить создать нового
+				//если такого нет - вывести месседж бокс с ответом "ок", 
+				//что нет такого пользователя и предложить создать нового
 				//Create_account();
-				Create_account(Nickname);
+				Create_account(ref User);
 			}
 			
 		}
-		
+
+		void GoodVisionInterface.Enter_account(ref UserClass User)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

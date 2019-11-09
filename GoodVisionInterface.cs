@@ -11,9 +11,9 @@ namespace GoodVision
     interface GoodVisionInterface
     {
 		
-        void Create_account(string Nickname);//функция для создания аккаунта
+        void Create_account(ref UserClass User);//функция для создания аккаунта
         void Clear_account(ref UserClass User);//удалить аккаунт
-        void Enter_account(string Nickname);//войти в аккаунт
+        void Enter_account(ref UserClass User);//войти в аккаунт
         void Get_Stats(ref UserClass  User);//узнать статистику пользователя
 		void Change_form();//закрыть 1 форму и открыть вторую;
 		void Test_vision_with_letters(ref UserClass User);//не требует пояснения
