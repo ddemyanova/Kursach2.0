@@ -9,42 +9,78 @@ namespace GoodVision
 {
 	class GoodVisionClass: GoodVisionInterface
 	{
-		private FileStream fileStream;
-		void Create_account(string Nickname)
+		public GoodVisionClass() { }
+		public void Add_to_file(ref UserClass User)
 		{
-			string filePath = Nickname + ".xml";//можно прописать тут полный адрес
-			if (File.Exists(filePath))
-			{
-				//вывести свой месседж бокс с "да-нет",сказать, что уже существует такой юзер
-				//если это вы - Enter Account();
-				//если нет - запросить снова
-				//хз что здесь возвращать
+			//добавление в файл пользователя данных
+		}
+
+		public void Clear_account(ref UserClass User)
+		{
+			try {
+				File.Delete(User.Nick + ".xml");
 			}
-			else
+			catch (FileNotFoundException)
 			{
-				fileStream = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
-				//создать файл с именем;
-				
+
+			}
+
+		}
+		
+		public void Get_help()
+		{
+			//вызвать help (messagebox)
+			HellpMessage hellpForm = new HellpMessage();
+			hellpForm.Show();
+		}
+
+
+		public void Get_Stats(ref UserClass User)
+		{
+			//показать статистику
+		}
+		public void Test_vision_with_circles(ref UserClass User)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Test_vision_with_letters(ref UserClass User)
+		{
+
+		}
+
+		public void Create_account(ref UserClass User)
+		{
+			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
+						
+			try
+			{
+					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
+					//создать файл с именем;
+			}
+			catch (FileNotFoundException)
+			{
+
 			}
 
 			
 		}
-		void Enter_account(string Nickname)
+
+		public void Enter_account( UserClass User)
 		{
-			string filePath = Nickname + ".xml";//можно прописать тут полный адрес
-			if (File.Exists(filePath))
+			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
+			try
 			{
-			fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+				FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
 			}
-			//открыть файл ;
-			else
+			catch (FileNotFoundException)
 			{
-				//если такого нет - вывести месседж бокс с ответом "ок", что нет такого пользователя и предложить создать нового
+				//если такого нет - вывести месседж бокс с ответом "ок", 
+				//что нет такого пользователя и предложить создать нового
 				//Create_account();
-				Create_account(Nickname);
+				Create_account(ref User);
 			}
 			
 		}
-		
 	}
 }

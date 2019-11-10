@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace GoodVision
 {
     class UserClass
     {
         private string Nickname;//имя
+		private FileStream FilePath;
         private DateTime last_check_date;//дата проверки(последней)
         private DateTime check_date;//произвольная дата когда пользователь чекал зрение нинаю пока куда его припхнуть, но явно понадобится для того чтобы статку чекать
         private double left_eye_vision;//зрание для левого глаза
         private double right_eye_vision;//для правого
-		
+
+		public UserClass() { }
         public UserClass(UserClass User)//конструктор
         {
             this.Nickname = User.Nickname;
@@ -28,6 +31,17 @@ namespace GoodVision
 			}
 			set {
 				this.Nickname = value;
+			}
+		}
+		public FileStream File
+		{
+			get
+			{
+				return this.FilePath;
+			}
+			set
+			{
+				this.FilePath = value;
 			}
 		}//ввести или получить имя
 		public double left {
