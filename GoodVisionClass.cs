@@ -9,16 +9,10 @@ namespace GoodVision
 {
 	class GoodVisionClass: GoodVisionInterface
 	{
-		private FileStream fileStream;
-
+		public GoodVisionClass() { }
 		public void Add_to_file(ref UserClass User)
 		{
-			throw new NotImplementedException();
-		}
-
-		public void Change_form()
-		{
-			throw new NotImplementedException();
+			//добавление в файл пользователя данных
 		}
 
 		public void Clear_account(ref UserClass User)
@@ -32,21 +26,19 @@ namespace GoodVision
 			}
 
 		}
-		void GoodVisionInterface.Clear_account(ref UserClass User)
-		{
-			throw new NotImplementedException();
-		}
-
+		
 		public void Get_help()
 		{
-			throw new NotImplementedException();
+			//вызвать help (messagebox)
+			HellpMessage hellpForm = new HellpMessage();
+			hellpForm.Show();
 		}
+
 
 		public void Get_Stats(ref UserClass User)
 		{
-			throw new NotImplementedException();
+			//показать статистику
 		}
-
 		public void Test_vision_with_circles(ref UserClass User)
 		{
 			throw new NotImplementedException();
@@ -54,27 +46,17 @@ namespace GoodVision
 
 		public void Test_vision_with_letters(ref UserClass User)
 		{
-			throw new NotImplementedException();
+
 		}
 
 		public void Create_account(ref UserClass User)
 		{
 			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
-			if (File.Exists(filePath))
-			{
-				//вывести свой месседж бокс с "да-нет",сказать, что уже существует такой юзер
-				//если это вы - Enter Account();
-				//если нет - запросить снова
-				//хз что здесь возвращать
-			}
-			else
-			
+						
 			try
 			{
 					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
 					//создать файл с именем;
-				
-				
 			}
 			catch (FileNotFoundException)
 			{
@@ -84,17 +66,12 @@ namespace GoodVision
 			
 		}
 
-		void GoodVisionInterface.Create_account(ref UserClass User)
-		{
-			throw new NotImplementedException();
-		}
-
-		public void Enter_account(ref UserClass User)
+		public void Enter_account( UserClass User)
 		{
 			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
 			try
 			{
-				fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+				FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
 			}
 			catch (FileNotFoundException)
 			{
@@ -104,11 +81,6 @@ namespace GoodVision
 				Create_account(ref User);
 			}
 			
-		}
-
-		void GoodVisionInterface.Enter_account(ref UserClass User)
-		{
-			throw new NotImplementedException();
 		}
 	}
 }

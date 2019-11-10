@@ -16,7 +16,7 @@ namespace GoodVision
         private double left_eye_vision;//зрание для левого глаза
         private double right_eye_vision;//для правого
 
-		
+		public UserClass() { }
         public UserClass(UserClass User)//конструктор
         {
             this.Nickname = User.Nickname;

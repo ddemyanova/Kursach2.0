@@ -13,9 +13,7 @@ namespace GoodVision
 
     public partial class RegForm : Form
     {
-		UserClass User;
-		GoodVisionClass MyVision;
-		//создали объекты, которые будем передавать между формами!
+		
 		public RegForm()
         {
             InitializeComponent();
@@ -27,16 +25,17 @@ namespace GoodVision
       
             
         }
-       
-        
-        private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
+
+		UserClass User=new UserClass();
+		GoodVisionClass MyVision= new GoodVisionClass();
+		private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
 
         {
 
             MainMenu mMForm = new MainMenu();
 			User.Nick = RegistTextBox.Text;
-			MyVision.Enter_account(ref User);
-			mMForm.Exchange = User; // отправили имя пользователя через свойство
+			MyVision.Enter_account( User); //входим в аккаунт
+			//добавить открытие файла сессии и запись имени пользователя в него
             mMForm.Show();
             this.Hide();
         }

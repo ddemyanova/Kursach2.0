@@ -12,42 +12,19 @@ namespace GoodVision
 {
     public partial class MainMenu : Form
     {
-        UserClass User;
+        
 		public MainMenu()
         {
             InitializeComponent();
            
         }
-		
-		
-		
-        public UserClass UserExchange // передаем имя пользователя в эту форму
-        {
-            get {return User; }
-            set
-            {
-                if (value != null)
-                {
-                    User.Nick = value;
-                    HelloLab.Text = "Hello, " + value;
-                }
-                else HelloLab.Text= "Hello, " + User.Nick;
-            }
-        }
+		UserClass User;
 		GoodVisionClass MyVision;
-		public GoodVisionClass GVExchange // передаем имя пользователя в эту форму
-		{
-			get { return MyVision; }
-			set
-			{
-				
-			}
-		}
+		
 
 		private void StaticticButton_Click(object sender, EventArgs e)  // просмотр статистики
         {
             StatisticForm statForm = new StatisticForm();
-            statForm.StatistExchange = Exchange;
             statForm.Show();
             this.Hide();
 
@@ -64,9 +41,14 @@ namespace GoodVision
         // вызываем помощь для главного меню
         private void HelpButton_Click(object sender, EventArgs e) 
         {
-            HellpMessage hellpForm = new HellpMessage();
-
-            hellpForm.Show();
+			MyVision.Get_help();
         }
-    }
+
+		private void MainMenu_Load(object sender, EventArgs e)
+		{
+			//считать данные из файла данной сессии (имя)
+			//открыть файл по имени пользователья с его данными
+			HelloLab.Text = "Hello, " + User.Nick;
+		}
+	}
 }
