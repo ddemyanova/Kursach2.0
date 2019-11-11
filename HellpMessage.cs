@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace GoodVision
 {
-    public partial class MainForm : Form
+    public partial class HellpMessage : Form
     {
-        public MainForm()
+        public HellpMessage() // чисто инфа 
         {
             InitializeComponent();
         }
+
+        //надо позаливать адреса картинок
+
+        
     }
 }
