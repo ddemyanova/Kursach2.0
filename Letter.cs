@@ -27,55 +27,62 @@ namespace GoodVision
         }
         public Letter()//конструктор в котором буква для каждого объекта будет по умолчанию выбрана случайно
         {
-            this.Letter_to_show = (Letters)Get_Random();
-            switch (Letter_to_show)
-            {
-                case Letters.Ш:
-                    {
-                        this.FileName = "Сюда надо путь к файлу для буквы Ш";
-                        break;
-                    }
-                case Letters.Б:
-                    {
-                        this.FileName = "Сюда надо путь к файлу для буквы Б";
-                        break;
-                    }
-                case Letters.М:
-                    {
-                        this.FileName = "Сюда надо путь к файлу для буквы М";
-                        break;
-                    }
-                case Letters.Н:
-                    {
-                        this.FileName = "Сюда надо путь к файлу для буквы Н";
-                        break;
-                    }
-                case Letters.К:
-                    {
-                        this.FileName = "Сюда надо путь к файлу для буквы К";
-                        break;
-                    }
-                case Letters.Ы:
-                    {
-                        this.FileName = "Сюда надо путь к файлу для буквы Ы";
-                        break;
-                    }
-                case Letters.И:
-                    {
-                        this.FileName = "Сюда надо путь к файлу для буквы И";
-                        break;
-                    }
-            }
+			this.Set_Letter();
         }
-        public void Set_Letter(int letter)//метод для установки значения буквы вручную
+        public void Set_Letter()//метод для установки значения буквы 
         {
-            this.Letter_to_show = (Letters)letter;
-        }
-        //а здесь должен быть метод чтобы узнать букву объекта, но шось его пока нет
-        public Letters Get_Letter()
-        {
-            return this.Letter_to_show;//возвращает текующую букву дял объекта класса
-        }
+			this.Letter_to_show = (Letters)Get_Random();
+			switch (Letter_to_show)
+			{
+				case Letters.Ш:
+					{
+						this.FileName = "Ш.xml";
+						break;
+					}
+				case Letters.Б:
+					{
+						this.FileName = "Б.xml";
+						break;
+					}
+				case Letters.М:
+					{
+						this.FileName = "М.xml";
+						break;
+					}
+				case Letters.Н:
+					{
+						this.FileName = "Н.xml";
+						break;
+					}
+				case Letters.К:
+					{
+						this.FileName = "К.xml";
+						break;
+					}
+				case Letters.Ы:
+					{
+						this.FileName = "Ы.xml";
+						break;
+					}
+				case Letters.И:
+					{
+						this.FileName = "И.xml";
+						break;
+					}
+			}
+		}
+		public string Get_Letter()//метод для установки значения буквы вручную
+		{
+			string name = this.FileName;
+			name.Remove(1,4);
+			return name;
+		}
+		public double CalcSize()
+		{
+			double size=0;
+			//формула
+			return size;
+		}
         ~Letter() { }
     }
 }
