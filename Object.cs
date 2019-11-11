@@ -13,7 +13,8 @@ namespace GoodVision
     {
         protected string FileName;
         protected Tuple<double, double> size;
-        protected Image ShowImage;
+        public Image ShowImage;
+		protected int Row;
 
         public Object()
         {
@@ -37,6 +38,17 @@ namespace GoodVision
         {
             this.size = Size;
         }
+		public int ObjectRow
+		{
+			get
+			{
+				return Row;
+			}
+			set
+			{
+				Row = value;
+			}
+		}
         ~Object(){}
     };
 }
