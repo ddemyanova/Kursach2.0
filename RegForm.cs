@@ -31,13 +31,15 @@ namespace GoodVision
 		private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
 
         {
-
-            MainMenu mMForm = new MainMenu();
-			User.Nick = RegistTextBox.Text;
-			MyVision.Enter_account( User); //входим в аккаунт
-			//добавить открытие файла сессии и запись имени пользователя в него
-            mMForm.Show();
-            this.Hide();
+            if (RegistTextBox.Text != string.Empty)
+            {
+                MainMenu mMForm = new MainMenu();
+                User.Nick = RegistTextBox.Text;
+                MyVision.Enter_account(User); //входим в аккаунт
+                                              //добавить открытие файла сессии и запись имени пользователя в него
+                mMForm.Show();
+                this.Hide();
+            }
         }
     }
 }
