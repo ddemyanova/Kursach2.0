@@ -203,6 +203,26 @@ namespace GoodVision.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HelpStat {
+            get {
+                object obj = ResourceManager.GetObject("HelpStat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HelpTest {
+            get {
+                object obj = ResourceManager.GetObject("HelpTest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hgEtDJcH_400x400 {
             get {
                 object obj = ResourceManager.GetObject("hgEtDJcH_400x400", resourceCulture);
@@ -266,6 +286,16 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap LeftHover {
             get {
                 object obj = ResourceManager.GetObject("LeftHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LightBlueBack {
+            get {
+                object obj = ResourceManager.GetObject("LightBlueBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,6 +373,16 @@ namespace GoodVision.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap statistic {
+            get {
+                object obj = ResourceManager.GetObject("statistic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Up {
             get {
                 object obj = ResourceManager.GetObject("Up", resourceCulture);
@@ -393,6 +433,26 @@ namespace GoodVision.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap початиТест {
+            get {
+                object obj = ResourceManager.GetObject("початиТест", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap почТестHover {
+            get {
+                object obj = ResourceManager.GetObject("почТестHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Регистр2 {
             get {
                 object obj = ResourceManager.GetObject("Регистр2", resourceCulture);
@@ -406,6 +466,16 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap старт11 {
             get {
                 object obj = ResourceManager.GetObject("старт11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap стат {
+            get {
+                object obj = ResourceManager.GetObject("стат", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

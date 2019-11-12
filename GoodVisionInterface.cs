@@ -18,6 +18,6 @@ namespace GoodVision
 		void Test_vision_with_letters(ref UserClass User);//не требует пояснения
         void Test_vision_with_circles(ref UserClass User);//это тоже
 		void Add_to_file(ref UserClass User); //записать данные проверки в файл
-        void Get_help();//получить хелпу
+       // void Get_help();//получить хелпу
     }
 }

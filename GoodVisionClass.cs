@@ -27,12 +27,7 @@ namespace GoodVision
 
 		}
 		
-		public void Get_help()
-		{
-			//вызвать help (messagebox)
-			HellpMessage hellpForm = new HellpMessage();
-			hellpForm.Show();
-		}
+	
 
 
 		public void Get_Stats(ref UserClass User)

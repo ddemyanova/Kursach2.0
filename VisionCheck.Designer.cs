@@ -136,7 +136,7 @@
             // VisionCheck
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1126, 616);

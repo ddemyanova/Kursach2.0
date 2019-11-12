@@ -41,7 +41,8 @@ namespace GoodVision
         // вызываем помощь для главного меню
         private void HelpButton_Click(object sender, EventArgs e) 
         {
-			MyVision.Get_help();
+            HellpMessage help = new HellpMessage();
+            help.Show();
         }
 
 		private void MainMenu_Load(object sender, EventArgs e)

@@ -17,8 +17,13 @@ namespace GoodVision
             InitializeComponent();
         }
 
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         //надо позаливать адреса картинок
 
-        
+
     }
 }

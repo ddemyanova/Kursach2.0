@@ -65,7 +65,7 @@
             this.RegPanel.BackColor = System.Drawing.Color.Transparent;
             this.RegPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RegPanel.BackgroundImage")));
             this.RegPanel.Controls.Add(this.RegistTextBox);
-            this.RegPanel.Location = new System.Drawing.Point(248, 261);
+            this.RegPanel.Location = new System.Drawing.Point(248, 314);
             this.RegPanel.Name = "RegPanel";
             this.RegPanel.Size = new System.Drawing.Size(700, 132);
             this.RegPanel.TabIndex = 1;
@@ -96,7 +96,7 @@
             this.RegButton.BackColor = System.Drawing.Color.Coral;
             this.RegButton.ImageHover = null;
             this.RegButton.ImageNormal = null;
-            this.RegButton.Location = new System.Drawing.Point(279, 417);
+            this.RegButton.Location = new System.Drawing.Point(279, 462);
             this.RegButton.Name = "RegButton";
             this.RegButton.Size = new System.Drawing.Size(636, 91);
             this.RegButton.TabIndex = 3;
@@ -106,7 +106,7 @@
             // RegForm
             // 
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1140, 601);
             this.Controls.Add(this.RegButton);
             this.Controls.Add(this.label2);

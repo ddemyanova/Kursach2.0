@@ -57,6 +57,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
+            this.panel2.Controls.Add(this.EyeTestPanel);
             this.panel2.Controls.Add(this.LetterPictureBox);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.SivtsevTimer);
@@ -68,9 +69,9 @@
             // LetterPictureBox
             // 
             this.LetterPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LetterPictureBox.Image")));
-            this.LetterPictureBox.Location = new System.Drawing.Point(229, 133);
+            this.LetterPictureBox.Location = new System.Drawing.Point(238, 133);
             this.LetterPictureBox.Name = "LetterPictureBox";
-            this.LetterPictureBox.Size = new System.Drawing.Size(287, 248);
+            this.LetterPictureBox.Size = new System.Drawing.Size(335, 266);
             this.LetterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.TabIndex = 0;
             this.LetterPictureBox.TabStop = false;
@@ -144,15 +145,16 @@
             this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
             this.EyeTestPanel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.EyeTestPanel.Location = new System.Drawing.Point(434, 12);
+            this.EyeTestPanel.Location = new System.Drawing.Point(0, 3);
             this.EyeTestPanel.Name = "EyeTestPanel";
-            this.EyeTestPanel.Size = new System.Drawing.Size(693, 363);
+            this.EyeTestPanel.Size = new System.Drawing.Size(694, 574);
             this.EyeTestPanel.TabIndex = 2;
             // 
             // EyeTextLabel
             // 
             this.EyeTextLabel.AutoSize = true;
             this.EyeTextLabel.Font = new System.Drawing.Font("18thCentury", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.EyeTextLabel.Location = new System.Drawing.Point(154, 159);
             this.EyeTextLabel.Name = "EyeTextLabel";
             this.EyeTextLabel.Size = new System.Drawing.Size(415, 40);
@@ -166,6 +168,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.SivtsevInstrTextBox);
             this.panel4.Location = new System.Drawing.Point(12, 12);
@@ -183,7 +186,7 @@
             // 
             // SivtsevInstrTextBox
             // 
-            this.SivtsevInstrTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.SivtsevInstrTextBox.BackColor = System.Drawing.Color.Lavender;
             this.SivtsevInstrTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SivtsevInstrTextBox.Location = new System.Drawing.Point(17, 28);
             this.SivtsevInstrTextBox.Name = "SivtsevInstrTextBox";
@@ -225,9 +228,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1140, 601);
-            this.Controls.Add(this.EyeTestPanel);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.BackToVisionCheckButton);
             this.Controls.Add(this.panel2);

@@ -93,6 +93,8 @@
             // StatistButton
             // 
             this.StatistButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.StatistButton.BackgroundImage = global::GoodVision.Properties.Resources.стат;
+            this.StatistButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.StatistButton.ImageHover = null;
             this.StatistButton.ImageNormal = null;
             this.StatistButton.Location = new System.Drawing.Point(46, 30);
