@@ -50,7 +50,7 @@ namespace GoodVision
 						
 			try
 			{
-					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
+					User.File = new FileStream(filePath, FileMode.Create);
 					//создать файл с именем;
 			}
 			catch (FileNotFoundException)
@@ -63,7 +63,7 @@ namespace GoodVision
 
 		public void Enter_account( UserClass User)
 		{
-			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
+			string filePath = User.Nick + ".xml";
 			try
 			{
 				FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
