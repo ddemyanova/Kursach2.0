@@ -20,14 +20,14 @@ namespace GoodVision
           
         }
         int i = 6, temp;
-		Letter NewLetter;
+		Letter NewLetter= new Letter();
 		int rightAnswer = 0;
 		int tests = 0;
 		int left = 1;
 		int right = 12;
 
-		UserClass User;
-		GoodVisionClass MyVision;
+		UserClass User = new UserClass() ;
+		GoodVisionClass MyVision= new GoodVisionClass();
 
 		Tuple<double, double> LetterSize =new Tuple<double, double>(0,0);
 

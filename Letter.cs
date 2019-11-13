@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace GoodVision
 {
@@ -36,53 +37,49 @@ namespace GoodVision
 			{
 				case Letters.Ш:
 					{
-						this.FileName = "Ш.xml";
+						this.FileName = "Ш.png";
 						break;
 					}
 				case Letters.Б:
 					{
-						this.FileName = "Б.xml";
+						this.FileName = "Б.png";
 						break;
 					}
 				case Letters.М:
 					{
-						this.FileName = "М.xml";
+						this.FileName = "М.png";
 						break;
 					}
 				case Letters.Н:
 					{
-						this.FileName = "Н.xml";
+						this.FileName = "Н.png";
 						break;
 					}
 				case Letters.К:
 					{
-						this.FileName = "К.xml";
+						this.FileName = "К.png";
 						break;
 					}
 				case Letters.Ы:
 					{
-						this.FileName = "Ы.xml";
+						this.FileName = "Ы.png";
 						break;
 					}
 				case Letters.И:
 					{
-						this.FileName = "И.xml";
+						this.FileName = "И.png";
 						break;
 					}
 			}
-		}
+            this.ShowImage = Image.FromFile(this.FileName);
+        }
 		public string Get_Letter()//метод для установки значения буквы вручную
 		{
 			string name = this.FileName;
 			name.Remove(1,4);
 			return name;
 		}
-		public double CalcSize()
-		{
-			double size=0;
-			//формула
-			return size;
-		}
+		
         ~Letter() { }
     }
 }

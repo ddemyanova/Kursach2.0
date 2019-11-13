@@ -15,17 +15,17 @@ namespace GoodVision
         protected Tuple<double, double> size;
         public Image ShowImage;
 		protected int Row;
-
+        protected double[] LettersKoefisitients = new double[12];
         public Object()
         {
-            this.FileName = "...";//Тут должен будет быт путь к базовому изображения
+           // this.FileName = "...";//Тут должен будет быт путь к базовому изображения
             this.size = new Tuple<double, double>(2.33333333, 2.33333333);//размер изображения в милиметрах для 6(базовой строки)
-            this.ShowImage = Image.FromFile(this.FileName);
+           // this.ShowImage = Image.FromFile(this.FileName);
         }
         public Object(Object Obj)
         {
-            this.FileName = Obj.FileName;
-            ShowImage = Image.FromFile(this.FileName);
+           // this.FileName = Obj.FileName;
+           // ShowImage = Image.FromFile(this.FileName);
             this.size = Obj.size;
         }
         virtual public Tuple<double, double> Get_size(Image Image_to_show)
@@ -38,7 +38,15 @@ namespace GoodVision
         {
             this.size = Size;
         }
-		public int ObjectRow
+
+        public double CalcSize()
+        {
+            double size = 7 / LettersKoefisitients[Row - 1] / 5;
+            //формула
+            return size;
+        }
+
+        public int ObjectRow
 		{
 			get
 			{

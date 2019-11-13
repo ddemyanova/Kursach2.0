@@ -33,5 +33,10 @@ namespace GoodVision
             mMForm.Show();
             this.Hide();
         }
+
+        private void StatisticTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

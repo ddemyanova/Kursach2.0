@@ -113,8 +113,8 @@
             // 
             this.PictureHelp2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PictureHelp2.Image = global::GoodVision.Properties.Resources.HelpTest;
-            this.PictureHelp2.ImageHover = null;
-            this.PictureHelp2.ImageNormal = null;
+            this.PictureHelp2.ImageHover = global::GoodVision.Properties.Resources.HelpTest;
+            this.PictureHelp2.ImageNormal = global::GoodVision.Properties.Resources.HelpTest;
             this.PictureHelp2.Location = new System.Drawing.Point(31, 327);
             this.PictureHelp2.Name = "PictureHelp2";
             this.PictureHelp2.Size = new System.Drawing.Size(261, 60);
@@ -126,8 +126,8 @@
             this.PictureHelp1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.PictureHelp1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PictureHelp1.Image = global::GoodVision.Properties.Resources.HelpStat;
-            this.PictureHelp1.ImageHover = global::GoodVision.Properties.Resources.statistic;
-            this.PictureHelp1.ImageNormal = global::GoodVision.Properties.Resources.statistic;
+            this.PictureHelp1.ImageHover = global::GoodVision.Properties.Resources.HelpStat;
+            this.PictureHelp1.ImageNormal = global::GoodVision.Properties.Resources.HelpStat;
             this.PictureHelp1.Location = new System.Drawing.Point(31, 201);
             this.PictureHelp1.Name = "PictureHelp1";
             this.PictureHelp1.Size = new System.Drawing.Size(261, 61);
@@ -218,8 +218,7 @@
             // HellpMessage
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImage = global::GoodVision.Properties.Resources.фон2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 610);

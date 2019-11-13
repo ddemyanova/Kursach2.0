@@ -60,9 +60,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(100, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(896, 62);
+            this.label1.Size = new System.Drawing.Size(917, 62);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Here you can view your test statistic";
+            this.label1.Text = "Here you can view your test statistics";
             // 
             // StatisticLabel
             // 
@@ -88,6 +88,7 @@
             this.StatisticTable.RowTemplate.Height = 24;
             this.StatisticTable.Size = new System.Drawing.Size(902, 416);
             this.StatisticTable.TabIndex = 1;
+            this.StatisticTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StatisticTable_CellContentClick);
             // 
             // UserName
             // 

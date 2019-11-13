@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace GoodVision
 {
@@ -24,7 +25,9 @@ namespace GoodVision
         }
         public Landolt_Circle()//конструктор со случайным выбором направления для кольца
         {
+            this.FileName = "Circle.png";
             this.Circle_Direction = (Direction)Get_Random();
+            this.ShowImage = Image.FromFile(this.FileName);
         }
         public Direction Get_direction(Landolt_Circle Obj)//Метод который возвращает направление кольца
         {

@@ -18,7 +18,7 @@ namespace GoodVision
             InitializeComponent();
            
         }
-		UserClass User;
+		UserClass User=new UserClass() ;
 		GoodVisionClass MyVision;
 		
 
