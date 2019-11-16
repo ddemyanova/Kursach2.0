@@ -31,6 +31,7 @@ namespace GoodVision
 			}
 			set {
 				this.Nickname = value;
+
 			}
 		}
 		public FileStream File

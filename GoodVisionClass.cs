@@ -61,17 +61,43 @@ namespace GoodVision
 			
 		}
 
-		public void Enter_account( UserClass User)
+		public bool Enter_account( UserClass User)
 		{
 			string filePath = User.Nick + ".xml";
 			try
 			{
 				FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+				if (fileStream != null)
+				{
+					//вывести месседж бокс "да/нет"  "это ваш аккаунт?"
+					if ()
+					{
+						return true;
+					}
+					//если да 
+					
+					//если нет -
+					else{
+						//вывести месседж бокс "да/нет", 
+						//что нет такого пользователя и предложить создать нового
+						if ()
+						//если да
+						{
+							Create_account(ref User);
+							return true;
+						}
+						else
+						{
+							//если нет
+							//закрыть месседж бокс
+							return false;
+						}
+					}
+				}
 			}
 			catch (FileNotFoundException)
 			{
-				//если такого нет - вывести месседж бокс с ответом "ок", 
-				//что нет такого пользователя и предложить создать нового
+				
 				//Create_account();
 				Create_account(ref User);
 			}

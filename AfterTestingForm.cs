@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GoodVision
 {
@@ -39,5 +40,16 @@ namespace GoodVision
             stat.Show();
             this.Hide();
         }
-    }
+
+		private void AfterTestingForm_Load(object sender, EventArgs e)
+		{
+			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+			if (session != null)
+			{
+				StreamReader reader = new StreamReader(session);
+				User.Nick = reader.ReadToEnd();
+				session.Close();
+			}
+		}
+	}
 }
