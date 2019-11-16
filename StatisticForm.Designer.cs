@@ -28,117 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.StatisticLabel = new System.Windows.Forms.Label();
-            this.StatisticTable = new System.Windows.Forms.DataGridView();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LeftEyeAcuity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RightEyeAcuity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BackToMenuButton = new rbutton.CustRoundButton();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.StatisticLabel);
-            this.panel1.Location = new System.Drawing.Point(50, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1063, 129);
-            this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(100, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(917, 62);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Here you can view your test statistics";
-            // 
-            // StatisticLabel
-            // 
-            this.StatisticLabel.AutoSize = true;
-            this.StatisticLabel.Location = new System.Drawing.Point(149, 38);
-            this.StatisticLabel.Name = "StatisticLabel";
-            this.StatisticLabel.Size = new System.Drawing.Size(0, 17);
-            this.StatisticLabel.TabIndex = 1;
-            // 
-            // StatisticTable
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
-            this.StatisticTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.StatisticTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.StatisticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StatisticTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.label1 = new System.Windows.Forms.Label();
+			this.StatisticLabel = new System.Windows.Forms.Label();
+			this.StatisticTable = new System.Windows.Forms.DataGridView();
+			this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.LeftEyeAcuity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.RightEyeAcuity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.BackToMenuButton = new rbutton.CustRoundButton();
+			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.Transparent;
+			this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
+			this.panel1.Controls.Add(this.label1);
+			this.panel1.Controls.Add(this.StatisticLabel);
+			this.panel1.Location = new System.Drawing.Point(50, 12);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1063, 129);
+			this.panel1.TabIndex = 0;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label1.Location = new System.Drawing.Point(100, 29);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(733, 50);
+			this.label1.TabIndex = 3;
+			this.label1.Text = "Here you can view your test statistics";
+			// 
+			// StatisticLabel
+			// 
+			this.StatisticLabel.AutoSize = true;
+			this.StatisticLabel.Location = new System.Drawing.Point(149, 38);
+			this.StatisticLabel.Name = "StatisticLabel";
+			this.StatisticLabel.Size = new System.Drawing.Size(0, 13);
+			this.StatisticLabel.TabIndex = 1;
+			// 
+			// StatisticTable
+			// 
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+			this.StatisticTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			this.StatisticTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.StatisticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.StatisticTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UserName,
             this.Date,
             this.LeftEyeAcuity,
             this.RightEyeAcuity});
-            this.StatisticTable.Location = new System.Drawing.Point(211, 147);
-            this.StatisticTable.Name = "StatisticTable";
-            this.StatisticTable.RowTemplate.Height = 24;
-            this.StatisticTable.Size = new System.Drawing.Size(902, 416);
-            this.StatisticTable.TabIndex = 1;
-            this.StatisticTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StatisticTable_CellContentClick);
-            // 
-            // UserName
-            // 
-            this.UserName.HeaderText = "User Name";
-            this.UserName.Name = "UserName";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // LeftEyeAcuity
-            // 
-            this.LeftEyeAcuity.HeaderText = "Left Eye Acuti";
-            this.LeftEyeAcuity.Name = "LeftEyeAcuity";
-            // 
-            // RightEyeAcuity
-            // 
-            this.RightEyeAcuity.HeaderText = "Right Eye Acuity";
-            this.RightEyeAcuity.Name = "RightEyeAcuity";
-            // 
-            // BackToMenuButton
-            // 
-            this.BackToMenuButton.BackColor = System.Drawing.Color.Transparent;
-            this.BackToMenuButton.Image = global::GoodVision.Properties.Resources._14;
-            this.BackToMenuButton.ImageHover = global::GoodVision.Properties.Resources._14Hover;
-            this.BackToMenuButton.ImageNormal = global::GoodVision.Properties.Resources._14;
-            this.BackToMenuButton.Location = new System.Drawing.Point(12, 432);
-            this.BackToMenuButton.Name = "BackToMenuButton";
-            this.BackToMenuButton.Size = new System.Drawing.Size(192, 152);
-            this.BackToMenuButton.TabIndex = 2;
-            this.BackToMenuButton.UseVisualStyleBackColor = false;
-            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
-            // 
-            // StatisticForm
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1140, 596);
-            this.Controls.Add(this.BackToMenuButton);
-            this.Controls.Add(this.StatisticTable);
-            this.Controls.Add(this.panel1);
-            this.DoubleBuffered = true;
-            this.Name = "StatisticForm";
-            this.Text = " ";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).EndInit();
-            this.ResumeLayout(false);
+			this.StatisticTable.Location = new System.Drawing.Point(211, 147);
+			this.StatisticTable.Name = "StatisticTable";
+			this.StatisticTable.RowTemplate.Height = 24;
+			this.StatisticTable.Size = new System.Drawing.Size(902, 416);
+			this.StatisticTable.TabIndex = 1;
+			this.StatisticTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StatisticTable_CellContentClick);
+			// 
+			// UserName
+			// 
+			this.UserName.HeaderText = "User Name";
+			this.UserName.Name = "UserName";
+			// 
+			// Date
+			// 
+			this.Date.HeaderText = "Date";
+			this.Date.Name = "Date";
+			// 
+			// LeftEyeAcuity
+			// 
+			this.LeftEyeAcuity.HeaderText = "Left Eye Acuti";
+			this.LeftEyeAcuity.Name = "LeftEyeAcuity";
+			// 
+			// RightEyeAcuity
+			// 
+			this.RightEyeAcuity.HeaderText = "Right Eye Acuity";
+			this.RightEyeAcuity.Name = "RightEyeAcuity";
+			// 
+			// BackToMenuButton
+			// 
+			this.BackToMenuButton.BackColor = System.Drawing.Color.Transparent;
+			this.BackToMenuButton.Image = global::GoodVision.Properties.Resources._14;
+			this.BackToMenuButton.ImageHover = global::GoodVision.Properties.Resources._14Hover;
+			this.BackToMenuButton.ImageNormal = global::GoodVision.Properties.Resources._14;
+			this.BackToMenuButton.Location = new System.Drawing.Point(12, 432);
+			this.BackToMenuButton.Name = "BackToMenuButton";
+			this.BackToMenuButton.Size = new System.Drawing.Size(192, 152);
+			this.BackToMenuButton.TabIndex = 2;
+			this.BackToMenuButton.UseVisualStyleBackColor = false;
+			this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
+			// 
+			// StatisticForm
+			// 
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+			this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(1140, 596);
+			this.Controls.Add(this.BackToMenuButton);
+			this.Controls.Add(this.StatisticTable);
+			this.Controls.Add(this.panel1);
+			this.DoubleBuffered = true;
+			this.Name = "StatisticForm";
+			this.Text = " ";
+			this.Load += new System.EventHandler(this.StatisticForm_Load);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).EndInit();
+			this.ResumeLayout(false);
 
         }
 

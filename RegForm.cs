@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GoodVision
 {
@@ -35,10 +36,19 @@ namespace GoodVision
             {
                 MainMenu mMForm = new MainMenu();
                 User.Nick = RegistTextBox.Text;
-                MyVision.Enter_account(User); //входим в аккаунт
-                                              //добавить открытие файла сессии и запись имени пользователя в него
-                mMForm.Show();
-                this.Hide();
+				if (MyVision.Enter_account(User))
+				{ //входим в аккаунт
+					FileStream session = new FileStream("session.txt", FileMode.Create, FileAccess.Write);
+					if (session != null)
+					{
+						StreamWriter writer = new StreamWriter(session);
+						writer.Write(User.Nick);
+						writer.Flush();
+						session.Close();
+					}//открытие файла сессии и запись имени пользователя в него
+					mMForm.Show();
+					this.Hide();
+				}
             }
         }
     }

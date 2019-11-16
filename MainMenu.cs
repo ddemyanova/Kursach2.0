@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GoodVision
 {
@@ -47,6 +48,13 @@ namespace GoodVision
 
 		private void MainMenu_Load(object sender, EventArgs e)
 		{
+			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+			if (session != null)
+			{
+				StreamReader reader = new StreamReader(session);
+				User.Nick = reader.ReadToEnd();
+				session.Close();
+			}
 			//считать данные из файла данной сессии (имя)
 			//открыть файл по имени пользователья с его данными
 
