@@ -12,7 +12,7 @@ namespace GoodVision
 {
     public partial class RegMessage : Form
     {
-
+        GoodVisionClass gv = new GoodVisionClass();
      // форма для подтверждения имени
         public RegMessage()
         {
@@ -21,12 +21,12 @@ namespace GoodVision
 
         private void YesButton_Click(object sender, EventArgs e)
         {
-
+            gv.ExchangeRegMessage = true;
         }
 
         private void NoButton_Click(object sender, EventArgs e)
         {
-
+            gv.ExchangeRegMessage = false;
         }
     }
 }

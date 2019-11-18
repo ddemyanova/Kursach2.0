@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 namespace GoodVision
 {
 	class GoodVisionClass: GoodVisionInterface
-	{
+	{ bool regMess;
 		public GoodVisionClass() { }
 		public void Add_to_file(ref UserClass User)
 		{
@@ -60,46 +61,50 @@ namespace GoodVision
 
 			
 		}
+        public bool ExchangeRegMessage
+        {
+            get { return regMess;  }
+            set {regMess = value; }
+        }
 
-		public bool Enter_account( UserClass User)
+        public bool Enter_account( UserClass User)
 		{
 			string filePath = User.Nick + ".xml";
 			try
 			{
 				FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
-				if (fileStream != null)
-				{
-					//вывести месседж бокс "да/нет"  "это ваш аккаунт?"
-					if ()
-					{
-						return true;
-					}
-					//если да 
-					
-					//если нет -
-					else{
-						//вывести месседж бокс "да/нет", 
-						//что нет такого пользователя и предложить создать нового
-						if ()
-						//если да
-						{
-							Create_account(ref User);
-							return true;
-						}
-						else
-						{
-							//если нет
-							//закрыть месседж бокс
-							return false;
-						}
-					}
+
+
+                if (fileStream != null)
+            { RegMessage reg = new RegMessage();
+                reg.Show();
+                //вывести месседж бокс "да/нет"  "это ваш аккаунт?"
+                if (ExchangeRegMessage == true)
+                    {
+                        fileStream.Flush();
+                        fileStream.Close();
+                        return true; // войти в аккаунт
+                       
+                    } 
+            //если да 
+
+            //если нет -
+            else {
+                        MessageBox.Show("Користувач з таким логіном вже існує. Будьласка, змініть логін");
+                        fileStream.Flush();
+                        fileStream.Close();
+                        return false;
+                            
+            }
 				}
+                else { return false; }
 			}
 			catch (FileNotFoundException)
 			{
 				
 				//Create_account();
 				Create_account(ref User);
+                return false;
 			}
 			
 		}
