@@ -153,9 +153,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(281, 290);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(659, 26);
+            this.label2.Size = new System.Drawing.Size(648, 26);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Щоб обрати формат тестування клацніть на зображення.";
+            this.label2.Text = "Щоб обрати формат тестування клікніть на зображення.";
             // 
             // panel2
             // 

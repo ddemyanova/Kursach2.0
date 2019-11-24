@@ -168,6 +168,16 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="SivtsevInstrTextBox.Text" xml:space="preserve">
+    <value>ДЛЯ ОТРИМАННЯ КОРЕКТНОГО РЕЗУЛЬТАТУ ДОТРИМУЙТЕСЬ НАСТУПНОЇ ІНСТРУКЦІЇ
+
+Тестування буде проходити в два етапи: для правого та лівого ока відповідно. Про зміну ока Ви дізнаєтесь з повідомлення.
+    Віддаліться від екрану на відстань 1 метр.
+    Закрийте око, що не тестується. 
+     Коли ви натиснете кнопку "старт",  на экрані на 5 секунд з'явиться буква , Вам необхідно набрати її у відповідному полі та нажати "ок".
+ 
+</value>
+  </data>
   <data name="BackToVisionCheckButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAADICAYAAAA0n5+2AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH

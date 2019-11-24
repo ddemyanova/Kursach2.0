@@ -56,7 +56,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
+            this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
             this.panel2.Controls.Add(this.EyeTestPanel);
             this.panel2.Controls.Add(this.LetterPictureBox);
             this.panel2.Controls.Add(this.panel3);
@@ -69,7 +69,7 @@
             // LetterPictureBox
             // 
             this.LetterPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LetterPictureBox.Image")));
-            this.LetterPictureBox.Location = new System.Drawing.Point(238, 133);
+            this.LetterPictureBox.Location = new System.Drawing.Point(209, 106);
             this.LetterPictureBox.Name = "LetterPictureBox";
             this.LetterPictureBox.Size = new System.Drawing.Size(335, 266);
             this.LetterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -78,21 +78,24 @@
             // 
             // panel3
             // 
+            this.panel3.BackgroundImage = global::GoodVision.Properties.Resources.подложка2;
             this.panel3.Controls.Add(this.AnswerSivtsevButton);
             this.panel3.Controls.Add(this.AnswerTextBox);
-            this.panel3.Location = new System.Drawing.Point(100, 405);
+            this.panel3.Location = new System.Drawing.Point(175, 396);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(559, 116);
+            this.panel3.Size = new System.Drawing.Size(413, 116);
             this.panel3.TabIndex = 2;
             // 
             // AnswerSivtsevButton
             // 
             this.AnswerSivtsevButton.BackColor = System.Drawing.Color.Coral;
-            this.AnswerSivtsevButton.ImageHover = null;
-            this.AnswerSivtsevButton.ImageNormal = null;
-            this.AnswerSivtsevButton.Location = new System.Drawing.Point(350, 29);
+            this.AnswerSivtsevButton.Image = global::GoodVision.Properties.Resources.ok;
+            this.AnswerSivtsevButton.ImageHover = global::GoodVision.Properties.Resources.ok;
+            this.AnswerSivtsevButton.ImageNormal = global::GoodVision.Properties.Resources.ok;
+            this.AnswerSivtsevButton.Location = new System.Drawing.Point(227, 32);
             this.AnswerSivtsevButton.Name = "AnswerSivtsevButton";
             this.AnswerSivtsevButton.Size = new System.Drawing.Size(149, 58);
+            this.AnswerSivtsevButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.AnswerSivtsevButton.TabIndex = 1;
             this.AnswerSivtsevButton.TabStop = false;
             this.AnswerSivtsevButton.Click += new System.EventHandler(this.AnswerSivtsevButton_Click);
@@ -101,7 +104,7 @@
             // 
             this.AnswerTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.AnswerTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnswerTextBox.Location = new System.Drawing.Point(90, 33);
+            this.AnswerTextBox.Location = new System.Drawing.Point(41, 35);
             this.AnswerTextBox.Name = "AnswerTextBox";
             this.AnswerTextBox.Size = new System.Drawing.Size(158, 55);
             this.AnswerTextBox.TabIndex = 0;
@@ -117,7 +120,7 @@
             this.SivtsevTimer.InnerColor = System.Drawing.Color.Transparent;
             this.SivtsevTimer.InnerMargin = 2;
             this.SivtsevTimer.InnerWidth = -1;
-            this.SivtsevTimer.Location = new System.Drawing.Point(70, 28);
+            this.SivtsevTimer.Location = new System.Drawing.Point(15, 3);
             this.SivtsevTimer.MarqueeAnimationSpeed = 2000;
             this.SivtsevTimer.Maximum = 50;
             this.SivtsevTimer.Name = "SivtsevTimer";
@@ -129,10 +132,10 @@
             this.SivtsevTimer.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.SivtsevTimer.Size = new System.Drawing.Size(135, 128);
             this.SivtsevTimer.StartAngle = 270;
-            this.SivtsevTimer.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.SivtsevTimer.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.SivtsevTimer.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
             this.SivtsevTimer.SubscriptText = "";
-            this.SivtsevTimer.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.SivtsevTimer.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.SivtsevTimer.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.SivtsevTimer.SuperscriptText = "";
             this.SivtsevTimer.TabIndex = 1;
@@ -144,8 +147,8 @@
             this.EyeTestPanel.BackColor = System.Drawing.Color.Transparent;
             this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
-            this.EyeTestPanel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.EyeTestPanel.Location = new System.Drawing.Point(0, 3);
+            this.EyeTestPanel.ForeColor = System.Drawing.Color.Cornsilk;
+            this.EyeTestPanel.Location = new System.Drawing.Point(3, 0);
             this.EyeTestPanel.Name = "EyeTestPanel";
             this.EyeTestPanel.Size = new System.Drawing.Size(694, 574);
             this.EyeTestPanel.TabIndex = 2;
@@ -153,13 +156,13 @@
             // EyeTextLabel
             // 
             this.EyeTextLabel.AutoSize = true;
-            this.EyeTextLabel.Font = new System.Drawing.Font("18thCentury", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EyeTextLabel.Font = new System.Drawing.Font("a_AvanteInt", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EyeTextLabel.Location = new System.Drawing.Point(154, 159);
+            this.EyeTextLabel.Location = new System.Drawing.Point(51, 191);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(415, 40);
+            this.EyeTextLabel.Size = new System.Drawing.Size(616, 108);
             this.EyeTextLabel.TabIndex = 0;
-            this.EyeTextLabel.Text = "Тестируем правый глаз";
+            this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудьласка, закрийте праве.";
             // 
             // timer1
             // 
@@ -187,14 +190,15 @@
             // SivtsevInstrTextBox
             // 
             this.SivtsevInstrTextBox.BackColor = System.Drawing.Color.Lavender;
-            this.SivtsevInstrTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SivtsevInstrTextBox.Location = new System.Drawing.Point(17, 28);
+            this.SivtsevInstrTextBox.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SivtsevInstrTextBox.Location = new System.Drawing.Point(0, 3);
             this.SivtsevInstrTextBox.Name = "SivtsevInstrTextBox";
             this.SivtsevInstrTextBox.ReadOnly = true;
-            this.SivtsevInstrTextBox.Size = new System.Drawing.Size(378, 290);
+            this.SivtsevInstrTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.SivtsevInstrTextBox.ShowSelectionMargin = true;
+            this.SivtsevInstrTextBox.Size = new System.Drawing.Size(423, 357);
             this.SivtsevInstrTextBox.TabIndex = 1;
-            this.SivtsevInstrTextBox.Text = "Инструкция\nС другой стороны реализация намеченных плановых заданий представляет с" +
-    "обой интересный эксперимент проверки соответствующий условий активизации. ";
+            this.SivtsevInstrTextBox.Text = resources.GetString("SivtsevInstrTextBox.Text");
             // 
             // BackToVisionCheckButton
             // 

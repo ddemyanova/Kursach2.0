@@ -56,11 +56,11 @@
             // WellcLabel
             // 
             this.WellcLabel.AutoSize = true;
-            this.WellcLabel.Font = new System.Drawing.Font("Aqum", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WellcLabel.Font = new System.Drawing.Font("a_AvanteInt", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WellcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.WellcLabel.Location = new System.Drawing.Point(235, 50);
             this.WellcLabel.Name = "WellcLabel";
-            this.WellcLabel.Size = new System.Drawing.Size(723, 70);
+            this.WellcLabel.Size = new System.Drawing.Size(693, 91);
             this.WellcLabel.TabIndex = 0;
             this.WellcLabel.Text = "Ласкаво просимо";
             // 
@@ -114,10 +114,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GoodVision.Properties.Resources.iconSmall1;
-            this.pictureBox1.Location = new System.Drawing.Point(1045, 507);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 509);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(91, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -139,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.RegButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

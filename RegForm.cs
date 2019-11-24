@@ -29,26 +29,28 @@ namespace GoodVision
 
 		UserClass User=new UserClass();
 		GoodVisionClass MyVision= new GoodVisionClass();
-		private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
+        private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
 
         {
             if (RegistTextBox.Text != string.Empty)
             {
                 MainMenu mMForm = new MainMenu();
                 User.Nick = RegistTextBox.Text;
-				if (MyVision.Enter_account(User))
-				{ //входим в аккаунт
-					FileStream session = new FileStream("session.txt", FileMode.Create, FileAccess.Write);
-					if (session != null)
-					{
-						StreamWriter writer = new StreamWriter(session);
-						writer.Write(User.Nick);
-						writer.Flush();
-						session.Close();
-					}//открытие файла сессии и запись имени пользователя в него
-					mMForm.Show();
-					this.Hide();
-				}
+                if (MyVision.Enter_account(User))
+                { //входим в аккаунт
+                    FileStream session = new FileStream("session.txt", FileMode.Create, FileAccess.Write);
+                    if (session != null)
+                    {
+                        StreamWriter writer = new StreamWriter(session);
+                        writer.Write(User.Nick);
+                        writer.Flush();
+                        session.Close();
+                    }//открытие файла сессии и запись имени пользователя в него //
+                    mMForm.Show();
+
+                    this.Hide();
+                }
+
             }
         }
     }
