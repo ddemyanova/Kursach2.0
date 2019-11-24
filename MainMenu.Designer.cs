@@ -47,7 +47,7 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Controls.Add(this.HelloLab);
-            this.panel3.Location = new System.Drawing.Point(171, 41);
+            this.panel3.Location = new System.Drawing.Point(182, 41);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(772, 134);
             this.panel3.TabIndex = 1;
@@ -55,12 +55,13 @@
             // HelloLab
             // 
             this.HelloLab.AutoSize = true;
-            this.HelloLab.Font = new System.Drawing.Font("Modern No. 20", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelloLab.Location = new System.Drawing.Point(51, 28);
+            this.HelloLab.Font = new System.Drawing.Font("a_AvanteInt", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HelloLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.HelloLab.Location = new System.Drawing.Point(30, 19);
             this.HelloLab.Name = "HelloLab";
-            this.HelloLab.Size = new System.Drawing.Size(390, 83);
+            this.HelloLab.Size = new System.Drawing.Size(338, 91);
             this.HelloLab.TabIndex = 0;
-            this.HelloLab.Text = "Hello, user";
+            this.HelloLab.Text = "Вітаємо,";
             // 
             // panel4
             // 
@@ -69,7 +70,7 @@
             this.panel4.Controls.Add(this.VisionCheckButton);
             this.panel4.Controls.Add(this.StaticticButton);
             this.panel4.Controls.Add(this.custRoundButton1);
-            this.panel4.Location = new System.Drawing.Point(171, 215);
+            this.panel4.Location = new System.Drawing.Point(182, 216);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(772, 323);
             this.panel4.TabIndex = 2;
@@ -117,9 +118,9 @@
             this.HelpButton.Image = ((System.Drawing.Image)(resources.GetObject("HelpButton.Image")));
             this.HelpButton.ImageHover = global::GoodVision.Properties.Resources.questionHover2;
             this.HelpButton.ImageNormal = global::GoodVision.Properties.Resources.вопросе;
-            this.HelpButton.Location = new System.Drawing.Point(971, 433);
+            this.HelpButton.Location = new System.Drawing.Point(997, 41);
             this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(145, 144);
+            this.HelpButton.Size = new System.Drawing.Size(131, 129);
             this.HelpButton.TabIndex = 3;
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);

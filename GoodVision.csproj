@@ -335,6 +335,21 @@
   <ItemGroup>
     <None Include="Resources\LightBlueBack.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\війти.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\війтиHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSmall1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
