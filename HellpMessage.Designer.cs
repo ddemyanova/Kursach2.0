@@ -62,10 +62,10 @@
             // HelpGreetingLabel
             // 
             this.HelpGreetingLabel.AutoSize = true;
-            this.HelpGreetingLabel.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HelpGreetingLabel.Font = new System.Drawing.Font("a_AvanteInt", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelpGreetingLabel.Location = new System.Drawing.Point(98, 16);
             this.HelpGreetingLabel.Name = "HelpGreetingLabel";
-            this.HelpGreetingLabel.Size = new System.Drawing.Size(321, 33);
+            this.HelpGreetingLabel.Size = new System.Drawing.Size(364, 33);
             this.HelpGreetingLabel.TabIndex = 0;
             this.HelpGreetingLabel.Text = "Вітаємо Вас у GoodVision";
             // 
@@ -89,11 +89,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("a_AvanteInt", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(46, 97);
+            this.label1.Location = new System.Drawing.Point(28, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(492, 72);
+            this.label1.Size = new System.Drawing.Size(539, 75);
             this.label1.TabIndex = 8;
             this.label1.Text = "Цей застосунок створений для надання приблизної \r\nінформації про стан гостроти зо" +
     "ру. Для достовірного\r\n диагнозу зверніться до лікаря";
@@ -146,7 +146,7 @@
             // 
             this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(202)))), ((int)(((byte)(203)))));
             this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox4.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox4.Location = new System.Drawing.Point(3, 20);
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
@@ -168,7 +168,7 @@
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(202)))), ((int)(((byte)(203)))));
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox2.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.richTextBox2.Location = new System.Drawing.Point(3, 7);
             this.richTextBox2.Name = "richTextBox2";
@@ -193,9 +193,10 @@
             // 
             // richTextBox3
             // 
+            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(202)))), ((int)(((byte)(203)))));
             this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox3.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox3.Location = new System.Drawing.Point(3, 6);
             this.richTextBox3.Name = "richTextBox3";

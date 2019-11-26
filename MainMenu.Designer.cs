@@ -36,10 +36,12 @@
             this.StaticticButton = new ButtonRoundedCorners.RoundedCorners();
             this.custRoundButton1 = new rbutton.CustRoundButton();
             this.HelpButton = new rbutton.CustRoundButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -47,7 +49,7 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Controls.Add(this.HelloLab);
-            this.panel3.Location = new System.Drawing.Point(171, 41);
+            this.panel3.Location = new System.Drawing.Point(182, 41);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(772, 134);
             this.panel3.TabIndex = 1;
@@ -55,12 +57,13 @@
             // HelloLab
             // 
             this.HelloLab.AutoSize = true;
-            this.HelloLab.Font = new System.Drawing.Font("Modern No. 20", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelloLab.Location = new System.Drawing.Point(51, 28);
+            this.HelloLab.Font = new System.Drawing.Font("a_AvanteInt", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HelloLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.HelloLab.Location = new System.Drawing.Point(33, 22);
             this.HelloLab.Name = "HelloLab";
-            this.HelloLab.Size = new System.Drawing.Size(390, 83);
+            this.HelloLab.Size = new System.Drawing.Size(338, 91);
             this.HelloLab.TabIndex = 0;
-            this.HelloLab.Text = "Hello, user";
+            this.HelloLab.Text = "Вітаємо,";
             // 
             // panel4
             // 
@@ -69,7 +72,7 @@
             this.panel4.Controls.Add(this.VisionCheckButton);
             this.panel4.Controls.Add(this.StaticticButton);
             this.panel4.Controls.Add(this.custRoundButton1);
-            this.panel4.Location = new System.Drawing.Point(171, 215);
+            this.panel4.Location = new System.Drawing.Point(182, 250);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(772, 323);
             this.panel4.TabIndex = 2;
@@ -117,18 +120,33 @@
             this.HelpButton.Image = ((System.Drawing.Image)(resources.GetObject("HelpButton.Image")));
             this.HelpButton.ImageHover = global::GoodVision.Properties.Resources.questionHover2;
             this.HelpButton.ImageNormal = global::GoodVision.Properties.Resources.вопросе;
-            this.HelpButton.Location = new System.Drawing.Point(971, 433);
+            this.HelpButton.Location = new System.Drawing.Point(984, 41);
             this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(145, 144);
+            this.HelpButton.Size = new System.Drawing.Size(133, 129);
             this.HelpButton.TabIndex = 3;
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::GoodVision.Properties.Resources.eye1;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             // 
             // MainMenu
             // 
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1140, 601);
+            this.ClientSize = new System.Drawing.Size(1140, 638);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.HelpButton);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -141,6 +159,7 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -161,6 +180,7 @@
         private rbutton.CustRoundButton HelpButton;
         private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
         private ButtonRoundedCorners.RoundedCorners StaticticButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
         //
     }
 }

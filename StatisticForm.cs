@@ -19,6 +19,7 @@ namespace GoodVision
 
            
         }
+        UserClass User = new UserClass();
 
         public string StatistExchange // передаем имя пользователя в эту форму
         {

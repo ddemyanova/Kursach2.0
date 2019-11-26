@@ -46,19 +46,39 @@ namespace GoodVision
             help.Show();
         }
 
-		private void MainMenu_Load(object sender, EventArgs e)
-		{
-			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
-			if (session != null)
-			{
-				StreamReader reader = new StreamReader(session);
-				User.Nick = reader.ReadToEnd();
-				session.Close();
-			}
-			//считать данные из файла данной сессии (имя)
-			//открыть файл по имени пользователья с его данными
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+            if (session != null)
+            {
+                StreamReader reader = new StreamReader(session);
+                User.Nick = reader.ReadToEnd();
+                session.Close();
+            }
+            //считать данные из файла данной сессии (имя)
+            //открыть файл по имени пользователья с его данными
 
-			HelloLab.Text = "Hello, " + User.Nick;
-		}
-	}
+            HelloLab.Text = "Hello, " + User.Nick;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      
+
+      
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.eye1;
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+
+            pictureBox1.Image = Properties.Resources.eye2;
+        }
+    }
 }

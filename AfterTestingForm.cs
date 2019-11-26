@@ -17,7 +17,7 @@ namespace GoodVision
         {
             InitializeComponent();
         }
-
+        UserClass User = new UserClass();
                                   
         private void BackToMenuButton_Click(object sender, EventArgs e) // возврат в меню
         {

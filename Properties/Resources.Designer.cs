@@ -183,6 +183,26 @@ namespace GoodVision.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye1 {
+            get {
+                object obj = ResourceManager.GetObject("eye1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eye2 {
+            get {
+                object obj = ResourceManager.GetObject("eye2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gjlkj_rf2 {
             get {
                 object obj = ResourceManager.GetObject("gjlkj;rf2", resourceCulture);
@@ -236,6 +256,36 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap hrest {
             get {
                 object obj = ResourceManager.GetObject("hrest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icon {
+            get {
+                object obj = ResourceManager.GetObject("Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconSmall {
+            get {
+                object obj = ResourceManager.GetObject("iconSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("iconSmall1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +356,16 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap menu1 {
             get {
                 object obj = ResourceManager.GetObject("menu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ok {
+            get {
+                object obj = ResourceManager.GetObject("ok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +456,26 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap UpHover {
             get {
                 object obj = ResourceManager.GetObject("UpHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap війти {
+            get {
+                object obj = ResourceManager.GetObject("війти", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap війтиHover {
+            get {
+                object obj = ResourceManager.GetObject("війтиHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
