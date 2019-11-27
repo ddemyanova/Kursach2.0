@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,6 +43,7 @@ namespace GoodVision
 
 		private void StatisticForm_Load(object sender, EventArgs e)
 		{
+            //Десериализатор Get_Stats здесь не используется (написал на всякий случай), вместо этого просто считываю файл 
 			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
 			if (session != null)
 			{
@@ -50,6 +51,18 @@ namespace GoodVision
 				User.Nick = reader.ReadToEnd();
 				session.Close();
 			}
-		}
+            DataSet ds = new DataSet();
+            ds.ReadXml(@"D:\Downloads\Kursach-master (7)\Kursach-master\bin\Debug\User.xml");
+            StatisticTable.DataSource = ds.Tables[0];
+            //read from .txt
+            string fileName = @"D:\Downloads\Kursach-master (7)\Kursach-master\bin\Debug\session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
+            string textLine = "";
+            //string userName = "";
+            System.IO.StreamReader objReader;
+            objReader = new System.IO.StreamReader(fileName);
+            textLine = objReader.ReadLine();
+
+            StatisticTable.Columns[0].HeaderText = textLine;
+        }
 	}
 }
