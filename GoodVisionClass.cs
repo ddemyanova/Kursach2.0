@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace GoodVision
 {
@@ -13,28 +14,40 @@ namespace GoodVision
 		public GoodVisionClass() { }
 		public void Add_to_file(ref UserClass User)
 		{
-			//добавление в файл пользователя данных
-		}
+            //добавление в файл пользователя данных
+            //XML Serizalisation
+            // передаем в конструктор тип класса
+            XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
+
+            // получаем поток, куда будем записывать сериализованный объект
+            using (FileStream fs = new FileStream("persons.xml", FileMode.OpenOrCreate))
+            {
+                formatter.Serialize(fs, User);
+
+                Console.WriteLine("Объект сериализован");
+            }
+        }
 
 		public void Clear_account(ref UserClass User)
 		{
 			try {
-				File.Delete(User.Nick + ".xml");
+				File.Delete("User.xml");
 			}
 			catch (FileNotFoundException)
 			{
-
-			}
+                MessageBox.Show("");
+            }
 
 		}
 		
 	
 
-
-		public void Get_Stats(ref UserClass User)
+        /*
+		public void (ref UserClass User)
 		{
 			//показать статистику
 		}
+        */
 		public void Test_vision_with_circles(ref UserClass User)
 		{
 			throw new NotImplementedException();
@@ -47,17 +60,17 @@ namespace GoodVision
 
 		public void Create_account(ref UserClass User)
 		{
-			string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
-						
-			try
+            string filePath = "User.xml";//можно прописать тут полный адрес
+            
+            try
 			{
 					User.File = new FileStream(filePath, FileMode.Create);
 					//создать файл с именем;
 			}
 			catch (FileNotFoundException)
 			{
-
-			}
+                MessageBox.Show("");
+            }
 
 			
 		}
@@ -69,10 +82,10 @@ namespace GoodVision
 
         public bool Enter_account(UserClass User)
         {
-            string filePath = User.Nick + ".xml";
+            string filePath = "User.xml";
             try
             {
-                FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+                FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
 
 
                 if (fileStream != null)
