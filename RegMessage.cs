@@ -10,23 +10,36 @@ using System.Windows.Forms;
 
 namespace GoodVision  
 {
-    public partial class RegMessage : Form
+  public partial class RegMessage : Form
     {
+
         GoodVisionClass gv = new GoodVisionClass();
-     // форма для подтверждения имени
-        public RegMessage()
+        RegForm regFor;
+        // форма для подтверждения имени
+        public int mode =0;
+        public string userNick;
+        UserClass User = new UserClass();
+        public RegMessage(RegForm regF)
         {
             InitializeComponent();
+            regFor=regF ;
+          userNick = regFor.userNick;
         }
+
 
         private void YesButton_Click(object sender, EventArgs e)
         {
-            gv.ExchangeRegMessage = true;
+            regFor.Enter_account(userNick);
+            this.Close();
         }
+
+ 
 
         private void NoButton_Click(object sender, EventArgs e)
         {
-            gv.ExchangeRegMessage = false;
+           
+            MessageBox.Show("Користувач з таким логіном вже існує. Будьласка, змініть логін");
+            this.Close();
         }
     }
 }

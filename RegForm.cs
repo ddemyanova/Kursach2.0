@@ -14,30 +14,78 @@ namespace GoodVision
 
     public partial class RegForm : Form
     {
-		
-		public RegForm()
+		public RegMessage regMess;
+        public string userNick;
+        UserClass User = new UserClass();
+        GoodVisionClass MyVision = new GoodVisionClass();
+
+        public RegForm()
         {
             InitializeComponent();
+            regMess = new RegMessage(this);
+
         }
-                 
-        
+       
+
         private void RegistTextBox_TextChanged(object sender, EventArgs e) //Имя пользователя 
         {
       
             
         }
 
-		UserClass User=new UserClass();
-		GoodVisionClass MyVision= new GoodVisionClass();
+
+	
         private void RegButton_Click(object sender, EventArgs e) // переход на нову форму
 
         {
             if (RegistTextBox.Text != string.Empty)
             {
-                MainMenu mMForm = new MainMenu();
-                User.Nick = RegistTextBox.Text;
-                if (MyVision.Enter_account(User))
-                { //входим в аккаунт
+              
+                userNick = RegistTextBox.Text;
+
+                string filePath = userNick + ".xml";
+                try
+                {
+                    // проверка, существует ли данный аккаунт
+
+                    if (File.Exists(filePath)) { 
+               
+
+                        regMess.userNick = userNick;
+                        regMess.Tag = this;
+                    
+                        regMess.Show();
+                        regMess.Focus();
+
+                        
+                   }
+   
+                     else
+                    {
+                        User.Nick = userNick;
+
+
+                        MyVision.Create_account(ref User);
+                        
+                        Enter_account(userNick);
+
+
+                    }
+                }
+
+                catch (Exception)
+                {
+                    
+                   
+
+                }
+            }
+        }
+
+
+              public void Enter_account(string user)
+                {
+                    User.Nick = user;
                     FileStream session = new FileStream("session.txt", FileMode.Create, FileAccess.Write);
                     if (session != null)
                     {
@@ -46,12 +94,14 @@ namespace GoodVision
                         writer.Flush();
                         session.Close();
                     }//открытие файла сессии и запись имени пользователя в него //
-                    mMForm.Show();
+                      MainMenu mMForm = new MainMenu();
+                      mMForm.Show();
 
                     this.Hide();
                 }
 
+                
+
             }
         }
-    }
-}
+    
