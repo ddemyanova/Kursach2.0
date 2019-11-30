@@ -11,7 +11,7 @@ namespace GoodVision
 
     abstract public class Object
     {
-        protected string FileName;
+        protected string FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\";
         protected Tuple<double, double> size;
         public Image ShowImage;
 		protected int Row;

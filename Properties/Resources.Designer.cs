@@ -463,6 +463,16 @@ namespace GoodVision.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Б {
+            get {
+                object obj = ResourceManager.GetObject("Б", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap війти {
             get {
                 object obj = ResourceManager.GetObject("війти", resourceCulture);
@@ -486,6 +496,46 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap вопросе {
             get {
                 object obj = ResourceManager.GetObject("вопросе", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap И {
+            get {
+                object obj = ResourceManager.GetObject("И", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap К {
+            get {
+                object obj = ResourceManager.GetObject("К", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap М {
+            get {
+                object obj = ResourceManager.GetObject("М", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Н {
+            get {
+                object obj = ResourceManager.GetObject("Н", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -566,6 +616,26 @@ namespace GoodVision.Properties {
         internal static System.Drawing.Bitmap фон2 {
             get {
                 object obj = ResourceManager.GetObject("фон2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ш {
+            get {
+                object obj = ResourceManager.GetObject("Ш", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ы {
+            get {
+                object obj = ResourceManager.GetObject("Ы", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

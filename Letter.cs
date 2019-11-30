@@ -37,37 +37,37 @@ namespace GoodVision
 			{
 				case Letters.Ш:
 					{
-						this.FileName = "Ш.png";
+						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Ш.png";
 						break;
 					}
 				case Letters.Б:
 					{
-						this.FileName = "Б.png";
+						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Б.png";
 						break;
 					}
 				case Letters.М:
 					{
-						this.FileName = "М.png";
+						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\М.png";
 						break;
 					}
 				case Letters.Н:
 					{
-						this.FileName = "Н.png";
+						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Н.png";
 						break;
 					}
 				case Letters.К:
 					{
-						this.FileName = "К.png";
+						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\К.png";
 						break;
 					}
 				case Letters.Ы:
 					{
-						this.FileName = "Ы.png";
+						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Ы.png";
 						break;
 					}
 				case Letters.И:
 					{
-						this.FileName = "И.png";
+						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\И.png";
 						break;
 					}
 			}

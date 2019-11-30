@@ -362,6 +362,27 @@
   <ItemGroup>
     <None Include="Resources\eye2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\И.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\К.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\М.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Н.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ш.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Б.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
