@@ -46,6 +46,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Controls.Add(this.HelloLab);
@@ -56,6 +57,7 @@
             // 
             // HelloLab
             // 
+            this.HelloLab.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.HelloLab.AutoSize = true;
             this.HelloLab.Font = new System.Drawing.Font("a_AvanteInt", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelloLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
@@ -67,6 +69,7 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.Controls.Add(this.VisionCheckButton);
@@ -117,6 +120,7 @@
             // 
             // HelpButton
             // 
+            this.HelpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.HelpButton.Image = ((System.Drawing.Image)(resources.GetObject("HelpButton.Image")));
             this.HelpButton.ImageHover = global::GoodVision.Properties.Resources.questionHover2;
             this.HelpButton.ImageNormal = global::GoodVision.Properties.Resources.вопросе;
@@ -129,6 +133,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GoodVision.Properties.Resources.eye1;
             this.pictureBox1.Location = new System.Drawing.Point(25, 63);

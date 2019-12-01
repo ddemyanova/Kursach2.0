@@ -53,17 +53,18 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.HelpGreetingLabel);
-            this.panel1.Location = new System.Drawing.Point(24, 13);
+            this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(12, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(543, 68);
+            this.panel1.Size = new System.Drawing.Size(597, 119);
             this.panel1.TabIndex = 1;
             // 
             // HelpGreetingLabel
             // 
             this.HelpGreetingLabel.AutoSize = true;
             this.HelpGreetingLabel.Font = new System.Drawing.Font("a_AvanteInt", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.HelpGreetingLabel.Location = new System.Drawing.Point(98, 16);
+            this.HelpGreetingLabel.Location = new System.Drawing.Point(117, 16);
             this.HelpGreetingLabel.Name = "HelpGreetingLabel";
             this.HelpGreetingLabel.Size = new System.Drawing.Size(364, 33);
             this.HelpGreetingLabel.TabIndex = 0;
@@ -72,31 +73,32 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.LightBlueBack;
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.BlueBack;
+            this.panel2.Controls.Add(this.HelpGreetingLabel);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.custRoundButton1);
             this.panel2.Controls.Add(this.PictureHelp2);
             this.panel2.Controls.Add(this.PictureHelp1);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(13, 17);
+            this.panel2.Location = new System.Drawing.Point(0, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(602, 590);
+            this.panel2.Size = new System.Drawing.Size(621, 659);
             this.panel2.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("a_AvanteInt", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(28, 84);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Эвристика", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(14, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(539, 75);
+            this.label1.Size = new System.Drawing.Size(578, 78);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Цей застосунок створений для надання приблизної \r\nінформації про стан гостроти зо" +
-    "ру. Для достовірного\r\n диагнозу зверніться до лікаря";
+            this.label1.Text = "Цей застосунок створено для надання приблизної \r\nінформації про стан гостроти зор" +
+    "у. Для достовірного\r\n диагнозу зверніться до лікаря";
             // 
             // custRoundButton1
             // 
@@ -144,7 +146,7 @@
             // 
             // richTextBox4
             // 
-            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(202)))), ((int)(((byte)(203)))));
+            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(219)))), ((int)(((byte)(220)))));
             this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox4.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox4.Location = new System.Drawing.Point(3, 20);
@@ -166,7 +168,7 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(202)))), ((int)(((byte)(203)))));
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(219)))), ((int)(((byte)(220)))));
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox2.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -194,7 +196,7 @@
             // richTextBox3
             // 
             this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(202)))), ((int)(((byte)(203)))));
+            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(219)))), ((int)(((byte)(220)))));
             this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox3.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;

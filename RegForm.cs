@@ -53,7 +53,7 @@ namespace GoodVision
 
                         regMess.userNick = userNick;
                         regMess.Tag = this;
-                    
+                        this.Enabled = false;
                         regMess.Show();
                         regMess.Focus();
 
@@ -95,13 +95,11 @@ namespace GoodVision
                         session.Close();
                     }//открытие файла сессии и запись имени пользователя в него //
                       MainMenu mMForm = new MainMenu();
-                      mMForm.Show();
+           
+            mMForm.Show();
 
                     this.Hide();
                 }
-
-                
-
-            }
+    }
         }
     

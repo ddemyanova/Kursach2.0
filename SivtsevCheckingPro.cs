@@ -87,7 +87,7 @@ namespace GoodVision
 
 
 				SivtsevTimer.Value = 0;
-				temp = i;
+				temp = 6; // temp=i;
 				timer1.Enabled = true;
 			
 			
@@ -95,8 +95,12 @@ namespace GoodVision
         private void StartButton_Click(object sender, EventArgs e)
         {
             SivtsevTimer.Value = 0;
-            EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
+            EyeTestPanel.Visible = false;// предупреждение про проверку правого глаза уходит
+
+            NewLetter.Set_Letter();
+            LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
+
             timer1.Enabled = true;
             temp = i;
         }
@@ -121,10 +125,13 @@ namespace GoodVision
                 SivtsevTimer.Text = Convert.ToString(temp);
             SivtsevTimer.PerformStep();
             if (temp != 0)
-            timer1.Enabled = true;
-            
+                timer1.Enabled = true;
+
             else
-             timer1.Enabled = false;
+            {
+                timer1.Enabled = false;
+                LetterPictureBox.Image = Properties.Resources.enterMessage;
+            }
             }
 
 		private void SivtsevCheckingPro_Load(object sender, EventArgs e)
