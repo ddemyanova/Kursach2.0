@@ -24,12 +24,14 @@ namespace GoodVision
             InitializeComponent();
             regFor=regF ;
           userNick = regFor.userNick;
+            
         }
 
 
         private void YesButton_Click(object sender, EventArgs e)
         {
             regFor.Enter_account(userNick);
+            regFor.Enabled = true;
             this.Close();
         }
 
@@ -39,7 +41,8 @@ namespace GoodVision
         {
            
             MessageBox.Show("Користувач з таким логіном вже існує. Будьласка, змініть логін");
-            this.Close();
+            regFor.Enabled = true;
+            this.Hide();
         }
     }
 }
