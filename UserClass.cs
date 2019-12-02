@@ -1,20 +1,23 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml.Serialization;
 
 namespace GoodVision
-{
-    class UserClass
+{   // класс и его члены объявлены как public
+    [Serializable]
+    public class UserClass
     {
-        private string Nickname;//имя
-		private FileStream FilePath;
-        private DateTime last_check_date;//дата проверки(последней)
-        private DateTime check_date;//произвольная дата когда пользователь чекал зрение нинаю пока куда его припхнуть, но явно понадобится для того чтобы статку чекать
-        private double left_eye_vision;//зрание для левого глаза
-        private double right_eye_vision;//для правого
+
+        public string Nickname;//имя
+        public FileStream FilePath;
+        public DateTime last_check_date;//дата проверки(последней)
+        public DateTime check_date;//произвольная дата когда пользователь чекал зрение нинаю пока куда его припхнуть, но явно понадобится для того чтобы статку чекать
+        public double left_eye_vision;//зрание для левого глаза
+        public double right_eye_vision;//для правого
 
 		public UserClass() { }
         public UserClass(UserClass User)//конструктор
@@ -88,6 +91,20 @@ namespace GoodVision
             var vision = new Tuple<double, double>(User.left_eye_vision, User.right_eye_vision);
             return vision;
         }
+         
+        public UserClass Get_Stats(ref UserClass User)
+        {
+            //показать статистику
+            XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
+            using (FileStream fs = new FileStream("User.xml", FileMode.OpenOrCreate))
+            {
+                UserClass newPerson = (UserClass)formatter.Deserialize(fs);
+                //здесь можем манипулировать всем!
+                Console.WriteLine("Объект десериализован");
+                return newPerson;
+            }
+        }
+
         ~UserClass() { }
         
     }
