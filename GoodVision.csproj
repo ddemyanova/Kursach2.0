@@ -362,6 +362,51 @@
   <ItemGroup>
     <None Include="Resources\eye2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\И.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\К.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\М.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Н.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ш.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Б.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enterMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\статHover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\статист1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

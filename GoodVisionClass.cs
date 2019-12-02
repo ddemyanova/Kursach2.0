@@ -28,6 +28,9 @@ namespace GoodVision
             }
         }
 
+        public static bool mode;
+
+
 		public void Clear_account(ref UserClass User)
 		{
 			try {
@@ -64,7 +67,7 @@ namespace GoodVision
             
             try
 			{
-					User.File = new FileStream(filePath, FileMode.Create);
+					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
 					//создать файл с именем;
 			}
 			catch (FileNotFoundException)
@@ -76,52 +79,10 @@ namespace GoodVision
 		}
         public bool ExchangeRegMessage
         {
-            get { return regMess;  }
-            set {regMess = value; }
+            get { return regMess; }
+            set { regMess = value; }
         }
+       
 
-        public bool Enter_account(UserClass User)
-        {
-            string filePath = "User.xml";
-            try
-            {
-                FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-
-
-                if (fileStream != null)
-                {
-                    RegMessage reg = new RegMessage();
-                    reg.Show();
-                    //вывести месседж бокс "да/нет"  "это ваш аккаунт?"
-                    if (ExchangeRegMessage == true)
-                    {
-                        fileStream.Flush();
-                        fileStream.Close();
-                        return true; // войти в аккаунт
-
-                    }
-                    //если да 
-
-                    //если нет -
-                    else
-                    {
-                        MessageBox.Show("Користувач з таким логіном вже існує. Будьласка, змініть логін");
-                        fileStream.Flush();
-                        fileStream.Close();
-                        return false;
-
-                    }
-                }
-                else { return false; }
-            }
-            catch (FileNotFoundException)
-            {
-
-                //Create_account();
-                Create_account(ref User);
-                return false;
-            }
-
-        }
     }
 }

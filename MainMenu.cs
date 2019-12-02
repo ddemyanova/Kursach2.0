@@ -58,7 +58,7 @@ namespace GoodVision
             //считать данные из файла данной сессии (имя)
             //открыть файл по имени пользователья с его данными
 
-            HelloLab.Text = "Hello, " + User.Nick;
+            HelloLab.Text = "Вітаємо, " + User.Nick;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
