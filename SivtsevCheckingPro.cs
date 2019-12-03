@@ -39,10 +39,12 @@ namespace GoodVision
 				if (AnswerTextBox.Text == NewLetter.Get_Letter())
 				{
 					rightAnswer++;
-				}
+             
 
-				i++;
-
+                }
+            AnswerTextBox.Text = string.Empty;
+            //  i++; // Светлана , откуда здесь i?
+            tests++;
 			if (tests < 3)
 			{
 				NewLetter.Set_Letter();
@@ -73,8 +75,11 @@ namespace GoodVision
 					{
 						User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
 						eye = false;
-						// вставить предупреждение про проверку левого глаза
-					}
+                        timer1.Enabled = false;
+                        EyeTestPanel.Visible = true;
+                        EyeTextLabel.Text="Тестуємо ліве око. Будь ласка, закрийте праве та нажміть ''старт''";
+                        // вставить предупреждение про проверку левого глаза
+                    }
 					else
 						User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
 					MyVision.Add_to_file(ref User);
@@ -102,7 +107,7 @@ namespace GoodVision
             System.Threading.Thread.Sleep(100);
 
             timer1.Enabled = true;
-            temp = i;
+            temp = 6;
         }
 
         private void AnswerTextBox_TextChanged(object sender, EventArgs e)

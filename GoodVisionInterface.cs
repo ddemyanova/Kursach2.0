@@ -15,7 +15,7 @@ namespace GoodVision
         void Clear_account(ref UserClass User);//удалить аккаунт
 
        // bool Enter_account( UserClass User);//войти в аккаунт
-       void Get_Stats(ref UserClass  User);//узнать статистику пользователя
+    //   void Get_Stats(ref UserClass  User);//узнать статистику пользователя
 
 		void Test_vision_with_letters(ref UserClass User);//не требует пояснения
         void Test_vision_with_circles(ref UserClass User);//это тоже
