@@ -33,6 +33,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.EyeTestPanel = new System.Windows.Forms.Panel();
             this.EyeTextLabel = new System.Windows.Forms.Label();
+            this.panelImage = new System.Windows.Forms.Panel();
             this.LetterPictureBox = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.AnswerSivtsevButton = new ButtonRoundedCorners.RoundedCorners();
@@ -44,15 +45,14 @@
             this.SivtsevInstrTextBox = new System.Windows.Forms.RichTextBox();
             this.BackToVisionCheckButton = new rbutton.CustRoundButton();
             this.StartButton = new ButtonRoundedCorners.RoundedCorners();
-            this.panelImage = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.EyeTestPanel.SuspendLayout();
+            this.panelImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).BeginInit();
-            this.panelImage.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -86,9 +86,17 @@
             this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.EyeTextLabel.Location = new System.Drawing.Point(27, 209);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(645, 108);
+            this.EyeTextLabel.Size = new System.Drawing.Size(1044, 108);
             this.EyeTextLabel.TabIndex = 0;
-            this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве.";
+            this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве та нажміть \"старт\".";
+            // 
+            // panelImage
+            // 
+            this.panelImage.Controls.Add(this.LetterPictureBox);
+            this.panelImage.Location = new System.Drawing.Point(272, 152);
+            this.panelImage.Name = "panelImage";
+            this.panelImage.Size = new System.Drawing.Size(225, 217);
+            this.panelImage.TabIndex = 3;
             // 
             // LetterPictureBox
             // 
@@ -230,14 +238,6 @@
             this.StartButton.TabStop = false;
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
-            // panelImage
-            // 
-            this.panelImage.Controls.Add(this.LetterPictureBox);
-            this.panelImage.Location = new System.Drawing.Point(272, 152);
-            this.panelImage.Name = "panelImage";
-            this.panelImage.Size = new System.Drawing.Size(225, 217);
-            this.panelImage.TabIndex = 3;
-            // 
             // SivtsevCheckingPro
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -256,6 +256,7 @@
             this.panel2.ResumeLayout(false);
             this.EyeTestPanel.ResumeLayout(false);
             this.EyeTestPanel.PerformLayout();
+            this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -263,7 +264,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();
-            this.panelImage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
