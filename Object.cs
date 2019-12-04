@@ -49,8 +49,8 @@ namespace GoodVision
 
         public void CalcSize()
         {
-            double Size = 7 / Coefficients[Row - 1] / 5;
-			this.size = new Tuple<double, double>( Size, Size);
+            double Size = (7 / Coefficients[Row - 1] / 5)*3.85;
+			this.size = new Tuple<double, double>(Size, Size);
         }
 
         public int ObjectRow

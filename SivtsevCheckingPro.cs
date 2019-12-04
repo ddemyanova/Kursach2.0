@@ -55,8 +55,11 @@ namespace GoodVision
 				NewLetter.ObjectRow = (left + right) / 2;
 				tests = 0;
 				NewLetter.Set_Letter();
-             
-				LetterPictureBox.Image = NewLetter.ShowImage;
+                NewLetter.CalcSize();
+                LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size(NewLetter.ShowImage).Item1, (int)NewLetter.Get_size(NewLetter.ShowImage).Item2);
+                this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                this.LetterPictureBox.BorderStyle = BorderStyle.None;
+                LetterPictureBox.Image = NewLetter.ShowImage;
 			}
 			else
 			{
@@ -66,6 +69,9 @@ namespace GoodVision
 				{
 					NewLetter.ObjectRow = (left + right) / 2;
 					NewLetter.CalcSize();
+                    LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size(NewLetter.ShowImage).Item1, (int)NewLetter.Get_size(NewLetter.ShowImage).Item2);
+                    this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                    this.LetterPictureBox.BorderStyle = BorderStyle.None;
 					LetterPictureBox.Image = NewLetter.ShowImage;
 					tests = 0;
 				}
@@ -104,6 +110,9 @@ namespace GoodVision
 
             NewLetter.Set_Letter();
             NewLetter.ObjectRow = 6; // задает начальное значение
+            LetterPictureBox.Size = new System.Drawing.Size(53, 53);
+            this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.LetterPictureBox.BorderStyle = BorderStyle.None;
             LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
 
