@@ -77,21 +77,23 @@ namespace GoodVision
 				}
 				else
 				{
-					if (eye)//какой глаз сейчас проверяем
-					{
-						User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
-						eye = false;
+                    if (eye)//какой глаз сейчас проверяем
+                    {
+                        User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        eye = false;
                         timer1.Enabled = false;
                         EyeTestPanel.Visible = true;
-                        EyeTextLabel.Text="Тестуємо ліве око. Будь ласка, закрийте праве та нажміть ''старт''";
+                        EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, закрийте праве та нажміть ''старт''";
                         // вставить предупреждение про проверку левого глаза
                     }
-					else
-						User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
-					MyVision.Add_to_file(ref User);
-					AfterTestingForm form = new AfterTestingForm();
-					form.Show();
-					this.Hide();
+                    else
+                    {
+                        User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        MyVision.Add_to_file(ref User);
+                        AfterTestingForm form = new AfterTestingForm();
+                        form.Show();
+                        this.Hide();
+                    }
 				}
 			
 			}
@@ -114,6 +116,8 @@ namespace GoodVision
             this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.BorderStyle = BorderStyle.None;
             LetterPictureBox.Image = NewLetter.ShowImage;
+            Point point = new Point(Convert.ToInt16(panelImage.Width * 0.5 +LetterPictureBox.Image.Width * 0.5), Convert.ToInt16(panelImage.Height * 0.5 - LetterPictureBox.Image.Height * 0.5));
+            LetterPictureBox.Location = point;
             System.Threading.Thread.Sleep(100);
 
             timer1.Enabled = true;
