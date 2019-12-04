@@ -31,7 +31,7 @@ namespace GoodVision
 		bool eye = true;
 		UserClass User = new UserClass() ;
 		GoodVisionClass MyVision= new GoodVisionClass();
-
+         
 		
 
         private void AnswerSivtsevButton_Click(object sender, EventArgs e)
@@ -49,17 +49,18 @@ namespace GoodVision
 				NewLetter.Set_Letter();
 				LetterPictureBox.Image = NewLetter.ShowImage;
 			}
-			else if (rightAnswer >= 2)
+			else if (rightAnswer >= 2) 
 			{
 				left = NewLetter.ObjectRow;
 				NewLetter.ObjectRow = (left + right) / 2;
 				tests = 0;
 				NewLetter.Set_Letter();
-
+             
 				LetterPictureBox.Image = NewLetter.ShowImage;
 			}
 			else
 			{
+               
 				right = NewLetter.ObjectRow;
 				if (left < right)
 				{
@@ -102,6 +103,7 @@ namespace GoodVision
             EyeTestPanel.Visible = false;// предупреждение про проверку правого глаза уходит
 
             NewLetter.Set_Letter();
+            NewLetter.ObjectRow = 6; // задает начальное значение
             LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
 
