@@ -11,17 +11,15 @@ namespace GoodVision
 
     abstract public class Object
     {
-        protected string FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\";
         protected Tuple<double, double> size;
+        protected string Name;
         public Image ShowImage;
 		protected int Row;
         protected double[] Coefficients = new double[12];
         public Object()
         {
-           // this.FileName = "...";//Тут должен будет быт путь к базовому изображения
-            this.size = new Tuple<double, double>(2.33333333, 2.33333333);//размер изображения в милиметрах для 6(базовой строки)
-           // this.ShowImage = Image.FromFile(this.FileName);
-		   for(int i = 1; i < 11; i++)
+           this.size = new Tuple<double, double>(2.33333333, 2.33333333);//размер изображения в милиметрах для 6(базовой строки)
+           for(int i = 1; i < 11; i++)
 			{
 				Coefficients[i - 1] = i * 0.1;
 			}

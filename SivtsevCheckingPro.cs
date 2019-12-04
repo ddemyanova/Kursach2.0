@@ -21,9 +21,10 @@ namespace GoodVision
             InitializeComponent();
           
         }
+
         int i = 6, temp;
-		Letter NewLetter= new Letter();
-		int rightAnswer = 0;
+		Letter NewLetter = new Letter();
+        int rightAnswer = 0;
 		int tests = 0;
 		int left = 1;
 		int right = 12;
@@ -39,8 +40,6 @@ namespace GoodVision
 				if (AnswerTextBox.Text == NewLetter.Get_Letter())
 				{
 					rightAnswer++;
-             
-
                 }
             AnswerTextBox.Text = string.Empty;
             //  i++; // Светлана , откуда здесь i?

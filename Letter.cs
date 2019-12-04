@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Windows.Forms;
+using System.IO;
+
 
 namespace GoodVision
 {
@@ -37,46 +40,53 @@ namespace GoodVision
 			{
 				case Letters.Ш:
 					{
-						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Ш.png";
+						this.ShowImage = Properties.Resources.Ш;
+                        this.Name = "Ш";
 						break;
 					}
 				case Letters.Б:
 					{
-						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Б.png";
-						break;
+						this.ShowImage = Properties.Resources.Б;
+                        this.Name = "Б";
+
+                        break;
 					}
 				case Letters.М:
 					{
-						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\М.png";
-						break;
+						this.ShowImage = Properties.Resources.М;
+                        this.Name = "М";
+                        break;
 					}
 				case Letters.Н:
 					{
-						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Н.png";
-						break;
+						this.ShowImage = Properties.Resources.Н;
+                        this.Name = "Н";
+                        break;
 					}
 				case Letters.К:
 					{
-						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\К.png";
-						break;
+						this.ShowImage = Properties.Resources.К;
+                        this.Name = "К";
+                        break;
 					}
 				case Letters.Ы:
 					{
-						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\Ы.png";
-						break;
+						this.ShowImage = Properties.Resources.Ы;
+                        this.Name = "Ы";
+                        break;
 					}
 				case Letters.И:
 					{
-						this.FileName = @"C:\Users\Marina\source\repos\Ap0ll0n\Kursach\Resources\И.png";
-						break;
+						this.ShowImage = Properties.Resources.И;
+                        this.Name = "И";
+                        break;
 					}
 			}
-            this.ShowImage = Image.FromFile(this.FileName);
+          //  this.ShowImage = Image.FromFile(this.FileName);
         }
 		public string Get_Letter()//метод для установки значения буквы вручную
 		{
-			string name = this.FileName;
-			name.Remove(1,4);
+			string name = this.Name;
 			return name;
 		}
 		

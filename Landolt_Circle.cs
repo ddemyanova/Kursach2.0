@@ -29,9 +29,9 @@ namespace GoodVision
 		}
 		public Landolt_Circle()//конструктор со случайным выбором направления для кольца
 		{
-			this.FileName = "Circle.png";
+		//	this.FileName = "Circle.png";
 			this.Set_Circle();
-			this.ShowImage = Image.FromFile(this.FileName);
+		//	this.ShowImage = Image.FromFile(this.FileName);
 		}
 		public int Directions//Метод который возвращает направление кольца
         {
