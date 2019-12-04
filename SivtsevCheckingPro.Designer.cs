@@ -59,7 +59,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
-            this.panel2.Controls.Add(this.EyeTestPanel);
             this.panel2.Controls.Add(this.panelImage);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.SivtsevTimer);
@@ -74,7 +73,7 @@
             this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
             this.EyeTestPanel.ForeColor = System.Drawing.Color.Cornsilk;
-            this.EyeTestPanel.Location = new System.Drawing.Point(3, 3);
+            this.EyeTestPanel.Location = new System.Drawing.Point(430, 15);
             this.EyeTestPanel.Name = "EyeTestPanel";
             this.EyeTestPanel.Size = new System.Drawing.Size(694, 574);
             this.EyeTestPanel.TabIndex = 2;
@@ -92,17 +91,18 @@
             // 
             // panelImage
             // 
+            this.panelImage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelImage.Controls.Add(this.LetterPictureBox);
-            this.panelImage.Location = new System.Drawing.Point(272, 152);
+            this.panelImage.Location = new System.Drawing.Point(271, 146);
             this.panelImage.Name = "panelImage";
             this.panelImage.Size = new System.Drawing.Size(225, 217);
             this.panelImage.TabIndex = 3;
             // 
             // LetterPictureBox
             // 
-            this.LetterPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.LetterPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LetterPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LetterPictureBox.Image")));
-            this.LetterPictureBox.Location = new System.Drawing.Point(20, 22);
+            this.LetterPictureBox.Location = new System.Drawing.Point(7, 22);
             this.LetterPictureBox.Name = "LetterPictureBox";
             this.LetterPictureBox.Size = new System.Drawing.Size(190, 171);
             this.LetterPictureBox.TabIndex = 0;
@@ -244,6 +244,7 @@
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1140, 601);
+            this.Controls.Add(this.EyeTestPanel);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.BackToVisionCheckButton);
             this.Controls.Add(this.panel2);
