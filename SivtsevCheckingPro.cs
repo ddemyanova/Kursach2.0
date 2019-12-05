@@ -51,6 +51,7 @@ namespace GoodVision
 			}
 			else if (rightAnswer >= 2) 
 			{
+                rightAnswer = 0;
 				left = NewLetter.ObjectRow;
 				NewLetter.ObjectRow = (left + right) / 2;
 				tests = 0;
@@ -112,11 +113,11 @@ namespace GoodVision
 
             NewLetter.Set_Letter();
             NewLetter.ObjectRow = 6; // задает начальное значение
-            LetterPictureBox.Size = new System.Drawing.Size(53, 53);
+            LetterPictureBox.Size = new System.Drawing.Size(9, 9);
             this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.BorderStyle = BorderStyle.None;
             LetterPictureBox.Image = NewLetter.ShowImage;
-            Point point = new Point(Convert.ToInt16(panelImage.Width * 0.5 +LetterPictureBox.Image.Width * 0.5), Convert.ToInt16(panelImage.Height * 0.5 - LetterPictureBox.Image.Height * 0.5));
+            Point point = new Point(Convert.ToInt16(panelImage.Width * 0.5 + LetterPictureBox.Image.Width * 0.5), Convert.ToInt16(panelImage.Height * 0.5 - LetterPictureBox.Image.Height * 0.5));
             LetterPictureBox.Location = point;
             System.Threading.Thread.Sleep(100);
 

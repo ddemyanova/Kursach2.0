@@ -38,7 +38,7 @@ namespace GoodVision
 		}
         virtual public Tuple<double, double> Get_size()
         {
-            this.size = new Tuple<double, double>((double)ShowImage.Height, (double)ShowImage.Width);
+       //     this.size = new Tuple<double, double>((double)ShowImage.Height, (double)ShowImage.Width);
             return size;
         }
 
