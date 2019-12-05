@@ -36,9 +36,9 @@ namespace GoodVision
 		{
 			return Coefficients[i];
 		}
-        virtual public Tuple<double, double> Get_size(Image Image_to_show)
+        virtual public Tuple<double, double> Get_size()
         {
-            this.size = new Tuple<double, double>((double)Image_to_show.Height * 0.265, (double)Image_to_show.Width * 0.265);
+            this.size = new Tuple<double, double>((double)ShowImage.Height, (double)ShowImage.Width);
             return size;
         }
 
