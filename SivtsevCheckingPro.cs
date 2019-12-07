@@ -51,16 +51,21 @@ namespace GoodVision
 			}
 			else if (rightAnswer >= 2) 
 			{
-                rightAnswer = 0;
-				left = NewLetter.ObjectRow;
-				NewLetter.ObjectRow = (left + right) / 2;
-				tests = 0;
-				NewLetter.Set_Letter();
-                NewLetter.CalcSize();
-                LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
-                this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                this.LetterPictureBox.BorderStyle = BorderStyle.None;
-                LetterPictureBox.Image = NewLetter.ShowImage;
+               
+                    rightAnswer = 0;
+                    left = NewLetter.ObjectRow;
+                if (left <= 9)
+                {
+                    NewLetter.ObjectRow = (left + right) / 2;
+                    tests = 0;
+                    NewLetter.Set_Letter();
+                    NewLetter.CalcSize();
+                    LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
+                    this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                    this.LetterPictureBox.BorderStyle = BorderStyle.None;
+                    LetterPictureBox.Image = NewLetter.ShowImage;
+                }
+                
 			}
 			else
 			{
@@ -70,10 +75,14 @@ namespace GoodVision
 				{
 					NewLetter.ObjectRow = (left + right) / 2;
 					NewLetter.CalcSize();
-                    LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
-                    this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                    this.LetterPictureBox.BorderStyle = BorderStyle.None;
-					LetterPictureBox.Image = NewLetter.ShowImage;
+                    if (left <= 9)
+                    {
+                        LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
+                        this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                        this.LetterPictureBox.BorderStyle = BorderStyle.None;
+                        LetterPictureBox.Image = NewLetter.ShowImage;
+                    }
+                   
 					tests = 0;
 				}
 				else
@@ -84,7 +93,7 @@ namespace GoodVision
                         eye = false;
                         timer1.Enabled = false;
                         EyeTestPanel.Visible = true;
-                        EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, закрийте праве та нажміть ''старт''";
+                        EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, \nзакрийте праве та нажміть ''старт''";
                         // вставить предупреждение про проверку левого глаза
                     }
                     else
@@ -113,11 +122,11 @@ namespace GoodVision
 
             NewLetter.Set_Letter();
             NewLetter.ObjectRow = 6; // задает начальное значение
-            LetterPictureBox.Size = new System.Drawing.Size(9, 9);
+            LetterPictureBox.Size = new System.Drawing.Size(15, 15);
             this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.BorderStyle = BorderStyle.None;
             LetterPictureBox.Image = NewLetter.ShowImage;
-            Point point = new Point(Convert.ToInt16(panelImage.Width * 0.5 + LetterPictureBox.Image.Width * 0.5), Convert.ToInt16(panelImage.Height * 0.5 - LetterPictureBox.Image.Height * 0.5));
+            Point point = new Point(Convert.ToInt16(panelImage.Width * 0.5 - LetterPictureBox.Image.Width * 0.5), Convert.ToInt16(panelImage.Height * 0.5 - LetterPictureBox.Image.Height * 0.5));
             LetterPictureBox.Location = point;
             System.Threading.Thread.Sleep(100);
 

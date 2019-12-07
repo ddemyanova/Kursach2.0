@@ -32,7 +32,7 @@ namespace GoodVision
 
 		private void GoLandotButton_Click(object sender, EventArgs e) // Запуск тестирования Сюда первую картинку надо
         {
-            LandotCirclePictureBox.Size = new System.Drawing.Size(9, 9);
+            LandotCirclePictureBox.Size = new System.Drawing.Size(15, 15);
             LandotTimer.Value = 0;
             EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
             System.Threading.Thread.Sleep(100);
