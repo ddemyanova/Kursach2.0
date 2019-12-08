@@ -204,7 +204,7 @@
             this.EyeTextLabel.Font = new System.Drawing.Font("a_AvanteInt", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EyeTextLabel.Location = new System.Drawing.Point(12, 187);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(675, 126);
+            this.EyeTextLabel.Size = new System.Drawing.Size(417, 44);
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве та нажміть\r\n \"старт\".\r\n";
             // 
