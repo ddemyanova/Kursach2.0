@@ -38,6 +38,7 @@ namespace GoodVision
 		}
         virtual public Tuple<double, double> Get_size()
         {
+
             return size;
         }
 

@@ -31,7 +31,7 @@ namespace GoodVision
 		bool eye = true;
 		UserClass User = new UserClass() ;
 		GoodVisionClass MyVision= new GoodVisionClass();
-         
+        Point stLocation= new Point(385,246);
 		
 
         private void AnswerSivtsevButton_Click(object sender, EventArgs e)
@@ -48,9 +48,13 @@ namespace GoodVision
 			{
 				NewLetter.Set_Letter();
 				LetterPictureBox.Image = NewLetter.ShowImage;
-			}
+                Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+
+                LetterPictureBox.Location = point;
+            }
 			else if (rightAnswer >= 2) 
 			{
+
                
                     rightAnswer = 0;
                     left = NewLetter.ObjectRow;
@@ -63,10 +67,13 @@ namespace GoodVision
                     LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
                     this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     this.LetterPictureBox.BorderStyle = BorderStyle.None;
+                    Point point = new Point((402 - LetterPictureBox.Width / 2),260 - (LetterPictureBox.Height) / 2);
+                    LetterPictureBox.Location = point;
                     LetterPictureBox.Image = NewLetter.ShowImage;
                 }
                 
 			}
+
 			else
 			{
                
@@ -75,15 +82,21 @@ namespace GoodVision
 				{
 					NewLetter.ObjectRow = (left + right) / 2;
 					NewLetter.CalcSize();
+
+            
+
                     if (left <= 9)
                     {
                         LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
                         this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                         this.LetterPictureBox.BorderStyle = BorderStyle.None;
+                        Point point = new Point((402-LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+                        LetterPictureBox.Location = point;
                         LetterPictureBox.Image = NewLetter.ShowImage;
                     }
                    
 					tests = 0;
+
 				}
 				else
 				{
@@ -122,12 +135,17 @@ namespace GoodVision
 
             NewLetter.Set_Letter();
             NewLetter.ObjectRow = 6; // задает начальное значение
+
             LetterPictureBox.Size = new System.Drawing.Size(15, 15);
             this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.BorderStyle = BorderStyle.None;
             LetterPictureBox.Image = NewLetter.ShowImage;
-            Point point = new Point(Convert.ToInt16(panelImage.Width * 0.5 - LetterPictureBox.Image.Width * 0.5), Convert.ToInt16(panelImage.Height * 0.5 - LetterPictureBox.Image.Height * 0.5));
+            Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+
+
             LetterPictureBox.Location = point;
+
+            LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
 
             timer1.Enabled = true;
@@ -174,7 +192,21 @@ namespace GoodVision
 			}
 		}
 
-		private void BackToVisionCheckButton_Click(object sender, EventArgs e)
+        private void AnswerTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+            if ((e.KeyChar>1071 && e.KeyChar < 1104)|| (e.KeyChar> 1039 && e.KeyChar < 1071))
+            {
+                if (AnswerTextBox.Text != string.Empty)
+                {
+                    AnswerTextBox.Text = string.Empty;
+                }
+               
+                AnswerTextBox.Text = Convert.ToString(e.KeyChar).ToUpper();
+            }
+        }
+
+        private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
             VisionCheck Vch = new VisionCheck();
             Vch.Show();
