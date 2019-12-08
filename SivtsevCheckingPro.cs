@@ -48,57 +48,58 @@ namespace GoodVision
 			{
 				NewLetter.Set_Letter();
 				LetterPictureBox.Image = NewLetter.ShowImage;
-                Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+				Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
 
-                LetterPictureBox.Location = point;
-            }
-			else if (rightAnswer >= 2) 
+				LetterPictureBox.Location = point;
+			}
+			else if (rightAnswer >= 2)
 			{
 
-               
-                    rightAnswer = 0;
-                    left = NewLetter.ObjectRow;
-                if (left <= 9)
-                {
-                    NewLetter.ObjectRow = (left + right) / 2;
-                    tests = 0;
-                    NewLetter.Set_Letter();
-                    NewLetter.CalcSize();
-                    LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
-                    this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                    this.LetterPictureBox.BorderStyle = BorderStyle.None;
-                    Point point = new Point((402 - LetterPictureBox.Width / 2),260 - (LetterPictureBox.Height) / 2);
-                    LetterPictureBox.Location = point;
-                    LetterPictureBox.Image = NewLetter.ShowImage;
-                }
-                
+
+				rightAnswer = 0;
+				left = NewLetter.ObjectRow;
+				if (left <= 9)
+				{
+					NewLetter.ObjectRow = (left + right) / 2;
+					tests = 0;
+					NewLetter.Set_Letter();
+					NewLetter.CalcSize();
+					LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
+					this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+					this.LetterPictureBox.BorderStyle = BorderStyle.None;
+					Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+					LetterPictureBox.Location = point;
+					LetterPictureBox.Image = NewLetter.ShowImage;
+				}
+
 			}
 
 			else
 			{
-               
+
 				right = NewLetter.ObjectRow;
 				if (left < right)
 				{
 					NewLetter.ObjectRow = (left + right) / 2;
 					NewLetter.CalcSize();
 
-            
 
-                    if (left <= 9)
-                    {
-                        LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
-                        this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                        this.LetterPictureBox.BorderStyle = BorderStyle.None;
-                        Point point = new Point((402-LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
-                        LetterPictureBox.Location = point;
-                        LetterPictureBox.Image = NewLetter.ShowImage;
-                    }
-                   
+
+					if (left <= 9)
+					{
+						LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
+						this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+						this.LetterPictureBox.BorderStyle = BorderStyle.None;
+						Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+						LetterPictureBox.Location = point;
+						LetterPictureBox.Image = NewLetter.ShowImage;
+					}
+
 					tests = 0;
 
 				}
-				else
+			}
+				if(left>=right || right == NewLetter.ObjectRow|| left== NewLetter.ObjectRow)
 				{
                     if (eye)//какой глаз сейчас проверяем
                     {
@@ -119,7 +120,7 @@ namespace GoodVision
                     }
 				}
 			
-			}
+			
 
 
 				SivtsevTimer.Value = 0;
