@@ -201,7 +201,7 @@
             this.EyeTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EyeTextLabel.Location = new System.Drawing.Point(104, 152);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(527, 55);
+            this.EyeTextLabel.Size = new System.Drawing.Size(417, 44);
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестируем левый глаз\r\n";
             // 

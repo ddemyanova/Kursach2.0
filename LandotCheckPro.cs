@@ -34,11 +34,15 @@ namespace GoodVision
         {
             LandotCirclePictureBox.Size = new System.Drawing.Size(15, 15);
             LandotTimer.Value = 0;
+            Circle.ObjectRow = 6;
             EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
             System.Threading.Thread.Sleep(100);
             LTimer.Enabled = true;
             temp = i;
+            Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7 ), Convert.ToInt16(EyeTestPanel.Height * 0.5));
+            LandotCirclePictureBox.Location = point;
         }
+
 
         private void BackToVisionCheckButton_Click(object sender, EventArgs e)// возврат на предыдущую страницу
         {
@@ -118,9 +122,13 @@ namespace GoodVision
 			if (Direction == Circle.Directions)
 			{
 				rightAnswer++;
+                tests++;
 			}
-
-			i++;
+            if (Direction != Circle.Directions)
+            {
+                tests++;
+            }
+			//i++;
 
 			if (tests < 3)
 			{
@@ -136,18 +144,22 @@ namespace GoodVision
                 Circle.Set_Circle();
                 Circle.CalcSize();
                 LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
+                Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7), Convert.ToInt16(EyeTestPanel.Height * 0.5));
+                LandotCirclePictureBox.Location = point;
                 this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
                 LandotCirclePictureBox.Image = Circle.ShowImage;
  			}
-			else
-			{
+			else if (rightAnswer < 2)
+            {
 				right = Circle.ObjectRow;
 				if (left < right)
 				{
 					Circle.ObjectRow = (left + right) / 2;
 					Circle.CalcSize();
                     LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
+                    Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7), Convert.ToInt16(EyeTestPanel.Height * 0.5));
+                    LandotCirclePictureBox.Location = point;
                     this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
                     LandotCirclePictureBox.Image = Circle.ShowImage;
