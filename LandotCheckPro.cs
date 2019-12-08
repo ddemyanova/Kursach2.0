@@ -32,6 +32,7 @@ namespace GoodVision
 
 		private void GoLandotButton_Click(object sender, EventArgs e) // Запуск тестирования Сюда первую картинку надо
         {
+            LandotCirclePictureBox.Size = new System.Drawing.Size(15, 15);
             LandotTimer.Value = 0;
             EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
             System.Threading.Thread.Sleep(100);
@@ -48,8 +49,7 @@ namespace GoodVision
 
         private void LTimer_Tick_1(object sender, EventArgs e)
         {
-
-            
+                      
             temp--;
             LandotTimer.Text = Convert.ToString(temp);    
             LandotTimer.PerformStep();
@@ -108,7 +108,8 @@ namespace GoodVision
 				StreamReader reader = new StreamReader(session);
 				User.Nick = reader.ReadToEnd();
 				session.Close();
-			}
+                LandotCirclePictureBox.Image = Circle.ShowImage;
+            }
 		}
 
 		private void DirectionClick()
@@ -128,13 +129,17 @@ namespace GoodVision
 			}
 			else if (rightAnswer >= 2)
 			{
-				left = Circle.ObjectRow;
+                rightAnswer = 0;
+                left = Circle.ObjectRow;
 				Circle.ObjectRow = (left + right) / 2;
 				tests = 0;
-				Circle.Set_Circle();
-
-				LandotCirclePictureBox.Image = Circle.ShowImage;
-			}
+                Circle.Set_Circle();
+                Circle.CalcSize();
+                LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
+                this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
+                LandotCirclePictureBox.Image = Circle.ShowImage;
+ 			}
 			else
 			{
 				right = Circle.ObjectRow;
@@ -142,7 +147,10 @@ namespace GoodVision
 				{
 					Circle.ObjectRow = (left + right) / 2;
 					Circle.CalcSize();
-					LandotCirclePictureBox.Image = Circle.ShowImage;
+                    LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
+                    this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                    this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
+                    LandotCirclePictureBox.Image = Circle.ShowImage;
 					tests = 0;
 				}
 				else
@@ -151,10 +159,9 @@ namespace GoodVision
 					{
 						User.right = Circle.Get_result(Circle.ObjectRow - 1);
 						eye = false;
-						// вставить предупреждение про проверку левого глаза
 					}
 					else
-						User.left = Circle.Get_result(Circle.ObjectRow - 1);
+					User.left = Circle.Get_result(Circle.ObjectRow - 1);
 					MyVision.Add_to_file(ref User);
 					AfterTestingForm form = new AfterTestingForm();
 					form.Show();

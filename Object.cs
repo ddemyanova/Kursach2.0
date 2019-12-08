@@ -38,7 +38,7 @@ namespace GoodVision
 		}
         virtual public Tuple<double, double> Get_size()
         {
-          //  this.size = new Tuple<double, double>((double)ShowImage.Height, (double)ShowImage.Width);
+
             return size;
         }
 
@@ -49,7 +49,7 @@ namespace GoodVision
 
         public void CalcSize()
         {
-            double Size = (7 / Coefficients[Row - 1] / 5)*3.85;
+            double Size = (7 / Coefficients[Row - 1] / 4)*3.85;
 			this.size = new Tuple<double, double>(Size, Size);
         }
 

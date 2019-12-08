@@ -26,7 +26,7 @@ namespace GoodVision
         public int Get_Random()//случайная генерация числа 1-7
         {
             Random rnd = new Random();
-            int Random_Letter = rnd.Next(1,7);
+            int Random_Letter = rnd.Next(1,8);
             return Random_Letter;
         }
         public Letter()//конструктор в котором буква для каждого объекта будет по умолчанию выбрана случайно
