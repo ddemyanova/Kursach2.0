@@ -18,14 +18,16 @@ namespace GoodVision
             //XML Serizalisation
             // передаем в конструктор тип класса
             XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
+			String str = User.Nick + ".xml";
 
             // получаем поток, куда будем записывать сериализованный объект
-            using (FileStream fs = new FileStream("User.xml", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream(str, FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, User);
-
+				fs.Close();
                 //Console.WriteLine("Объект сериализован");
             }
+			
         }
 
         public static bool mode;
@@ -33,6 +35,7 @@ namespace GoodVision
 
 		public void Clear_account(ref UserClass User)
 		{
+
 			try {
 				File.Delete("User.xml");
 			}

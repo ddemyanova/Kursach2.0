@@ -34,13 +34,20 @@ namespace GoodVision
         {
             LandotCirclePictureBox.Size = new System.Drawing.Size(15, 15);
             LandotTimer.Value = 0;
+
             Circle.ObjectRow = 6;
-            EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
+			right = 12;
+			left = 1;
+			tests = 0;
+
+			EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
             System.Threading.Thread.Sleep(100);
             LTimer.Enabled = true;
             temp = i;
             Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7 ), Convert.ToInt16(EyeTestPanel.Height * 0.5));
             LandotCirclePictureBox.Location = point;
+
+
         }
 
 
@@ -114,6 +121,8 @@ namespace GoodVision
 				session.Close();
                 LandotCirclePictureBox.Image = Circle.ShowImage;
             }
+			session.Close();
+
 		}
 
 		private void DirectionClick()
