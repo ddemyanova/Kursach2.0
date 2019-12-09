@@ -43,7 +43,7 @@ namespace GoodVision
               
                 userNick = RegistTextBox.Text;
 
-                string filePath = userNick + ".xml";
+                string filePath = "User.xml";
                 try
                 {
                     // проверка, существует ли данный аккаунт

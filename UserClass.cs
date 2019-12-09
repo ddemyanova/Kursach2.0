@@ -11,12 +11,16 @@ namespace GoodVision
     [Serializable]
     public class UserClass
     {
-
+        [XmlIgnore]
         public string Nickname;//имя
         public FileStream FilePath;
+        [XmlIgnore]
         public DateTime last_check_date;//дата проверки(последней)
+        [XmlIgnore]
         public DateTime check_date;//произвольная дата когда пользователь чекал зрение нинаю пока куда его припхнуть, но явно понадобится для того чтобы статку чекать
+        [XmlIgnore]
         public double left_eye_vision;//зрание для левого глаза
+        [XmlIgnore]
         public double right_eye_vision;//для правого
 
 		public UserClass() { }
@@ -58,17 +62,19 @@ namespace GoodVision
 				this.left_eye_vision = value;
 			}
 		}
-		public double right {
-			get
-			{
-				return this.right_eye_vision;
-			}
-			set
-			{
-				this.right_eye_vision = value;
-			}
-		}
-		public DateTime last_date {
+		public double right
+        {
+            get
+            {
+                return this.right_eye_vision;
+            }
+            set
+            {
+                this.right_eye_vision = value;
+            }
+        }
+        
+        public DateTime last_date {
 			get
 			{
 				return this.last_check_date;

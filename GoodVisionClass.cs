@@ -61,8 +61,10 @@ namespace GoodVision
             try
 			{
 					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
-					//создать файл с именем;
-			}
+                //создать файл с именем;
+                //закрываем поток
+                System.IO.File.Create(filePath).Close();
+            }
 			catch (FileNotFoundException)
 			{
                 MessageBox.Show("");
