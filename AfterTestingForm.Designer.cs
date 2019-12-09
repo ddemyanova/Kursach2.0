@@ -54,7 +54,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
             this.panel1.Controls.Add(this.Title);
-            this.panel1.Location = new System.Drawing.Point(66, 24);
+            this.panel1.Location = new System.Drawing.Point(100, 22);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1006, 89);

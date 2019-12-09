@@ -38,9 +38,16 @@ namespace GoodVision
             EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
             System.Threading.Thread.Sleep(100);
             LTimer.Enabled = true;
-            temp = i;
-            Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7 ), Convert.ToInt16(EyeTestPanel.Height * 0.5));
+
+            Point point = new Point((124 - LandotCirclePictureBox.Width / 2), 108 - (LandotCirclePictureBox.Height) / 2);
             LandotCirclePictureBox.Location = point;
+            LandotCirclePictureBox.Image = Circle.ShowImage;
+
+            MessagePanel.Visible = false;
+            temp = 6;
+            tests = 0;
+            left = 1;
+            right = 12;
         }
 
 
@@ -58,11 +65,14 @@ namespace GoodVision
             LandotTimer.Text = Convert.ToString(temp);    
             LandotTimer.PerformStep();
             if (temp != 0)
-                LTimer.Enabled = true;
+            { LTimer.Enabled = true; }
 
             else
+            {
                 LTimer.Enabled = false;
-        }
+                MessagePanel.Visible = true;
+            }
+            }
 
     
         // Выбор ответа
@@ -118,8 +128,8 @@ namespace GoodVision
 
 		private void DirectionClick()
 		{
-
-			if (Direction == Circle.Directions)
+            MessagePanel.Visible = false;
+            if (Direction == Circle.Directions)
 			{
 				rightAnswer++;
                 tests++;
@@ -134,9 +144,9 @@ namespace GoodVision
 			{
 				Circle.Set_Circle();
 				LandotCirclePictureBox.Image = Circle.ShowImage;
-				Point point = new Point((402 - LandotCirclePictureBox.Width / 2), 260 - (LandotCirclePictureBox.Height) / 2);
+                Point point = new Point((124 - LandotCirclePictureBox.Width / 2), 108 - (LandotCirclePictureBox.Height) / 2);
 
-				LandotCirclePictureBox.Location = point;
+                LandotCirclePictureBox.Location = point;
 			}
 			else if (rightAnswer >= 2)
 			{
@@ -150,8 +160,8 @@ namespace GoodVision
 				if (left <= 9)
 				{
 					LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
-					Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7), Convert.ToInt16(EyeTestPanel.Height * 0.5));
-					LandotCirclePictureBox.Location = point;
+                    Point point = new Point((124 - LandotCirclePictureBox.Width / 2), 108 - (LandotCirclePictureBox.Height) / 2);
+                    LandotCirclePictureBox.Location = point;
 					this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 					this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
 					LandotCirclePictureBox.Image = Circle.ShowImage;
@@ -167,8 +177,8 @@ namespace GoodVision
 					if (left <= 9)
 					{
 						LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
-						Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7), Convert.ToInt16(EyeTestPanel.Height * 0.5));
-						LandotCirclePictureBox.Location = point;
+                        Point point = new Point((124 - LandotCirclePictureBox.Width / 2), 108 - (LandotCirclePictureBox.Height) / 2);
+                        LandotCirclePictureBox.Location = point;
 						this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 						this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
 						LandotCirclePictureBox.Image = Circle.ShowImage;
@@ -182,7 +192,9 @@ namespace GoodVision
 				{
 					User.right = Circle.Get_result(Circle.ObjectRow - 1);
 					eye = false;
-				}
+                    EyeTestPanel.Visible = true;
+                    EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, \nзакрийте праве та нажміть ''старт''";
+                }
 				else
 				{
 					User.left = Circle.Get_result(Circle.ObjectRow - 1);
