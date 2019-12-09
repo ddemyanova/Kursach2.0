@@ -36,8 +36,8 @@ namespace GoodVision
 
         private void AnswerSivtsevButton_Click(object sender, EventArgs e)
         {
-			
-				if (AnswerTextBox.Text == NewLetter.Get_Letter())
+            MessagePanel.Visible = false;
+            if (AnswerTextBox.Text == NewLetter.Get_Letter())
 				{
 					rightAnswer++;
                 }
@@ -48,7 +48,7 @@ namespace GoodVision
 			{
 				NewLetter.Set_Letter();
 				LetterPictureBox.Image = NewLetter.ShowImage;
-                Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+                Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
 
                 LetterPictureBox.Location = point;
             }
@@ -57,17 +57,18 @@ namespace GoodVision
 
                
                     rightAnswer = 0;
-                    left = NewLetter.ObjectRow;
+                //    left = NewLetter.ObjectRow;
                 if (left <= 9)
                 {
                     NewLetter.ObjectRow = (left + right) / 2;
+                    left = NewLetter.ObjectRow;
                     tests = 0;
                     NewLetter.Set_Letter();
                     NewLetter.CalcSize();
                     LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
                     this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     this.LetterPictureBox.BorderStyle = BorderStyle.None;
-                    Point point = new Point((402 - LetterPictureBox.Width / 2),260 - (LetterPictureBox.Height) / 2);
+                    Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
                     LetterPictureBox.Location = point;
                     LetterPictureBox.Image = NewLetter.ShowImage;
                 }
@@ -90,7 +91,7 @@ namespace GoodVision
                         LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
                         this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                         this.LetterPictureBox.BorderStyle = BorderStyle.None;
-                        Point point = new Point((402-LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+                        Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
                         LetterPictureBox.Location = point;
                         LetterPictureBox.Image = NewLetter.ShowImage;
                     }
@@ -140,16 +141,19 @@ namespace GoodVision
             this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.BorderStyle = BorderStyle.None;
             LetterPictureBox.Image = NewLetter.ShowImage;
-            Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+            Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
 
 
             LetterPictureBox.Location = point;
-
+            MessagePanel.Visible = false;
             LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
 
             timer1.Enabled = true;
             temp = 6;
+            tests = 0;
+            left = 0;
+            right = 12;
         }
 
         private void AnswerTextBox_TextChanged(object sender, EventArgs e)
@@ -177,7 +181,7 @@ namespace GoodVision
             else
             {
                 timer1.Enabled = false;
-                LetterPictureBox.Image = Properties.Resources.enterMessage;
+                MessagePanel.Visible = true;
             }
             }
 
@@ -208,7 +212,7 @@ namespace GoodVision
 
         private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
-            VisionCheck Vch = new VisionCheck();
+            MainMenu Vch = new MainMenu();
             Vch.Show();
             this.Hide();
         }
