@@ -32,12 +32,17 @@ namespace GoodVision
 
 		private void GoLandotButton_Click(object sender, EventArgs e) // Запуск тестирования Сюда первую картинку надо
         {
+            LandotCirclePictureBox.Size = new System.Drawing.Size(15, 15);
             LandotTimer.Value = 0;
+            Circle.ObjectRow = 6;
             EyeTestPanel.Visible = false;             // предупреждение про проверку правого глаза уходит
             System.Threading.Thread.Sleep(100);
             LTimer.Enabled = true;
             temp = i;
+            Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7 ), Convert.ToInt16(EyeTestPanel.Height * 0.5));
+            LandotCirclePictureBox.Location = point;
         }
+
 
         private void BackToVisionCheckButton_Click(object sender, EventArgs e)// возврат на предыдущую страницу
         {
@@ -48,8 +53,7 @@ namespace GoodVision
 
         private void LTimer_Tick_1(object sender, EventArgs e)
         {
-
-            
+                      
             temp--;
             LandotTimer.Text = Convert.ToString(temp);    
             LandotTimer.PerformStep();
@@ -108,7 +112,8 @@ namespace GoodVision
 				StreamReader reader = new StreamReader(session);
 				User.Nick = reader.ReadToEnd();
 				session.Close();
-			}
+                LandotCirclePictureBox.Image = Circle.ShowImage;
+            }
 		}
 
 		private void DirectionClick()
@@ -117,51 +122,78 @@ namespace GoodVision
 			if (Direction == Circle.Directions)
 			{
 				rightAnswer++;
+                tests++;
 			}
+            if (Direction != Circle.Directions)
+            {
+                tests++;
+            }
 
-			i++;
 
 			if (tests < 3)
 			{
 				Circle.Set_Circle();
 				LandotCirclePictureBox.Image = Circle.ShowImage;
+				Point point = new Point((402 - LandotCirclePictureBox.Width / 2), 260 - (LandotCirclePictureBox.Height) / 2);
+
+				LandotCirclePictureBox.Location = point;
 			}
 			else if (rightAnswer >= 2)
 			{
+				rightAnswer = 0;
 				left = Circle.ObjectRow;
 				Circle.ObjectRow = (left + right) / 2;
+				if (left == 11) Circle.ObjectRow = 12;
 				tests = 0;
 				Circle.Set_Circle();
-
-				LandotCirclePictureBox.Image = Circle.ShowImage;
+				Circle.CalcSize();
+				if (left <= 9)
+				{
+					LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
+					Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7), Convert.ToInt16(EyeTestPanel.Height * 0.5));
+					LandotCirclePictureBox.Location = point;
+					this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+					this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
+					LandotCirclePictureBox.Image = Circle.ShowImage;
+				}
 			}
-			else
+			else if (rightAnswer < 2)
 			{
 				right = Circle.ObjectRow;
 				if (left < right)
 				{
 					Circle.ObjectRow = (left + right) / 2;
 					Circle.CalcSize();
-					LandotCirclePictureBox.Image = Circle.ShowImage;
-					tests = 0;
+					if (left <= 9)
+					{
+						LandotCirclePictureBox.Size = new System.Drawing.Size((int)Circle.Get_size().Item1, (int)Circle.Get_size().Item2);
+						Point point = new Point(Convert.ToInt16(EyeTestPanel.Width * 0.5 + 7), Convert.ToInt16(EyeTestPanel.Height * 0.5));
+						LandotCirclePictureBox.Location = point;
+						this.LandotCirclePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+						this.LandotCirclePictureBox.BorderStyle = BorderStyle.None;
+						LandotCirclePictureBox.Image = Circle.ShowImage;
+						tests = 0;
+					}
+				}
+			}
+			if(left >= right || right == Circle.ObjectRow || left == Circle.ObjectRow)
+			{
+				if (eye)//какой глаз сейчас проверяем
+				{
+					User.right = Circle.Get_result(Circle.ObjectRow - 1);
+					eye = false;
 				}
 				else
 				{
-					if (eye)//какой глаз сейчас проверяем
-					{
-						User.right = Circle.Get_result(Circle.ObjectRow - 1);
-						eye = false;
-						// вставить предупреждение про проверку левого глаза
-					}
-					else
-						User.left = Circle.Get_result(Circle.ObjectRow - 1);
+					User.left = Circle.Get_result(Circle.ObjectRow - 1);
 					MyVision.Add_to_file(ref User);
 					AfterTestingForm form = new AfterTestingForm();
 					form.Show();
 					this.Hide();
 				}
-
 			}
+
+			
 		}
 
     }

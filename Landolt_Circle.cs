@@ -20,18 +20,44 @@ namespace GoodVision
 		public int Get_Random()//случайная генерация числа 1-4
 		{
 			Random rnd = new Random();
-			int Random_Direction = rnd.Next(1, 4);
+			int Random_Direction = rnd.Next(1, 5);
 			return Random_Direction;
 		}
 		public void Set_Circle()
 		{
 			this.Circle_Direction = (Direction)Get_Random();
-		}
+            this.ShowImage = Properties.Resources.Circle;
+            switch (Circle_Direction)
+            {
+                case Direction.Upwards:
+                    {
+                        ShowImage.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                        break;
+                    }
+                case Direction.Leftwards:
+                    {
+                        ShowImage.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                        break;
+                    }
+                case Direction.Downwards:
+                    {
+                        this.ShowImage.RotateFlip(RotateFlipType.RotateNoneFlipNone);
+                        break;
+                    }
+                case Direction.Rightwards:
+                    {
+                        ShowImage.RotateFlip(RotateFlipType.Rotate90FlipX);
+                        break;
+                    }
+            }
+          
+
+        }
 		public Landolt_Circle()//конструктор со случайным выбором направления для кольца
 		{
-			this.FileName = "Circle.png";
+
 			this.Set_Circle();
-			this.ShowImage = Image.FromFile(this.FileName);
+
 		}
 		public int Directions//Метод который возвращает направление кольца
         {

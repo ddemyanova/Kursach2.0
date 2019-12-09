@@ -21,16 +21,17 @@ namespace GoodVision
             InitializeComponent();
           
         }
+
         int i = 6, temp;
-		Letter NewLetter= new Letter();
-		int rightAnswer = 0;
+		Letter NewLetter = new Letter();
+        int rightAnswer = 0;
 		int tests = 0;
 		int left = 1;
 		int right = 12;
 		bool eye = true;
 		UserClass User = new UserClass() ;
 		GoodVisionClass MyVision= new GoodVisionClass();
-
+        Point stLocation= new Point(385,246);
 		
 
         private void AnswerSivtsevButton_Click(object sender, EventArgs e)
@@ -39,8 +40,6 @@ namespace GoodVision
 				if (AnswerTextBox.Text == NewLetter.Get_Letter())
 				{
 					rightAnswer++;
-             
-
                 }
             AnswerTextBox.Text = string.Empty;
             //  i++; // Светлана , откуда здесь i?
@@ -49,46 +48,79 @@ namespace GoodVision
 			{
 				NewLetter.Set_Letter();
 				LetterPictureBox.Image = NewLetter.ShowImage;
+				Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+
+				LetterPictureBox.Location = point;
 			}
 			else if (rightAnswer >= 2)
 			{
+				rightAnswer = 0;
 				left = NewLetter.ObjectRow;
 				NewLetter.ObjectRow = (left + right) / 2;
+				if (left == 11) NewLetter.ObjectRow = 12;
 				tests = 0;
 				NewLetter.Set_Letter();
+				NewLetter.CalcSize();
+				if (left <= 9)
+				{
+					
+					LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
+					this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+					this.LetterPictureBox.BorderStyle = BorderStyle.None;
+					Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+					LetterPictureBox.Location = point;
+					LetterPictureBox.Image = NewLetter.ShowImage;
+				}
 
-				LetterPictureBox.Image = NewLetter.ShowImage;
 			}
+
 			else
 			{
+
 				right = NewLetter.ObjectRow;
 				if (left < right)
 				{
 					NewLetter.ObjectRow = (left + right) / 2;
 					NewLetter.CalcSize();
-					LetterPictureBox.Image = NewLetter.ShowImage;
-					tests = 0;
-				}
-				else
-				{
-					if (eye)//какой глаз сейчас проверяем
+
+
+
+					if (left <= 9)
 					{
-						User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
-						eye = false;
+						LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
+						this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+						this.LetterPictureBox.BorderStyle = BorderStyle.None;
+						Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+						LetterPictureBox.Location = point;
+						LetterPictureBox.Image = NewLetter.ShowImage;
+					}
+
+					tests = 0;
+
+				}
+			}
+				if(left>=right || right == NewLetter.ObjectRow|| left== NewLetter.ObjectRow)
+				{
+                    if (eye)//какой глаз сейчас проверяем
+                    {
+                        User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        eye = false;
                         timer1.Enabled = false;
                         EyeTestPanel.Visible = true;
-                        EyeTextLabel.Text="Тестуємо ліве око. Будь ласка, закрийте праве та нажміть ''старт''";
+                        EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, \nзакрийте праве та нажміть ''старт''";
                         // вставить предупреждение про проверку левого глаза
                     }
-					else
-						User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
-					MyVision.Add_to_file(ref User);
-					AfterTestingForm form = new AfterTestingForm();
-					form.Show();
-					this.Hide();
+                    else
+                    {
+                        User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        MyVision.Add_to_file(ref User);
+                        AfterTestingForm form = new AfterTestingForm();
+                        form.Show();
+                        this.Hide();
+                    }
 				}
 			
-			}
+			
 
 
 				SivtsevTimer.Value = 0;
@@ -103,6 +135,17 @@ namespace GoodVision
             EyeTestPanel.Visible = false;// предупреждение про проверку правого глаза уходит
 
             NewLetter.Set_Letter();
+            NewLetter.ObjectRow = 6; // задает начальное значение
+
+            LetterPictureBox.Size = new System.Drawing.Size(15, 15);
+            this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.LetterPictureBox.BorderStyle = BorderStyle.None;
+            LetterPictureBox.Image = NewLetter.ShowImage;
+            Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+
+
+            LetterPictureBox.Location = point;
+
             LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
 
@@ -150,7 +193,21 @@ namespace GoodVision
 			}
 		}
 
-		private void BackToVisionCheckButton_Click(object sender, EventArgs e)
+        private void AnswerTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+            if ((e.KeyChar>1071 && e.KeyChar < 1104)|| (e.KeyChar> 1039 && e.KeyChar < 1071))
+            {
+                if (AnswerTextBox.Text != string.Empty)
+                {
+                    AnswerTextBox.Text = string.Empty;
+                }
+               
+                AnswerTextBox.Text = Convert.ToString(e.KeyChar).ToUpper();
+            }
+        }
+
+        private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
             VisionCheck Vch = new VisionCheck();
             Vch.Show();

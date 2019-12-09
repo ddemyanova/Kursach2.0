@@ -11,17 +11,15 @@ namespace GoodVision
 
     abstract public class Object
     {
-        protected string FileName = @"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\Resources\";
         protected Tuple<double, double> size;
+        protected string Name;
         public Image ShowImage;
 		protected int Row;
         protected double[] Coefficients = new double[12];
         public Object()
         {
-           // this.FileName = "...";//Тут должен будет быт путь к базовому изображения
-            this.size = new Tuple<double, double>(2.33333333, 2.33333333);//размер изображения в милиметрах для 6(базовой строки)
-           // this.ShowImage = Image.FromFile(this.FileName);
-		   for(int i = 1; i < 11; i++)
+           this.size = new Tuple<double, double>(2.33333333, 2.33333333);//размер изображения в милиметрах для 6(базовой строки)
+           for(int i = 1; i < 11; i++)
 			{
 				Coefficients[i - 1] = i * 0.1;
 			}
@@ -38,9 +36,9 @@ namespace GoodVision
 		{
 			return Coefficients[i];
 		}
-        virtual public Tuple<double, double> Get_size(Image Image_to_show)
+        virtual public Tuple<double, double> Get_size()
         {
-            this.size = new Tuple<double, double>((double)Image_to_show.Height * 0.265, (double)Image_to_show.Width * 0.265);
+
             return size;
         }
 
@@ -51,8 +49,8 @@ namespace GoodVision
 
         public void CalcSize()
         {
-            double Size = 7 / Coefficients[Row - 1] / 5;
-			this.size = new Tuple<double, double>( Size, Size);
+            double Size = (7 / Coefficients[Row - 1] / 4)*3.85;
+			this.size = new Tuple<double, double>(Size, Size);
         }
 
         public int ObjectRow
