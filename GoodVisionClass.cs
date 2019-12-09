@@ -20,11 +20,11 @@ namespace GoodVision
             XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
 
             // получаем поток, куда будем записывать сериализованный объект
-            using (FileStream fs = new FileStream("persons.xml", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream("User.xml", FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, User);
 
-                Console.WriteLine("Объект сериализован");
+                //Console.WriteLine("Объект сериализован");
             }
         }
 
@@ -43,14 +43,7 @@ namespace GoodVision
 
 		}
 		
-	
 
-        /*
-		public void (ref UserClass User)
-		{
-			//показать статистику
-		}
-        */
 		public void Test_vision_with_circles(ref UserClass User)
 		{
 			throw new NotImplementedException();
