@@ -155,7 +155,7 @@ namespace GoodVision
             timer1.Enabled = true;
             temp = 6;
             tests = 0;
-            left = 0;
+            left = 1;
             right = 12;
         }
 

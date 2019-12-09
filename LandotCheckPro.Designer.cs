@@ -193,7 +193,7 @@
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
             this.EyeTestPanel.Font = new System.Drawing.Font("a_AvanteInt", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EyeTestPanel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EyeTestPanel.Location = new System.Drawing.Point(426, 6);
+            this.EyeTestPanel.Location = new System.Drawing.Point(432, 9);
             this.EyeTestPanel.Name = "EyeTestPanel";
             this.EyeTestPanel.Size = new System.Drawing.Size(694, 574);
             this.EyeTestPanel.TabIndex = 7;
