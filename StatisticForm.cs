@@ -44,25 +44,29 @@ namespace GoodVision
 		private void StatisticForm_Load(object sender, EventArgs e)
 		{
             //Десериализатор Get_Stats здесь не используется (написал на всякий случай), вместо этого просто считываю файл 
-			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
-			if (session != null)
-			{
-				StreamReader reader = new StreamReader(session);
-				User.Nick = reader.ReadToEnd();
-				session.Close();
-			}
+            FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+            if (session != null)
+            {
+                StreamReader reader = new StreamReader(session);
+                User.Nick = reader.ReadToEnd();
+                session.Close();
+            }
             DataSet ds = new DataSet();
-            ds.ReadXml(@"D:\Downloads\Kursach-master (7)\Kursach-master\bin\Debug\User.xml");
+            ds.ReadXml(@"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\persons.xml");
             StatisticTable.DataSource = ds.Tables[0];
             //read from .txt
-            string fileName = @"D:\Downloads\Kursach-master (7)\Kursach-master\bin\Debug\session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
+            string fileName = @"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
             string textLine = "";
             //string userName = "";
             System.IO.StreamReader objReader;
             objReader = new System.IO.StreamReader(fileName);
             textLine = objReader.ReadLine();
-
-            StatisticTable.Columns[0].HeaderText = textLine;
+            /*
+            StatisticTable.Columns[4].HeaderText = textLine;
+            StatisticTable.Columns[5].HeaderText = "Дата";
+            StatisticTable.Columns[6].HeaderText = "Острота лівого ока";
+            StatisticTable.Columns[7].HeaderText = "Острота правого ока";
+            */
         }
 	}
 }

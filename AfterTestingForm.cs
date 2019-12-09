@@ -50,6 +50,7 @@ namespace GoodVision
 				User.Nick = reader.ReadToEnd();
 				session.Close();
 			}
+
 		}
 
         private void BackToMenuButton_Click_1(object sender, EventArgs e)
