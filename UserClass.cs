@@ -9,6 +9,11 @@ using System.Xml.Serialization;
 namespace GoodVision
 {   // класс и его члены объявлены как public
     [Serializable]
+    public class Users
+    {
+        public List<UserClass> UsersList { get; set; } = new List<UserClass>();
+    }
+    [Serializable]
     public class UserClass
     {
         [XmlIgnore]
@@ -98,13 +103,13 @@ namespace GoodVision
             return vision;
         }
          
-        public UserClass Get_Stats(ref UserClass User)
+        public Users Get_Stats(ref Users users)
         {
             //показать статистику
-            XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
+            XmlSerializer xml = new XmlSerializer(typeof(UserClass));
             using (FileStream fs = new FileStream("User.xml", FileMode.OpenOrCreate))
             {
-                UserClass newPerson = (UserClass)formatter.Deserialize(fs);
+                Users newPerson = (Users)xml.Deserialize(fs);
                 //здесь можем манипулировать всем!
                 Console.WriteLine("Объект десериализован");
                 return newPerson;

@@ -186,8 +186,12 @@ namespace GoodVision
 				else
 				{
 					User.left = Circle.Get_result(Circle.ObjectRow - 1);
-					MyVision.Add_to_file(ref User);
-					AfterTestingForm form = new AfterTestingForm();
+                    //MyVision.Add_to_file(ref User);
+                    foreach(UserClass o in  Users.UsersList)
+                    {
+                        MyVision.Add_to_file(ref o);
+                    }
+                    AfterTestingForm form = new AfterTestingForm();
 					form.Show();
 					this.Hide();
 				}
