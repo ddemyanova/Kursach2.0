@@ -45,15 +45,15 @@ namespace GoodVision
         virtual public void Set_size(Tuple<double, double> Size)
         {
             this.size = Size;
-        }
+            }
 
-        public void CalcSize()
-        {
-            double Size = (7 / Coefficients[Row - 1] / 4)*3.85;
-			this.size = new Tuple<double, double>(Size, Size);
-        }
+            public void CalcSize()
+            {
+                double Size = (7 / Coefficients[Row - 1] / 4) * 3.85;
+                this.size = new Tuple<double, double>(Size, Size);
+            }
 
-        public int ObjectRow
+         public int ObjectRow
 		{
 			get
 			{

@@ -12,17 +12,17 @@ namespace GoodVision
 	class GoodVisionClass: GoodVisionInterface
 	{ bool regMess;
 		public GoodVisionClass() { }
-		public void Add_to_file(ref Users User)
+		public void Add_to_file(ref UserClass User)
 		{
             //добавление в файл пользователя данных
             //XML Serizalisation
             // передаем в конструктор тип класса
-            XmlSerializer xml = new XmlSerializer(typeof(Users));
+            XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
 
             // получаем поток, куда будем записывать сериализованный объект
             using (FileStream fs = new FileStream("User.xml", FileMode.OpenOrCreate))
             {
-                xml.Serialize(fs, User);
+                formatter.Serialize(fs, User);
 
                 //Console.WriteLine("Объект сериализован");
             }
