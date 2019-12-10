@@ -44,6 +44,8 @@
             this.LTimer = new System.Windows.Forms.Timer(this.components);
             this.BackToVisionCheckButton = new rbutton.CustRoundButton();
             this.GoLandotButton = new ButtonRoundedCorners.RoundedCorners();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.MessagePanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpLandotButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightLandotButton)).BeginInit();
@@ -53,18 +55,20 @@
             this.panel2.SuspendLayout();
             this.EyeTestPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
+            this.panel1.Controls.Add(this.MessagePanel);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.UpLandotButton);
             this.panel1.Controls.Add(this.LandotTimer);
             this.panel1.Controls.Add(this.RightLandotButton);
             this.panel1.Controls.Add(this.DownLandotButton);
             this.panel1.Controls.Add(this.LeftLandotButton);
-            this.panel1.Controls.Add(this.LandotCirclePictureBox);
             this.panel1.Location = new System.Drawing.Point(429, 9);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(694, 574);
@@ -76,7 +80,7 @@
             this.UpLandotButton.Image = global::GoodVision.Properties.Resources.Up;
             this.UpLandotButton.ImageHover = global::GoodVision.Properties.Resources.UpHover;
             this.UpLandotButton.ImageNormal = global::GoodVision.Properties.Resources.Up;
-            this.UpLandotButton.Location = new System.Drawing.Point(260, 46);
+            this.UpLandotButton.Location = new System.Drawing.Point(253, 40);
             this.UpLandotButton.Name = "UpLandotButton";
             this.UpLandotButton.Size = new System.Drawing.Size(225, 109);
             this.UpLandotButton.TabIndex = 5;
@@ -157,9 +161,9 @@
             // LandotCirclePictureBox
             // 
             this.LandotCirclePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LandotCirclePictureBox.Image")));
-            this.LandotCirclePictureBox.Location = new System.Drawing.Point(260, 173);
+            this.LandotCirclePictureBox.Location = new System.Drawing.Point(107, 94);
             this.LandotCirclePictureBox.Name = "LandotCirclePictureBox";
-            this.LandotCirclePictureBox.Size = new System.Drawing.Size(225, 212);
+            this.LandotCirclePictureBox.Size = new System.Drawing.Size(33, 28);
             this.LandotCirclePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LandotCirclePictureBox.TabIndex = 0;
             this.LandotCirclePictureBox.TabStop = false;
@@ -193,7 +197,7 @@
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
             this.EyeTestPanel.Font = new System.Drawing.Font("a_AvanteInt", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EyeTestPanel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EyeTestPanel.Location = new System.Drawing.Point(432, 9);
+            this.EyeTestPanel.Location = new System.Drawing.Point(426, 6);
             this.EyeTestPanel.Name = "EyeTestPanel";
             this.EyeTestPanel.Size = new System.Drawing.Size(694, 574);
             this.EyeTestPanel.TabIndex = 7;
@@ -238,6 +242,26 @@
             this.GoLandotButton.TabStop = false;
             this.GoLandotButton.Click += new System.EventHandler(this.GoLandotButton_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel3.Controls.Add(this.LandotCirclePictureBox);
+            this.panel3.Location = new System.Drawing.Point(243, 181);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(246, 214);
+            this.panel3.TabIndex = 7;
+            // 
+            // MessagePanel
+            // 
+            this.MessagePanel.BackColor = System.Drawing.Color.Transparent;
+            this.MessagePanel.BackgroundImage = global::GoodVision.Properties.Resources.enterMessageLand;
+            this.MessagePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MessagePanel.Location = new System.Drawing.Point(234, 160);
+            this.MessagePanel.Name = "MessagePanel";
+            this.MessagePanel.Size = new System.Drawing.Size(269, 244);
+            this.MessagePanel.TabIndex = 8;
+            this.MessagePanel.Visible = false;
+            // 
             // LandotCheckPro
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -264,6 +288,7 @@
             this.EyeTestPanel.ResumeLayout(false);
             this.EyeTestPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -285,5 +310,7 @@
         private ButtonRoundedCorners.RoundedCorners GoLandotButton;
         private System.Windows.Forms.Panel EyeTestPanel;
         private System.Windows.Forms.Label EyeTextLabel;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel MessagePanel;
     }
 }

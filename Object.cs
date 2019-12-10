@@ -15,6 +15,7 @@ namespace GoodVision
         protected string Name;
         public Image ShowImage;
 		protected int Row;
+        //   protected double[] Coefficients = new double[12];
         protected double[] Coefficients = new double[12];
         public Object()
         {
