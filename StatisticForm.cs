@@ -43,7 +43,6 @@ namespace GoodVision
 
 		private void StatisticForm_Load(object sender, EventArgs e)
 		{
-            
             //Десериализатор Get_Stats здесь не используется (написал на всякий случай), вместо этого просто считываю файл 
             FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
             if (session != null)
@@ -53,7 +52,7 @@ namespace GoodVision
                 session.Close();
             }
             DataSet ds = new DataSet();
-            ds.ReadXml(@"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\User.xml");
+            ds.ReadXml(@"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\"+User.Nick+".xml");
             StatisticTable.DataSource = ds.Tables[0];
             //read from .txt
             string fileName = @"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
@@ -62,14 +61,10 @@ namespace GoodVision
             System.IO.StreamReader objReader;
             objReader = new System.IO.StreamReader(fileName);
             textLine = objReader.ReadLine();
-            
-            StatisticTable.Columns[0].HeaderText = textLine;
-
-            
-            StatisticTable.Columns[1].HeaderText = "Дата";
-            StatisticTable.Columns[2].HeaderText = "Острота лівого ока";
-            StatisticTable.Columns[3].HeaderText = "Острота правого ока";
-            
+            StatisticTable.Columns[0].HeaderText = "Ім'я";
+            StatisticTable.Columns[1].HeaderText = "Острота лівого ока";
+            StatisticTable.Columns[2].HeaderText = "Острота правого ока";
+            StatisticTable.Columns[3].HeaderText = "Дата";
         }
     }
 }

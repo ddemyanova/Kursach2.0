@@ -34,7 +34,6 @@
             this.StatisticLabel = new System.Windows.Forms.Label();
             this.StatisticTable = new System.Windows.Forms.DataGridView();
             this.BackToMenuButton = new rbutton.CustRoundButton();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).BeginInit();
             this.SuspendLayout();
@@ -75,8 +74,6 @@
             this.StatisticTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.StatisticTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StatisticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StatisticTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.UserName});
             this.StatisticTable.Location = new System.Drawing.Point(211, 147);
             this.StatisticTable.Name = "StatisticTable";
             this.StatisticTable.RowTemplate.Height = 24;
@@ -96,11 +93,6 @@
             this.BackToMenuButton.TabIndex = 2;
             this.BackToMenuButton.UseVisualStyleBackColor = false;
             this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
-            // 
-            // UserName
-            // 
-            this.UserName.HeaderText = "Ім\'я користувача";
-            this.UserName.Name = "UserName";
             // 
             // StatisticForm
             // 
@@ -130,6 +122,5 @@
        // private rbutton.CustRoundButton BackToMainButton;
         private System.Windows.Forms.Label label1;
         private rbutton.CustRoundButton BackToMenuButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
     }
 }

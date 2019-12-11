@@ -113,6 +113,7 @@ namespace GoodVision
                     else
                     {
                         User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        //User.check_date = DateTime.Now;
                         MyVision.Add_to_file(ref User);
                         AfterTestingForm form = new AfterTestingForm();
                         form.Show();
