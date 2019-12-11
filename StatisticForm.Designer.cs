@@ -58,9 +58,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("a_AvanteInt", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(25, 38);
+            this.label1.Location = new System.Drawing.Point(113, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1007, 61);
+            this.label1.Size = new System.Drawing.Size(815, 49);
             this.label1.TabIndex = 3;
             this.label1.Text = "Тут Ви можете побачити Вашу статистику";
             // 
@@ -69,7 +69,7 @@
             this.StatisticLabel.AutoSize = true;
             this.StatisticLabel.Location = new System.Drawing.Point(149, 38);
             this.StatisticLabel.Name = "StatisticLabel";
-            this.StatisticLabel.Size = new System.Drawing.Size(0, 17);
+            this.StatisticLabel.Size = new System.Drawing.Size(0, 13);
             this.StatisticLabel.TabIndex = 1;
             // 
             // StatisticTable

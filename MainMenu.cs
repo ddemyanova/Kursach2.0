@@ -80,5 +80,13 @@ namespace GoodVision
 
             pictureBox1.Image = Properties.Resources.eye2;
         }
+
+        private void ChangeUser_Click(object sender, EventArgs e)
+        {
+            
+            RegForm reg1 = new RegForm();
+            reg1.Show();
+            this.Hide();
+        }
     }
 }

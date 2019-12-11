@@ -110,7 +110,8 @@ namespace GoodVision
                         eye = false;
                         timer1.Enabled = false;
                         EyeTestPanel.Visible = true;
-                        EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, \nзакрийте праве та нажміть ''старт''";
+                    AnswerSivtsevButton.Enabled = false;
+                    EyeTextLabel.Text = "Тестуємо праве око.\n Будь ласка, закрийте ліве\n та нажміть ''старт''";
                         // вставить предупреждение про проверку левого глаза
                     }
                     else
@@ -134,6 +135,7 @@ namespace GoodVision
         }
         private void StartButton_Click(object sender, EventArgs e)
         {
+            AnswerSivtsevButton.Enabled = true;
             SivtsevTimer.Value = 0;
             EyeTestPanel.Visible = false;// предупреждение про проверку правого глаза уходит
 
@@ -202,14 +204,37 @@ namespace GoodVision
         private void AnswerTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
-            if ((e.KeyChar>1071 && e.KeyChar < 1104)|| (e.KeyChar> 1039 && e.KeyChar < 1071))
+            if ((e.KeyChar>1071 && e.KeyChar < 1104)|| (e.KeyChar> 1039 && e.KeyChar < 1071)||(e.KeyChar==1110)|| (e.KeyChar == 8))
             {
                 if (AnswerTextBox.Text != string.Empty)
                 {
                     AnswerTextBox.Text = string.Empty;
                 }
-               
-                AnswerTextBox.Text = Convert.ToString(e.KeyChar).ToUpper();
+                if (e.KeyChar == 1110)
+                {
+                    AnswerTextBox.Text = Convert.ToString('ы').ToUpper();
+                }
+                 else if (e.KeyChar == 8)
+                {
+                    AnswerTextBox.Text = string.Empty;
+                }
+                else AnswerTextBox.Text = Convert.ToString(e.KeyChar).ToUpper();
+            }
+        }
+
+        private void SivtsevInstrTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SivtsevCheckingPro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (AnswerSivtsevButton.Enabled == true)
+            {
+                if (e.KeyValue == (char)13)
+                {
+                    AnswerSivtsevButton_Click(AnswerSivtsevButton, null);
+                }
             }
         }
 
