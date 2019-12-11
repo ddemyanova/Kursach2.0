@@ -60,12 +60,13 @@ namespace GoodVision
 		public void Create_account(ref UserClass User)
 		{
             string filePath = "User.xml";//можно прописать тут полный адрес
-            
+
             try
-			{
-					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
-					//создать файл с именем;
-			}
+            {
+                User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
+                User.File.Close();
+                //создать файл с именем;
+            }
 			catch (FileNotFoundException)
 			{
                 MessageBox.Show("");

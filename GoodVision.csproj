@@ -421,6 +421,24 @@
   <ItemGroup>
     <None Include="Resources\enterMessageLand.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вопросе1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHelpHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHelp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangeUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangeUserHover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

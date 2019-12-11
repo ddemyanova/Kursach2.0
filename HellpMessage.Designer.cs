@@ -77,6 +77,7 @@
             // 
             this.HelpGreetingLabel.AutoSize = true;
             this.HelpGreetingLabel.Font = new System.Drawing.Font("a_AvanteInt", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HelpGreetingLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.HelpGreetingLabel.Location = new System.Drawing.Point(117, 16);
             this.HelpGreetingLabel.Name = "HelpGreetingLabel";
             this.HelpGreetingLabel.Size = new System.Drawing.Size(364, 33);
@@ -151,12 +152,13 @@
             this.richTextBox4.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox4.Location = new System.Drawing.Point(3, 20);
             this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
             this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox4.ShowSelectionMargin = true;
             this.richTextBox4.Size = new System.Drawing.Size(269, 104);
             this.richTextBox4.TabIndex = 0;
-            this.richTextBox4.Text = " За допомоги цієї кнопки Ви завжди можете повернутися на цю сторінку з будь-якої " +
-    "іншої.";
+            this.richTextBox4.Text = "\n За допомоги цієї кнопки Ви завжди можете повернутися на цю сторінку з будь-якої" +
+    " іншої.";
             // 
             // panel3
             // 
@@ -180,7 +182,7 @@
             this.richTextBox2.ShowSelectionMargin = true;
             this.richTextBox2.Size = new System.Drawing.Size(266, 92);
             this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = " Кнопка для перегляду Вашої статистики попередніх тестувань.";
+            this.richTextBox2.Text = " \nКнопка для перегляду Вашої статистики попередніх тестувань.";
             this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // panel4
@@ -207,8 +209,8 @@
             this.richTextBox3.ShowSelectionMargin = true;
             this.richTextBox3.Size = new System.Drawing.Size(269, 135);
             this.richTextBox3.TabIndex = 1;
-            this.richTextBox3.Text = " Кнопка для переходу на вибір методу тестування. Там ви отримаєте докладні інстру" +
-    "кції для проходження тестів.\n";
+            this.richTextBox3.Text = " \nКнопка для переходу на вибір методу тестування. Там ви отримаєте докладні інстр" +
+    "укції для проходження тестів.\n";
             // 
             // richTextBox1
             // 

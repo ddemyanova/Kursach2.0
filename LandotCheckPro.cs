@@ -202,7 +202,7 @@ namespace GoodVision
 					User.right = Circle.Get_result(Circle.ObjectRow - 1);
 					eye = false;
                     EyeTestPanel.Visible = true;
-                    EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, \nзакрийте праве та нажміть ''старт''";
+                    EyeTextLabel.Text = "Тестуємо праве око.\n Будь ласка, закрийте ліве\n та нажміть ''старт''";
                 }
 				else
 				{
