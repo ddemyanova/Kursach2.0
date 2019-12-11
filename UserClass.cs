@@ -8,13 +8,7 @@ using System.Xml.Serialization;
 
 namespace GoodVision
 {   // класс и его члены объявлены как public
-    /*
-    [Serializable]
-    public class Users
-    {
-        List<UserClass> userList = new List<UserClass>();
-    }
-    */
+   
     [Serializable]
     public class UserClass
     {
@@ -22,13 +16,13 @@ namespace GoodVision
         public string Nickname;//имя
         //[XmlIgnore]
         public FileStream FilePath;
-        [XmlIgnore]
+        
         public DateTime last_check_date;//дата проверки(последней)
-        [XmlIgnore]
+        
         public DateTime check_date;//произвольная дата когда пользователь чекал зрение нинаю пока куда его припхнуть, но явно понадобится для того чтобы статку чекать
-        [XmlIgnore]
+        
         public double left_eye_vision;//зрание для левого глаза
-        [XmlIgnore]
+        
         public double right_eye_vision;//для правого
 
 		public UserClass() { }

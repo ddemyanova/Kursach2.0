@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -15,6 +16,7 @@ namespace GoodVision
 
         public void Add_to_file(ref UserClass User)
         {
+            /*
             //добавление в файл пользователя данных
             //XML Serizalisation
             // передаем в конструктор тип класса
@@ -28,7 +30,14 @@ namespace GoodVision
                 
                 //Console.WriteLine("Объект сериализован");
             }
-
+            */
+            string filePath = User.Nick + ".xml";
+            XDocument doc = XDocument.Load(filePath);
+            XElement root = new XElement("Snippet");
+            root.Add(new XAttribute("name", "name goes here"));
+            root.Add(new XElement("SnippetCode", "SnippetCode"));
+            doc.Element("Snippets").Add(root);
+            doc.Save(filePath);
         }
         /*
         void SerializeXML(ref Users userList)
@@ -84,6 +93,10 @@ namespace GoodVision
                 //создать файл с именем;
                 //закрываем поток
                 System.IO.File.Create(filePath).Close();
+                XDocument doc = XDocument.Load(filePath);
+                XElement root = new XElement("UserData");
+                doc.Add(root);
+                doc.Save(filePath);
             }
 			catch (FileNotFoundException)
 			{
