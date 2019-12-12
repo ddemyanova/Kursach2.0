@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
@@ -111,6 +112,7 @@
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).EndInit();
 			this.ResumeLayout(false);
+
 
         }
 

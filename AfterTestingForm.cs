@@ -11,6 +11,7 @@ using System.IO;
 
 namespace GoodVision
 {
+
 	public partial class AfterTestingForm : Form
 	{
 		public AfterTestingForm(UserClass u)
@@ -20,12 +21,14 @@ namespace GoodVision
 		}
 		UserClass User;
 
+
 		private void BackToMenuButton_Click(object sender, EventArgs e) // возврат в меню
 		{
 			MainMenu mMen = new MainMenu();
 			mMen.Show();
 			mMen.Hide();
 		}
+
 
 
 		private void VisionCheckButton_Click(object sender, EventArgs e) // переход на форма проверка зрения
@@ -42,18 +45,21 @@ namespace GoodVision
 			this.Hide();
 		}
 
+
 		private void AfterTestingForm_Load(object sender, EventArgs e)
 		{
 			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
 			if (session != null)
 			{
 				StreamReader reader = new StreamReader(session);
-				User.Nick = reader.ReadToEnd();
+                User.Nick = reader.ReadToEnd();
 				session.Close();
 			}
+
 			this.LeftEyeRes.Text = User.left.ToString();
 			this.RightEyeRes.Text = User.right.ToString();
 
 		}
 	}
+
 }

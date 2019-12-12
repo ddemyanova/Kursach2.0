@@ -11,6 +11,7 @@ using System.Xml.Serialization;
 
 namespace GoodVision
 {
+
 	class GoodVisionClass : GoodVisionInterface
 	{
 		bool regMess;
@@ -21,10 +22,12 @@ namespace GoodVision
 		public void Add_to_file(ref UserClass User)
 		{
 			/*
+
             //добавление в файл пользователя данных
             //XML Serizalisation
             // передаем в конструктор тип класса
             XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
+
             string filePath = User.Nick + ".xml";
             // получаем поток, куда будем записывать сериализованный объект
             using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate))
@@ -32,6 +35,7 @@ namespace GoodVision
                 formatter.Serialize(fs, User);
                 fs.Close();
                 
+
                 //Console.WriteLine("Объект сериализован");
             }
             */
@@ -114,9 +118,11 @@ namespace GoodVision
 
 		public void Clear_account(ref UserClass User)
 		{
+
 			try
 			{
 				File.Delete(User.Nick + ".xml");
+
 			}
 			catch (FileNotFoundException)
 			{
@@ -138,6 +144,7 @@ namespace GoodVision
 
 		public void Create_account(ref UserClass User)
 		{
+
 			//         string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
 
 			//         try
@@ -170,6 +177,7 @@ namespace GoodVision
 			//{
 			//             MessageBox.Show("");
 			//         }
+
 
 
 		}

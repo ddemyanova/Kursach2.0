@@ -23,6 +23,7 @@ namespace GoodVision
 		{
 			InitializeComponent();
 
+
 			AfterTesting = isAfterTesting;
 		}
 		UserClass User = new UserClass();
@@ -33,6 +34,7 @@ namespace GoodVision
 			get { return StatisticLabel.Text; }
 			set { StatisticLabel.Text = value; }
 		}
+
 
 
 
@@ -50,6 +52,7 @@ namespace GoodVision
 
 		private void StatisticForm_Load(object sender, EventArgs e)
 		{
+
 			//Десериализатор Get_Stats здесь не используется (написал на всякий случай), вместо этого просто считываю файл 
 			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
 			if (session != null)
@@ -93,4 +96,5 @@ namespace GoodVision
 
 		}
 	}
+
 }
