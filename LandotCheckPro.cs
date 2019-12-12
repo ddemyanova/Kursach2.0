@@ -135,6 +135,11 @@ namespace GoodVision
 
 		}
 
+		private void LandotCheckPro_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+
 		private void DirectionClick()
 		{
             MessagePanel.Visible = false;

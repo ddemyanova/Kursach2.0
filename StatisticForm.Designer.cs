@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
-
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
@@ -72,12 +70,19 @@
 			// 
 			// StatisticTable
 			// 
+			this.StatisticTable.AllowUserToAddRows = false;
+			this.StatisticTable.AllowUserToDeleteRows = false;
+			this.StatisticTable.AllowUserToResizeColumns = false;
+			this.StatisticTable.AllowUserToResizeRows = false;
 			dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
 			this.StatisticTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			this.StatisticTable.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.StatisticTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.StatisticTable.BackgroundColor = System.Drawing.Color.Azure;
 			this.StatisticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.StatisticTable.Location = new System.Drawing.Point(211, 147);
 			this.StatisticTable.Name = "StatisticTable";
+			this.StatisticTable.ReadOnly = true;
 			this.StatisticTable.RowTemplate.Height = 24;
 			this.StatisticTable.Size = new System.Drawing.Size(902, 416);
 			this.StatisticTable.TabIndex = 1;
@@ -107,14 +112,14 @@
 			this.Controls.Add(this.panel1);
 			this.DoubleBuffered = true;
 			this.Name = "StatisticForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = " Статистика";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StatisticForm_FormClosing);
 			this.Load += new System.EventHandler(this.StatisticForm_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).EndInit();
 			this.ResumeLayout(false);
-
-
 
         }
 

@@ -252,7 +252,12 @@ namespace GoodVision
             }
         }
 
-        private void BackToVisionCheckButton_Click(object sender, EventArgs e)
+		private void SivtsevCheckingPro_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+
+		private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
             MainMenu Vch = new MainMenu();
             Vch.Show();

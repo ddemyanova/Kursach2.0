@@ -47,25 +47,7 @@ namespace GoodVision
 			{
 				if (!File.Exists(filePath))
 				{
-					XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
-					xmlWriterSettings.Indent = true;
-					xmlWriterSettings.NewLineOnAttributes = true;
-					using (XmlWriter xmlWriter = XmlWriter.Create(filePath, xmlWriterSettings))
-					{
-						xmlWriter.WriteStartDocument();
-						xmlWriter.WriteStartElement("UserData");
-
-						xmlWriter.WriteStartElement(User.Nick);
-						xmlWriter.WriteElementString("Date", User.check_date.ToString());
-						xmlWriter.WriteElementString("Left", User.left.ToString());
-						xmlWriter.WriteElementString("Right", User.right.ToString());
-						xmlWriter.WriteEndElement();
-
-						xmlWriter.WriteEndElement();
-						xmlWriter.WriteEndDocument();
-						xmlWriter.Flush();
-						xmlWriter.Close();
-					}
+					Create_account(ref User);
 				}
 				else
 				{
@@ -85,7 +67,7 @@ namespace GoodVision
 					xDocument.Save(filePath);
 				}
 			}
-			catch (Exception ex)
+			catch (FileNotFoundException ex)
 			{
 				MessageBox.Show("Error!");
 			}
@@ -138,38 +120,26 @@ namespace GoodVision
 
 		public void Create_account(ref UserClass User)
 		{
-			//         string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
+			string filePath = User.Nick + ".xml";
+			XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+			xmlWriterSettings.Indent = true;
+			xmlWriterSettings.NewLineOnAttributes = true;
+			using (XmlWriter xmlWriter = XmlWriter.Create(filePath, xmlWriterSettings))
+			{
+				xmlWriter.WriteStartDocument();
+				xmlWriter.WriteStartElement("UserData");
 
-			//         try
-			//         {
-			//             //User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
-			//             ////создать файл с именем;
-			//             ////закрываем поток
-			//             //System.IO.File.Create(filePath).Close();
-			//             //XDocument doc = XDocument.Load(filePath);
-			//             //XElement root = new XElement("UserData");
-			//             //doc.Add(root);
-			//             //doc.Save(filePath);
-			//             //User.File.Close();
+				xmlWriter.WriteStartElement(User.Nick);
+				xmlWriter.WriteElementString("Date", null);
+				xmlWriter.WriteElementString("Left", null);
+				xmlWriter.WriteElementString("Right", null);
+				xmlWriter.WriteEndElement();
 
-			//             XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
-			//             xmlWriterSettings.Indent = true;
-			//             xmlWriterSettings.NewLineOnAttributes = true;
-			//             using (XmlWriter xmlWriter = XmlWriter.Create(filePath, xmlWriterSettings))
-			//             {
-			//                 xmlWriter.WriteStartDocument();
-			//                 xmlWriter.WriteStartElement("UserData");
-
-			//                 xmlWriter.WriteEndElement();
-			//                 xmlWriter.WriteEndDocument();
-			//                 xmlWriter.Flush();
-			//                 xmlWriter.Close();
-			//             }
-			//         }
-			//         catch (FileNotFoundException)
-			//{
-			//             MessageBox.Show("");
-			//         }
+				xmlWriter.WriteEndElement();
+				xmlWriter.WriteEndDocument();
+				xmlWriter.Flush();
+				xmlWriter.Close();
+			}
 
 
 		}

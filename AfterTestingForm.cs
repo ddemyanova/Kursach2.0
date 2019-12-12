@@ -24,7 +24,7 @@ namespace GoodVision
 		{
 			MainMenu mMen = new MainMenu();
 			mMen.Show();
-			mMen.Hide();
+			this.Hide();
 		}
 
 
@@ -54,6 +54,11 @@ namespace GoodVision
 			this.LeftEyeRes.Text = User.left.ToString();
 			this.RightEyeRes.Text = User.right.ToString();
 
+		}
+
+		private void AfterTestingForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
 		}
 	}
 }

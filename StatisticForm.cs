@@ -62,26 +62,26 @@ namespace GoodVision
 			DataSet ds = new DataSet();
 			ds.ReadXml(User.Nick + ".xml");
 
-			if (AfterTesting == true)
-			{
-				StatisticTable.Columns.Add("Data", "Дата");
-				StatisticTable.Columns.Add("Left", "Гострота лівого ока");
-				StatisticTable.Columns.Add("Right", "Гострота правого ока");
+			//if (AfterTesting == true)
+			//{
+			//	StatisticTable.Columns.Add("Data", "Дата");
+			//	StatisticTable.Columns.Add("Left", "Гострота лівого ока");
+			//	StatisticTable.Columns.Add("Right", "Гострота правого ока");
 
-				DataGridView dg2 = new DataGridView();
-				dg2.DataSource = ds.Tables[0];
-				StatisticTable.Rows.Add(ds.Tables[0].Rows[0].ItemArray);
+			//	DataGridView dg2 = new DataGridView();
+			//	dg2.DataSource = ds.Tables[0];
+			//	StatisticTable.Rows.Add(ds.Tables[0].Rows[0].ItemArray);
 
-			}
-			else
-			{
+			//}
+			//else
+			//{
 				StatisticTable.DataSource = ds.Tables[0];
 
 				StatisticTable.Columns[0].HeaderText = "Дата";
 				StatisticTable.Columns[1].HeaderText = "Гострота лівого ока";
 				StatisticTable.Columns[2].HeaderText = "Гострота правого ока";
 
-			}
+			//}
 			//read from .txt
 			string fileName = "session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
 			string textLine = "";
@@ -91,6 +91,11 @@ namespace GoodVision
 			textLine = objReader.ReadLine();
 
 
+		}
+
+		private void StatisticForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
 		}
 	}
 }
