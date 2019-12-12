@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.WellcLabel = new System.Windows.Forms.Label();
             this.WellcomePanel = new System.Windows.Forms.Panel();
@@ -104,63 +105,8 @@
             this.RegButton.Location = new System.Drawing.Point(19, 188);
             this.RegButton.Name = "RegButton";
             this.RegButton.Size = new System.Drawing.Size(680, 97);
-            this.RegButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.RegButton.TabIndex = 3;
-            this.RegButton.TabStop = false;
-            this.RegButton.Click += new System.EventHandler(this.RegButton_Click);
-            // 
-            // RegistTextBox
-            // 
-            this.RegistTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.RegistTextBox.BackColor = System.Drawing.SystemColors.Menu;
-            this.RegistTextBox.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistTextBox.Location = new System.Drawing.Point(31, 103);
-            this.RegistTextBox.Name = "RegistTextBox";
-            this.RegistTextBox.Size = new System.Drawing.Size(668, 36);
-            this.RegistTextBox.TabIndex = 0;
-            this.RegistTextBox.TextChanged += new System.EventHandler(this.RegistTextBox_TextChanged);
-            this.RegistTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RegistTextBox_KeyPress);
-            // 
-            // RegPanel
-            // 
-            this.RegPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RegPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.RegPanel.BackColor = System.Drawing.Color.Transparent;
-            this.RegPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RegPanel.BackgroundImage")));
-            this.RegPanel.Controls.Add(this.RegistTextBox);
-            this.RegPanel.Controls.Add(this.RegButton);
-            this.RegPanel.Controls.Add(this.NameLabel);
-            this.RegPanel.Location = new System.Drawing.Point(213, 237);
-            this.RegPanel.Name = "RegPanel";
-            this.RegPanel.Size = new System.Drawing.Size(729, 310);
-            this.RegPanel.TabIndex = 1;
-            // 
-            // RegForm
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1140, 601);
-            this.Controls.Add(this.logo);
-            this.Controls.Add(this.RegPanel);
-            this.Controls.Add(this.WellcomePanel);
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "RegForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Реєстрація";
-            this.Load += new System.EventHandler(this.RegForm_Load);
-            this.WellcomePanel.ResumeLayout(false);
-            this.WellcomePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RegButton)).EndInit();
-            this.RegPanel.ResumeLayout(false);
-            this.RegPanel.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+
+
 
         }
 

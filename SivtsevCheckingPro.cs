@@ -106,7 +106,7 @@ namespace GoodVision
 				{
                     if (eye)//какой глаз сейчас проверяем
                     {
-                        User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
                         eye = false;
                         timer1.Enabled = false;
                         EyeTestPanel.Visible = true;
@@ -116,9 +116,12 @@ namespace GoodVision
                     }
                     else
                     {
-                        User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
-                        MyVision.Add_to_file(ref User);
-                        AfterTestingForm form = new AfterTestingForm();
+                        User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+
+					User.check_date = DateTime.Now;
+					MyVision.Add_to_file(ref User);
+
+                        AfterTestingForm form = new AfterTestingForm(User);
                         form.Show();
                         this.Hide();
                     }
@@ -238,7 +241,23 @@ namespace GoodVision
             }
         }
 
-        private void BackToVisionCheckButton_Click(object sender, EventArgs e)
+        private void SivtsevCheckingPro_Load_1(object sender, EventArgs e)
+        {
+            FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+            if (session != null)
+            {
+                StreamReader reader = new StreamReader(session);
+                User.Nick = reader.ReadToEnd();
+                session.Close();
+            }
+        }
+
+		private void SivtsevCheckingPro_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+
+		private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
             MainMenu Vch = new MainMenu();
             Vch.Show();

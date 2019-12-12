@@ -26,7 +26,7 @@ namespace GoodVision
 		int tests = 0;
 		int left = 1;
 		int right = 12;
-
+        //Users ob = new Users();
 		UserClass User = new UserClass();
 		GoodVisionClass MyVision = new GoodVisionClass();
 
@@ -135,6 +135,11 @@ namespace GoodVision
 
 		}
 
+		private void LandotCheckPro_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+
 		private void DirectionClick()
 		{
             MessagePanel.Visible = false;
@@ -199,16 +204,19 @@ namespace GoodVision
 			{
 				if (eye)//какой глаз сейчас проверяем
 				{
-					User.right = Circle.Get_result(Circle.ObjectRow - 1);
+					User.left = Circle.Get_result(Circle.ObjectRow - 1);
 					eye = false;
                     EyeTestPanel.Visible = true;
                     EyeTextLabel.Text = "Тестуємо праве око.\n Будь ласка, закрийте ліве\n та нажміть ''старт''";
                 }
 				else
 				{
-					User.left = Circle.Get_result(Circle.ObjectRow - 1);
+					User.right = Circle.Get_result(Circle.ObjectRow - 1);
+
+					User.check_date = DateTime.Now;
 					MyVision.Add_to_file(ref User);
-					AfterTestingForm form = new AfterTestingForm();
+					AfterTestingForm form = new AfterTestingForm(User);
+
 					form.Show();
 					this.Hide();
 				}
