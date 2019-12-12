@@ -42,5 +42,10 @@ namespace GoodVision
             LanCheck.Show();
             this.Hide();
         }
-    }
+
+		private void VisionCheck_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+	}
 }

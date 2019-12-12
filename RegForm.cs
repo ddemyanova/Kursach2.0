@@ -119,6 +119,11 @@ namespace GoodVision
         {
 
         }
-    }
+
+		private void RegForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+	}
         }
     
