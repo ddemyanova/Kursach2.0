@@ -73,7 +73,8 @@ namespace GoodVision
 			}
 
         }
-        ~Landolt_Circle() { }//деструктор
+        ~Landolt_Circle() { }
+
         
     }
 }

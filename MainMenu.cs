@@ -85,5 +85,10 @@ namespace GoodVision
             reg1.Show();
             this.Hide();
         }
-    }
+
+		private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+	}
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisionCheck));
             this.BluePanel = new System.Windows.Forms.Panel();
@@ -200,6 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SivtsevModeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LandoltModeButton)).EndInit();
             this.ResumeLayout(false);
+
 
         }
 

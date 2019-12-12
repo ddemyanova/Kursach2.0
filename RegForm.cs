@@ -41,28 +41,32 @@ namespace GoodVision
             if (RegistTextBox.Text != string.Empty)
             {
               
-                userNick = RegistTextBox.Text;
+                User.Nick = RegistTextBox.Text;
 
-                string filePath = userNick + ".xml";
+                string filePath = User.Nick + ".xml";
                 try
                 {
                     // проверка, существует ли данный аккаунт
 
-                    if (File.Exists(filePath)) { 
-               
+                    if (File.Exists(filePath)) {
 
+                        FileStream session = new FileStream("session.txt", FileMode.Create, FileAccess.Write);
+                        if (session != null)
+                        {
+                            StreamWriter writer = new StreamWriter(session);
+                            writer.Write(User.Nick);
+                            writer.Flush();
+                            session.Close();
+                        }
                         regMess.userNick = userNick;
                         regMess.Tag = this;
                         this.Enabled = false;
                         regMess.Show();
                         regMess.Focus();
-
-                        
-                   }
+                    }
    
                      else
                     {
-                        User.Nick = userNick;
 
 
                         MyVision.Create_account(ref User);
@@ -85,7 +89,6 @@ namespace GoodVision
 
               public void Enter_account(string user)
                 {
-                    User.Nick = user;
                     FileStream session = new FileStream("session.txt", FileMode.Create, FileAccess.Write);
                     if (session != null)
                     {
@@ -116,6 +119,11 @@ namespace GoodVision
         {
 
         }
-    }
+
+		private void RegForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+	}
         }
     

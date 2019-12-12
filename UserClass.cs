@@ -8,15 +8,21 @@ using System.Xml.Serialization;
 
 namespace GoodVision
 {   // класс и его члены объявлены как public
+   
     [Serializable]
     public class UserClass
     {
-
+        [XmlIgnore]
         public string Nickname;//имя
+        //[XmlIgnore]
         public FileStream FilePath;
+        
         public DateTime last_check_date;//дата проверки(последней)
+        
         public DateTime check_date;//произвольная дата когда пользователь чекал зрение нинаю пока куда его припхнуть, но явно понадобится для того чтобы статку чекать
+        
         public double left_eye_vision;//зрание для левого глаза
+        
         public double right_eye_vision;//для правого
 
 		public UserClass() { }
@@ -58,17 +64,19 @@ namespace GoodVision
 				this.left_eye_vision = value;
 			}
 		}
-		public double right {
-			get
-			{
-				return this.right_eye_vision;
-			}
-			set
-			{
-				this.right_eye_vision = value;
-			}
-		}
-		public DateTime last_date {
+		public double right
+        {
+            get
+            {
+                return this.right_eye_vision;
+            }
+            set
+            {
+                this.right_eye_vision = value;
+            }
+        }
+        
+        public DateTime last_date {
 			get
 			{
 				return this.last_check_date;
@@ -95,12 +103,13 @@ namespace GoodVision
         public UserClass Get_Stats(ref UserClass User)
         {
             //показать статистику
-            XmlSerializer formatter = new XmlSerializer(typeof(UserClass));
-            using (FileStream fs = new FileStream("User.xml", FileMode.OpenOrCreate))
+            XmlSerializer xml = new XmlSerializer(typeof(UserClass));
+            string filePath = User.Nick + ".xml";
+            using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate))
             {
-                UserClass newPerson = (UserClass)formatter.Deserialize(fs);
+                UserClass newPerson = (UserClass)xml.Deserialize(fs);
                 //здесь можем манипулировать всем!
-                Console.WriteLine("Объект десериализован");
+                //Console.WriteLine("Объект десериализован");
                 return newPerson;
             }
         }
