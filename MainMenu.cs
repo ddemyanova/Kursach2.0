@@ -61,24 +61,21 @@ namespace GoodVision
             HelloLab.Text = "Вітаємо, " + User.Nick;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
       
 
       
 
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        private void eyePictureBox_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox1.Image = Properties.Resources.eye1;
+            eyePictureBox.Image = Properties.Resources.eye1;
         }
 
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        private void eyePictureBox_MouseEnter(object sender, EventArgs e)
         {
 
-            pictureBox1.Image = Properties.Resources.eye2;
+            eyePictureBox.Image = Properties.Resources.eye2;
         }
 
         private void ChangeUser_Click(object sender, EventArgs e)

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+
+
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandotCheckPro));
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -305,6 +307,7 @@
 			this.EyeTestPanel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).EndInit();
 			this.ResumeLayout(false);
+
 
         }
 

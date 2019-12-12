@@ -22,6 +22,12 @@ namespace GoodVision
 
         }
 
+        private void HellpMessage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+        }
+
         //надо позаливать адреса картинок
 
 

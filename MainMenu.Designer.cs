@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.HelloLab = new System.Windows.Forms.Label();
@@ -187,6 +188,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.ChangeUser)).EndInit();
 			this.ResumeLayout(false);
 
+
         }
 
         #endregion
@@ -197,15 +199,15 @@
        // private rbutton.CustRoundButton HelpButton;
    //     private RoundButtonTwo.MyRoundButton StatisticButton;
         private System.Windows.Forms.Label HelloLabel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel lightPanel;
+        private System.Windows.Forms.Panel darkPanel;
       //  private rbutton.CustRoundButton MainMenuHellpButton;
         public System.Windows.Forms.Label HelloLab;
-        private rbutton.CustRoundButton custRoundButton1;
+      
         private rbutton.CustRoundButton HelpButton;
         private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
         private ButtonRoundedCorners.RoundedCorners StaticticButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox eyePictureBox;
         private TetraCustomButton.ImageTetraButton ChangeUser;
         //
     }
