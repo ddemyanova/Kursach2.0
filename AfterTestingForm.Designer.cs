@@ -36,7 +36,7 @@
             this.BackToMenuButton = new rbutton.CustRoundButton();
             this.panelRight = new System.Windows.Forms.Panel();
             this.RightEyeRes = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelLeft = new System.Windows.Forms.Panel();
             this.LeftEyeRes = new System.Windows.Forms.Label();
             this.RightEyeLabel = new System.Windows.Forms.Label();
             this.LeftEyeLabel = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatistButton)).BeginInit();
             this.panelRight.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelLeft.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,7 +66,7 @@
             this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.Location = new System.Drawing.Point(325, 17);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(359, 55);
+            this.Title.Size = new System.Drawing.Size(283, 44);
             this.Title.TabIndex = 0;
             this.Title.Text = "Ваш результат";
             // 
@@ -145,33 +145,39 @@
             // 
             this.RightEyeRes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RightEyeRes.AutoSize = true;
-            this.RightEyeRes.Font = new System.Drawing.Font("a_AvanteInt", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RightEyeRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RightEyeRes.Location = new System.Drawing.Point(58, 10);
             this.RightEyeRes.Name = "RightEyeRes";
-            this.RightEyeRes.Size = new System.Drawing.Size(91, 32);
+
+            this.RightEyeRes.Size = new System.Drawing.Size(70, 26);
+
             this.RightEyeRes.TabIndex = 0;
             this.RightEyeRes.Text = "label1";
             // 
-            // panel3
+            // panelLeft
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
-            this.panel3.Controls.Add(this.LeftEyeRes);
-            this.panel3.Location = new System.Drawing.Point(286, 195);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(195, 50);
-            this.panel3.TabIndex = 1;
+
+            this.panelLeft.BackColor = System.Drawing.Color.Transparent;
+            this.panelLeft.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
+            this.panelLeft.Controls.Add(this.LeftEyeRes);
+            this.panelLeft.Location = new System.Drawing.Point(286, 195);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(195, 50);
+            this.panelLeft.TabIndex = 1;
+
+
             // 
             // LeftEyeRes
             // 
             this.LeftEyeRes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeftEyeRes.AutoSize = true;
-            this.LeftEyeRes.Font = new System.Drawing.Font("a_AvanteInt", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LeftEyeRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LeftEyeRes.Location = new System.Drawing.Point(45, 10);
             this.LeftEyeRes.Name = "LeftEyeRes";
-            this.LeftEyeRes.Size = new System.Drawing.Size(91, 32);
+
+            this.LeftEyeRes.Size = new System.Drawing.Size(70, 26);
+
             this.LeftEyeRes.TabIndex = 0;
             this.LeftEyeRes.Text = "label1";
             // 
@@ -180,10 +186,12 @@
             this.RightEyeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RightEyeLabel.AutoSize = true;
             this.RightEyeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.RightEyeLabel.Font = new System.Drawing.Font("a_AvanteInt", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RightEyeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RightEyeLabel.Location = new System.Drawing.Point(712, 151);
             this.RightEyeLabel.Name = "RightEyeLabel";
-            this.RightEyeLabel.Size = new System.Drawing.Size(148, 32);
+
+            this.RightEyeLabel.Size = new System.Drawing.Size(117, 26);
+
             this.RightEyeLabel.TabIndex = 0;
             this.RightEyeLabel.Text = "Праве око";
             // 
@@ -192,10 +200,12 @@
             this.LeftEyeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeftEyeLabel.AutoSize = true;
             this.LeftEyeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.LeftEyeLabel.Font = new System.Drawing.Font("a_AvanteInt", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LeftEyeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LeftEyeLabel.Location = new System.Drawing.Point(320, 151);
             this.LeftEyeLabel.Name = "LeftEyeLabel";
-            this.LeftEyeLabel.Size = new System.Drawing.Size(120, 32);
+
+            this.LeftEyeLabel.Size = new System.Drawing.Size(98, 26);
+
             this.LeftEyeLabel.TabIndex = 0;
             this.LeftEyeLabel.Text = "Ліве око";
             // 
@@ -205,7 +215,7 @@
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1140, 601);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.LeftEyeLabel);
@@ -213,7 +223,7 @@
             this.Controls.Add(this.BackToMenuButton);
             this.Controls.Add(this.RightEyeLabel);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("a_AvanteInt", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AfterTestingForm";
@@ -227,8 +237,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.StatistButton)).EndInit();
             this.panelRight.ResumeLayout(false);
             this.panelRight.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
+            this.panelLeft.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,7 +249,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Label RightEyeLabel;
         private System.Windows.Forms.Label LeftEyeLabel;
         private System.Windows.Forms.Panel panelRight;

@@ -26,7 +26,7 @@ namespace GoodVision
 		int tests = 0;
 		int left = 1;
 		int right = 12;
-
+        //Users ob = new Users();
 		UserClass User = new UserClass();
 		GoodVisionClass MyVision = new GoodVisionClass();
 
@@ -207,8 +207,9 @@ namespace GoodVision
 				else
 				{
 					User.left = Circle.Get_result(Circle.ObjectRow - 1);
-					MyVision.Add_to_file(ref User);
-					AfterTestingForm form = new AfterTestingForm();
+                    User.check_date = DateTime.Now;
+                    MyVision.Add_to_file(ref User);
+                    AfterTestingForm form = new AfterTestingForm(User);
 					form.Show();
 					this.Hide();
 				}
