@@ -178,15 +178,15 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-    //    private RoundButtonTwo.MyRoundButton CheckVisionButton;
-       // private rbutton.CustRoundButton HelpButton;
-   //     private RoundButtonTwo.MyRoundButton StatisticButton;
+        //    private RoundButtonTwo.MyRoundButton CheckVisionButton;
+        // private rbutton.CustRoundButton HelpButton;
+        //     private RoundButtonTwo.MyRoundButton StatisticButton;
         private System.Windows.Forms.Label HelloLabel;
         private System.Windows.Forms.Panel lightPanel;
         private System.Windows.Forms.Panel darkPanel;
-      //  private rbutton.CustRoundButton MainMenuHellpButton;
+        //  private rbutton.CustRoundButton MainMenuHellpButton;
         public System.Windows.Forms.Label HelloLab;
-      
+
         private rbutton.CustRoundButton HelpButton;
         private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
         private ButtonRoundedCorners.RoundedCorners StaticticButton;
