@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegForm));
             this.WellcLabel = new System.Windows.Forms.Label();
             this.WellcomePanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.RegButton = new ButtonRoundedCorners.RoundedCorners();
             this.RegistTextBox = new System.Windows.Forms.TextBox();
             this.RegPanel = new System.Windows.Forms.Panel();
             this.WellcomePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RegButton)).BeginInit();
             this.RegPanel.SuspendLayout();
             this.SuspendLayout();
@@ -69,29 +69,29 @@
             this.WellcomePanel.Size = new System.Drawing.Size(1116, 172);
             this.WellcomePanel.TabIndex = 0;
             // 
-            // pictureBox1
+            // logo
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.Image = global::GoodVision.Properties.Resources.iconSmall1;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 509);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.logo.Image = global::GoodVision.Properties.Resources.iconSmall1;
+            this.logo.Location = new System.Drawing.Point(2, 509);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(91, 91);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logo.TabIndex = 4;
+            this.logo.TabStop = false;
             // 
-            // label2
+            // NameLabel
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("a_AvanteInt", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.label2.Location = new System.Drawing.Point(23, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 45);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "введiть своє ім\'я";
+            this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.NameLabel.Font = new System.Drawing.Font("a_AvanteInt", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.NameLabel.Location = new System.Drawing.Point(23, 55);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(299, 45);
+            this.NameLabel.TabIndex = 2;
+            this.NameLabel.Text = "введiть своє ім\'я";
             // 
             // RegButton
             // 
@@ -129,7 +129,7 @@
             this.RegPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RegPanel.BackgroundImage")));
             this.RegPanel.Controls.Add(this.RegistTextBox);
             this.RegPanel.Controls.Add(this.RegButton);
-            this.RegPanel.Controls.Add(this.label2);
+            this.RegPanel.Controls.Add(this.NameLabel);
             this.RegPanel.Location = new System.Drawing.Point(213, 237);
             this.RegPanel.Name = "RegPanel";
             this.RegPanel.Size = new System.Drawing.Size(729, 310);
@@ -144,7 +144,7 @@
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1140, 601);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.logo);
             this.Controls.Add(this.RegPanel);
             this.Controls.Add(this.WellcomePanel);
             this.DoubleBuffered = true;
@@ -155,7 +155,7 @@
             this.Load += new System.EventHandler(this.RegForm_Load);
             this.WellcomePanel.ResumeLayout(false);
             this.WellcomePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RegButton)).EndInit();
             this.RegPanel.ResumeLayout(false);
             this.RegPanel.PerformLayout();
@@ -174,8 +174,8 @@
         private System.Windows.Forms.Panel EnterNamePanel;
         private System.Windows.Forms.Label WellcLabel;
         private System.Windows.Forms.Panel WellcomePanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Label NameLabel;
         private ButtonRoundedCorners.RoundedCorners RegButton;
         public System.Windows.Forms.TextBox RegistTextBox;
         private System.Windows.Forms.Panel RegPanel;

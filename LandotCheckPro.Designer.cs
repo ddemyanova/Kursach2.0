@@ -265,12 +265,13 @@
             // 
             // GoLandotButton
             // 
+            this.GoLandotButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GoLandotButton.Image = global::GoodVision.Properties.Resources.ИнвСтарт;
             this.GoLandotButton.ImageHover = global::GoodVision.Properties.Resources.ИнвСтарт;
             this.GoLandotButton.ImageNormal = global::GoodVision.Properties.Resources.ИнвСтарт;
-            this.GoLandotButton.Location = new System.Drawing.Point(226, 380);
+            this.GoLandotButton.Location = new System.Drawing.Point(226, 382);
             this.GoLandotButton.Name = "GoLandotButton";
-            this.GoLandotButton.Size = new System.Drawing.Size(199, 199);
+            this.GoLandotButton.Size = new System.Drawing.Size(199, 196);
             this.GoLandotButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GoLandotButton.TabIndex = 8;
             this.GoLandotButton.TabStop = false;
