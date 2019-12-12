@@ -127,7 +127,7 @@
             this.BackToMenuButton.Name = "BackToMenuButton";
             this.BackToMenuButton.Size = new System.Drawing.Size(219, 162);
             this.BackToMenuButton.TabIndex = 0;
-            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click_1);
+            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
             // 
             // panelRight
             // 
