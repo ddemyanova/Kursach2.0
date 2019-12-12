@@ -11,62 +11,86 @@ using System.IO;
 
 namespace GoodVision
 {
-    public partial class StatisticForm : Form
-    {
-        public StatisticForm()
-        {
-            InitializeComponent();
+	public partial class StatisticForm : Form
+	{
+		public StatisticForm()
+		{
+			InitializeComponent();
 
-           
-        }
-        UserClass User = new UserClass();
 
-        public string StatistExchange // передаем имя пользователя в эту форму
-        {
-            get { return StatisticLabel.Text; }
-            set {StatisticLabel.Text = value; }
-        }
+		}
+		public StatisticForm(bool isAfterTesting)
+		{
+			InitializeComponent();
 
-  
+			AfterTesting = isAfterTesting;
+		}
+		UserClass User = new UserClass();
+		private bool AfterTesting = false;
 
-        private void BackToMenuButton_Click(object sender, EventArgs e)
-        {
-            MainMenu mMForm = new MainMenu();
-            mMForm.Show();
-            this.Hide();
-        }
+		public string StatistExchange // передаем имя пользователя в эту форму
+		{
+			get { return StatisticLabel.Text; }
+			set { StatisticLabel.Text = value; }
+		}
 
-        private void StatisticTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
+
+		private void BackToMenuButton_Click(object sender, EventArgs e)
+		{
+			MainMenu mMForm = new MainMenu();
+			mMForm.Show();
+			this.Hide();
+		}
+
+		private void StatisticTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
 
 		private void StatisticForm_Load(object sender, EventArgs e)
 		{
-            //Десериализатор Get_Stats здесь не используется (написал на всякий случай), вместо этого просто считываю файл 
-            FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
-            if (session != null)
-            {
-                StreamReader reader = new StreamReader(session);
-                User.Nick = reader.ReadToEnd();
-                session.Close();
-            }
-            DataSet ds = new DataSet();
-            ds.ReadXml(@"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\persons.xml");
-            StatisticTable.DataSource = ds.Tables[0];
-            //read from .txt
-            string fileName = @"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
-            string textLine = "";
-            //string userName = "";
-            System.IO.StreamReader objReader;
-            objReader = new System.IO.StreamReader(fileName);
-            textLine = objReader.ReadLine();
-            /*
-            StatisticTable.Columns[4].HeaderText = textLine;
-            StatisticTable.Columns[5].HeaderText = "Дата";
-            StatisticTable.Columns[6].HeaderText = "Острота лівого ока";
-            StatisticTable.Columns[7].HeaderText = "Острота правого ока";
-            */
-        }
+			//Десериализатор Get_Stats здесь не используется (написал на всякий случай), вместо этого просто считываю файл 
+			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+			if (session != null)
+			{
+				StreamReader reader = new StreamReader(session);
+				User.Nick = reader.ReadToEnd();
+				session.Close();
+			}
+			this.label1.Text = "Ви можете побачити вашу статистику, " + User.Nick;
+			DataSet ds = new DataSet();
+			ds.ReadXml(User.Nick + ".xml");
+
+			if (AfterTesting == true)
+			{
+				StatisticTable.Columns.Add("Data", "Дата");
+				StatisticTable.Columns.Add("Left", "Гострота лівого ока");
+				StatisticTable.Columns.Add("Right", "Гострота правого ока");
+
+				DataGridView dg2 = new DataGridView();
+				dg2.DataSource = ds.Tables[0];
+				StatisticTable.Rows.Add(ds.Tables[0].Rows[0].ItemArray);
+
+			}
+			else
+			{
+				StatisticTable.DataSource = ds.Tables[0];
+
+				StatisticTable.Columns[0].HeaderText = "Дата";
+				StatisticTable.Columns[1].HeaderText = "Гострота лівого ока";
+				StatisticTable.Columns[2].HeaderText = "Гострота правого ока";
+
+			}
+			//read from .txt
+			string fileName = "session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
+			string textLine = "";
+			//string userName = "";
+			System.IO.StreamReader objReader;
+			objReader = new System.IO.StreamReader(fileName);
+			textLine = objReader.ReadLine();
+
+
+		}
 	}
 }
