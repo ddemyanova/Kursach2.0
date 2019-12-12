@@ -92,7 +92,7 @@
             // EyeTextLabel
             // 
 
-          \  this.EyeTextLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EyeTextLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EyeTextLabel.AutoSize = true;
             this.EyeTextLabel.Font = new System.Drawing.Font("a_AvanteInt", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
