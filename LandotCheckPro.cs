@@ -207,9 +207,11 @@ namespace GoodVision
 				else
 				{
 					User.left = Circle.Get_result(Circle.ObjectRow - 1);
-                    User.check_date = DateTime.Now;
-                    MyVision.Add_to_file(ref User);
-                    AfterTestingForm form = new AfterTestingForm(User);
+
+					User.check_date = DateTime.Now;
+					MyVision.Add_to_file(ref User);
+					AfterTestingForm form = new AfterTestingForm(User);
+
 					form.Show();
 					this.Hide();
 				}

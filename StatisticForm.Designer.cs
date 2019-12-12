@@ -22,12 +22,13 @@
 
 		#region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+
 
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -114,15 +115,17 @@
 			this.ResumeLayout(false);
 
 
-		}
 
-		#endregion
+        }
 
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.DataGridView StatisticTable;
-		private System.Windows.Forms.Label StatisticLabel;
-		// private rbutton.CustRoundButton BackToMainButton;
-		private System.Windows.Forms.Label label1;
-		private rbutton.CustRoundButton BackToMenuButton;
-	}
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView StatisticTable;
+        private System.Windows.Forms.Label StatisticLabel;
+       // private rbutton.CustRoundButton BackToMainButton;
+        private System.Windows.Forms.Label label1;
+        private rbutton.CustRoundButton BackToMenuButton;
+    }
+
 }
