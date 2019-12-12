@@ -106,7 +106,7 @@ namespace GoodVision
 				{
                     if (eye)//какой глаз сейчас проверяем
                     {
-                        User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
                         eye = false;
                         timer1.Enabled = false;
                         EyeTestPanel.Visible = true;
@@ -116,7 +116,7 @@ namespace GoodVision
                     }
                     else
                     {
-                        User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
+                        User.right = NewLetter.Get_result(NewLetter.ObjectRow - 1);
 
 					User.check_date = DateTime.Now;
 					MyVision.Add_to_file(ref User);

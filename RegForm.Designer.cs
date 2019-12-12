@@ -115,6 +115,7 @@
 			this.RegistTextBox.BackColor = System.Drawing.SystemColors.Menu;
 			this.RegistTextBox.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.RegistTextBox.Location = new System.Drawing.Point(31, 103);
+			this.RegistTextBox.MaxLength = 12;
 			this.RegistTextBox.Name = "RegistTextBox";
 			this.RegistTextBox.Size = new System.Drawing.Size(668, 31);
 			this.RegistTextBox.TabIndex = 0;

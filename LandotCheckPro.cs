@@ -204,14 +204,14 @@ namespace GoodVision
 			{
 				if (eye)//какой глаз сейчас проверяем
 				{
-					User.right = Circle.Get_result(Circle.ObjectRow - 1);
+					User.left = Circle.Get_result(Circle.ObjectRow - 1);
 					eye = false;
                     EyeTestPanel.Visible = true;
                     EyeTextLabel.Text = "Тестуємо праве око.\n Будь ласка, закрийте ліве\n та нажміть ''старт''";
                 }
 				else
 				{
-					User.left = Circle.Get_result(Circle.ObjectRow - 1);
+					User.right = Circle.Get_result(Circle.ObjectRow - 1);
 
 					User.check_date = DateTime.Now;
 					MyVision.Add_to_file(ref User);

@@ -61,11 +61,11 @@
 			// 
 			this.HelloLab.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.HelloLab.AutoSize = true;
-			this.HelloLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.HelloLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 45.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.HelloLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-			this.HelloLab.Location = new System.Drawing.Point(33, 22);
+			this.HelloLab.Location = new System.Drawing.Point(16, 22);
 			this.HelloLab.Name = "HelloLab";
-			this.HelloLab.Size = new System.Drawing.Size(286, 73);
+			this.HelloLab.Size = new System.Drawing.Size(273, 70);
 			this.HelloLab.TabIndex = 0;
 			this.HelloLab.Text = "Вітаємо,";
 			// 
