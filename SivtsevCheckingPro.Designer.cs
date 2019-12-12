@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SivtsevCheckingPro));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.EyeTestPanel = new System.Windows.Forms.Panel();
+            this.EyeTextLabel = new System.Windows.Forms.Label();
             this.LetterPictureBox = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.AnswerSivtsevButton = new ButtonRoundedCorners.RoundedCorners();
             this.AnswerTextBox = new System.Windows.Forms.TextBox();
             this.SivtsevTimer = new CircularProgressBar.CircularProgressBar();
-            this.EyeTestPanel = new System.Windows.Forms.Panel();
-            this.EyeTextLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,10 +45,10 @@
             this.BackToVisionCheckButton = new rbutton.CustRoundButton();
             this.StartButton = new ButtonRoundedCorners.RoundedCorners();
             this.panel2.SuspendLayout();
+            this.EyeTestPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).BeginInit();
-            this.EyeTestPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(693, 577);
             this.panel2.TabIndex = 0;
+            // 
+            // EyeTestPanel
+            // 
+            this.EyeTestPanel.BackColor = System.Drawing.Color.Transparent;
+            this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
+            this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
+            this.EyeTestPanel.ForeColor = System.Drawing.Color.Cornsilk;
+            this.EyeTestPanel.Location = new System.Drawing.Point(3, 0);
+            this.EyeTestPanel.Name = "EyeTestPanel";
+            this.EyeTestPanel.Size = new System.Drawing.Size(694, 583);
+            this.EyeTestPanel.TabIndex = 2;
+            // 
+            // EyeTextLabel
+            // 
+            this.EyeTextLabel.AutoSize = true;
+            this.EyeTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.EyeTextLabel.Location = new System.Drawing.Point(48, 193);
+            this.EyeTextLabel.Name = "EyeTextLabel";
+            this.EyeTextLabel.Size = new System.Drawing.Size(654, 117);
+            this.EyeTextLabel.TabIndex = 0;
+            this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве та нажміть\r\n \"старт\".";
             // 
             // LetterPictureBox
             // 
@@ -103,10 +125,10 @@
             // AnswerTextBox
             // 
             this.AnswerTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.AnswerTextBox.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnswerTextBox.Location = new System.Drawing.Point(41, 35);
             this.AnswerTextBox.Name = "AnswerTextBox";
-            this.AnswerTextBox.Size = new System.Drawing.Size(158, 55);
+            this.AnswerTextBox.Size = new System.Drawing.Size(158, 46);
             this.AnswerTextBox.TabIndex = 0;
             this.AnswerTextBox.TextChanged += new System.EventHandler(this.AnswerTextBox_TextChanged);
             this.AnswerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AnswerTextBox_KeyPress);
@@ -143,28 +165,6 @@
             this.SivtsevTimer.TextMargin = new System.Windows.Forms.Padding(7, 7, 0, 0);
             this.SivtsevTimer.Value = 50;
             // 
-            // EyeTestPanel
-            // 
-            this.EyeTestPanel.BackColor = System.Drawing.Color.Transparent;
-            this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
-            this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
-            this.EyeTestPanel.ForeColor = System.Drawing.Color.Cornsilk;
-            this.EyeTestPanel.Location = new System.Drawing.Point(3, 0);
-            this.EyeTestPanel.Name = "EyeTestPanel";
-            this.EyeTestPanel.Size = new System.Drawing.Size(694, 583);
-            this.EyeTestPanel.TabIndex = 2;
-            // 
-            // EyeTextLabel
-            // 
-            this.EyeTextLabel.AutoSize = true;
-            this.EyeTextLabel.Font = new System.Drawing.Font("a_AvanteInt", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EyeTextLabel.Location = new System.Drawing.Point(48, 193);
-            this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(799, 150);
-            this.EyeTextLabel.TabIndex = 0;
-            this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве та нажміть\r\n \"старт\".";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -185,7 +185,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(26, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
             // 
             // SivtsevInstrTextBox
@@ -244,13 +244,14 @@
             this.Name = "SivtsevCheckingPro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.SivtsevCheckingPro_Load_1);
             this.panel2.ResumeLayout(false);
+            this.EyeTestPanel.ResumeLayout(false);
+            this.EyeTestPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).EndInit();
-            this.EyeTestPanel.ResumeLayout(false);
-            this.EyeTestPanel.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();

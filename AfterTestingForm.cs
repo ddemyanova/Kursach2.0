@@ -13,11 +13,12 @@ namespace GoodVision
 {
     public partial class AfterTestingForm : Form
     {
-        public AfterTestingForm()
+        public AfterTestingForm(UserClass u)
         {
             InitializeComponent();
+            User = u;
         }
-        UserClass User = new UserClass();
+        UserClass User;
                                   
         private void BackToMenuButton_Click(object sender, EventArgs e) // возврат в меню
         {
@@ -36,7 +37,7 @@ namespace GoodVision
 
         private void StatistButton_Click(object sender, EventArgs e) // переход на форму статистики
         {
-            StatisticForm stat = new StatisticForm();
+            StatisticForm stat = new StatisticForm(true);
             stat.Show();
             this.Hide();
         }
@@ -47,10 +48,12 @@ namespace GoodVision
 			if (session != null)
 			{
 				StreamReader reader = new StreamReader(session);
-				User.Nick = reader.ReadToEnd();
+                User.Nick = reader.ReadToEnd();
 				session.Close();
 			}
+            this.LeftEyeRes.Text = User.left.ToString();
+            this.RightEyeRes.Text = User.right.ToString();
 
-		}
+        }
     }
 }

@@ -19,7 +19,14 @@ namespace GoodVision
 
            
         }
+        public StatisticForm(bool isAfterTesting)
+        {
+            InitializeComponent();
+
+            AfterTesting = isAfterTesting;
+        }
         UserClass User = new UserClass();
+        private bool AfterTesting = false;
 
         public string StatistExchange // передаем имя пользователя в эту форму
         {
@@ -51,20 +58,39 @@ namespace GoodVision
                 User.Nick = reader.ReadToEnd();
                 session.Close();
             }
+            this.label1.Text = "Ви можете побачити вашу статистику, " + User.Nick;
             DataSet ds = new DataSet();
-            ds.ReadXml(@"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\"+User.Nick+".xml");
-            StatisticTable.DataSource = ds.Tables[0];
+            ds.ReadXml(User.Nick+".xml");
+
+            if (AfterTesting == true)
+            {
+                StatisticTable.Columns.Add("Data","Дата");
+                StatisticTable.Columns.Add("Left", "Острота лівого ока");
+                StatisticTable.Columns.Add("Right", "Острота правого ока");
+
+                DataGridView dg2 = new DataGridView();
+                dg2.DataSource = ds.Tables[0];
+                StatisticTable.Rows.Add(ds.Tables[0].Rows[0].ItemArray);
+
+            }
+            else
+            {
+                StatisticTable.DataSource = ds.Tables[0];
+                
+                StatisticTable.Columns[0].HeaderText = "Дата";
+                StatisticTable.Columns[1].HeaderText = "Острота лівого ока";
+                StatisticTable.Columns[2].HeaderText = "Острота правого ока";
+
+            }
             //read from .txt
-            string fileName = @"C:\Users\Daniel\source\repos\Ap0ll0n\Kursach\bin\Debug\session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
+            string fileName = "session.txt"; //"условное" название, по идее .txt должен создаться после регистрации там же, где и User.xml
             string textLine = "";
             //string userName = "";
             System.IO.StreamReader objReader;
             objReader = new System.IO.StreamReader(fileName);
             textLine = objReader.ReadLine();
-            StatisticTable.Columns[0].HeaderText = "Ім'я";
-            StatisticTable.Columns[1].HeaderText = "Острота лівого ока";
-            StatisticTable.Columns[2].HeaderText = "Острота правого ока";
-            StatisticTable.Columns[3].HeaderText = "Дата";
+            
+            
         }
     }
 }

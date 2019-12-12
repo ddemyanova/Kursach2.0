@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.IO;
+using System.Xml;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
@@ -12,7 +13,8 @@ namespace GoodVision
 {
 	class GoodVisionClass: GoodVisionInterface
 	{ bool regMess;
-        public GoodVisionClass() { }
+        public GoodVisionClass() {
+        }
 
         public void Add_to_file(ref UserClass User)
         {
@@ -31,13 +33,61 @@ namespace GoodVision
                 //Console.WriteLine("Объект сериализован");
             }
             */
+
             string filePath = User.Nick + ".xml";
-            XDocument doc = XDocument.Load(filePath);
-            XElement root = new XElement("Snippet");
-            root.Add(new XAttribute("name", "name goes here"));
-            root.Add(new XElement("SnippetCode", "SnippetCode"));
-            doc.Element("Snippets").Add(root);
-            doc.Save(filePath);
+            //XDocument doc = XDocument.Load(filePath);
+            //XElement root = new XElement("Snippet");
+            //root.Add(new XAttribute("name", "name goes here"));
+            //root.Add(new XElement("SnippetCode", "SnippetCode"));
+            //doc.Element("Snippets").Add(root);
+            //doc.Save(filePath);
+            try
+            {
+                if (!File.Exists(filePath))
+                {
+                    XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+                    xmlWriterSettings.Indent = true;
+                    xmlWriterSettings.NewLineOnAttributes = true;
+                    using (XmlWriter xmlWriter = XmlWriter.Create(filePath, xmlWriterSettings))
+                    {
+                        xmlWriter.WriteStartDocument();
+                        xmlWriter.WriteStartElement("UserData");
+
+                        xmlWriter.WriteStartElement(User.Nick);
+                        xmlWriter.WriteElementString("Date", User.check_date.ToString());
+                        xmlWriter.WriteElementString("Left", User.left.ToString());
+                        xmlWriter.WriteElementString("Right", User.right.ToString());
+                        xmlWriter.WriteEndElement();
+
+                        xmlWriter.WriteEndElement();
+                        xmlWriter.WriteEndDocument();
+                        xmlWriter.Flush();
+                        xmlWriter.Close();
+                    }
+                }
+                else
+                {
+                    XDocument xDocument = XDocument.Load(filePath);
+                    XElement root2 = xDocument.Element("UserData");
+                    IEnumerable<XElement> rows = root2.Descendants(User.Nick);
+                    XElement firstRow = rows.First();
+                    XElement userEl = new XElement(User.Nick);
+                    XElement dateEl = new XElement("Date", User.check_date.ToString());
+                    XElement leftEl = new XElement("Left", User.left.ToString());
+                    XElement rightEl = new XElement("Right", User.right.ToString());
+
+                    userEl.Add(dateEl);
+                    userEl.Add(leftEl);
+                    userEl.Add(rightEl);
+                    firstRow.AddBeforeSelf(userEl);
+                    xDocument.Save(filePath);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error!");
+            }
+
         }
         /*
         void SerializeXML(ref Users userList)
@@ -85,23 +135,38 @@ namespace GoodVision
 
 		public void Create_account(ref UserClass User)
 		{
-            string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
-            
-            try
-			{
-					User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
-                //создать файл с именем;
-                //закрываем поток
-                System.IO.File.Create(filePath).Close();
-                XDocument doc = XDocument.Load(filePath);
-                XElement root = new XElement("UserData");
-                doc.Add(root);
-                doc.Save(filePath);
-            }
-			catch (FileNotFoundException)
-			{
-                MessageBox.Show("");
-            }
+   //         string filePath = User.Nick + ".xml";//можно прописать тут полный адрес
+
+   //         try
+   //         {
+   //             //User.File = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite);
+   //             ////создать файл с именем;
+   //             ////закрываем поток
+   //             //System.IO.File.Create(filePath).Close();
+   //             //XDocument doc = XDocument.Load(filePath);
+   //             //XElement root = new XElement("UserData");
+   //             //doc.Add(root);
+   //             //doc.Save(filePath);
+   //             //User.File.Close();
+
+   //             XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+   //             xmlWriterSettings.Indent = true;
+   //             xmlWriterSettings.NewLineOnAttributes = true;
+   //             using (XmlWriter xmlWriter = XmlWriter.Create(filePath, xmlWriterSettings))
+   //             {
+   //                 xmlWriter.WriteStartDocument();
+   //                 xmlWriter.WriteStartElement("UserData");
+
+   //                 xmlWriter.WriteEndElement();
+   //                 xmlWriter.WriteEndDocument();
+   //                 xmlWriter.Flush();
+   //                 xmlWriter.Close();
+   //             }
+   //         }
+   //         catch (FileNotFoundException)
+			//{
+   //             MessageBox.Show("");
+   //         }
 
 			
 		}

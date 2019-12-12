@@ -113,9 +113,9 @@ namespace GoodVision
                     else
                     {
                         User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
-                        //User.check_date = DateTime.Now;
+                        User.check_date = DateTime.Now;
                         MyVision.Add_to_file(ref User);
-                        AfterTestingForm form = new AfterTestingForm();
+                        AfterTestingForm form = new AfterTestingForm(User);
                         form.Show();
                         this.Hide();
                     }
@@ -205,6 +205,17 @@ namespace GoodVision
                 }
                
                 AnswerTextBox.Text = Convert.ToString(e.KeyChar).ToUpper();
+            }
+        }
+
+        private void SivtsevCheckingPro_Load_1(object sender, EventArgs e)
+        {
+            FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+            if (session != null)
+            {
+                StreamReader reader = new StreamReader(session);
+                User.Nick = reader.ReadToEnd();
+                session.Close();
             }
         }
 
