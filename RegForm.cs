@@ -77,10 +77,10 @@ namespace GoodVision
                     }
                 }
 
-                catch (Exception)
+                catch (FileNotFoundException)
                 {
                     
-                   
+             
 
                 }
             }
@@ -103,6 +103,22 @@ namespace GoodVision
 
                     this.Hide();
                 }
+
+        private void RegistTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+            if (( e.KeyChar>96&& e.KeyChar < 123)||(e.KeyChar > 1071 && e.KeyChar < 1103)||(e.KeyChar == 1110)||
+                (e.KeyChar == 1111)|| (e.KeyChar > 47 && e.KeyChar < 58)||(e.KeyChar==8)|| (e.KeyChar > 1040 && e.KeyChar < 1071) 
+                || (e.KeyChar > 65 && e.KeyChar < 90) || (e.KeyChar == 1030) || (e.KeyChar == 1031))
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void RegForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
         }
     

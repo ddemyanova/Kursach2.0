@@ -48,7 +48,7 @@
             this.WellcLabel.AutoSize = true;
             this.WellcLabel.Font = new System.Drawing.Font("a_AvanteInt", 20.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(204)));
             this.WellcLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.WellcLabel.Location = new System.Drawing.Point(182, 28);
+            this.WellcLabel.Location = new System.Drawing.Point(250, 29);
             this.WellcLabel.Name = "WellcLabel";
             this.WellcLabel.Size = new System.Drawing.Size(832, 110);
             this.WellcLabel.TabIndex = 0;
@@ -89,7 +89,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.label2.Location = new System.Drawing.Point(23, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(290, 45);
+            this.label2.Size = new System.Drawing.Size(299, 45);
             this.label2.TabIndex = 2;
             this.label2.Text = "введiть своє ім\'я";
             // 
@@ -119,6 +119,7 @@
             this.RegistTextBox.Size = new System.Drawing.Size(668, 36);
             this.RegistTextBox.TabIndex = 0;
             this.RegistTextBox.TextChanged += new System.EventHandler(this.RegistTextBox_TextChanged);
+            this.RegistTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RegistTextBox_KeyPress);
             // 
             // RegPanel
             // 
@@ -150,6 +151,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "RegForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Реєстрація";
+            this.Load += new System.EventHandler(this.RegForm_Load);
             this.WellcomePanel.ResumeLayout(false);
             this.WellcomePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

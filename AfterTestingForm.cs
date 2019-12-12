@@ -54,6 +54,9 @@ namespace GoodVision
             this.LeftEyeRes.Text = User.left.ToString();
             this.RightEyeRes.Text = User.right.ToString();
 
+
+
+
         }
     }
 }

@@ -36,8 +36,8 @@ namespace GoodVision
 
         private void AnswerSivtsevButton_Click(object sender, EventArgs e)
         {
-			
-				if (AnswerTextBox.Text == NewLetter.Get_Letter())
+            MessagePanel.Visible = false;
+            if (AnswerTextBox.Text == NewLetter.Get_Letter())
 				{
 					rightAnswer++;
                 }
@@ -48,7 +48,9 @@ namespace GoodVision
 			{
 				NewLetter.Set_Letter();
 				LetterPictureBox.Image = NewLetter.ShowImage;
-				Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+
+                Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
+
 
 				LetterPictureBox.Location = point;
 			}
@@ -67,7 +69,7 @@ namespace GoodVision
 					LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
 					this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 					this.LetterPictureBox.BorderStyle = BorderStyle.None;
-					Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+				  Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
 					LetterPictureBox.Location = point;
 					LetterPictureBox.Image = NewLetter.ShowImage;
 				}
@@ -85,15 +87,16 @@ namespace GoodVision
 
 
 
-					if (left <= 9)
-					{
-						LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
-						this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-						this.LetterPictureBox.BorderStyle = BorderStyle.None;
-						Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
-						LetterPictureBox.Location = point;
-						LetterPictureBox.Image = NewLetter.ShowImage;
-					}
+                    if (left <= 9)
+                    {
+                        LetterPictureBox.Size = new System.Drawing.Size((int)NewLetter.Get_size().Item1, (int)NewLetter.Get_size().Item2);
+                        this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                        this.LetterPictureBox.BorderStyle = BorderStyle.None;
+                        Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
+                        LetterPictureBox.Location = point;
+                        LetterPictureBox.Image = NewLetter.ShowImage;
+                    }
+                   
 
 					tests = 0;
 
@@ -107,7 +110,8 @@ namespace GoodVision
                         eye = false;
                         timer1.Enabled = false;
                         EyeTestPanel.Visible = true;
-                        EyeTextLabel.Text = "Тестуємо ліве око. Будь ласка, \nзакрийте праве та нажміть ''старт''";
+                    AnswerSivtsevButton.Enabled = false;
+                    EyeTextLabel.Text = "Тестуємо праве око.\n Будь ласка, закрийте ліве\n та нажміть ''старт''";
                         // вставить предупреждение про проверку левого глаза
                     }
                     else
@@ -132,6 +136,7 @@ namespace GoodVision
         }
         private void StartButton_Click(object sender, EventArgs e)
         {
+            AnswerSivtsevButton.Enabled = true;
             SivtsevTimer.Value = 0;
             EyeTestPanel.Visible = false;// предупреждение про проверку правого глаза уходит
 
@@ -142,16 +147,19 @@ namespace GoodVision
             this.LetterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             this.LetterPictureBox.BorderStyle = BorderStyle.None;
             LetterPictureBox.Image = NewLetter.ShowImage;
-            Point point = new Point((402 - LetterPictureBox.Width / 2), 260 - (LetterPictureBox.Height) / 2);
+            Point point = new Point((124 - LetterPictureBox.Width / 2), 108 - (LetterPictureBox.Height) / 2);
 
 
             LetterPictureBox.Location = point;
-
+            MessagePanel.Visible = false;
             LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
 
             timer1.Enabled = true;
             temp = 6;
+            tests = 0;
+            left = 1;
+            right = 12;
         }
 
         private void AnswerTextBox_TextChanged(object sender, EventArgs e)
@@ -179,7 +187,7 @@ namespace GoodVision
             else
             {
                 timer1.Enabled = false;
-                LetterPictureBox.Image = Properties.Resources.enterMessage;
+                MessagePanel.Visible = true;
             }
             }
 
@@ -197,14 +205,37 @@ namespace GoodVision
         private void AnswerTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
-            if ((e.KeyChar>1071 && e.KeyChar < 1104)|| (e.KeyChar> 1039 && e.KeyChar < 1071))
+            if ((e.KeyChar>1071 && e.KeyChar < 1104)|| (e.KeyChar> 1039 && e.KeyChar < 1071)||(e.KeyChar==1110)|| (e.KeyChar == 8))
             {
                 if (AnswerTextBox.Text != string.Empty)
                 {
                     AnswerTextBox.Text = string.Empty;
                 }
-               
-                AnswerTextBox.Text = Convert.ToString(e.KeyChar).ToUpper();
+                if (e.KeyChar == 1110)
+                {
+                    AnswerTextBox.Text = Convert.ToString('ы').ToUpper();
+                }
+                 else if (e.KeyChar == 8)
+                {
+                    AnswerTextBox.Text = string.Empty;
+                }
+                else AnswerTextBox.Text = Convert.ToString(e.KeyChar).ToUpper();
+            }
+        }
+
+        private void SivtsevInstrTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SivtsevCheckingPro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (AnswerSivtsevButton.Enabled == true)
+            {
+                if (e.KeyValue == (char)13)
+                {
+                    AnswerSivtsevButton_Click(AnswerSivtsevButton, null);
+                }
             }
         }
 
@@ -221,7 +252,7 @@ namespace GoodVision
 
         private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
-            VisionCheck Vch = new VisionCheck();
+            MainMenu Vch = new MainMenu();
             Vch.Show();
             this.Hide();
         }

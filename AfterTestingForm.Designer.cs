@@ -50,10 +50,11 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
             this.panel1.Controls.Add(this.Title);
-            this.panel1.Location = new System.Drawing.Point(66, 24);
+            this.panel1.Location = new System.Drawing.Point(100, 22);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1006, 89);
@@ -71,6 +72,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.panel2.Controls.Add(this.VisionCheckButton);
@@ -83,6 +85,7 @@
             // 
             // VisionCheckButton
             // 
+            this.VisionCheckButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.VisionCheckButton.BackColor = System.Drawing.SystemColors.ControlDark;
             this.VisionCheckButton.Image = global::GoodVision.Properties.Resources.початиТест;
             this.VisionCheckButton.ImageHover = global::GoodVision.Properties.Resources.почТестHover;
@@ -98,6 +101,7 @@
             // 
             // StatistButton
             // 
+            this.StatistButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StatistButton.BackColor = System.Drawing.SystemColors.ControlDark;
             this.StatistButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.StatistButton.Image = global::GoodVision.Properties.Resources.статист;
@@ -114,6 +118,7 @@
             // 
             // BackToMenuButton
             // 
+            this.BackToMenuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BackToMenuButton.Image = global::GoodVision.Properties.Resources._13;
             this.BackToMenuButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
             this.BackToMenuButton.ImageNormal = global::GoodVision.Properties.Resources._13;
@@ -122,9 +127,11 @@
             this.BackToMenuButton.Name = "BackToMenuButton";
             this.BackToMenuButton.Size = new System.Drawing.Size(219, 162);
             this.BackToMenuButton.TabIndex = 0;
+            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click_1);
             // 
             // panelRight
             // 
+            this.panelRight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelRight.BackColor = System.Drawing.Color.Transparent;
             this.panelRight.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
             this.panelRight.Controls.Add(this.RightEyeRes);
@@ -136,16 +143,20 @@
             // 
             // RightEyeRes
             // 
+            this.RightEyeRes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RightEyeRes.AutoSize = true;
             this.RightEyeRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RightEyeRes.Location = new System.Drawing.Point(58, 10);
             this.RightEyeRes.Name = "RightEyeRes";
+
             this.RightEyeRes.Size = new System.Drawing.Size(70, 26);
+
             this.RightEyeRes.TabIndex = 0;
             this.RightEyeRes.Text = "label1";
             // 
             // panelLeft
             // 
+
             this.panelLeft.BackColor = System.Drawing.Color.Transparent;
             this.panelLeft.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
             this.panelLeft.Controls.Add(this.LeftEyeRes);
@@ -154,36 +165,47 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(195, 50);
             this.panelLeft.TabIndex = 1;
+
+
             // 
             // LeftEyeRes
             // 
+            this.LeftEyeRes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeftEyeRes.AutoSize = true;
             this.LeftEyeRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LeftEyeRes.Location = new System.Drawing.Point(45, 10);
             this.LeftEyeRes.Name = "LeftEyeRes";
+
             this.LeftEyeRes.Size = new System.Drawing.Size(70, 26);
+
             this.LeftEyeRes.TabIndex = 0;
             this.LeftEyeRes.Text = "label1";
             // 
             // RightEyeLabel
             // 
+            this.RightEyeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RightEyeLabel.AutoSize = true;
             this.RightEyeLabel.BackColor = System.Drawing.Color.Transparent;
             this.RightEyeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RightEyeLabel.Location = new System.Drawing.Point(712, 151);
             this.RightEyeLabel.Name = "RightEyeLabel";
+
             this.RightEyeLabel.Size = new System.Drawing.Size(117, 26);
+
             this.RightEyeLabel.TabIndex = 0;
             this.RightEyeLabel.Text = "Праве око";
             // 
             // LeftEyeLabel
             // 
+            this.LeftEyeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LeftEyeLabel.AutoSize = true;
             this.LeftEyeLabel.BackColor = System.Drawing.Color.Transparent;
             this.LeftEyeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LeftEyeLabel.Location = new System.Drawing.Point(320, 151);
             this.LeftEyeLabel.Name = "LeftEyeLabel";
+
             this.LeftEyeLabel.Size = new System.Drawing.Size(98, 26);
+
             this.LeftEyeLabel.TabIndex = 0;
             this.LeftEyeLabel.Text = "Ліве око";
             // 
@@ -205,7 +227,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AfterTestingForm";
-            this.Text = "Result";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Результат";
             this.Load += new System.EventHandler(this.AfterTestingForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

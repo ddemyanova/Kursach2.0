@@ -33,6 +33,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.StatisticLabel = new System.Windows.Forms.Label();
             this.StatisticTable = new System.Windows.Forms.DataGridView();
+
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LeftEyeAcuity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RightEyeAcuity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+
             this.BackToMenuButton = new rbutton.CustRoundButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).BeginInit();
@@ -54,9 +60,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(25, 38);
+            this.label1.Location = new System.Drawing.Point(113, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(868, 51);
+
+            this.label1.Size = new System.Drawing.Size(815, 49);
+
             this.label1.TabIndex = 3;
             this.label1.Text = "Тут Ви можете побачити Вашу статистику";
             // 
@@ -81,6 +89,28 @@
             this.StatisticTable.TabIndex = 1;
             this.StatisticTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StatisticTable_CellContentClick);
             // 
+
+            // UserName
+            // 
+            this.UserName.HeaderText = "Ім\'я користувача";
+            this.UserName.Name = "UserName";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Дата";
+            this.Date.Name = "Date";
+            // 
+            // LeftEyeAcuity
+            // 
+            this.LeftEyeAcuity.HeaderText = "Острота лівого ока";
+            this.LeftEyeAcuity.Name = "LeftEyeAcuity";
+            // 
+            // RightEyeAcuity
+            // 
+            this.RightEyeAcuity.HeaderText = "Острота правого ока";
+            this.RightEyeAcuity.Name = "RightEyeAcuity";
+            // 
+
             // BackToMenuButton
             // 
             this.BackToMenuButton.BackColor = System.Drawing.Color.Transparent;
@@ -105,7 +135,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Name = "StatisticForm";
-            this.Text = " ";
+            this.Text = " Статистика";
             this.Load += new System.EventHandler(this.StatisticForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

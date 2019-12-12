@@ -37,11 +37,13 @@
             this.custRoundButton1 = new rbutton.CustRoundButton();
             this.HelpButton = new rbutton.CustRoundButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ChangeUser = new TetraCustomButton.ImageTetraButton();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChangeUser)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -63,7 +65,7 @@
             this.HelloLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.HelloLab.Location = new System.Drawing.Point(33, 22);
             this.HelloLab.Name = "HelloLab";
-            this.HelloLab.Size = new System.Drawing.Size(338, 91);
+            this.HelloLab.Size = new System.Drawing.Size(271, 73);
             this.HelloLab.TabIndex = 0;
             this.HelloLab.Text = "Вітаємо,";
             // 
@@ -121,12 +123,12 @@
             // HelpButton
             // 
             this.HelpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.HelpButton.Image = ((System.Drawing.Image)(resources.GetObject("HelpButton.Image")));
-            this.HelpButton.ImageHover = global::GoodVision.Properties.Resources.questionHover2;
-            this.HelpButton.ImageNormal = global::GoodVision.Properties.Resources.вопросе;
-            this.HelpButton.Location = new System.Drawing.Point(984, 41);
+            this.HelpButton.Image = global::GoodVision.Properties.Resources.NewHelp;
+            this.HelpButton.ImageHover = global::GoodVision.Properties.Resources.NewHelpHover;
+            this.HelpButton.ImageNormal = global::GoodVision.Properties.Resources.NewHelp;
+            this.HelpButton.Location = new System.Drawing.Point(1006, 462);
             this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(133, 129);
+            this.HelpButton.Size = new System.Drawing.Size(122, 111);
             this.HelpButton.TabIndex = 3;
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
@@ -146,11 +148,26 @@
             this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
             this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             // 
+            // ChangeUser
+            // 
+            this.ChangeUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ChangeUser.Image = global::GoodVision.Properties.Resources.ChangeUser;
+            this.ChangeUser.ImageHover = global::GoodVision.Properties.Resources.ChangeUserHover;
+            this.ChangeUser.ImageNormal = global::GoodVision.Properties.Resources.ChangeUser;
+            this.ChangeUser.Location = new System.Drawing.Point(971, 60);
+            this.ChangeUser.Name = "ChangeUser";
+            this.ChangeUser.Size = new System.Drawing.Size(157, 92);
+            this.ChangeUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ChangeUser.TabIndex = 5;
+            this.ChangeUser.TabStop = false;
+            this.ChangeUser.Click += new System.EventHandler(this.ChangeUser_Click);
+            // 
             // MainMenu
             // 
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1140, 638);
+            this.Controls.Add(this.ChangeUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.HelpButton);
             this.Controls.Add(this.panel4);
@@ -158,6 +175,7 @@
             this.DoubleBuffered = true;
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Головне меню";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -165,6 +183,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChangeUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,6 +205,7 @@
         private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
         private ButtonRoundedCorners.RoundedCorners StaticticButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private TetraCustomButton.ImageTetraButton ChangeUser;
         //
     }
 }
