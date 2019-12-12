@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisionCheck));
             this.BluePanel = new System.Windows.Forms.Panel();
@@ -91,11 +90,11 @@
             // 
             this.AdviceLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.AdviceLabel.AutoSize = true;
-            this.AdviceLabel.Font = new System.Drawing.Font("a_AvanteInt", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AdviceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AdviceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.AdviceLabel.Location = new System.Drawing.Point(271, 295);
+            this.AdviceLabel.Location = new System.Drawing.Point(231, 297);
             this.AdviceLabel.Name = "AdviceLabel";
-            this.AdviceLabel.Size = new System.Drawing.Size(845, 35);
+            this.AdviceLabel.Size = new System.Drawing.Size(818, 32);
             this.AdviceLabel.TabIndex = 1;
             this.AdviceLabel.Text = "Щоб обрати формат тестування нажмiть на зображення.";
             this.AdviceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,10 +116,10 @@
             this.InstructionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.InstructionLabel.AutoSize = true;
             this.InstructionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InstructionLabel.Font = new System.Drawing.Font("a_AvanteInt", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.InstructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InstructionLabel.Location = new System.Drawing.Point(152, 104);
             this.InstructionLabel.Name = "InstructionLabel";
-            this.InstructionLabel.Size = new System.Drawing.Size(1097, 43);
+            this.InstructionLabel.Size = new System.Drawing.Size(1037, 39);
             this.InstructionLabel.TabIndex = 0;
             this.InstructionLabel.Text = "Для початку тестування вам необхідно обрати його формат.";
             this.InstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -201,7 +200,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SivtsevModeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LandoltModeButton)).EndInit();
             this.ResumeLayout(false);
-
 
         }
 

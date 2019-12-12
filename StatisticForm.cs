@@ -58,7 +58,7 @@ namespace GoodVision
 				User.Nick = reader.ReadToEnd();
 				session.Close();
 			}
-			this.label1.Text = "Ви можете побачити вашу статистику " ;
+			this.TitleLabel.Text = "Ви можете побачити вашу статистику " ;
 			DataSet ds = new DataSet();
 			ds.ReadXml(User.Nick + ".xml");
 
