@@ -129,7 +129,7 @@ namespace GoodVision
 				xmlWriter.WriteStartDocument();
 				xmlWriter.WriteStartElement("UserData");
 
-				xmlWriter.WriteStartElement(User.Nick);
+				xmlWriter.WriteStartElement(Convert.ToString(User.Nick));
 				xmlWriter.WriteElementString("Date", null);
 				xmlWriter.WriteElementString("Left", null);
 				xmlWriter.WriteElementString("Right", null);

@@ -30,50 +30,50 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandotCheckPro));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.EyeTestingPanel = new System.Windows.Forms.Panel();
             this.MessagePanel = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.WhitePanel = new System.Windows.Forms.Panel();
             this.LandotCirclePictureBox = new System.Windows.Forms.PictureBox();
             this.UpLandotButton = new ButtonRoundedCorners.RoundedCorners();
             this.LandotTimer = new CircularProgressBar.CircularProgressBar();
             this.RightLandotButton = new ButtonRoundedCorners.RoundedCorners();
             this.DownLandotButton = new ButtonRoundedCorners.RoundedCorners();
             this.LeftLandotButton = new ButtonRoundedCorners.RoundedCorners();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.InstructPanel = new System.Windows.Forms.Panel();
             this.LandotInstructTextBox = new System.Windows.Forms.RichTextBox();
             this.EyeTestPanel = new System.Windows.Forms.Panel();
             this.EyeTextLabel = new System.Windows.Forms.Label();
             this.LTimer = new System.Windows.Forms.Timer(this.components);
             this.BackToVisionCheckButton = new rbutton.CustRoundButton();
             this.GoLandotButton = new ButtonRoundedCorners.RoundedCorners();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.EyeTestingPanel.SuspendLayout();
+            this.WhitePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LandotCirclePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpLandotButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightLandotButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DownLandotButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftLandotButton)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.InstructPanel.SuspendLayout();
             this.EyeTestPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // EyeTestingPanel
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
-            this.panel1.Controls.Add(this.MessagePanel);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.UpLandotButton);
-            this.panel1.Controls.Add(this.LandotTimer);
-            this.panel1.Controls.Add(this.RightLandotButton);
-            this.panel1.Controls.Add(this.DownLandotButton);
-            this.panel1.Controls.Add(this.LeftLandotButton);
-            this.panel1.Location = new System.Drawing.Point(429, 9);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(694, 574);
-            this.panel1.TabIndex = 0;
+            this.EyeTestingPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EyeTestingPanel.BackColor = System.Drawing.Color.Transparent;
+            this.EyeTestingPanel.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
+            this.EyeTestingPanel.Controls.Add(this.MessagePanel);
+            this.EyeTestingPanel.Controls.Add(this.WhitePanel);
+            this.EyeTestingPanel.Controls.Add(this.UpLandotButton);
+            this.EyeTestingPanel.Controls.Add(this.LandotTimer);
+            this.EyeTestingPanel.Controls.Add(this.RightLandotButton);
+            this.EyeTestingPanel.Controls.Add(this.DownLandotButton);
+            this.EyeTestingPanel.Controls.Add(this.LeftLandotButton);
+            this.EyeTestingPanel.Location = new System.Drawing.Point(429, 9);
+            this.EyeTestingPanel.Name = "EyeTestingPanel";
+            this.EyeTestingPanel.Size = new System.Drawing.Size(694, 574);
+            this.EyeTestingPanel.TabIndex = 0;
             // 
             // MessagePanel
             // 
@@ -87,15 +87,15 @@
             this.MessagePanel.TabIndex = 8;
             this.MessagePanel.Visible = false;
             // 
-            // panel3
+            // WhitePanel
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel3.Controls.Add(this.LandotCirclePictureBox);
-            this.panel3.Location = new System.Drawing.Point(243, 181);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(246, 214);
-            this.panel3.TabIndex = 7;
+            this.WhitePanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.WhitePanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.WhitePanel.Controls.Add(this.LandotCirclePictureBox);
+            this.WhitePanel.Location = new System.Drawing.Point(243, 181);
+            this.WhitePanel.Name = "WhitePanel";
+            this.WhitePanel.Size = new System.Drawing.Size(246, 214);
+            this.WhitePanel.TabIndex = 7;
             // 
             // LandotCirclePictureBox
             // 
@@ -197,15 +197,15 @@
             this.LeftLandotButton.TabStop = false;
             this.LeftLandotButton.Click += new System.EventHandler(this.LeftLandotButton_Click);
             // 
-            // panel2
+            // InstructPanel
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.LandotInstructTextBox);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(423, 347);
-            this.panel2.TabIndex = 3;
+            this.InstructPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.InstructPanel.BackColor = System.Drawing.Color.Transparent;
+            this.InstructPanel.Controls.Add(this.LandotInstructTextBox);
+            this.InstructPanel.Location = new System.Drawing.Point(12, 12);
+            this.InstructPanel.Name = "InstructPanel";
+            this.InstructPanel.Size = new System.Drawing.Size(423, 347);
+            this.InstructPanel.TabIndex = 3;
             // 
             // LandotInstructTextBox
             // 
@@ -234,6 +234,7 @@
             this.EyeTestPanel.Name = "EyeTestPanel";
             this.EyeTestPanel.Size = new System.Drawing.Size(694, 574);
             this.EyeTestPanel.TabIndex = 7;
+            this.EyeTestPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.EyeTestPanel_Paint);
             // 
             // EyeTextLabel
             // 
@@ -241,7 +242,7 @@
             this.EyeTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EyeTextLabel.Location = new System.Drawing.Point(89, 196);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(647, 162);
+            this.EyeTextLabel.Size = new System.Drawing.Size(517, 126);
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве \r\nта нажміть \"старт\".\r\n";
             // 
@@ -285,22 +286,22 @@
             this.Controls.Add(this.GoLandotButton);
             this.Controls.Add(this.EyeTestPanel);
             this.Controls.Add(this.BackToVisionCheckButton);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.InstructPanel);
+            this.Controls.Add(this.EyeTestingPanel);
             this.DoubleBuffered = true;
             this.Name = "LandotCheckPro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Перевірка кільцями Ландольта";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LandotCheckPro_FormClosing);
             this.Load += new System.EventHandler(this.LandotCheckPro_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.EyeTestingPanel.ResumeLayout(false);
+            this.WhitePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LandotCirclePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpLandotButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightLandotButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DownLandotButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftLandotButton)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.InstructPanel.ResumeLayout(false);
             this.EyeTestPanel.ResumeLayout(false);
             this.EyeTestPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoLandotButton)).EndInit();
@@ -310,10 +311,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel EyeTestingPanel;
        // private rbutton.CustRoundButton BackToVisionCheckButton;
         private System.Windows.Forms.PictureBox LandotCirclePictureBox;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel InstructPanel;
         private System.Windows.Forms.RichTextBox LandotInstructTextBox;
         private CircularProgressBar.CircularProgressBar LandotTimer;
         private System.Windows.Forms.Timer LTimer;
@@ -324,7 +325,7 @@
         private ButtonRoundedCorners.RoundedCorners LeftLandotButton;
         private System.Windows.Forms.Panel EyeTestPanel;
         private System.Windows.Forms.Label EyeTextLabel;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel WhitePanel;
         private System.Windows.Forms.Panel MessagePanel;
         private ButtonRoundedCorners.RoundedCorners GoLandotButton;
     }

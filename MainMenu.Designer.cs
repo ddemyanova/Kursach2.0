@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.lightPanel = new System.Windows.Forms.Panel();
+            this.LightPanel = new System.Windows.Forms.Panel();
             this.HelloLab = new System.Windows.Forms.Label();
-            this.darkPanel = new System.Windows.Forms.Panel();
+            this.DarkPanel = new System.Windows.Forms.Panel();
             this.VisionCheckButton = new ButtonRoundedCorners.RoundedCorners();
             this.StaticticButton = new ButtonRoundedCorners.RoundedCorners();
             this.HelpButton = new rbutton.CustRoundButton();
-            this.eyePictureBox = new System.Windows.Forms.PictureBox();
+            this.EyePictureBox = new System.Windows.Forms.PictureBox();
             this.ChangeUser = new TetraCustomButton.ImageTetraButton();
-            this.lightPanel.SuspendLayout();
-            this.darkPanel.SuspendLayout();
+            this.LightPanel.SuspendLayout();
+            this.DarkPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eyePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EyePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChangeUser)).BeginInit();
             this.SuspendLayout();
             // 
-            // lightPanel
+            // LightPanel
             // 
-            this.lightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lightPanel.BackColor = System.Drawing.Color.Transparent;
-            this.lightPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lightPanel.BackgroundImage")));
-            this.lightPanel.Controls.Add(this.HelloLab);
-            this.lightPanel.Location = new System.Drawing.Point(182, 41);
-            this.lightPanel.Name = "lightPanel";
-            this.lightPanel.Size = new System.Drawing.Size(772, 134);
-            this.lightPanel.TabIndex = 1;
+            this.LightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.LightPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LightPanel.BackgroundImage")));
+            this.LightPanel.Controls.Add(this.HelloLab);
+            this.LightPanel.Location = new System.Drawing.Point(182, 41);
+            this.LightPanel.Name = "LightPanel";
+            this.LightPanel.Size = new System.Drawing.Size(772, 134);
+            this.LightPanel.TabIndex = 1;
             // 
             // HelloLab
             // 
@@ -64,21 +64,21 @@
             this.HelloLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.HelloLab.Location = new System.Drawing.Point(16, 22);
             this.HelloLab.Name = "HelloLab";
-            this.HelloLab.Size = new System.Drawing.Size(341, 87);
+            this.HelloLab.Size = new System.Drawing.Size(273, 70);
             this.HelloLab.TabIndex = 0;
             this.HelloLab.Text = "Вітаємо,";
             // 
-            // darkPanel
+            // DarkPanel
             // 
-            this.darkPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.darkPanel.BackColor = System.Drawing.Color.Transparent;
-            this.darkPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("darkPanel.BackgroundImage")));
-            this.darkPanel.Controls.Add(this.VisionCheckButton);
-            this.darkPanel.Controls.Add(this.StaticticButton);
-            this.darkPanel.Location = new System.Drawing.Point(182, 250);
-            this.darkPanel.Name = "darkPanel";
-            this.darkPanel.Size = new System.Drawing.Size(772, 323);
-            this.darkPanel.TabIndex = 2;
+            this.DarkPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DarkPanel.BackColor = System.Drawing.Color.Transparent;
+            this.DarkPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DarkPanel.BackgroundImage")));
+            this.DarkPanel.Controls.Add(this.VisionCheckButton);
+            this.DarkPanel.Controls.Add(this.StaticticButton);
+            this.DarkPanel.Location = new System.Drawing.Point(182, 250);
+            this.DarkPanel.Name = "DarkPanel";
+            this.DarkPanel.Size = new System.Drawing.Size(772, 323);
+            this.DarkPanel.TabIndex = 2;
             // 
             // VisionCheckButton
             // 
@@ -120,19 +120,19 @@
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
-            // eyePictureBox
+            // EyePictureBox
             // 
-            this.eyePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.eyePictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.eyePictureBox.Image = global::GoodVision.Properties.Resources.eye1;
-            this.eyePictureBox.Location = new System.Drawing.Point(25, 63);
-            this.eyePictureBox.Name = "eyePictureBox";
-            this.eyePictureBox.Size = new System.Drawing.Size(131, 89);
-            this.eyePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.eyePictureBox.TabIndex = 4;
-            this.eyePictureBox.TabStop = false;
-            this.eyePictureBox.MouseEnter += new System.EventHandler(this.eyePictureBox_MouseEnter);
-            this.eyePictureBox.MouseLeave += new System.EventHandler(this.eyePictureBox_MouseLeave);
+            this.EyePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EyePictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.EyePictureBox.Image = global::GoodVision.Properties.Resources.eye1;
+            this.EyePictureBox.Location = new System.Drawing.Point(25, 63);
+            this.EyePictureBox.Name = "EyePictureBox";
+            this.EyePictureBox.Size = new System.Drawing.Size(131, 89);
+            this.EyePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EyePictureBox.TabIndex = 4;
+            this.EyePictureBox.TabStop = false;
+            this.EyePictureBox.MouseEnter += new System.EventHandler(this.EyePictureBox_MouseEnter);
+            this.EyePictureBox.MouseLeave += new System.EventHandler(this.EyePictureBox_MouseLeave);
             // 
             // ChangeUser
             // 
@@ -154,22 +154,22 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1140, 638);
             this.Controls.Add(this.ChangeUser);
-            this.Controls.Add(this.eyePictureBox);
+            this.Controls.Add(this.EyePictureBox);
             this.Controls.Add(this.HelpButton);
-            this.Controls.Add(this.darkPanel);
-            this.Controls.Add(this.lightPanel);
+            this.Controls.Add(this.DarkPanel);
+            this.Controls.Add(this.LightPanel);
             this.DoubleBuffered = true;
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Головне меню";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenu_FormClosing);
             this.Load += new System.EventHandler(this.MainMenu_Load);
-            this.lightPanel.ResumeLayout(false);
-            this.lightPanel.PerformLayout();
-            this.darkPanel.ResumeLayout(false);
+            this.LightPanel.ResumeLayout(false);
+            this.LightPanel.PerformLayout();
+            this.DarkPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eyePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EyePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChangeUser)).EndInit();
             this.ResumeLayout(false);
 
@@ -183,15 +183,15 @@
         // private rbutton.CustRoundButton HelpButton;
         //     private RoundButtonTwo.MyRoundButton StatisticButton;
         private System.Windows.Forms.Label HelloLabel;
-        private System.Windows.Forms.Panel lightPanel;
-        private System.Windows.Forms.Panel darkPanel;
+        private System.Windows.Forms.Panel LightPanel;
+        private System.Windows.Forms.Panel DarkPanel;
         //  private rbutton.CustRoundButton MainMenuHellpButton;
         public System.Windows.Forms.Label HelloLab;
 
         private rbutton.CustRoundButton HelpButton;
         private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
         private ButtonRoundedCorners.RoundedCorners StaticticButton;
-        private System.Windows.Forms.PictureBox eyePictureBox;
+        private System.Windows.Forms.PictureBox EyePictureBox;
         private TetraCustomButton.ImageTetraButton ChangeUser;
         //
     }

@@ -67,15 +67,15 @@ namespace GoodVision
 
       
 
-        private void eyePictureBox_MouseLeave(object sender, EventArgs e)
+        private void EyePictureBox_MouseLeave(object sender, EventArgs e)
         {
-            eyePictureBox.Image = Properties.Resources.eye1;
+            EyePictureBox.Image = Properties.Resources.eye1;
         }
 
-        private void eyePictureBox_MouseEnter(object sender, EventArgs e)
+        private void EyePictureBox_MouseEnter(object sender, EventArgs e)
         {
 
-            eyePictureBox.Image = Properties.Resources.eye2;
+            EyePictureBox.Image = Properties.Resources.eye2;
         }
 
         private void ChangeUser_Click(object sender, EventArgs e)
@@ -90,5 +90,7 @@ namespace GoodVision
 		{
 			Environment.Exit(0);
 		}
-	}
+
+  
+    }
 }

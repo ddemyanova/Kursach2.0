@@ -140,7 +140,12 @@ namespace GoodVision
 			Environment.Exit(0);
 		}
 
-		private void DirectionClick()
+        private void EyeTestPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DirectionClick()
 		{
             MessagePanel.Visible = false;
             if (Direction == Circle.Directions)
