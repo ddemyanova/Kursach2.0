@@ -108,7 +108,7 @@ namespace GoodVision
                     {
                         User.left = NewLetter.Get_result(NewLetter.ObjectRow - 1);
                         eye = false;
-                        timer1.Enabled = false;
+                        Timer.Enabled = false;
                         EyeTestPanel.Visible = true;
                     AnswerSivtsevButton.Enabled = false;
                     EyeTextLabel.Text = "Тестуємо праве око.\n Будь ласка, закрийте ліве\n та нажміть ''старт''";
@@ -132,7 +132,7 @@ namespace GoodVision
 
 				SivtsevTimer.Value = 0;
 				temp = 6; // temp=i;
-				timer1.Enabled = true;
+				Timer.Enabled = true;
 			
 			
         }
@@ -157,7 +157,7 @@ namespace GoodVision
             LetterPictureBox.Image = NewLetter.ShowImage;
             System.Threading.Thread.Sleep(100);
 
-            timer1.Enabled = true;
+            Timer.Enabled = true;
             temp = 6;
             tests = 0;
             left = 1;
@@ -177,18 +177,18 @@ namespace GoodVision
         }
 
 
-        private void timer1_Tick(object sender, EventArgs e) 
+        private void Timer_Tick(object sender, EventArgs e) 
         {
                     
                 temp--;
                 SivtsevTimer.Text = Convert.ToString(temp);
             SivtsevTimer.PerformStep();
             if (temp != 0)
-                timer1.Enabled = true;
+                Timer.Enabled = true;
 
             else
             {
-                timer1.Enabled = false;
+                Timer.Enabled = false;
                 MessagePanel.Visible = true;
             }
             }
@@ -257,7 +257,9 @@ namespace GoodVision
 			Environment.Exit(0);
 		}
 
-		private void BackToVisionCheckButton_Click(object sender, EventArgs e)
+   
+
+        private void BackToVisionCheckButton_Click(object sender, EventArgs e)
         {
             MainMenu Vch = new MainMenu();
             Vch.Show();

@@ -30,46 +30,45 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SivtsevCheckingPro));
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.BackPanel = new System.Windows.Forms.Panel();
             this.EyeTestPanel = new System.Windows.Forms.Panel();
             this.EyeTextLabel = new System.Windows.Forms.Label();
             this.MessagePanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.WhitePanel = new System.Windows.Forms.Panel();
             this.LetterPictureBox = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.LightPanel = new System.Windows.Forms.Panel();
             this.AnswerSivtsevButton = new ButtonRoundedCorners.RoundedCorners();
             this.AnswerTextBox = new System.Windows.Forms.TextBox();
             this.SivtsevTimer = new CircularProgressBar.CircularProgressBar();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.InstrPanel = new System.Windows.Forms.Panel();
+          //  this.label1 = new System.Windows.Forms.Label();
             this.SivtsevInstrTextBox = new System.Windows.Forms.RichTextBox();
             this.BackToVisionCheckButton = new rbutton.CustRoundButton();
             this.StartButton = new ButtonRoundedCorners.RoundedCorners();
-            this.panel2.SuspendLayout();
+            this.BackPanel.SuspendLayout();
             this.EyeTestPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.WhitePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.LightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.InstrPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // BackPanel
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
-            this.panel2.Controls.Add(this.EyeTestPanel);
-            this.panel2.Controls.Add(this.MessagePanel);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.SivtsevTimer);
-            this.panel2.Location = new System.Drawing.Point(434, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(693, 577);
-            this.panel2.TabIndex = 0;
+            this.BackPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BackPanel.BackColor = System.Drawing.Color.Transparent;
+            this.BackPanel.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
+            this.BackPanel.Controls.Add(this.MessagePanel);
+            this.BackPanel.Controls.Add(this.WhitePanel);
+            this.BackPanel.Controls.Add(this.LightPanel);
+            this.BackPanel.Controls.Add(this.SivtsevTimer);
+            this.BackPanel.Location = new System.Drawing.Point(434, 12);
+            this.BackPanel.Name = "BackPanel";
+            this.BackPanel.Size = new System.Drawing.Size(693, 577);
+            this.BackPanel.TabIndex = 0;
             // 
             // EyeTestPanel
             // 
@@ -78,7 +77,7 @@
             this.EyeTestPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
             this.EyeTestPanel.Controls.Add(this.EyeTextLabel);
             this.EyeTestPanel.ForeColor = System.Drawing.Color.Cornsilk;
-            this.EyeTestPanel.Location = new System.Drawing.Point(3, 0);
+            this.EyeTestPanel.Location = new System.Drawing.Point(437, 12);
             this.EyeTestPanel.Name = "EyeTestPanel";
             this.EyeTestPanel.Size = new System.Drawing.Size(694, 583);
             this.EyeTestPanel.TabIndex = 2;
@@ -91,7 +90,7 @@
             this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.EyeTextLabel.Location = new System.Drawing.Point(85, 199);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(647, 162);
+            this.EyeTextLabel.Size = new System.Drawing.Size(517, 126);
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве \r\nта нажміть \"старт\".";
             // 
@@ -106,15 +105,15 @@
             this.MessagePanel.TabIndex = 1;
             this.MessagePanel.Visible = false;
             // 
-            // panel1
+            // WhitePanel
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.LetterPictureBox);
-            this.panel1.Location = new System.Drawing.Point(269, 146);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 214);
-            this.panel1.TabIndex = 3;
+            this.WhitePanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.WhitePanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.WhitePanel.Controls.Add(this.LetterPictureBox);
+            this.WhitePanel.Location = new System.Drawing.Point(269, 146);
+            this.WhitePanel.Name = "WhitePanel";
+            this.WhitePanel.Size = new System.Drawing.Size(246, 214);
+            this.WhitePanel.TabIndex = 3;
             // 
             // LetterPictureBox
             // 
@@ -126,16 +125,16 @@
             this.LetterPictureBox.TabIndex = 0;
             this.LetterPictureBox.TabStop = false;
             // 
-            // panel3
+            // LightPanel
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackgroundImage = global::GoodVision.Properties.Resources.подложка2;
-            this.panel3.Controls.Add(this.AnswerSivtsevButton);
-            this.panel3.Controls.Add(this.AnswerTextBox);
-            this.panel3.Location = new System.Drawing.Point(175, 396);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(413, 116);
-            this.panel3.TabIndex = 2;
+            this.LightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LightPanel.BackgroundImage = global::GoodVision.Properties.Resources.подложка2;
+            this.LightPanel.Controls.Add(this.AnswerSivtsevButton);
+            this.LightPanel.Controls.Add(this.AnswerTextBox);
+            this.LightPanel.Location = new System.Drawing.Point(175, 396);
+            this.LightPanel.Name = "LightPanel";
+            this.LightPanel.Size = new System.Drawing.Size(413, 116);
+            this.LightPanel.TabIndex = 2;
             // 
             // AnswerSivtsevButton
             // 
@@ -160,7 +159,7 @@
             this.AnswerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnswerTextBox.Location = new System.Drawing.Point(41, 35);
             this.AnswerTextBox.Name = "AnswerTextBox";
-            this.AnswerTextBox.Size = new System.Drawing.Size(158, 56);
+            this.AnswerTextBox.Size = new System.Drawing.Size(158, 46);
             this.AnswerTextBox.TabIndex = 0;
             this.AnswerTextBox.TextChanged += new System.EventHandler(this.AnswerTextBox_TextChanged);
             this.AnswerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AnswerTextBox_KeyPress);
@@ -198,30 +197,25 @@
             this.SivtsevTimer.TextMargin = new System.Windows.Forms.Padding(7, 7, 0, 0);
             this.SivtsevTimer.Value = 50;
             // 
-            // timer1
+            // Timer
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
-            // panel4
+            // InstrPanel
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.SivtsevInstrTextBox);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(423, 363);
-            this.panel4.TabIndex = 5;
+            this.InstrPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.InstrPanel.BackColor = System.Drawing.Color.Transparent;
+           // this.InstrPanel.Controls.Add(this.label1);
+            this.InstrPanel.Controls.Add(this.SivtsevInstrTextBox);
+            this.InstrPanel.Location = new System.Drawing.Point(12, 12);
+            this.InstrPanel.Name = "InstrPanel";
+            this.InstrPanel.Size = new System.Drawing.Size(423, 363);
+            this.InstrPanel.TabIndex = 5;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
-            this.label1.TabIndex = 0;
+
             // 
             // SivtsevInstrTextBox
             // 
@@ -275,10 +269,11 @@
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1140, 601);
+            this.Controls.Add(this.EyeTestPanel);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.BackToVisionCheckButton);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.BackPanel);
+            this.Controls.Add(this.InstrPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
@@ -288,38 +283,38 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SivtsevCheckingPro_FormClosing);
             this.Load += new System.EventHandler(this.SivtsevCheckingPro_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SivtsevCheckingPro_KeyDown);
-            this.panel2.ResumeLayout(false);
+            this.BackPanel.ResumeLayout(false);
             this.EyeTestPanel.ResumeLayout(false);
             this.EyeTestPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.WhitePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LetterPictureBox)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.LightPanel.ResumeLayout(false);
+            this.LightPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnswerSivtsevButton)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.InstrPanel.ResumeLayout(false);
+            this.InstrPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartButton)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel BackPanel;
         private System.Windows.Forms.PictureBox LetterPictureBox;
         private CircularProgressBar.CircularProgressBar SivtsevTimer;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel LightPanel;
         private System.Windows.Forms.TextBox AnswerTextBox;
       //  private rbutton.CustRoundButton BackFromSivtsevButton;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Panel InstrPanel;
+      //  private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox SivtsevInstrTextBox;
         private rbutton.CustRoundButton BackToVisionCheckButton;
         private ButtonRoundedCorners.RoundedCorners AnswerSivtsevButton;
         private ButtonRoundedCorners.RoundedCorners StartButton;
         private System.Windows.Forms.Panel EyeTestPanel;
         private System.Windows.Forms.Label EyeTextLabel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel WhitePanel;
         private System.Windows.Forms.Panel MessagePanel;
         //   private RoundButtonTwo.MyRoundButton AnswerSivtsevButton;
         //private RoundButtonTwo.MyRoundButton StartButton;
