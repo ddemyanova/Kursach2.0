@@ -107,11 +107,16 @@ namespace GoodVision
         private void RegistTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
-            if (( e.KeyChar>96&& e.KeyChar < 123)||(e.KeyChar > 1071 && e.KeyChar <= 1103)||(e.KeyChar == 1110)||
+            if((e.KeyChar > 47 && e.KeyChar < 58) && RegistTextBox.Text == string.Empty)
+            {
+                WarningLabel.Text = "ім'я користувача не має починатися з цифри";
+            }
+            else if (( e.KeyChar>96&& e.KeyChar < 123)||(e.KeyChar > 1071 && e.KeyChar <= 1103)||(e.KeyChar == 1110)||
                 (e.KeyChar == 1111)|| (e.KeyChar > 47 && e.KeyChar < 58)||(e.KeyChar==8)|| (e.KeyChar >= 1040 && e.KeyChar <= 1071) 
                 || (e.KeyChar > 65 && e.KeyChar < 90) || (e.KeyChar == 1030) || (e.KeyChar == 1031))
             {
                 e.Handled = false;
+                WarningLabel.Text = "";
             }
         }
 

@@ -37,6 +37,7 @@ namespace GoodVision
             this.RegButton = new ButtonRoundedCorners.RoundedCorners();
             this.RegistTextBox = new System.Windows.Forms.TextBox();
             this.RegPanel = new System.Windows.Forms.Panel();
+            this.WarningLabel = new System.Windows.Forms.Label();
             this.WellcomePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RegButton)).BeginInit();
@@ -129,6 +130,7 @@ namespace GoodVision
             this.RegPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.RegPanel.BackColor = System.Drawing.Color.Transparent;
             this.RegPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RegPanel.BackgroundImage")));
+            this.RegPanel.Controls.Add(this.WarningLabel);
             this.RegPanel.Controls.Add(this.RegistTextBox);
             this.RegPanel.Controls.Add(this.RegButton);
             this.RegPanel.Controls.Add(this.NameLabel);
@@ -136,6 +138,14 @@ namespace GoodVision
             this.RegPanel.Name = "RegPanel";
             this.RegPanel.Size = new System.Drawing.Size(729, 310);
             this.RegPanel.TabIndex = 1;
+            // 
+            // WarningLabel
+            // 
+            this.WarningLabel.AutoSize = true;
+            this.WarningLabel.Location = new System.Drawing.Point(39, 146);
+            this.WarningLabel.Name = "WarningLabel";
+            this.WarningLabel.Size = new System.Drawing.Size(0, 13);
+            this.WarningLabel.TabIndex = 4;
             // 
             // RegForm
             // 
@@ -182,6 +192,7 @@ namespace GoodVision
         private ButtonRoundedCorners.RoundedCorners RegButton;
         public System.Windows.Forms.TextBox RegistTextBox;
         private System.Windows.Forms.Panel RegPanel;
+        private System.Windows.Forms.Label WarningLabel;
         // private RoundButtonTwo.MyRoundButton RegButton;
     }
 }

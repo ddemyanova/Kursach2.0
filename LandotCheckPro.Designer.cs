@@ -212,7 +212,7 @@
             this.LandotInstructTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LandotInstructTextBox.BackColor = System.Drawing.Color.Lavender;
             this.LandotInstructTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LandotInstructTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.LandotInstructTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.LandotInstructTextBox.Location = new System.Drawing.Point(-7, 3);
             this.LandotInstructTextBox.Name = "LandotInstructTextBox";
             this.LandotInstructTextBox.ReadOnly = true;
