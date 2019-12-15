@@ -12,9 +12,9 @@ using System.IO;
 
 namespace GoodVision
 {
-    public partial class LandotCheckPro : Form
+    public partial class LandoltCheckPro : Form
     {
-        public LandotCheckPro()
+        public LandoltCheckPro()
         {
             InitializeComponent();
         }
@@ -121,21 +121,9 @@ namespace GoodVision
             temp = i;
         }
 
-		private void LandotCheckPro_Load(object sender, EventArgs e)
-		{
-			FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
-			if (session != null)
-			{
-				StreamReader reader = new StreamReader(session);
-				User.Nick = reader.ReadToEnd();
-				session.Close();
-                LandotCirclePictureBox.Image = Circle.ShowImage;
-            }
-			session.Close();
+	
 
-		}
-
-		private void LandotCheckPro_FormClosing(object sender, FormClosingEventArgs e)
+        private void LandoltCheckPro_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			Environment.Exit(0);
 		}
@@ -143,6 +131,24 @@ namespace GoodVision
         private void EyeTestPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void LandoltCheckPro_Load(object sender, EventArgs e)
+        {
+            FileStream session = new FileStream("session.txt", FileMode.Open, FileAccess.Read);
+            if (session != null)
+            {
+                StreamReader reader = new StreamReader(session);
+                User.Nick = reader.ReadToEnd();
+                session.Close();
+            }
+        }
+
+        private void BackToMenuButton_Click(object sender, EventArgs e)
+        {
+            MainMenu Vch = new MainMenu();
+            Vch.Show();
+            this.Hide();
         }
 
         private void DirectionClick()

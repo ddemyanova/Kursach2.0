@@ -28,15 +28,15 @@ namespace GoodVision
 		UserClass User = new UserClass();
 		private bool AfterTesting = false;
 
-		public string StatistExchange // передаем имя пользователя в эту форму
-		{
-			get { return StatisticLabel.Text; }
-			set { StatisticLabel.Text = value; }
-		}
+        //public string StatistExchange // передаем имя пользователя в эту форму
+        //{
+        //    get { return StatisticLabel.Text; }
+        //    set { StatisticLabel.Text = value; }
+        //}
 
 
 
-		private void BackToMenuButton_Click(object sender, EventArgs e)
+        private void BackToMenuButton_Click(object sender, EventArgs e)
 		{
 			MainMenu mMForm = new MainMenu();
 			mMForm.Show();
@@ -58,7 +58,7 @@ namespace GoodVision
 				User.Nick = reader.ReadToEnd();
 				session.Close();
 			}
-			this.TitleLabel.Text = "Ви можете побачити вашу статистику " ;
+			//this.TitleLabel.Text = "Ви можете побачити вашу статистику " ;
 			DataSet ds = new DataSet();
 			ds.ReadXml(User.Nick + ".xml");
 

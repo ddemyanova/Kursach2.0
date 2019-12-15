@@ -41,7 +41,6 @@
             this.HelpLabel1 = new System.Windows.Forms.Label();
             this.LightPanel2 = new System.Windows.Forms.Panel();
             this.HelpLabel2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.MainLightPanel.SuspendLayout();
             this.BlueBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureHelp2)).BeginInit();
@@ -68,7 +67,7 @@
             this.MainLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.MainLabel.Location = new System.Drawing.Point(17, 20);
             this.MainLabel.Name = "MainLabel";
-            this.MainLabel.Size = new System.Drawing.Size(531, 78);
+            this.MainLabel.Size = new System.Drawing.Size(685, 96);
             this.MainLabel.TabIndex = 8;
             this.MainLabel.Text = "Цей застосунок створено для надання приблизної \r\nінформації про стан гостроти зор" +
     "у. \r\nДля достовірного диагнозу зверніться до лікаря";
@@ -80,7 +79,7 @@
             this.HelpGreetingLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.HelpGreetingLabel.Location = new System.Drawing.Point(137, 16);
             this.HelpGreetingLabel.Name = "HelpGreetingLabel";
-            this.HelpGreetingLabel.Size = new System.Drawing.Size(297, 26);
+            this.HelpGreetingLabel.Size = new System.Drawing.Size(377, 32);
             this.HelpGreetingLabel.TabIndex = 0;
             this.HelpGreetingLabel.Text = "Вітаємо Вас у GoodVision";
             // 
@@ -152,7 +151,7 @@
             this.HelpLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelpLabel3.Location = new System.Drawing.Point(12, 16);
             this.HelpLabel3.Name = "HelpLabel3";
-            this.HelpLabel3.Size = new System.Drawing.Size(242, 96);
+            this.HelpLabel3.Size = new System.Drawing.Size(313, 116);
             this.HelpLabel3.TabIndex = 0;
             this.HelpLabel3.Text = "За допомоги цієї кнопки \r\nВи завжди можете\r\n повернутися на цю \r\nсторінку з будь-" +
     "якої іншої.";
@@ -172,7 +171,7 @@
             this.HelpLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelpLabel1.Location = new System.Drawing.Point(14, 10);
             this.HelpLabel1.Name = "HelpLabel1";
-            this.HelpLabel1.Size = new System.Drawing.Size(221, 72);
+            this.HelpLabel1.Size = new System.Drawing.Size(278, 87);
             this.HelpLabel1.TabIndex = 0;
             this.HelpLabel1.Text = "Кнопка для перегляду\r\n статистики\r\n попередніх тестувань.";
             // 
@@ -181,7 +180,6 @@
             this.LightPanel2.BackColor = System.Drawing.Color.Transparent;
             this.LightPanel2.BackgroundImage = global::GoodVision.Properties.Resources.подложка;
             this.LightPanel2.Controls.Add(this.HelpLabel2);
-            this.LightPanel2.Controls.Add(this.richTextBox1);
             this.LightPanel2.Location = new System.Drawing.Point(298, 285);
             this.LightPanel2.Name = "LightPanel2";
             this.LightPanel2.Size = new System.Drawing.Size(275, 144);
@@ -193,18 +191,10 @@
             this.HelpLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelpLabel2.Location = new System.Drawing.Point(6, 5);
             this.HelpLabel2.Name = "HelpLabel2";
-            this.HelpLabel2.Size = new System.Drawing.Size(247, 120);
+            this.HelpLabel2.Size = new System.Drawing.Size(313, 145);
             this.HelpLabel2.TabIndex = 1;
             this.HelpLabel2.Text = " Кнопка для переходу на\r\n вибір методу тестування.\r\n Там ви отримаєте\r\n докладні " +
     "інструкції\r\n для проходження тестів.\r\n";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(-267, -16);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(261, 144);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
             // 
             // HellpMessage
             // 
@@ -244,7 +234,6 @@
         private System.Windows.Forms.Panel LightPanel3;
         private System.Windows.Forms.Panel LightPanel2;
         private System.Windows.Forms.Panel LightPanel1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private ButtonRoundedCorners.RoundedCorners PictureHelp2;
         private ButtonRoundedCorners.RoundedCorners PictureHelp1;
         private rbutton.CustRoundButton MenuPict;

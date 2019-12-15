@@ -1,6 +1,6 @@
 ﻿namespace GoodVision
 {
-    partial class LandotCheckPro
+    partial class LandoltCheckPro
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandotCheckPro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandoltCheckPro));
             this.EyeTestingPanel = new System.Windows.Forms.Panel();
             this.MessagePanel = new System.Windows.Forms.Panel();
             this.WhitePanel = new System.Windows.Forms.Panel();
@@ -44,7 +44,7 @@
             this.EyeTestPanel = new System.Windows.Forms.Panel();
             this.EyeTextLabel = new System.Windows.Forms.Label();
             this.LTimer = new System.Windows.Forms.Timer(this.components);
-            this.BackToVisionCheckButton = new rbutton.CustRoundButton();
+            this.BackToMenuButton = new rbutton.CustRoundButton();
             this.GoLandotButton = new ButtonRoundedCorners.RoundedCorners();
             this.EyeTestingPanel.SuspendLayout();
             this.WhitePanel.SuspendLayout();
@@ -242,7 +242,7 @@
             this.EyeTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EyeTextLabel.Location = new System.Drawing.Point(89, 196);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(517, 126);
+            this.EyeTextLabel.Size = new System.Drawing.Size(647, 162);
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве \r\nта нажміть \"старт\".\r\n";
             // 
@@ -251,18 +251,18 @@
             this.LTimer.Interval = 1000;
             this.LTimer.Tick += new System.EventHandler(this.LTimer_Tick_1);
             // 
-            // BackToVisionCheckButton
+            // BackToMenuButton
             // 
-            this.BackToVisionCheckButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BackToVisionCheckButton.Image = global::GoodVision.Properties.Resources._13;
-            this.BackToVisionCheckButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
-            this.BackToVisionCheckButton.ImageNormal = global::GoodVision.Properties.Resources._13;
-            this.BackToVisionCheckButton.Location = new System.Drawing.Point(5, 405);
-            this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
-            this.BackToVisionCheckButton.Size = new System.Drawing.Size(218, 163);
-            this.BackToVisionCheckButton.TabIndex = 4;
-            this.BackToVisionCheckButton.UseVisualStyleBackColor = true;
-            this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
+            this.BackToMenuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BackToMenuButton.Image = global::GoodVision.Properties.Resources._13;
+            this.BackToMenuButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
+            this.BackToMenuButton.ImageNormal = global::GoodVision.Properties.Resources._13;
+            this.BackToMenuButton.Location = new System.Drawing.Point(5, 405);
+            this.BackToMenuButton.Name = "BackToMenuButton";
+            this.BackToMenuButton.Size = new System.Drawing.Size(218, 163);
+            this.BackToMenuButton.TabIndex = 4;
+            this.BackToMenuButton.UseVisualStyleBackColor = true;
+            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
             // 
             // GoLandotButton
             // 
@@ -277,7 +277,7 @@
             this.GoLandotButton.TabStop = false;
             this.GoLandotButton.Click += new System.EventHandler(this.GoLandotButton_Click);
             // 
-            // LandotCheckPro
+            // LandoltCheckPro
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImage = global::GoodVision.Properties.Resources.Регистр2;
@@ -285,15 +285,15 @@
             this.ClientSize = new System.Drawing.Size(1140, 601);
             this.Controls.Add(this.GoLandotButton);
             this.Controls.Add(this.EyeTestPanel);
-            this.Controls.Add(this.BackToVisionCheckButton);
+            this.Controls.Add(this.BackToMenuButton);
             this.Controls.Add(this.InstructPanel);
             this.Controls.Add(this.EyeTestingPanel);
             this.DoubleBuffered = true;
-            this.Name = "LandotCheckPro";
+            this.Name = "LandoltCheckPro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Перевірка кільцями Ландольта";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LandotCheckPro_FormClosing);
-            this.Load += new System.EventHandler(this.LandotCheckPro_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LandoltCheckPro_FormClosing);
+            this.Load += new System.EventHandler(this.LandoltCheckPro_Load);
             this.EyeTestingPanel.ResumeLayout(false);
             this.WhitePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LandotCirclePictureBox)).EndInit();
@@ -318,7 +318,7 @@
         private System.Windows.Forms.RichTextBox LandotInstructTextBox;
         private CircularProgressBar.CircularProgressBar LandotTimer;
         private System.Windows.Forms.Timer LTimer;
-        private rbutton.CustRoundButton BackToVisionCheckButton;
+        private rbutton.CustRoundButton BackToMenuButton;
         private ButtonRoundedCorners.RoundedCorners RightLandotButton;
         private ButtonRoundedCorners.RoundedCorners UpLandotButton;
         private ButtonRoundedCorners.RoundedCorners DownLandotButton;

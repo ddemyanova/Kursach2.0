@@ -43,7 +43,7 @@
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.InstrPanel = new System.Windows.Forms.Panel();
             this.SivtsevInstrTextBox = new System.Windows.Forms.RichTextBox();
-            this.BackToVisionCheckButton = new rbutton.CustRoundButton();
+            this.BackToMenuButton = new rbutton.CustRoundButton();
             this.StartButton = new ButtonRoundedCorners.RoundedCorners();
             this.BackPanel.SuspendLayout();
             this.WhitePanel.SuspendLayout();
@@ -134,7 +134,7 @@
             this.AnswerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnswerTextBox.Location = new System.Drawing.Point(41, 35);
             this.AnswerTextBox.Name = "AnswerTextBox";
-            this.AnswerTextBox.Size = new System.Drawing.Size(158, 46);
+            this.AnswerTextBox.Size = new System.Drawing.Size(158, 56);
             this.AnswerTextBox.TabIndex = 0;
             this.AnswerTextBox.TextChanged += new System.EventHandler(this.AnswerTextBox_TextChanged);
             this.AnswerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AnswerTextBox_KeyPress);
@@ -192,7 +192,7 @@
             this.EyeTextLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.EyeTextLabel.Location = new System.Drawing.Point(85, 199);
             this.EyeTextLabel.Name = "EyeTextLabel";
-            this.EyeTextLabel.Size = new System.Drawing.Size(517, 126);
+            this.EyeTextLabel.Size = new System.Drawing.Size(647, 162);
             this.EyeTextLabel.TabIndex = 0;
             this.EyeTextLabel.Text = "Тестуємо ліве око. \r\nБудь ласка, закрийте праве \r\nта нажміть \"старт\".";
             // 
@@ -226,19 +226,19 @@
             this.SivtsevInstrTextBox.Text = resources.GetString("SivtsevInstrTextBox.Text");
             this.SivtsevInstrTextBox.TextChanged += new System.EventHandler(this.SivtsevInstrTextBox_TextChanged);
             // 
-            // BackToVisionCheckButton
+            // BackToMenuButton
             // 
-            this.BackToVisionCheckButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BackToVisionCheckButton.BackColor = System.Drawing.Color.Transparent;
-            this.BackToVisionCheckButton.Image = global::GoodVision.Properties.Resources._13;
-            this.BackToVisionCheckButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
-            this.BackToVisionCheckButton.ImageNormal = global::GoodVision.Properties.Resources._13;
-            this.BackToVisionCheckButton.Location = new System.Drawing.Point(5, 408);
-            this.BackToVisionCheckButton.Name = "BackToVisionCheckButton";
-            this.BackToVisionCheckButton.Size = new System.Drawing.Size(218, 163);
-            this.BackToVisionCheckButton.TabIndex = 6;
-            this.BackToVisionCheckButton.UseVisualStyleBackColor = false;
-            this.BackToVisionCheckButton.Click += new System.EventHandler(this.BackToVisionCheckButton_Click);
+            this.BackToMenuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BackToMenuButton.BackColor = System.Drawing.Color.Transparent;
+            this.BackToMenuButton.Image = global::GoodVision.Properties.Resources._13;
+            this.BackToMenuButton.ImageHover = global::GoodVision.Properties.Resources._13Hover;
+            this.BackToMenuButton.ImageNormal = global::GoodVision.Properties.Resources._13;
+            this.BackToMenuButton.Location = new System.Drawing.Point(5, 408);
+            this.BackToMenuButton.Name = "BackToMenuButton";
+            this.BackToMenuButton.Size = new System.Drawing.Size(218, 163);
+            this.BackToMenuButton.TabIndex = 6;
+            this.BackToMenuButton.UseVisualStyleBackColor = false;
+            this.BackToMenuButton.Click += new System.EventHandler(this.BackToMenuButton_Click);
             // 
             // StartButton
             // 
@@ -265,7 +265,7 @@
             this.ClientSize = new System.Drawing.Size(1140, 601);
             this.Controls.Add(this.EyeTestPanel);
             this.Controls.Add(this.StartButton);
-            this.Controls.Add(this.BackToVisionCheckButton);
+            this.Controls.Add(this.BackToMenuButton);
             this.Controls.Add(this.BackPanel);
             this.Controls.Add(this.InstrPanel);
             this.DoubleBuffered = true;
@@ -302,7 +302,7 @@
         private System.Windows.Forms.Panel InstrPanel;
       //  private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox SivtsevInstrTextBox;
-        private rbutton.CustRoundButton BackToVisionCheckButton;
+        private rbutton.CustRoundButton BackToMenuButton;
         private ButtonRoundedCorners.RoundedCorners AnswerSivtsevButton;
         private ButtonRoundedCorners.RoundedCorners StartButton;
         private System.Windows.Forms.Panel EyeTestPanel;

@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisionCheck));
             this.BluePanel = new System.Windows.Forms.Panel();
             this.DarkPanel = new System.Windows.Forms.Panel();
-            this.InstrLabel = new System.Windows.Forms.Label();
+            this.MainInstructionLabel = new System.Windows.Forms.Label();
             this.AdviceLabel = new System.Windows.Forms.Label();
             this.VisionCheckLabel = new System.Windows.Forms.Label();
             this.InstructionLabel = new System.Windows.Forms.Label();
-            this.sivtsevTip = new System.Windows.Forms.ToolTip(this.components);
+            this.SivtsevTip = new System.Windows.Forms.ToolTip(this.components);
             this.SivtsevModeButton = new TetraCustomButton.ImageTetraButton();
             this.LandoltTip = new System.Windows.Forms.ToolTip(this.components);
             this.LandoltModeButton = new TetraCustomButton.ImageTetraButton();
@@ -67,24 +67,24 @@
             // 
             this.DarkPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.DarkPanel.BackgroundImage = global::GoodVision.Properties.Resources.подложка2;
-            this.DarkPanel.Controls.Add(this.InstrLabel);
+            this.DarkPanel.Controls.Add(this.MainInstructionLabel);
             this.DarkPanel.Location = new System.Drawing.Point(3, 160);
             this.DarkPanel.Name = "DarkPanel";
             this.DarkPanel.Size = new System.Drawing.Size(1124, 127);
             this.DarkPanel.TabIndex = 2;
             // 
-            // InstrLabel
+            // MainInstructionLabel
             // 
-            this.InstrLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.InstrLabel.AutoSize = true;
-            this.InstrLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InstrLabel.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.InstrLabel.Location = new System.Drawing.Point(105, 11);
-            this.InstrLabel.Name = "InstrLabel";
-            this.InstrLabel.Size = new System.Drawing.Size(1225, 126);
-            this.InstrLabel.TabIndex = 0;
-            this.InstrLabel.Text = resources.GetString("InstrLabel.Text");
-            this.InstrLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MainInstructionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MainInstructionLabel.AutoSize = true;
+            this.MainInstructionLabel.BackColor = System.Drawing.Color.Transparent;
+            this.MainInstructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MainInstructionLabel.Location = new System.Drawing.Point(105, 11);
+            this.MainInstructionLabel.Name = "MainInstructionLabel";
+            this.MainInstructionLabel.Size = new System.Drawing.Size(1259, 117);
+            this.MainInstructionLabel.TabIndex = 0;
+            this.MainInstructionLabel.Text = resources.GetString("MainInstructionLabel.Text");
+            this.MainInstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AdviceLabel
             // 
@@ -119,14 +119,14 @@
             this.InstructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InstructionLabel.Location = new System.Drawing.Point(152, 104);
             this.InstructionLabel.Name = "InstructionLabel";
-            this.InstructionLabel.Size = new System.Drawing.Size(1037, 39);
+            this.InstructionLabel.Size = new System.Drawing.Size(1006, 38);
             this.InstructionLabel.TabIndex = 0;
             this.InstructionLabel.Text = "Для початку тестування вам необхідно обрати його формат.";
             this.InstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // sivtsevTip
+            // SivtsevTip
             // 
-            this.sivtsevTip.IsBalloon = true;
+            this.SivtsevTip.IsBalloon = true;
             // 
             // SivtsevModeButton
             // 
@@ -140,7 +140,7 @@
             this.SivtsevModeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SivtsevModeButton.TabIndex = 4;
             this.SivtsevModeButton.TabStop = false;
-            this.sivtsevTip.SetToolTip(this.SivtsevModeButton, "Тестування за допомоги таблиці Сивцева");
+            this.SivtsevTip.SetToolTip(this.SivtsevModeButton, "Тестування за допомоги таблиці Сивцева");
             this.SivtsevModeButton.Click += new System.EventHandler(this.SivtsevModeButton_Click);
             // 
             // LandoltTip
@@ -211,11 +211,11 @@
      //   private ImageTetraButton.ImageCustomButton SivtsevModeButton;
        // private ImageTetraButton.ImageCustomButton LandoltModeButton;
     //    private rbutton.CustRoundButton BackFromVChButton;
-        private System.Windows.Forms.Label InstrLabel;
+        private System.Windows.Forms.Label MainInstructionLabel;
         private rbutton.CustRoundButton BackToMenuButton;
         private TetraCustomButton.ImageTetraButton LandoltModeButton;
         private TetraCustomButton.ImageTetraButton SivtsevModeButton;
-        private System.Windows.Forms.ToolTip sivtsevTip;
+        private System.Windows.Forms.ToolTip SivtsevTip;
         private System.Windows.Forms.ToolTip LandoltTip;
         private System.Windows.Forms.Panel DarkPanel;
         private System.Windows.Forms.Label AdviceLabel;

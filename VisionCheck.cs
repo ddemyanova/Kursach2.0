@@ -38,7 +38,7 @@ namespace GoodVision
 
         private void LandoltModeButton_Click_1(object sender, EventArgs e)
         {
-            LandotCheckPro LanCheck = new LandotCheckPro();
+            LandoltCheckPro LanCheck = new LandoltCheckPro();
             LanCheck.Show();
             this.Hide();
         }

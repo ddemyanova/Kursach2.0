@@ -33,14 +33,14 @@
             this.HelloLab = new System.Windows.Forms.Label();
             this.DarkPanel = new System.Windows.Forms.Panel();
             this.VisionCheckButton = new ButtonRoundedCorners.RoundedCorners();
-            this.StaticticButton = new ButtonRoundedCorners.RoundedCorners();
+            this.StatisticButton = new ButtonRoundedCorners.RoundedCorners();
             this.HelpButton = new rbutton.CustRoundButton();
             this.EyePictureBox = new System.Windows.Forms.PictureBox();
             this.ChangeUser = new TetraCustomButton.ImageTetraButton();
             this.LightPanel.SuspendLayout();
             this.DarkPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatisticButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EyePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChangeUser)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.HelloLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.HelloLab.Location = new System.Drawing.Point(16, 22);
             this.HelloLab.Name = "HelloLab";
-            this.HelloLab.Size = new System.Drawing.Size(273, 70);
+            this.HelloLab.Size = new System.Drawing.Size(341, 87);
             this.HelloLab.TabIndex = 0;
             this.HelloLab.Text = "Вітаємо,";
             // 
@@ -74,7 +74,7 @@
             this.DarkPanel.BackColor = System.Drawing.Color.Transparent;
             this.DarkPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DarkPanel.BackgroundImage")));
             this.DarkPanel.Controls.Add(this.VisionCheckButton);
-            this.DarkPanel.Controls.Add(this.StaticticButton);
+            this.DarkPanel.Controls.Add(this.StatisticButton);
             this.DarkPanel.Location = new System.Drawing.Point(182, 250);
             this.DarkPanel.Name = "DarkPanel";
             this.DarkPanel.Size = new System.Drawing.Size(772, 323);
@@ -94,18 +94,18 @@
             this.VisionCheckButton.TabStop = false;
             this.VisionCheckButton.Click += new System.EventHandler(this.VisionCheckButton_Click);
             // 
-            // StaticticButton
+            // StatisticButton
             // 
-            this.StaticticButton.BackColor = System.Drawing.Color.Coral;
-            this.StaticticButton.BackgroundImage = global::GoodVision.Properties.Resources.statistic;
-            this.StaticticButton.ImageHover = global::GoodVision.Properties.Resources.стат;
-            this.StaticticButton.ImageNormal = null;
-            this.StaticticButton.Location = new System.Drawing.Point(65, 47);
-            this.StaticticButton.Name = "StaticticButton";
-            this.StaticticButton.Size = new System.Drawing.Size(668, 93);
-            this.StaticticButton.TabIndex = 2;
-            this.StaticticButton.TabStop = false;
-            this.StaticticButton.Click += new System.EventHandler(this.StaticticButton_Click);
+            this.StatisticButton.BackColor = System.Drawing.Color.Coral;
+            this.StatisticButton.BackgroundImage = global::GoodVision.Properties.Resources.statistic;
+            this.StatisticButton.ImageHover = global::GoodVision.Properties.Resources.стат;
+            this.StatisticButton.ImageNormal = null;
+            this.StatisticButton.Location = new System.Drawing.Point(65, 47);
+            this.StatisticButton.Name = "StatisticButton";
+            this.StatisticButton.Size = new System.Drawing.Size(668, 93);
+            this.StatisticButton.TabIndex = 2;
+            this.StatisticButton.TabStop = false;
+            this.StatisticButton.Click += new System.EventHandler(this.StatisticButton_Click);
             // 
             // HelpButton
             // 
@@ -168,7 +168,7 @@
             this.LightPanel.PerformLayout();
             this.DarkPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VisionCheckButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StaticticButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatisticButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EyePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChangeUser)).EndInit();
             this.ResumeLayout(false);
@@ -190,7 +190,7 @@
 
         private rbutton.CustRoundButton HelpButton;
         private ButtonRoundedCorners.RoundedCorners VisionCheckButton;
-        private ButtonRoundedCorners.RoundedCorners StaticticButton;
+        private ButtonRoundedCorners.RoundedCorners StatisticButton;
         private System.Windows.Forms.PictureBox EyePictureBox;
         private TetraCustomButton.ImageTetraButton ChangeUser;
         //

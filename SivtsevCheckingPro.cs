@@ -257,14 +257,14 @@ namespace GoodVision
 			Environment.Exit(0);
 		}
 
-   
-
-        private void BackToVisionCheckButton_Click(object sender, EventArgs e)
+        private void BackToMenuButton_Click(object sender, EventArgs e)
         {
             MainMenu Vch = new MainMenu();
             Vch.Show();
             this.Hide();
         }
+
+     
 
 
 

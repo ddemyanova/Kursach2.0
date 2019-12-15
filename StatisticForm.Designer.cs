@@ -28,27 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.darkPanel = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.DarkPanel = new System.Windows.Forms.Panel();
             this.TitleLabel = new System.Windows.Forms.Label();
-            this.StatisticLabel = new System.Windows.Forms.Label();
             this.StatisticTable = new System.Windows.Forms.DataGridView();
             this.BackToMenuButton = new rbutton.CustRoundButton();
-            this.darkPanel.SuspendLayout();
+            this.DarkPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).BeginInit();
             this.SuspendLayout();
             // 
-            // darkPanel
+            // DarkPanel
             // 
-            this.darkPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.darkPanel.BackColor = System.Drawing.Color.Transparent;
-            this.darkPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
-            this.darkPanel.Controls.Add(this.TitleLabel);
-            this.darkPanel.Controls.Add(this.StatisticLabel);
-            this.darkPanel.Location = new System.Drawing.Point(50, 12);
-            this.darkPanel.Name = "darkPanel";
-            this.darkPanel.Size = new System.Drawing.Size(1063, 129);
-            this.darkPanel.TabIndex = 0;
+            this.DarkPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DarkPanel.BackColor = System.Drawing.Color.Transparent;
+            this.DarkPanel.BackgroundImage = global::GoodVision.Properties.Resources.gjlkj_rf2;
+            this.DarkPanel.Controls.Add(this.TitleLabel);
+            this.DarkPanel.Location = new System.Drawing.Point(65, 12);
+            this.DarkPanel.Name = "DarkPanel";
+            this.DarkPanel.Size = new System.Drawing.Size(1063, 129);
+            this.DarkPanel.TabIndex = 0;
             // 
             // TitleLabel
             // 
@@ -56,19 +54,11 @@
             this.TitleLabel.AutoSize = true;
             this.TitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TitleLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TitleLabel.Location = new System.Drawing.Point(113, 38);
+            this.TitleLabel.Location = new System.Drawing.Point(70, 32);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(1063, 61);
             this.TitleLabel.TabIndex = 3;
             this.TitleLabel.Text = "Тут Ви можете побачити Вашу статистику";
-            // 
-            // StatisticLabel
-            // 
-            this.StatisticLabel.AutoSize = true;
-            this.StatisticLabel.Location = new System.Drawing.Point(149, 38);
-            this.StatisticLabel.Name = "StatisticLabel";
-            this.StatisticLabel.Size = new System.Drawing.Size(0, 17);
-            this.StatisticLabel.TabIndex = 1;
             // 
             // StatisticTable
             // 
@@ -76,8 +66,8 @@
             this.StatisticTable.AllowUserToDeleteRows = false;
             this.StatisticTable.AllowUserToResizeColumns = false;
             this.StatisticTable.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
-            this.StatisticTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
+            this.StatisticTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.StatisticTable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StatisticTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StatisticTable.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
@@ -112,15 +102,15 @@
             this.ClientSize = new System.Drawing.Size(1140, 596);
             this.Controls.Add(this.BackToMenuButton);
             this.Controls.Add(this.StatisticTable);
-            this.Controls.Add(this.darkPanel);
+            this.Controls.Add(this.DarkPanel);
             this.DoubleBuffered = true;
             this.Name = "StatisticForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Статистика";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StatisticForm_FormClosing);
             this.Load += new System.EventHandler(this.StatisticForm_Load);
-            this.darkPanel.ResumeLayout(false);
-            this.darkPanel.PerformLayout();
+            this.DarkPanel.ResumeLayout(false);
+            this.DarkPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StatisticTable)).EndInit();
             this.ResumeLayout(false);
 
@@ -128,9 +118,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel darkPanel;
+        private System.Windows.Forms.Panel DarkPanel;
         private System.Windows.Forms.DataGridView StatisticTable;
-        private System.Windows.Forms.Label StatisticLabel;
        // private rbutton.CustRoundButton BackToMainButton;
         private System.Windows.Forms.Label TitleLabel;
         private rbutton.CustRoundButton BackToMenuButton;

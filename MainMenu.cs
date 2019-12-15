@@ -23,7 +23,7 @@ namespace GoodVision
 		GoodVisionClass MyVision;
         HellpMessage help = new HellpMessage();
 
-        private void StaticticButton_Click(object sender, EventArgs e)  // просмотр статистики
+        private void StatisticButton_Click(object sender, EventArgs e)  // просмотр статистики
         {
             StatisticForm statForm = new StatisticForm();
             statForm.Show();
@@ -91,6 +91,6 @@ namespace GoodVision
 			Environment.Exit(0);
 		}
 
-  
+      
     }
 }
